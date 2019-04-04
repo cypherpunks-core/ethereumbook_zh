@@ -236,7 +236,7 @@ module.exports = function(deployer) {
 };
 ----
 
-腳本初始化變量+Faucet+，將+Faucet.sol+ Solidity源程式碼標識為定義+Faucet+的工件。然後，它調用部署功能來部署此合約。
+腳本初始化變數+Faucet+，將+Faucet.sol+ Solidity源程式碼標識為定義+Faucet+的工件。然後，它調用部署功能來部署此合約。
 
 我們都準備好了。我們使用 +truffle migrate+ 來部署合約。我們必須使用+--network+參數指定在哪個網路上部署合約。我們只在配置檔案中指定了一個網路，我們將其命名為+localnode+。確保你的本地以太坊客戶端正在運行，然後輸入：
 
