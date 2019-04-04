@@ -14,7 +14,7 @@
 
 * 當系統提示你備份密鑰或助記詞時，請使用筆和紙進行物理備份。不要把這個任務放在“以後”，你會忘記。這些在你丟失了系統中保存的所有數據時使用。
 
-* 不要在數字文件，數字照片，屏幕截圖，在線驅動器，加密的PDF等中儲存密鑰材料（加密或不加密），不要臨時湊合的安全性。使用密碼管理器或筆和紙。
+* 不要在數位文件、數位照片、螢幕截圖、在線驅動器、加密的PDF等中儲存密鑰材料（加密或不加密），不要臨時湊合的安全性。使用密碼管理器或筆和紙。
 
 * 在傳輸任何大量數據之前，先做一個小的測試交易（例如，1美元）。一旦你收到測試交易，請嘗試從該錢包中發送。如果你忘記密碼或因任何其他原因無法發送資金，最好是一個小小的損失。
 
@@ -65,13 +65,13 @@
 
 起始錢包：
 
-MetaMask:: MetaMask是一款瀏覽器擴展錢包，可在你的瀏覽器（Chrome，Firefox，Opera或Brave Browser）中運行。它易於使用且便於測試，因為它可以連接到各種以太坊節點和測試區塊鏈（請參閱“testnets”）。
+MetaMask:: MetaMask是一款瀏覽器擴展錢包，可在你的瀏覽器（Chrome、Firefox、Opera或Brave Browser）中運行。它易於使用且便於測試，因為它可以連接到各種以太坊節點和測試區塊鏈（請參閱“testnets”）。
 
-Jaxx:: Jaxx是一款多平臺和多幣種錢包，可在各種操作系統上運行，包括Android，iOS，Windows，Mac和Linux。對於新用戶來說，它通常是一個不錯的選擇，因為它的設計簡單易用。
+Jaxx:: Jaxx是一款多平臺和多幣種錢包，可在各種操作系統上運行，包括Android、iOS、Windows、Mac和Linux。對於新用戶來說，它通常是一個不錯的選擇，因為它的設計簡單易用。
 
 MyEtherWallet (MEW):: MyEtherWallet是一款基於網路的錢包，可在任何瀏覽器中運行。它具有多個複雜的功能，我們將在許多範例中探討這些功能。
 
-Emerald Wallet:: Emerald錢包設計用於以太坊經典區塊鏈，但與其他以太坊區塊鏈兼容。它是一款開源桌面應用程式，適用於Windows，Mac和Linux。Emerald錢包可以運行一個完整的節點或連接到一個公共的遠程節點，工作在“輕量”模式下。它還有一個配套工具來在命令行中執行所有操作。
+Emerald Wallet:: Emerald錢包設計用於以太坊經典區塊鏈，但與其他以太坊區塊鏈兼容。它是一款開源桌面應用程式，適用於Windows、Mac和Linux。Emerald錢包可以運行一個完整的節點或連接到一個公共的遠程節點，工作在“輕量”模式下。它還有一個配套工具來在命令行中執行所有操作。
 
 我們將首先在桌面上安裝MetaMask
 
@@ -82,7 +82,7 @@ Emerald Wallet:: Emerald錢包設計用於以太坊經典區塊鏈，但與其�
 
 https://chrome.google.com/webstore/category/extensions
 
-搜索“MetaMask”並點擊狐狸的標誌。你應該看到這樣的擴展的詳細信息頁面：
+搜索“MetaMask”並點擊狐狸的標誌。你應該看到這樣的擴展的詳細資訊頁面：
 
 [[metamask_download]]
 .The detail page of the MetaMask Chrome Extension
@@ -100,7 +100,7 @@ image::images/metamask_download.png["MetaMask Detail Page"]
 [[using_MetaMask]]
 === 第一次使用MetaMask
 
-一旦安裝了MetaMask，你應該在瀏覽器的工具欄中看到一個新圖標（狐狸頭）。點擊它開始。它將要求你接受條款和條件，然後通過輸入密碼來創建新的以太坊錢包：
+一旦安裝了MetaMask，你應該在瀏覽器的工具欄中看到一個新圖示（狐狸頭）。點擊它開始。它將要求你接受條款和條件，然後通過輸入密碼來創建新的以太坊錢包：
 
 [[metamask_password]]
 .The password page of the MetaMask Chrome Extension
@@ -122,13 +122,13 @@ image::images/metamask_mnemonic.png["MetaMask Mnemonic Page"]
 在紙上備份助記符（12個字），兩次。將兩份紙張備份存放在兩個單獨的安全位置，例如防火安全櫃，鎖定的抽屜或保險箱。將紙質備份視為你在Ethereum錢包中儲存的相同價值的現金。任何能夠訪問這些文字的人都可以訪問並竊取你的資金。
 ====
 
-一旦確認你已安全儲存助記符，MetaMask將顯示你的以太坊帳戶詳細信息：
+一旦確認你已安全儲存助記符，MetaMask將顯示你的以太坊帳戶詳細資訊：
 
 [[metamask_account]]
 .Your Ethereum account in MetaMask
 image::images/metamask_account.png["MetaMask Account Page"]
 
-你的帳戶頁面會顯示你帳戶的名稱（預設情況下為“Account 1”），以太坊地址（範例中為0x9E713 ...）以及彩色圖標，以幫助你將此帳戶與其他帳戶區分開來。在帳戶頁面的頂部，你可以看到你當前正在使用哪個以太坊網路（範例中的“主網路”）。
+你的帳戶頁面會顯示你帳戶的名稱（預設情況下為“Account 1”），以太坊地址（範例中為0x9E713 ...）以及彩色圖示，以幫助你將此帳戶與其他帳戶區分開來。在帳戶頁面的頂部，你可以看到你當前正在使用哪個以太坊網路（範例中的“主網路”）。
 
 恭喜！你已經建立了你的第一個以太坊錢包！
 
@@ -149,7 +149,7 @@ Localhost 8545:: 連接到與瀏覽器在同一臺計算機上運行的節點。
 
 Custom RPC:: 允許你將MetaMask連接到任何具有geth兼容的遠程過程調用（RPC）接口的節點。該節點可以是任何公共或私有區塊鏈的一部分。
 
-有關各種以太坊測試網以及如何在它們之間進行選擇的更多信息，請參見 <<testnets>>。
+有關各種以太坊測試網以及如何在它們之間進行選擇的更多資訊，請參見 <<testnets>>。
 
 [TIP]
 ====
@@ -159,7 +159,7 @@ Custom RPC:: 允許你將MetaMask連接到任何具有geth兼容的遠程過程�
 [[getting_test_eth]]
 === 獲得一些測試以太
 
-我們的首要任務是給我們的錢包充值。我們不會在主網上這樣做，因為真正的以太網需要花費金錢，處理它需要更多的經驗。現在，我們將使用一些testnet ether加載我們的錢包。
+我們的首要任務是給我們的錢包儲值。我們不會在主網上這樣做，因為真正的以太網需要花費金錢，處理它需要更多的經驗。現在，我們將使用一些testnet ether加載我們的錢包。
 
 將MetaMask切換到_Ropsten測試網路_。然後點擊“Buy”，然後點擊“Ropsten Test Faucet”。MetaMask將打開一個新的網頁：
 
@@ -195,7 +195,7 @@ https://ropsten.etherscan.io/tx/0x7c7ad5aaea6474adccf6f5c5d6abed11b70a350fbc6f95
 
 幸運的是，我們不是測試ether的囤積者，我們希望練習發送ether。
 
-點擊橙色的“1 ether”按鈕來告訴MetaMask創建支付Faucet 1 ether的交易。MetaMask將準備一個交易並彈出一個窗口，並顯示確認信息：
+點擊橙色的“1 ether”按鈕來告訴MetaMask創建支付Faucet 1 ether的交易。MetaMask將準備一個交易並彈出一個視窗，並顯示確認資訊：
 
 [[send_to_faucet]]
 .Sending 1 ether to the faucet
@@ -217,12 +217,12 @@ image::images/send_to_faucet.png["Sending 1 ether to the faucet"]
 
 讓我們再來測試一下吧！再次點擊綠色的“request 1 ether from the faucet”按鈕，等待幾秒鐘。別擔心，faucet應該有足夠的ether，如果你要的話，會給你更多的東西。
 
-一旦你有2 ETH的餘額，你可以再試一次。這次，當你點擊橙色的“1 ether”捐贈按鈕時，你有足夠的餘額來完成交易。MetaMask彈出付款窗口時點擊“Submit”。所有這一切之後，你應該看到0.999937 ETH的餘額，因為你使用0.000063 ETH的gas發送了1個ETH到faucet。
+一旦你有2 ETH的餘額，你可以再試一次。這次，當你點擊橙色的“1 ether”捐贈按鈕時，你有足夠的餘額來完成交易。MetaMask彈出付款視窗時點擊“Submit”。所有這一切之後，你應該看到0.999937 ETH的餘額，因為你使用0.000063 ETH的gas發送了1個ETH到faucet。
 
 [[explore_tx_history]]
 === 探索地址的交易歷史
 
-到目前為止，你已經成為使用MetaMask發送和接收測試ether的專家。你的錢包已收到至少兩次付款並至少發送了一次。讓我們看看所有這些交易，使用 +ropsten.etherscan.io+ 區塊瀏覽器。你可以複製你的錢包地址並將其粘貼到瀏覽器的搜索框中，或者你可以讓MetaMask為你打開該頁面。在MetaMask中你的帳戶圖標旁邊，你會看到一個顯示三個點的按鈕。點擊它顯示與帳戶相關的選項菜單：
+到目前為止，你已經成為使用MetaMask發送和接收測試ether的專家。你的錢包已收到至少兩次付款並至少發送了一次。讓我們看看所有這些交易，使用 +ropsten.etherscan.io+ 區塊瀏覽器。你可以複製你的錢包地址並將其粘貼到瀏覽器的搜索框中，或者你可以讓MetaMask為你打開該頁面。在MetaMask中你的帳戶圖示旁邊，你會看到一個顯示三個點的按鈕。點擊它顯示與帳戶相關的選項菜單：
 
 [[metamask_account_context_menu]]
 .MetaMask Account Context Menu
@@ -234,9 +234,9 @@ image::images/metamask_account_context_menu.png["MetaMask Account Context Menu"]
 .Address Transaction History on Etherscan
 image::images/block_explorer_account_history.png["Address Transaction History on Etherscan"]
 
-在這裡你可以看到你的以太坊地址的整個交易歷史。它顯示了Ropsten區塊鏈上記錄的所有交易，其中你的地址是交易的發件人或收件人。點擊其中幾項交易即可查看更多詳細信息。
+在這裡你可以看到你的以太坊地址的整個交易歷史。它顯示了Ropsten區塊鏈上記錄的所有交易，其中你的地址是交易的發件人或收件人。點擊其中幾項交易即可查看更多詳細資訊。
 
-你可以瀏覽任何地址的交易歷史記錄。查看你是否可以瀏覽Ropsten Test Faucet地址的交易歷史記錄（提示：它是在你的地址中最早付款中列出的“發件人”地址）。你可以看到從faucet發送給你的和其他地址的測試ether。你看到的每筆交易都可能帶給你更多的地址和交易。不久之後，你將迷失在相互關聯的數據迷宮中。公共區塊鏈包含大量的信息，所有這些都可以通過編程方式進行探索，我們將在未來的例子中看到。
+你可以瀏覽任何地址的交易歷史記錄。查看你是否可以瀏覽Ropsten Test Faucet地址的交易歷史記錄（提示：它是在你的地址中最早付款中列出的“發件人”地址）。你可以看到從faucet發送給你的和其他地址的測試ether。你看到的每筆交易都可能帶給你更多的地址和交易。不久之後，你將迷失在相互關聯的數據迷宮中。公共區塊鏈包含大量的資訊，所有這些都可以通過編程方式進行探索，我們將在未來的例子中看到。
 
 [[intro_world_computer]]
 === 世界計算機簡介
@@ -290,16 +290,16 @@ include::code/Solidity/Faucet.sol[]
 contract Faucet {
 ----
 
-該行聲明瞭一個合約物件，類似於JavaScript，Java或Cpass:[++]等其他面嚮物件語言中的 +class+ 聲明。合約的定義包含了大括號中的所有行 pass:[{}]，它定義了 +範圍 +，就像在其他許多程式語言中使用花括號一樣。
+該行宣告瞭一個合約物件，類似於JavaScript，Java或Cpass:[++]等其他面嚮物件語言中的 +class+ 宣告。合約的定義包含了大括號中的所有行 pass:[{}]，它定義了 +範圍 +，就像在其他許多程式語言中使用大括號一樣。
 
-接下來，我們聲明faucet合約的第一個函數：
+接下來，我們宣告faucet合約的第一個函數：
 
 [[withdraw_function]]
 ----
 function withdraw(uint withdraw_amount) public {
 ----
 
-函數名為 +withdraw+，它接收一個無符號整數（+uint+）名為 +withdraw_amount+ 的參數。它被聲明為 +public+ 函數，意味著它可以被其他合約調用。函數定義在花括號之間：
+函數名為 +withdraw+，它接收一個無符號整數（+uint+）名為 +withdraw_amount+ 的參數。它被宣告為 +public+ 函數，意味著它可以被其他合約調用。函數定義在大括號之間：
 
 [[withdraw_limit]]
 ----
@@ -316,20 +316,20 @@ Next comes the actual withdrawal:
 msg.sender.transfer(withdraw_amount);
 ----
 
-這裡發生了一些有趣的事情。+msg+ 物件是所有合約可以訪問的輸入之一。它代表觸發執行此合約的交易。屬性 +sender+ 是交易的發件人地址。函數 +transfer+ 是一個內建函數，它將ether從合約傳遞到調用它的地址。從後往前讀，表示 +transfer+ 到觸發此合約執行的 +msg+ 的 +sender+。+transfer+ 函數將一個金額作為唯一的參數。我們傳遞之前聲明為 +withdraw+ 方法的參數的 +withdraw_amount+ 值。
+這裡發生了一些有趣的事情。+msg+ 物件是所有合約可以訪問的輸入之一。它代表觸發執行此合約的交易。屬性 +sender+ 是交易的發件人地址。函數 +transfer+ 是一個內建函數，它將ether從合約傳遞到調用它的地址。從後往前讀，表示 +transfer+ 到觸發此合約執行的 +msg+ 的 +sender+。+transfer+ 函數將一個金額作為唯一的參數。我們傳遞之前宣告為 +withdraw+ 方法的參數的 +withdraw_amount+ 值。
 
 緊接著的一行是結束大括號，表示 +withdraw+ 函數定義的結束。
 
-下面我們又聲明瞭一個函數：
+下面我們又宣告了一個函數：
 
 [[fallback_function]]
 ----
 function () public payable {}
 ----
 
-此函數是所謂的_“fallback”_或_default_函數，如果合約的交易沒有命名合約中任何已聲明的功能或任何功能，或者不包含數據，則觸發此函數。合約可以有一個這樣的預設功能（沒有名字），它通常是接收ether的那個。這就是為什麼它被定義為 +public+ 和 +payable+ 函數，這意味著它可以接受合約中的ether。除了大括號中的空白定義 pass:[{}] 所指示的以外，它不會執行任何操作。如果我們進行一次向這個合約地址發送ether的交易，就好像它是一個錢包一樣，該函數將處理它。
+此函數是所謂的_“fallback”_或_default_函數，如果合約的交易沒有命名合約中任何已宣告的功能或任何功能，或者不包含數據，則觸發此函數。合約可以有一個這樣的預設功能（沒有名字），它通常是接收ether的那個。這就是為什麼它被定義為 +public+ 和 +payable+ 函數，這意味著它可以接受合約中的ether。除了大括號中的空白定義 pass:[{}] 所指示的以外，它不會執行任何操作。如果我們進行一次向這個合約地址發送ether的交易，就好像它是一個錢包一樣，該函數將處理它。
 
-在我們的預設函數下面是最後一個關閉花括號，它關閉了合約 +faucet+ 的定義。就是這樣！
+在我們的預設函數下面是最後一個關閉大括號，它關閉了合約 +faucet+ 的定義。就是這樣！
 
 [[compile_faucet_contract]]
 === 編譯faucet合約
@@ -360,7 +360,7 @@ image::images/remix_toolbar.png["Click the plus sign to open a new tab"]
 .Copy the Faucet example code into the new tab
 image::images/remix_faucet_load.png["Copy the Faucet example code into the new tab"]
 
-現在我們已將 +Faucet.sol+ 合約加載到Remix IDE中，IDE將自動編譯程式碼。如果一切順利，你會看到一個綠色的放開，右邊出現一個帶有“faucet”的綠色方塊，在Compile選項卡下，確認編譯成功：
+現在我們已將 +Faucet.sol+ 合約加載到Remix IDE中，IDE將自動編譯程式碼。如果一切順利，你會看到一個綠色的方塊，右邊出現一個帶有“faucet”的綠色方塊，在Compile選項卡下，確認編譯成功：
 
 [[remix_compile]]
 .Remix successfully compiles the Faucet.sol contract
@@ -420,7 +420,7 @@ image::images/remix_contract_interact.png["The Faucet contract is ALIVE!"]
 [[view_contract_address]]
 ==== 在區塊瀏覽器中查看合約地址
 
-現在，我們在區塊鏈中登記了一份合約，我們可以看到它有一個以太坊地址。讓我們在 +ropsten.etherscan.io+ 區塊瀏覽器中查看它，看看合約是什麼樣子。通過點擊名稱旁邊的剪貼板圖標來複制合約的地址。
+現在，我們在區塊鏈中登記了一份合約，我們可以看到它有一個以太坊地址。讓我們在 +ropsten.etherscan.io+ 區塊瀏覽器中查看它，看看合約是什麼樣子。通過點擊名稱旁邊的剪貼板圖示來複制合約的地址。
 
 [[remix_contract_address]]
 .Copy the contract address from Remix
@@ -452,7 +452,7 @@ image::images/metamask_send_to_contract.png[""]
 function () public payable {}
 ----
 
-當你將交易發送到合約地址時，沒有指定要調用哪個函數的數據，它將調用預設函數。由於我們將它聲明為+payable+，因此它接受1 ether並存入合約賬戶餘額中。你的交易導致合約在EVM中運行，更新其餘額。我們資助了我們的faucet！
+當你將交易發送到合約地址時，沒有指定要調用哪個函數的數據，它將調用預設函數。由於我們將它宣告為+payable+，因此它接受1 ether並存入合約賬戶餘額中。你的交易導致合約在EVM中運行，更新其餘額。我們資助了我們的faucet！
 
 [[withdraw_from_contract]]
 ==== 從我們的合約中提取
@@ -481,7 +481,7 @@ image::images/remix_contract_interact.png["The withdraw function of Faucet.sol, 
 .Click "withdraw" in Remix to create a withdrawal transaction
 image::images/remix_withdraw.png[""]
 
-MetaMask將彈出一個交易窗口供你批准。點擊“Submit”將你的提款通知發送至合約：
+MetaMask將彈出一個交易視窗供你批准。點擊“Submit”將你的提款通知發送至合約：
 
 [[metamask_withdraw]]
 .MetaMask transaction to call the withdraw function
@@ -513,7 +513,7 @@ msg.sender.transfer(withdraw_amount);
 [[intro_conclusion]]
 === 總結
 
-本章中，我們使用MetaMask創建了一個錢包，並且使用Ropsten測試網路上的一個faucet為它充值。我們收到了發送到錢包以太坊地址的ether。然後我們把ether發送到faucet的以太坊地址。
+本章中，我們使用MetaMask創建了一個錢包，並且使用Ropsten測試網路上的一個faucet為它儲值。我們收到了發送到錢包以太坊地址的ether。然後我們把ether發送到faucet的以太坊地址。
 
 接下來，我們在Solidity中寫了一個faucet合約。使用Remix IDE將合約編譯為EVM Bytecode 。使用Remix進行交易，並在Ropsten區塊鏈上登記faucet合約。一旦登記，faucet合約有一個以太坊地址，我們發送一些ether。最後，我們構建了一個交易來調用 +withdraw+ 函數，併成功請求了0.1 ether。該合約檢查了我們的請求，發送給我們0.1 ether並進行內部交易。
 
