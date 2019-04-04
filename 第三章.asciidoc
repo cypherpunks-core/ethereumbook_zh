@@ -179,7 +179,7 @@ $ sudo apt-get install openssl libssl-dev libudev-dev
 [[parity]]
 ==== Parity
 
-Parity是完整節點以太坊客戶端和DApp瀏覽器的實現。Parity是由Rust從頭開始編寫的，系統程式語言是為了構建一個模塊化，安全和可擴展的以太坊客戶端。Parity由英國公司Parity Tech開發，並以GPLv3開源許可證發佈。
+Parity是完整節點以太坊客戶端和DApp瀏覽器的實現。Parity是由Rust從頭開始編寫的，系統程式語言是為了構建一個模組化，安全和可擴展的以太坊客戶端。Parity由英國公司Parity Tech開發，並以GPLv3開源許可證發佈。
 
 [NOTE]
 =====
