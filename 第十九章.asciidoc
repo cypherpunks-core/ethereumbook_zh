@@ -125,7 +125,7 @@ DAO中的一想安全措施是所有提款請求都要延遲28天。這為社區
 
 [[eth_etc_differences_evm]]
 ==== EVM
-對於大多數部分（截至2018年4月），兩個網路保持高度兼容。為一條鏈生成的合約程式碼在另一條鏈上按預期運行。儘管EVM操作系統的差異很小（參見EIPs： https://github.com/ethereum/EIPs/blob/master/EIPS/eip-140.md[140], link:https://github.com/ethereum/EIPs/blob/master/EIPS/eip-145.md[145], 和link:https://github.com/ethereum/EIPs/blob/master/EIPS/eip-214.md[214]）
+對於大多數部分（截至2018年4月），兩個網路保持高度兼容。為一條鏈生成的合約程式碼在另一條鏈上按預期運行。儘管EVM作業系統的差異很小（參見EIPs： https://github.com/ethereum/EIPs/blob/master/EIPS/eip-140.md[140], link:https://github.com/ethereum/EIPs/blob/master/EIPS/eip-145.md[145], 和link:https://github.com/ethereum/EIPs/blob/master/EIPS/eip-214.md[214]）
 
 [[eth_etc_differences_core_development]]
 ==== 核心網路開發
