@@ -174,7 +174,7 @@ $ sudo apt-get install openssl libssl-dev libudev-dev
 
 對於其他操作系統，請使用操作系統的軟體包管理器或遵循Wiki說明（https://github.com/paritytech/parity/wiki/Setup）來安裝所需的庫。
 
-現在你已經安裝了 +git+，+golang+，+rust+ 和必要的庫，讓我們開始工作吧！
+現在你已經安裝了 +git+、+golang+、+rust+ 和必要的庫，讓我們開始工作吧！
 
 [[parity]]
 ==== Parity
