@@ -281,7 +281,7 @@ require(withdraw_amount <= 100000000000000000);
 require(withdraw_amount <= 0.1 ether);
 ----
 
-==== 預定義的全局變數和函數
+==== 預定義的全域變數和函數
 
 在EVM中執行合約時，它可以訪問一組較小範圍內的全局物件。這些包括 +block+，+msg+ 和 +tx+ 物件。另外，Solidity公開了許多EVM操作碼作為預定義的Solidity功能。在本節中，我們將檢查你可以從Solidity的智能合約中訪問的變數和函數。
 
