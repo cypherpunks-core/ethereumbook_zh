@@ -209,9 +209,9 @@ $ npm install -g ganache-cli
 ----
 
 讓我們開始以太坊區塊鏈協議的節點模擬。
-* []檢查`--networkId`和`--port`標誌值是否與truffle.js中的配置相匹配
-* []檢查`--gasLimit`標誌值是否與https://ethstats.net上顯示的最新主網gas極限（即8000000 gas）相匹配，以避免不必要地遇到`gas'異常。請注意，4000000000的“--gasPrice”代表4 gwei的gas價格。
-* []可以輸入一個`--mnemonic'標誌值來恢復以前的高清錢包和相關地址
+* []檢查`--networkId`和`--port`flag values是否與truffle.js中的配置相匹配
+* []檢查`--gasLimit`flag values是否與https://ethstats.net上顯示的最新主網gas極限（即8000000 gas）相匹配，以避免不必要地遇到`gas'異常。請注意，4000000000的“--gasPrice”代表4 gwei的gas價格。
+* []可以輸入一個`--mnemonic'flag values來恢復以前的高清錢包和相關地址
 
 ----
 $ ganache-cli \
