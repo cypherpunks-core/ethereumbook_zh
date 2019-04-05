@@ -72,7 +72,7 @@ geth --testnet account list
 eth.getBlock("latest").number
 ----
 
-一旦你的testnet節點完全同步，這應該返回一個非0的數字。你可以將該編號與已知的testnet區塊瀏覽器中的最新塊進行比較，例如https://ropsten.etherscan.io/
+一旦你的testnet節點完全同步，這應該返回一個非0的數字。你可以將該編號與已知的testnet區塊瀏覽器中的最新區塊進行比較，例如https://ropsten.etherscan.io/
 
 同樣，要連接到Rinkeby測試網路，請使用命令行參數：
 
