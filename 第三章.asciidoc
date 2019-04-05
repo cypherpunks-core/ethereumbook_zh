@@ -483,22 +483,22 @@ $ parity --geth
 * 使用另一個客戶端提供/注入瀏覽器的web3實例。
 * 在本地或遠程以太網節點上訪問RPC服務。
 
-一些輕量級客戶端（例如移動（智能手機）錢包）僅提供基本的錢包功能。其他輕量級客戶端是完全開發的DApp瀏覽器。輕量級客戶端通常提供完整節點以太坊客戶端的某些功能，而無需同步以太坊區塊鏈的本地副本。
+一些輕量級客戶端（例如移動（智慧型手機）錢包）僅提供基本的錢包功能。其他輕量級客戶端是完全開發的DApp瀏覽器。輕量級客戶端通常提供完整節點以太坊客戶端的某些功能，而無需同步以太坊區塊鏈的本地副本。
 
 我們來看看一些最受歡迎的輕量級客戶端及其提供的功能。
 
 [[mobile_wallets]]
-=== 移動（智能手機）錢包
+=== 移動（智慧型手機）錢包
 
-所有的移動錢包都是輕量級的客戶端，因為智能手機沒有足夠的資源來運行完整的以太坊客戶端。
+所有的移動錢包都是輕量級的客戶端，因為智慧型手機沒有足夠的資源來運行完整的以太坊客戶端。
 
 流行的移動錢包包括Jaxx，Status和Trust Wallet。我們列舉這些作為流行手機錢包的例子（不是對這些錢包的安全或功能的認可）。
 
 Jaxx :: 基於BIP39助記種子的多幣種手機錢包，支持比特幣，萊特幣，以太坊，以太坊經典，ZCash，各種ERC20代幣和許多其他貨幣。Jaxx可在Android，iOS上作為瀏覽器插件錢包使用，桌面錢包可用於各種作業系統。可以在https://jaxx.io找到它。
 
-Status:: 移動錢包和DApp瀏覽器，支持各種代幣和流行的DApps。適用於iOS和Android智能手機。可以在https://status.im找到它。
+Status:: 移動錢包和DApp瀏覽器，支持各種代幣和流行的DApps。適用於iOS和Android智慧型手機。可以在https://status.im找到它。
 
-Trust Wallet:: 支持ERC20和ERC223代幣的移動以太坊，以太坊經典錢包。Trust Wallet適用於iOS和Android智能手機。可以在https://trustwalletapp.com/找到它。
+Trust Wallet:: 支持ERC20和ERC223代幣的移動以太坊，以太坊經典錢包。Trust Wallet適用於iOS和Android智慧型手機。可以在https://trustwalletapp.com/找到它。
 
 Cipher Browser:: 全功能的啟用以太坊的移動DApp瀏覽器和錢包。允許與以太坊應用程式和代幣集成。可以在https://www.cipherbrowser.com找到它
 
