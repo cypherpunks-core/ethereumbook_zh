@@ -100,7 +100,7 @@
 [[running_client]]
 === 運行以太坊客戶端
 
-如果你有時間和資源，你應該嘗試運行一個完整的節點，即使只是為了更多地瞭解這個過程。在接下來的幾節中，我們將下載，編譯和運行以太坊客戶Go-Ethereum（Geth）和Parity。這需要熟悉在操作系統上使用命令行界面。無論你選擇將它們作為完整節點，作為testnet節點還是作為本地私有區塊鏈的客戶端運行，都值得安裝這些客戶端。
+如果你有時間和資源，你應該嘗試運行一個完整的節點，即使只是為了更多地瞭解這個過程。在接下來的幾節中，我們將下載，編譯和運行以太坊客戶Go-Ethereum（Geth）和Parity。這需要熟悉在作業系統上使用命令行界面。無論你選擇將它們作為完整節點，作為testnet節點還是作為本地私有區塊鏈的客戶端運行，都值得安裝這些客戶端。
 
 [[requirements]]
 ==== 完整節點的硬體要求
@@ -138,9 +138,9 @@
 [[sw_reqs]]
 ==== 構建和運行客戶端（節點）的軟體要求
 
-本節介紹Geth和Parity客戶端軟體。並假設你正在使用類Unix的命令行環境。這些範例顯示了在運行Bash shell（命令行執行環境）的Ubuntu Linux操作系統上輸入的輸出和命令。
+本節介紹Geth和Parity客戶端軟體。並假設你正在使用類Unix的命令行環境。這些範例顯示了在運行Bash shell（命令行執行環境）的Ubuntu Linux作業系統上輸入的輸出和命令。
 
-通常，每個區塊鏈都有自己的Geth版本，而Parity支持多個以太坊區塊鏈（Ethereum，Ethereum Classic，Ellaism，Expanse，Musicoin）。
+通常，每個區塊鏈都有自己的Geth版本，而Parity支持多個以太坊區塊鏈（Ethereum、Ethereum Classic、Ellaism、Expanse、Musicoin）。
 
 在我們開始之前，我們可能需要滿足一些先決條件。如果你從未在你當前使用的計算機上進行任何軟體開發，則可能需要安裝一些基本工具。對於以下範例，你需要安裝 +git+，源程式碼管理系統; +Golang+，Go程式語言和標準庫; 和Rust，一種系統程式語言。
 
@@ -154,7 +154,7 @@ https://golang.org/
 =====
 Geth的要求各不相同，但如果你堅持使用Go版本1.10或更高版本，你應該能夠編譯你想要的任何版本的Geth。當然，你應該總是參考你選擇的Geth的文件。
 
-如果安裝在你的操作系統上的Golang版本或者從系統的軟體包管理器中獲得的版本遠遠早於1.10，請將其刪除並從golang.org安裝最新版本。
+如果安裝在你的作業系統上的Golang版本或者從系統的軟體包管理器中獲得的版本遠遠早於1.10，請將其刪除並從golang.org安裝最新版本。
 =====
 
 Rust可以按照以下說明進行安裝：
@@ -172,9 +172,9 @@ Parity還需要一些軟體庫，例如OpenSSL和libudev。要在Linux（Debian�
 $ sudo apt-get install openssl libssl-dev libudev-dev
 ----
 
-對於其他操作系統，請使用操作系統的軟體包管理器或遵循Wiki說明（https://github.com/paritytech/parity/wiki/Setup）來安裝所需的庫。
+對於其他作業系統，請使用作業系統的軟體包管理器或遵循Wiki說明（https://github.com/paritytech/parity/wiki/Setup）來安裝所需的庫。
 
-現在你已經安裝了 +git+，+golang+，+rust+ 和必要的庫，讓我們開始工作吧！
+現在你已經安裝了 +git+、+golang+、+rust+ 和必要的庫，讓我們開始工作吧！
 
 [[parity]]
 ==== Parity
@@ -354,7 +354,7 @@ GOROOT=/usr/local/go
 
 你的 +geth version+ 命令可能會稍微不同，但你應該看到類似上面的版本報告。
 
-最後，我們可能希望將 +geth+ 命令複製到操作系統的應用程式目錄（或命令行執行路徑上的目錄）。在Linux上，我們使用以下命令：
+最後，我們可能希望將 +geth+ 命令複製到作業系統的應用程式目錄（或命令行執行路徑上的目錄）。在Linux上，我們使用以下命令：
 
 [[copy_geth_binary]]
 ----
@@ -494,7 +494,7 @@ $ parity --geth
 
 流行的移動錢包包括Jaxx，Status和Trust Wallet。我們列舉這些作為流行手機錢包的例子（不是對這些錢包的安全或功能的認可）。
 
-Jaxx :: 基於BIP39助記種子的多幣種手機錢包，支持比特幣，萊特幣，以太坊，以太坊經典，ZCash，各種ERC20代幣和許多其他貨幣。Jaxx可在Android，iOS上作為瀏覽器插件錢包使用，桌面錢包可用於各種操作系統。可以在https://jaxx.io找到它。
+Jaxx :: 基於BIP39助記種子的多幣種手機錢包，支持比特幣，萊特幣，以太坊，以太坊經典，ZCash，各種ERC20代幣和許多其他貨幣。Jaxx可在Android，iOS上作為瀏覽器插件錢包使用，桌面錢包可用於各種作業系統。可以在https://jaxx.io找到它。
 
 Status:: 移動錢包和DApp瀏覽器，支持各種代幣和流行的DApps。適用於iOS和Android智能手機。可以在https://status.im找到它。
 

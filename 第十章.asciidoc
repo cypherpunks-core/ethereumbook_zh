@@ -320,7 +320,7 @@ https://github.com/ethereumbook/ethereumbook/blob/develop/code/truffle/METoken/c
 include::code/METoken/contracts/METoken.sol[]
 ----
 
-在這裡，我們定義可選變量+name+，+symbol+和+decimals+。我們還定義了一個+_initial_supply+變量，設置為2,100萬個Token，以及兩個小數細分（總共21億）。在契約的初始化（構造函數）函數中，我們將+totalSupply+設置為等於+_initial_supply+，並將所有+_initial_supply+分配給創建 +METoken+ 契約的帳戶餘額（+msg.sender+）。
+在這裡，我們定義可選變數+name+，+symbol+和+decimals+。我們還定義了一個+_initial_supply+變數，設置為2,100萬個Token，以及兩個小數細分（總共21億）。在契約的初始化（構造函數）函數中，我們將+totalSupply+設置為等於+_initial_supply+，並將所有+_initial_supply+分配給創建 +METoken+ 契約的帳戶餘額（+msg.sender+）。
 
 我們現在使用+truffle+編譯+METoken+程式碼：
 
@@ -623,11 +623,11 @@ contract METFaucet {
 }
 ----
 
-我們對基本的Faucet範例做了很多改動。由於METFaucet將使用+METoken+中的+transferFrom+函數，它將需要兩個額外的變量。其中一個將保存已部署的+METoken+合約地址。另一個將持有MET所有者的地址，他們將提供Faucet提款的批准。+METFaucet+將調用+METoken.transferFrom+並指示它將MET從所有者移至Faucet提取請求所來自的地址。
+我們對基本的Faucet範例做了很多改動。由於METFaucet將使用+METoken+中的+transferFrom+函數，它將需要兩個額外的變數。其中一個將保存已部署的+METoken+合約地址。另一個將持有MET所有者的地址，他們將提供Faucet提款的批准。+METFaucet+將調用+METoken.transferFrom+並指示它將MET從所有者移至Faucet提取請求所來自的地址。
 
 
 [[MET_owner_var]]
-我們在這裡宣告這兩個變量：
+我們在這裡宣告這兩個變數：
 ----
 StandardToken public METoken;
 address public METOwner;
