@@ -471,7 +471,7 @@ image::images/remix_contract_interact.png["The withdraw function of Faucet.sol, 
 
 [TIP]
 ====
-由於JavaScript的限制，Remix無法處理10^17這樣大的數字。相反，我們用雙引號括起來，讓Remix以字符串的形式接收它，並將它作為 +BigNumber+ 進行操作。如果我們不把它放在引號中，那麼Remix IDE將無法處理它並顯示“Error encoding arguments：Error：Assertion failed” 。
+由於JavaScript的限制，Remix無法處理10^17這樣大的數字。相反，我們用雙引號括起來，讓Remix以字串的形式接收它，並將它作為 +BigNumber+ 進行操作。如果我們不把它放在引號中，那麼Remix IDE將無法處理它並顯示“Error encoding arguments：Error：Assertion failed” 。
 譯者注：翻譯此書時，已經支持直接輸入數字
 ====
 

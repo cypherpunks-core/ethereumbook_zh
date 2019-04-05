@@ -354,7 +354,7 @@ libsecp256k1:: Bitcoin Core的libsecp256k1是secp256k1橢圓曲線和其他密�
 
 如何判斷你使用的軟體庫是FIPS-202 SHA-3還是Keccak-256（如果兩者都可能被稱為“SHA3”）？
 
-一個簡單的方法是使用_test vector_，一個給定輸入的預期輸出。最常用於雜湊函數的測試是_empty input_。如果你使用空字符串作為輸入運行雜湊函數，你應該看到以下結果：
+一個簡單的方法是使用_test vector_，一個給定輸入的預期輸出。最常用於雜湊函數的測試是_empty input_。如果你使用空字串作為輸入運行雜湊函數，你應該看到以下結果：
 
 [[sha3_test_vectors]]
 .Testing whether the SHA3 library you are using is Keccak-256 of FIP-202 SHA-3

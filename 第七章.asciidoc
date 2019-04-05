@@ -307,13 +307,13 @@ image::images/parity_txdemo_novalue_nodata.png["Parity wallet showing a transact
 function withdraw(uint withdraw_amount) public {
 ----
 
-withdraw函數的_prototype_被定義為包含函數名稱的字符串，隨後是括號中括起來的每個參數的數據類型，並用單個逗號分隔。函數名稱是+withdraw+，它只有一個參數是uint（它是uint256的別名）。所以+withdraw+的原型將是：
+withdraw函數的_prototype_被定義為包含函數名稱的字串，隨後是括號中括起來的每個參數的數據類型，並用單個逗號分隔。函數名稱是+withdraw+，它只有一個參數是uint（它是uint256的別名）。所以+withdraw+的原型將是：
 
 ----
 withdraw(uint256)
 ----
 
-我們來計算這個字符串的Keccak256雜湊值（我們可以使用truffle控制台或任何JavaScript web3控制台來做到這一點）：
+我們來計算這個字串的Keccak256雜湊值（我們可以使用truffle控制台或任何JavaScript web3控制台來做到這一點）：
 
 [source,javascript]
 ----
