@@ -35,7 +35,7 @@ https://infura.io/
 
 ==== Remix集成開發環境（IDE）
 
-Remix IDE可用於在主網和測試網上部署和交互智能合約，包括Ropsten，Rinkeby和Kovan（Web3提供者使用Infura地址和API密鑰或通過Injected Web3使用MetaMask中選擇的網路）和Ganache（ Web3提供端點http://localhost:8545） 
+Remix IDE可用於在主網和測試網上部署和交互智能合約，包括Ropsten、Rinkeby和Kovan（Web3提供者使用Infura地址和API密鑰或通過Injected Web3使用MetaMask中選擇的網路）和Ganache（ Web3提供端點http://localhost:8545） 
 
 https://github.com/ethereum/remix/blob/master/docs/run_tab.rst 
 https://medium.com/swlh/deploy-smart-contracts-on-ropsten-testnet-through-ethereum-remix-233cd1494b4b
