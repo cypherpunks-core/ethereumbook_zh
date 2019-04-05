@@ -507,16 +507,16 @@ Cipher Browser:: 全功能的啟用以太坊的行動DApp瀏覽器和錢包。�
 
 各種錢包和DApp瀏覽器可用作瀏覽器的插件或擴展，例如Chrome和Firefox：運行在瀏覽器內的輕量級客戶端。
 
-一些比較流行的是MetaMask，Jaxx和MyEtherWallet/MyCrypto。
+一些比較流行的是MetaMask、Jaxx和MyEtherWallet/MyCrypto。
 
 [[MetaMask]]
 ==== MetaMask
 
-MetaMask 在 <<intro>> 中介紹，它是一個多功能的基於瀏覽器的錢包，RPC客戶端和基本合約瀏覽器。它可用於Chrome，Firefox，Opera和Brave Browser。在以下位置找到MetaMask：
+MetaMask 在 <<intro>> 中介紹，它是一個多功能的基於瀏覽器的錢包，RPC客戶端和基本合約瀏覽器。它可用於Chrome、Firefox、Opera和Brave Browser。在以下位置找到MetaMask：
 
 https://metamask.io
 
-乍一看，MetaMask是一款基於瀏覽器的錢包。但是，與其他瀏覽器錢包不同，MetaMask將web3實例注入瀏覽器，作為連接到各種以太坊區塊鏈（例如mainnet，Ropsten testnet，Kovan testnet，本地RPC節點等）的RPC客戶端。能夠注入web3實例並充當外部RPC服務的入口，使MetaMask成為開發人員和用戶非常強大的工具。例如，它可以與MyEtherWallet或MyCrypto相結合，充當這些工具的web3提供者和RPC網關。
+乍一看，MetaMask是一款基於瀏覽器的錢包。但是，與其他瀏覽器錢包不同，MetaMask將web3實例注入瀏覽器，作為連接到各種以太坊區塊鏈（例如mainnet、Ropsten testnet、Kovan testnet、本地RPC節點等）的RPC客戶端。能夠注入web3實例並充當外部RPC服務的入口，使MetaMask成為開發人員和用戶非常強大的工具。例如，它可以與MyEtherWallet或MyCrypto相結合，充當這些工具的web3提供者和RPC網關。
 
 [[Jaxx]]
 ==== Jaxx
