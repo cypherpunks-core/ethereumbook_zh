@@ -23,9 +23,9 @@ Metamask完全支持Ropsten，Kovan和Rinkeby測試網，但也可以連接到�
 
 ===== Infura
 
-當MetaMask連接到測試網路時，它使用Infura服務提供商來訪問JSON-RPC接口。Infura誕生的目的是為ConsenSys內部項目提供穩定可靠的RPC訪問。除了JSON-RPC API之外，Infura還提供REST（表述性狀態轉移）API，IPFS（星際檔案系統，即去中心化儲存）API和Websockets（即流式傳輸）API。
+當MetaMask連接到測試網路時，它使用Infura服務提供商來訪問JSON-RPC接口。Infura誕生的目的是為ConsenSys內部項目提供穩定可靠的RPC訪問。除了JSON-RPC API之外，Infura還提供REST（表述性狀態轉移）API、IPFS（星際檔案系統，即去中心化儲存）API和Websockets（即流式傳輸）API。
 
-Infura為Ethereum主網，Ropsten，Kovan，Rinkeby和INFURAnet（用於Infura的定製測試網路）提供網關API。
+Infura為Ethereum主網，Ropsten、Kovan、Rinkeby和INFURAnet（用於Infura的定製測試網路）提供網關API。
 
 要通過MetaMask使用Infura進行較低級別的活動，你不需要賬戶。要直接使用API，你需要註冊一個賬戶並使用Infura提供的API密鑰。
 
@@ -35,7 +35,7 @@ https://infura.io/
 
 ==== Remix集成開發環境（IDE）
 
-Remix IDE可用於在主網和測試網上部署和交互智能合約，包括Ropsten，Rinkeby和Kovan（Web3提供者使用Infura地址和API密鑰或通過Injected Web3使用MetaMask中選擇的網路）和Ganache（ Web3提供端點http://localhost:8545） 
+Remix IDE可用於在主網和測試網上部署和交互智能合約，包括Ropsten、Rinkeby和Kovan（Web3提供者使用Infura地址和API密鑰或通過Injected Web3使用MetaMask中選擇的網路）和Ganache（ Web3提供端點http://localhost:8545） 
 
 https://github.com/ethereum/remix/blob/master/docs/run_tab.rst 
 https://medium.com/swlh/deploy-smart-contracts-on-ropsten-testnet-through-ethereum-remix-233cd1494b4b
@@ -54,7 +54,7 @@ geth --testnet
 geth --testnet console
 ----
 
-這使得執行操作成為可能，例如開設新賬戶，檢查餘額，檢查其他以太坊地址的餘額等。
+這使得執行操作成為可能，例如開設新賬戶、檢查餘額、檢查其他以太坊地址的餘額等。
 在Geth控制台之外運行時，只需將`--testnet`參數添加到命令行指令中，就可以執行類似於在主網上執行的操作。作為列舉所有可用的testnet帳戶及其地址的範例，請運行：
 
 ----
@@ -72,7 +72,7 @@ geth --testnet account list
 eth.getBlock("latest").number
 ----
 
-一旦你的testnet節點完全同步，這應該返回一個非0的數字。你可以將該編號與已知的testnet區塊瀏覽器中的最新塊進行比較，例如https://ropsten.etherscan.io/
+一旦你的testnet節點完全同步，這應該返回一個非0的數字。你可以將該編號與已知的testnet區塊瀏覽器中的最新區塊進行比較，例如https://ropsten.etherscan.io/
 
 同樣，要連接到Rinkeby測試網路，請使用命令行參數：
 
@@ -209,9 +209,9 @@ $ npm install -g ganache-cli
 ----
 
 讓我們開始以太坊區塊鏈協議的節點模擬。
-* []檢查`--networkId`和`--port`標誌值是否與truffle.js中的配置相匹配
-* []檢查`--gasLimit`標誌值是否與https://ethstats.net上顯示的最新主網gas極限（即8000000 gas）相匹配，以避免不必要地遇到`gas'異常。請注意，4000000000的“--gasPrice”代表4 gwei的gas價格。
-* []可以輸入一個`--mnemonic'標誌值來恢復以前的高清錢包和相關地址
+* []檢查`--networkId`和`--port`flag values是否與truffle.js中的配置相匹配
+* []檢查`--gasLimit`flag values是否與https://ethstats.net上顯示的最新主網gas極限（即8000000 gas）相匹配，以避免不必要地遇到`gas'異常。請注意，4000000000的“--gasPrice”代表4 gwei的gas價格。
+* []可以輸入一個`--mnemonic'flag values來恢復以前的高清錢包和相關地址
 
 ----
 $ ganache-cli \

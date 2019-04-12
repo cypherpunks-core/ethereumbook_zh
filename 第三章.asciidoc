@@ -425,11 +425,11 @@ method:: 要調用的方法的名稱。
 
 params:: 一個結構化值，用於保存在調用方法期間要使用的參數值。該元素可以省略。
 
-id:: 由客戶端建立的標識符，必須包含字符串，數字或NULL值（如果包含）。如果包含，伺服器必須在Response物件中使用相同的值進行回覆。該元素用於關聯兩個物件之間的上下文。
+id:: 由客戶端建立的識別碼，必須包含字串，數字或NULL值（如果包含）。如果包含，伺服器必須在Response物件中使用相同的值進行回覆。該元素用於關聯兩個物件之間的上下文。
 
 [TIP]
 ====
-+id+ 參數主要用於在單個JSON-RPC調用中進行多個請求的情況，這種做法稱為_批處理_。批處理用於避免每個請求的新HTTP和TCP連接的開銷。例如，在以太坊環境中，如果我們想要在一個HTTP連接中檢索數千個交易，我們將使用批處理。批處理時，為每個請求設置不同的 +id+，然後將其與來自JSON-RPC伺服器的每個響應中的+id+進行匹配。實現這個最簡單的方法是維護一個計數器併為每個請求增加值。
++id+ 參數主要用於在單個JSON-RPC調用中進行多個請求的情況，這種做法稱為_批處理_。批處理用於避免每個請求的新HTTP和TCP連接的開銷。例如，在以太坊環境中，如果我們想要在一個HTTP連接中查詢數千個交易，我們將使用批處理。批處理時，為每個請求設置不同的 +id+，然後將其與來自JSON-RPC伺服器的每個響應中的+id+進行匹配。實現這個最簡單的方法是維護一個計數器併為每個請求增加值。
 ====
 
 [[JSON_RPC_response]]
@@ -474,54 +474,54 @@ $ parity --geth
 輕量級客戶端提供以下一項或多項功能：
 
 * 管理錢包中的私鑰和以太坊地址。
-* 創建，簽署和廣播交易。
+* 創建、簽署和廣播交易。
 * 使用數據與智能合約進行交互。
 * 瀏覽並與DApps交互。
 * 提供到區塊瀏覽器等外部服務的鏈接。
-* 轉換ether單位並從外部來源檢索匯率。
+* 轉換ether單位並從外部來源查詢匯率。
 * 將web3實例作為JavaScript物件注入到Web瀏覽器中。
 * 使用另一個客戶端提供/注入瀏覽器的web3實例。
 * 在本地或遠程以太網節點上訪問RPC服務。
 
-一些輕量級客戶端（例如移動（智能手機）錢包）僅提供基本的錢包功能。其他輕量級客戶端是完全開發的DApp瀏覽器。輕量級客戶端通常提供完整節點以太坊客戶端的某些功能，而無需同步以太坊區塊鏈的本地副本。
+一些輕量級客戶端（例如行動（智慧型手機）錢包）僅提供基本的錢包功能。其他輕量級客戶端是完全開發的DApp瀏覽器。輕量級客戶端通常提供完整節點以太坊客戶端的某些功能，而無需同步以太坊區塊鏈的本地副本。
 
 我們來看看一些最受歡迎的輕量級客戶端及其提供的功能。
 
 [[mobile_wallets]]
-=== 移動（智能手機）錢包
+=== 行動（智慧型手機）錢包
 
-所有的移動錢包都是輕量級的客戶端，因為智能手機沒有足夠的資源來運行完整的以太坊客戶端。
+所有的行動錢包都是輕量級的客戶端，因為智慧型手機沒有足夠的資源來運行完整的以太坊客戶端。
 
-流行的移動錢包包括Jaxx，Status和Trust Wallet。我們列舉這些作為流行手機錢包的例子（不是對這些錢包的安全或功能的認可）。
+流行的行動錢包包括Jaxx，Status和Trust Wallet。我們列舉這些作為流行手機錢包的例子（不是對這些錢包的安全或功能的認可）。
 
-Jaxx :: 基於BIP39助記種子的多幣種手機錢包，支持比特幣，萊特幣，以太坊，以太坊經典，ZCash，各種ERC20代幣和許多其他貨幣。Jaxx可在Android，iOS上作為瀏覽器插件錢包使用，桌面錢包可用於各種作業系統。可以在https://jaxx.io找到它。
+Jaxx :: 基於BIP39助記種子的多幣種手機錢包，支持比特幣、萊特幣、以太坊、以太坊經典、ZCash、各種ERC20代幣和許多其他貨幣。Jaxx可在Android、iOS上作為瀏覽器插件錢包使用，桌面錢包可用於各種作業系統。可以在https://jaxx.io找到它。
 
-Status:: 移動錢包和DApp瀏覽器，支持各種代幣和流行的DApps。適用於iOS和Android智能手機。可以在https://status.im找到它。
+Status:: 行動錢包和DApp瀏覽器，支持各種代幣和流行的DApps。適用於iOS和Android智慧型手機。可以在https://status.im找到它。
 
-Trust Wallet:: 支持ERC20和ERC223代幣的移動以太坊，以太坊經典錢包。Trust Wallet適用於iOS和Android智能手機。可以在https://trustwalletapp.com/找到它。
+Trust Wallet:: 支持ERC20和ERC223代幣的行動以太坊，以太坊經典錢包。Trust Wallet適用於iOS和Android智慧型手機。可以在https://trustwalletapp.com/找到它。
 
-Cipher Browser:: 全功能的啟用以太坊的移動DApp瀏覽器和錢包。允許與以太坊應用程式和代幣集成。可以在https://www.cipherbrowser.com找到它
+Cipher Browser:: 全功能的啟用以太坊的行動DApp瀏覽器和錢包。允許與以太坊應用程式和代幣集成。可以在https://www.cipherbrowser.com找到它
 
 [[browser_wallets]]
 === 瀏覽器錢包
 
 各種錢包和DApp瀏覽器可用作瀏覽器的插件或擴展，例如Chrome和Firefox：運行在瀏覽器內的輕量級客戶端。
 
-一些比較流行的是MetaMask，Jaxx和MyEtherWallet/MyCrypto。
+一些比較流行的是MetaMask、Jaxx和MyEtherWallet/MyCrypto。
 
 [[MetaMask]]
 ==== MetaMask
 
-MetaMask 在 <<intro>> 中介紹，它是一個多功能的基於瀏覽器的錢包，RPC客戶端和基本合約瀏覽器。它可用於Chrome，Firefox，Opera和Brave Browser。在以下位置找到MetaMask：
+MetaMask 在 <<intro>> 中介紹，它是一個多功能的基於瀏覽器的錢包，RPC客戶端和基本合約瀏覽器。它可用於Chrome、Firefox、Opera和Brave Browser。在以下位置找到MetaMask：
 
 https://metamask.io
 
-乍一看，MetaMask是一款基於瀏覽器的錢包。但是，與其他瀏覽器錢包不同，MetaMask將web3實例注入瀏覽器，作為連接到各種以太坊區塊鏈（例如mainnet，Ropsten testnet，Kovan testnet，本地RPC節點等）的RPC客戶端。能夠注入web3實例並充當外部RPC服務的入口，使MetaMask成為開發人員和用戶非常強大的工具。例如，它可以與MyEtherWallet或MyCrypto相結合，充當這些工具的web3提供者和RPC網關。
+乍看，MetaMask是一款基於瀏覽器的錢包。但是，與其他瀏覽器錢包不同，MetaMask將web3實例注入瀏覽器，作為連接到各種以太坊區塊鏈（例如mainnet、Ropsten testnet、Kovan testnet、本地RPC節點等）的RPC客戶端。能夠注入web3實例並充當外部RPC服務的入口，使MetaMask成為開發人員和用戶非常強大的工具。例如，它可以與MyEtherWallet或MyCrypto相結合，充當這些工具的web3提供者和RPC網關。
 
 [[Jaxx]]
 ==== Jaxx
 
-在 <<mobile_wallets>> 中作為移動錢包介紹的Jaxx也可用作Chrome和Firefox擴展。可以在這裡找到：
+在 <<mobile_wallets>> 中作為行動錢包介紹的Jaxx也可用作Chrome和Firefox擴展。可以在這裡找到：
 
 https://jaxx.io
 
