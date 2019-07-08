@@ -5,11 +5,11 @@
 
 這個快速術語表包含許多與以太坊相關的術語。這些術語在本書中都有使用，所以請將其加入書籤以便快速參考。
 
-賬戶 Account::
-    包含地址、餘額、隨機數以及可選儲存和程式碼的物件。賬戶可以是合約賬戶或外部擁有賬戶（EOA，externally owned account）。
+帳戶 Account::
+    帳戶可以是外部擁有帳戶(EOA, externally owned account)或是合約帳戶(contract address)。兩者必定包含地址、餘額、隨機數 (nonce)。而合約帳戶則是多了資料儲存空間 (storage) 及程式碼 (code) 的部份。
 
 地址 Address::
-    一般來說，這代表一個 EOA 或合約，它可以在區塊鏈上接收（目標地址）或發送（源地址）交易。更具體地說，它是 ECDSA 公鑰的 Keccak 雜湊的最右邊的160位，表現為16進制的40個字符長度，在前面加上“0x”字符。
+    一般來說，區塊鏈上的地址代表的是 EOA 或是合約的地址，用來接收或是傳送交易(transaction)。更俱體地說，私鑰先使用 ECDSA 計算出公鑰，接著對公鑰作出 Keccak 雜湊，接著取其雜湊最右邊的40位元組，並以16進制字串方式表達該40位元組，然後在字串前面加上“0x”字符後，該字串即為該私鑰所對應之乙太坊地址(Ethereum Address)。
 
 斷言 Assert::
     在 Solidity 中，assert(false) 編譯為 *0xfe*, 是一個無效的操作碼，用盡所有剩餘的燃氣（Gas），並恢復所有更改。
@@ -93,7 +93,7 @@ Ethash::
 	事件允許EVM日誌工具的使用。Dapp 可以監聽事件，並在事件發生時觸發 Javascript 的回呼函式 。更多資訊，參見 http://solidity.readthedocs.io/en/develop/contracts.html#events。
 
 以太坊虛擬機 EVM::
-    以太坊虛擬機（Ethereum Virtual Machine）。 一種以棧（Stack）為基底，執行 Bytecode 的虛擬機。在以太坊中，執行模型明確說明了系統狀態在給定一系列 Bytecode 指令和少量環境數據的情況下該如何發生改變。
+    以太坊虛擬機（Ethereum Virtual Machine）。 一種以堆疊（Stack）為基底，執行 Bytecode 的虛擬機。在以太坊中，執行模型明確說明了系統狀態在給定一系列 Bytecode 指令和少量環境數據的情況下該如何發生改變。
     這是通過虛擬狀態機的正式模型指定的。
 
 EVM組合語言 EVM Assembly Language::
