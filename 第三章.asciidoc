@@ -21,7 +21,7 @@
 
 目前，乙太坊協議 (Ethereum protocol) 有六種實作，以不同的程式語言編寫完成：Go 語言編寫的 Geth、Rust 語言編寫的 parity、C++ 編寫的 cpp-ethereum、Python 編寫的 pyethereum 、Scala 編寫的 mantis 以及 Java 編寫的harmony。
 
-在本節中，我們將看看兩個最常見的乙太坊客戶端，Geth 和 Parity。我們將學習如何使用它們的客戶端去啟動節點(node)，並且探索它們的命令列(command-line options) 操作方式以及應用程式編程接口（API）。
+在本節中，我們將看看兩個最常見的乙太坊客戶端，Geth 和 Parity。我們將學習如何使用它們的客戶端去啟動節點(node)，並且探索它們的命令列(command-line options) 操作方式以及應用程式編程介面（API）。
 
 [[full_node_importance]]
 === 我應該運行一個完整的節點嗎？
