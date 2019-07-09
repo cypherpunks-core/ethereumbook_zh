@@ -9,7 +9,7 @@
     帳戶可以是外部擁有帳戶(EOA, externally owned account)或是合約帳戶(contract address)。兩者必定包含地址、餘額、隨機數 (nonce)。而合約帳戶則是多了資料儲存空間 (storage) 及程式碼 (code) 的部份。
 
 地址 Address::
-    一般來說，區塊鏈上的地址代表的是 EOA 或是合約的地址，用來接收或是傳送交易(transaction)。更俱體地說，私鑰先使用 ECDSA 計算出公鑰，接著對公鑰作出 Keccak 雜湊，接著取其雜湊最右邊的40位元組，並以16進制字串方式表達該40位元組，然後在字串前面加上“0x”字符後，該字串即為該私鑰所對應之乙太坊地址(Ethereum Address)。
+    一般來說，乙太坊區塊鏈上的地址代表的是 EOA 或是合約的地址，用來接收或是傳送交易(transaction)。更俱體地說，私鑰先使用 ECDSA 計算出公鑰，接著對公鑰作出 Keccak 雜湊，接著取其雜湊最右邊的40位元組，並以16進制字串方式表達該40位元組，然後在字串前面加上“0x”字符後，該字串即為該私鑰所對應之乙太坊地址(Ethereum Address)。
 
 斷言 Assert::
     在 Solidity 中，assert(false) 編譯為 *0xfe*, 是一個無效的操作碼，用盡所有剩餘的燃氣（Gas），並恢復所有更改。
