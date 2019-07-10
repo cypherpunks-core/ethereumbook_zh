@@ -15,7 +15,7 @@
 
 == 以太坊網路
 
-現今存在各式各樣基於乙太坊的網路，它們雖然大程度符合以太坊黃皮書 (Ethereum Yello Pape) 的正式規範，有些人可能會假設它們彼此間能互相操作，但這樣的假設並不成立。
+現今存在各式各樣基於乙太坊的網路，它們雖然大程度符合以太坊黃皮書 (Ethereum Yellow Paper) 的正式規範。但它們之間並不一定能互相操作。
 
 這些基於以太坊的網路有：Ethereum、Ethereum Classic、Ella，Expanse、Ubiq、Musicoin 等等。雖然它們幾乎相容於乙太坊協議(Ethereum protocol)，但這些網路通常各自有一些特別功能及屬性，而乙太坊用戶端 (Ethereum client) 軟體為了支持這些不同網路，需要為各別網路進行小修改才有辦法達成。因此，並非每個版本的乙太坊用戶端 (Ethereum client) 軟體總能夠支持所有基於以太坊的網路。
 
