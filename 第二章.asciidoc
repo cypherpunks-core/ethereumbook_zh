@@ -77,7 +77,7 @@ Emerald Wallet:: Emerald錢包設計用於以太坊經典區塊鏈，但與其�
 
 
 [[installing_MetaMask]]
-=== 安裝 MetaMask
+=== MetaMask 入門
 
 打開Google Chrome瀏覽器並導航至：
 
