@@ -244,7 +244,7 @@ image::images/block_explorer_account_history.png["Address Transaction History on
 
 你現在已經創建好一個錢包，也能傳送與接收 ether了，到目前為止，我們已經將以太坊視為一種密碼貨幣 (cryptocurrency)。但是以太坊的功能其實比這些多太多了。事實上，整個乙太坊是一個去中心化的世界計算機 (World Computer)，而密碼貨幣的功能則是從屬於以太坊的功能。一個執行於以太坊虛擬機器 (Ethereum Virtual Machine, EVM) 中的電腦程式，它稱之為智能合約，它就是這個世界計算機的電腦程式，當你執行這程式時，就是用乙太幣用來支付執行費用。
 
-EVM 是一個全域單例 (global singleton) ，這意味著它的運作方式就好像它是一個全域的單一實體計算機，無處不在。以太坊網路上的每個節點運行 EVM 副本於本地，用以驗證合約執行，而以太坊區塊鏈上，記錄著這台世界計算機處理的交易以及智能合約上的狀態 (State) 之變化紀錄。更多更棒的細節我們可以在[link:https://github.com/cypherpunks-core/ethereumbook_zh/blob/master/%E7%AC%AC%E5%8D%81%E5%9B%9B%E7%AB%A0.asciidoc[以太坊虛擬機]]這一章看到。
+EVM 是一個全域單例 (global singleton) ，這意味著它的運作方式就好像它是一個全域的單一實體計算機，無處不在。以太坊網路上的每個節點運行 EVM 副本於本地，用以驗證合約執行，而以太坊區塊鏈上，記錄著這台世界計算機處理的交易以及智能合約上的狀態 (State) 之變化紀錄。更多更棒的細節我們可以在 <<第十四章#,以太坊虛擬機>> 這一章看到。
 
 [[EOA_contracts]]
 === 外部所有賬戶（EOAs）和合約
