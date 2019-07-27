@@ -270,7 +270,23 @@ EVM 是一個全域單例 (global singleton) ，這意味著它的運作方式�
 .Faucet.sol : A Solidity contract implementing a faucet
 [source,solidity,linenums]
 ----
-include::code/Solidity/Faucet.sol[]
+// Our first contract is a faucet!
+contract Faucet {
+
+    // Give out ether to anyone who asks
+    function withdraw(uint withdraw_amount) public {
+
+        // Limit withdrawal amount
+        require(withdraw_amount <= 100000000000000000);
+
+        // Send the amount to the address that requested it
+        msg.sender.transfer(withdraw_amount);
+    }
+
+    // Accept any incoming amount
+    function () public payable {}
+
+
 ----
 
 這是一個非常簡單的合約。這也是一個有*缺陷*的合約，顯示了一些不良做法和安全漏洞。我們將通過檢查後面章節中的所有缺陷來學習。但現在，讓我們逐行看下這個合約的作用，以及它是如何工作的。
