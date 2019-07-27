@@ -30,9 +30,9 @@
 
 實際上，oracle可以實現爲鏈上智能合約系統和用於監控請求，查詢和返回數據的離線基礎設施。來自去中心化應用的數據請求通常是涉及許多步驟的異步過程。
 
-首先，外部所有帳戶將與去中心化應用進行交易，從而與oracle智能合約中定義的函數進行交互。此函數初始化對oracle的請求，除了可能包含回調函數和調度參數的補充資訊之外，還使用相關參數詳細說明所請求的數據。一旦驗證了此事務，就可以將oracle請求視爲oracle合約發出的EVM事件，或者狀態更改； 參數可以被取出並用於從脫鏈數據源執行實際查詢。oracle可能需要處理請求的費用，回調的gas費用，以及訪問所請求數據的權限/權限。最後，結果數據由oracle所有者簽署，基本上證明在給定時間數據的價值，並在交易中交付給作出請求的去中心化應用 - 直接或通過oracle合約。根據調度參數，oracle可以定期廣播進一步更新數據的事務，例如日終定價資訊。
+首先，外部擁有帳戶將與去中心化應用進行交易，從而與oracle智能合約中定義的函數進行交互。此函數初始化對oracle的請求，除了可能包含回調函數和調度參數的補充資訊之外，還使用相關參數詳細說明所請求的數據。一旦驗證了此事務，就可以將oracle請求視爲oracle合約發出的EVM事件，或者狀態更改； 參數可以被取出並用於從脫鏈數據源執行實際查詢。oracle可能需要處理請求的費用，回調的gas費用，以及訪問所請求數據的權限/權限。最後，結果數據由oracle所有者簽署，基本上證明在給定時間數據的價值，並在交易中交付給作出請求的去中心化應用 - 直接或通過oracle合約。根據調度參數，oracle可以定期廣播進一步更新數據的事務，例如日終定價資訊。
 
-可能有一系列替代方案。可以從外部所有帳戶請求數據並直接返回數據，從而無需使用oracle智能合約。類似地，可以向物聯網啓用的硬體傳感器發出請求和響應。因此，oracles可以是人類，軟體或基於硬體的。
+可能有一系列替代方案。可以從外部擁有帳戶請求數據並直接返回數據，從而無需使用oracle智能合約。類似地，可以向物聯網啓用的硬體傳感器發出請求和響應。因此，oracles可以是人類，軟體或基於硬體的。
 
 oracle的主要功能可概括如下：
 
@@ -229,7 +229,7 @@ contract OracleB1IQClient {
 使用initRequest()函數啓動數據請求，該函數除了兩個回調函數之外，還允許指定查詢類型（在此範例中，是對日內價格的請求）。
 這將返回一個uint256識別碼，然後可以使用該識別碼提供其他參數。addArgumentToRequestString()函數用於指定RIC（Reuters Instrument Code），此處用於IBM股票，addArgumentToRequestUint()允許指定時間戳。現在，傳入block.timestamp的別名將查詢IBM的當前價格。然後由executeRequest()函數執行該請求。處理完請求後，oracle合約將使用查詢識別碼調用onSuccess回調函數，允許查詢結果數據，否則在查詢失敗時使用錯誤程式碼進行onFailure回調。成功查詢的可用欄位包括開盤價，最高價，最低價，收盤價（OHLC）和買/賣價。
 
-Reality Keys [14]允許使用POST請求對事實進行離線請求。響應以加密方式簽名，允許在鏈上進行驗證。在這裏，請求使用blockr.io API在特定時間檢查比特幣區塊鏈上的賬戶餘額：
+Reality Keys [14]允許使用POST請求對事實進行離線請求。響應以加密方式簽名，允許在鏈上進行驗證。在這裏，請求使用blockr.io API在特定時間檢查比特幣區塊鏈上的帳戶餘額：
 ----
 wget -qO- https://www.realitykeys.com/api/v1/blockchain/new --post-data="chain=XBT&address=1F1tAaz5x1HUXrCNLbtMDqcw6o5GNn4xqX&which_total=total_received&comparison=ge&value=1000&settlement_date=2015-09-23&objection_period_secs=604800&accept_terms_of_service=current&use_existing=1"
 ----
