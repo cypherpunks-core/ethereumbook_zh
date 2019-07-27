@@ -21,7 +21,7 @@
 [[evm_bytecode_overview]]
 ==== EVM機器語言（ Bytecode 操作）
 
-EVM機器語言分為特定的指令集組，例如算術運算，邏輯和比較運算，控制流，系統調用，堆棧操作和儲存器操作。除典型的 Bytecode 操作外，EVM還必須管理賬戶資訊（即地址和餘額），當前gas價格和區塊資訊。
+EVM機器語言分為特定的指令集組，例如算術運算，邏輯和比較運算，控制流，系統調用，堆棧操作和儲存器操作。除典型的 Bytecode 操作外，EVM還必須管理帳戶資訊（即地址和餘額），當前gas價格和區塊資訊。
 
 [[common_stack_opcodes]]
 通用堆棧操作:: 堆棧和記憶體管理的操作碼指令：
@@ -43,11 +43,11 @@ SWAP    // 交換棧項目
 通用系統操作:: 執行程式的系統的操作碼指令：
 
 ----
-CREATE  // 創建新的賬戶
-CALL    // 在賬戶間傳遞消息的指令
+CREATE  // 創建新的帳戶
+CALL    // 在帳戶間傳遞消息的指令
 RETURN  // 執行停機
 REVERT  // 執行停機，恢復狀態更改
-SELFDESTRUCT // 執行停機，並標記賬戶為刪除的
+SELFDESTRUCT // 執行停機，並標記帳戶為刪除的
 ----
 
 [[common_arithmetic_opcodes]]
@@ -71,14 +71,14 @@ STOP //停止操作
 環境操作碼:: 處理執行環境資訊的通用操作碼：
 
 ----
-ADDRESS //當前執行賬戶的地址
-BALANCE //賬戶餘額
+ADDRESS //當前執行帳戶的地址
+BALANCE //帳戶餘額
 CALLVALUE //執行環境的交易值
 ORIGIN //執行環境的原始地址
 CALLER //執行調用者的地址
 CODESIZE //執行環境程式碼大小
 GASPRICE //gas價格狀態
-EXTCODESIZE //賬戶的程式碼大小
+EXTCODESIZE //帳戶的程式碼大小
 RETURNDATACOPY //從先前的記憶體調用輸出的數據的副本
 ----
 
@@ -87,19 +87,19 @@ RETURNDATACOPY //從先前的記憶體調用輸出的數據的副本
 
 與任何計算系統一樣，狀態概念也很重要。就像CPU跟蹤執行過程一樣，EVM必須跟蹤各種組件的狀態以支持交易。這些組件的狀態最終會推動總體區塊鏈的變化程度。這方面導致將以太坊描述為_基於交易的狀態機_，包含以下組件：
 
-World State:: 160位地址識別碼和賬戶狀態之間的映射，在不可變的_Merkle Patricia Tree_資料結構中維護。
+World State:: 160位地址識別碼和帳戶狀態之間的映射，在不可變的_Merkle Patricia Tree_資料結構中維護。
 
 Account State:: 包含以下四個組件：
 
-* _nonce_：表示從該相應賬戶發送的交易數量的值。
+* _nonce_：表示從該相應帳戶發送的交易數量的值。
 
-* _balance_：賬戶地址擁有的_wei_的數量。
+* _balance_：帳戶地址擁有的_wei_的數量。
 
 * _storageRoot_：Merkle Patricia Tree根節點的256位雜湊值。
 
-* _codeHash_：各個賬戶的EVM程式碼的不可變雜湊值。
+* _codeHash_：各個帳戶的EVM程式碼的不可變雜湊值。
 
-Storage State:: 在EVM上運行時維護的賬戶特定狀態資訊。
+Storage State:: 在EVM上運行時維護的帳戶特定狀態資訊。
 
 Block State:: 交易所需的狀態值包括以下內容：
 
@@ -121,7 +121,7 @@ Runtime Environment Information:: 用於使用交易的資訊。
 
 * _codesize_：交易程式碼庫的大小。
 
-* _caller_：執行當前交易的賬戶的地址。
+* _caller_：執行當前交易的帳戶的地址。
 
 * _origin_：當前交易原始發件人的地址。
 
@@ -289,7 +289,7 @@ MSTORE是一個堆棧/記憶體操作（參見<<common_stack_opcodes>>），它�
 [[gas_accounting_execution]]
 ==== Gas，會計
 
-對於每個交易，都有一個關聯的_gas-limit_和_gas-price_，它們構成了EVM執行的費用。這些費用用於促進交易的必要資源，例如計算和儲存。gas還用於創建賬戶和智能合約。
+對於每個交易，都有一個關聯的_gas-limit_和_gas-price_，它們構成了EVM執行的費用。這些費用用於促進交易的必要資源，例如計算和儲存。gas還用於創建帳戶和智能合約。
 
 [[turing_completeness_and_gas]]
 ==== 圖靈完備性和gas
