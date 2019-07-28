@@ -77,8 +77,8 @@
 熵 Entropy::
     在密碼學領域，表示可預測性的缺乏或隨機性水平。在生成秘密資訊（如主私鑰）時，演算法通常依賴高熵源來確保輸出不可預測。
 
-外部擁有賬戶 EOA::
-    外部擁有賬戶（Externally Owned Account）。 由或為以太坊的真人用戶創建的賬戶。
+外部擁有帳戶 EOA::
+    外部擁有帳戶（Externally Owned Account）。 由或為以太坊的真人用戶創建的帳戶。
 
 以太坊註釋請求 ERC::
     以太坊註釋請求（Ethereum Request for Comments）。一些 EIP 被標記為 ERC，表示試圖定義以太坊使用的特定標準的建議。
