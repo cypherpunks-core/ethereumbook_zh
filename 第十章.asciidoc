@@ -140,7 +140,7 @@ transfer:: 給定一個地址和數量，將該數量的Tokens從執行該方法
 
 transferFrom:: 給定發送者，接收人和數量，將Token從一個帳戶轉移到另一個帳戶。與+approve+結合使用。
 
-approve:: 在給定接收者地址和數量的情況下，授權該地址從發佈批准的帳戶執行多次轉賬，直到到達指定的數量。
+approve:: 在給定接收者地址和數量的情況下，授權該地址從發佈批准的帳戶執行多次轉帳，直到到達指定的數量。
 
 allowance:: 給定一個所有者地址和一個消費者地址，返回該消費者被批准從所有者的取款的剩餘金額。
 
@@ -181,7 +181,7 @@ contract ERC20 {
 
 如果你檢查任何ERC20實現，它將包含兩個資料結構，一個用於追蹤餘額，另一個用於追蹤配額（allowances）。在Solidity中，它們使用_data mapping_實現。
 
-第一個data mapping按擁有者實現了Token餘額的內部表。這允許Token合約跟蹤誰擁有Token。每次轉賬都是從一個餘額中扣除的，並且是對另一個餘額的增加。
+第一個data mapping按擁有者實現了Token餘額的內部表。這允許Token合約跟蹤誰擁有Token。每次轉帳都是從一個餘額中扣除的，並且是對另一個餘額的增加。
 
 [[balance_mapping]]
 .Balances: a mapping from address (owner) to amount (balance)
@@ -442,7 +442,7 @@ truffle(ganache)> METoken.deployed().then(instance => instance.totalSupply())
 BigNumber { s: 1, e: 9, c: [ 2100000000 ] }
 ----
 
-接下來，讓我們使用由+ganache+創建的賬戶來檢查我們的METoken餘額並將一些METoken發送到另一個地址。首先，讓我們獲取帳戶地址：
+接下來，讓我們使用由+ganache+創建的帳戶來檢查我們的METoken餘額並將一些METoken發送到另一個地址。首先，讓我們獲取帳戶地址：
 
 [[get_account_addresses]]
 ----
@@ -497,7 +497,7 @@ image::images/ganache_meToken_transfer.png["METoken transfer on Ganache"]
 [[sending_erc20_Tokens_contracts]]
 ==== 將ERC20Token發送到合同地址
 
-到目前為止，我們已經設置了ERC20Token並從一個帳戶轉移到另一個帳戶。我們用於這些示範的所有賬戶都是外部擁有賬戶（EOAs），這意味著它們由私鑰控制，而不是合同。如果我們將MET發送到合同地址會發生什麼？讓我們看看！
+到目前為止，我們已經設置了ERC20Token並從一個帳戶轉移到另一個帳戶。我們用於這些示範的所有帳戶都是外部擁有帳戶（EOAs），這意味著它們由私鑰控制，而不是合同。如果我們將MET發送到合同地址會發生什麼？讓我們看看！
 
 首先，我們將其他合約部署到我們的測試環境中。對於這個例子，我們將使用我們的第一個合同+Faucet.sol+。我們將它添加到METoken項目中，方法是將它複製到+contracts+目錄。我們的目錄應該是這樣的：
 

@@ -229,7 +229,7 @@ image::images/send_to_faucet.png["Sending 1 ether to the faucet"]
 .MetaMask Account Context Menu
 image::images/metamask_account_context_menu.png["MetaMask Account Context Menu"]
 
-選擇 "View Account on Etherscan"，在瀏覽器中打開一個網頁，顯示你賬戶的交易記錄：
+選擇 "View Account on Etherscan"，在瀏覽器中打開一個網頁，顯示你帳戶的交易記錄：
 
 [[block_explorer_account_history]]
 .Address Transaction History on Etherscan
@@ -247,11 +247,11 @@ image::images/block_explorer_account_history.png["Address Transaction History on
 EVM 是一個全域單例 (global singleton) ，這意味著它的運作方式就好像它是一個全域的單一實體計算機，無處不在。以太坊網路上的每個節點運行 EVM 副本於本地，用以驗證合約執行，而以太坊區塊鏈上，記錄著這台世界計算機處理的交易以及智能合約上的狀態 (State) 之變化紀錄。更多更棒的細節我們可以在 <<第十四章#,以太坊虛擬機>> 這一章看到。
 
 [[EOA_contracts]]
-=== 外部所有賬戶（EOAs）和合約
+=== 外部擁有帳戶（EOAs）和合約
 
-我們在MetaMask錢包中創建的賬戶類型稱為 _Externally Owned Account（EOA）_ 。外部所有賬戶是那些擁有私人密鑰的賬戶，它控制對資金或合約的訪問。現在，你可能猜測還有另一種帳戶，_合約_帳戶。合約賬戶由以太坊區塊鏈記錄，由EVM執行的軟體程式的邏輯所擁有（和控制）。
+我們在MetaMask錢包中創建的帳戶類型稱為 _Externally Owned Account（EOA）_ 。外部擁有帳戶是那些擁有私人密鑰的帳戶，它控制對資金或合約的訪問。現在，你可能猜測還有另一種帳戶，_合約_帳戶。合約帳戶由以太坊區塊鏈記錄，由EVM執行的軟體程式的邏輯所擁有（和控制）。
 
-將來，所有以太坊錢包可能會作為以太坊合約運行，模糊了外部所有賬戶和合約賬戶之間的區別。但是永遠保持的重要區別在於：人們通過EOA做出決定，而軟體通過合約做出決定。
+將來，所有以太坊錢包可能會作為以太坊合約運行，模糊了外部擁有帳戶和合約帳戶之間的區別。但是永遠保持的重要區別在於：人們通過EOA做出決定，而軟體通過合約做出決定。
 
 合約有一個地址，就像EOAs（錢包）一樣。合約可以發送和接收ether，就像錢包一樣。當交易目的地是合約地址時，它會導致該合約在EVM中_運行_，並將交易作為其輸入。
 
