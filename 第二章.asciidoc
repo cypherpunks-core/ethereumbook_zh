@@ -249,7 +249,7 @@ EVM 是一個全域單例 (global singleton) ，這意味著它的運作方式�
 [[EOA_contracts]]
 === 外部擁有帳戶（EOAs）和合約
 
-我們在MetaMask錢包中創建的帳戶類型稱為 _Externally Owned Account（EOA）_ 。外部擁有帳戶是那些擁有私人密鑰的帳戶，它控制對資金或合約的訪問。現在，你可能猜測還有另一種帳戶，_合約_帳戶。合約帳戶由以太坊區塊鏈記錄，由EVM執行的軟體程式的邏輯所擁有（和控制）。
+我們在 MetaMask 錢包中創建的帳戶類型稱為 _Externally Owned Account（EOA）_ 。外部擁有帳戶是那些擁有私人密鑰的帳戶，它控制對資金或合約的訪問。現在，你可能猜測還有另一種帳戶，_合約_帳戶。合約帳戶由以太坊區塊鏈記錄，由EVM執行的軟體程式的邏輯所擁有（和控制）。
 
 將來，所有以太坊錢包可能會作為以太坊合約運行，模糊了外部擁有帳戶和合約帳戶之間的區別。但是永遠保持的重要區別在於：人們通過EOA做出決定，而軟體通過合約做出決定。
 
@@ -260,7 +260,7 @@ EVM 是一個全域單例 (global singleton) ，這意味著它的運作方式�
 在接下來的幾節中，我們將編寫我們的第一份合約。然後，我們將使用MetaMask錢包和測試ether在Ropsten測試網上創建，資助，使用該合約。
 
 [[simple_contract_example]]
-=== 一個簡單的合約：一個test ether faucet
+=== 一個簡單的合約：一個 test ether faucet
 
 以太坊有許多不同的高階語言，所有這些語言都可用於編寫合約並生成EVM Bytecode 。你可以閱讀 <<high_level_languages>>  中許多最成功和有趣的內容。一種智能合約編程的主要高階語言：Solidity。本書的合著者Gavin Wood創建了Solidity，已經成為以太坊及以太坊外最廣泛使用的語言。我們將使用Solidity編寫我們的第一份合約。
 
@@ -307,7 +307,7 @@ contract Faucet {
 contract Faucet {
 ----
 
-這一行宣告了一個合約物件，類似於其他物件導向語言中的類別宣告，這裡的大括號所以定義的是一個範圍(scope)，就如同許多其他編程語言中使用大括號的方式一樣，大括號（{}）間的所有程式碥構成了合約的定義。
+這一行宣告了一個合約物件，類似於其他物件導向語言中的類別宣告，這裡的大括號所以定義的是一個範圍 (scope)，就如同許多其他編程語言中使用大括號的方式一樣，大括號（{}）間的所有程式構成了合約的定義。
 
 接下來，我們宣告 faucet 合約的第一個函數：
 
@@ -316,16 +316,18 @@ contract Faucet {
 function withdraw(uint withdraw_amount) public {
 ----
 
-函數名為 +withdraw+，它接收一個無符號整數（+uint+）名為 +withdraw_amount+ 的參數。它被宣告為 +public+ 函數，意味著它可以被其他合約呼叫。函數定義在大括號之間：
+函數名為 +withdraw+，它接收一個無符號整數（+uint+）名為 +withdraw_amount+ 的參數。它被宣告為 +public+ 函數，意味著它可以被其他合約呼叫。函數定義在大括號之間。+withdraw+函數的第一個參數設置了取款限制：
 
 [[withdraw_limit]]
 ----
 require(withdraw_amount <= 100000000000000000);
 ----
 
-+withdraw+方法的第一部分設置了取款限制。它使用內建的 Solidity 函數 +require+ 來測試前提條件，即 +withdraw_amount+ 小於或等於 100,000,000,000,000,000 +wei+，它是 ether 的基本單位（參見 <<ether_denominations>>），等於 0.1 ether。如果使用 +withdraw_amount+ 大於該數量調用 +withdraw+ 函數，則此處的 +require+ 函數將導致合約執行停止並且失敗而丟出例外 (exception) ，注意，在 Solidity 中的每一行程式敘述(statement) 需要以分號作為結束。
+它使用內建的 Solidity 函數 +require+ 來測試前提條件，即 +withdraw_amount+ 小於或等於 100,000,000,000,000,000 +wei+，它是 ether 的基本單位（參見 <<ether_denominations>>），等於 0.1 ether。如果 +withdraw+ 函數的 +withdraw_amount+ 參數大於該數值，則此處的 +require+ 函數將導致合約停止執行、失敗並且丟出例外 (exception) ，注意，在 Solidity 中的每一行程式敘述 (statement) 需要以分號作為結束。
 
 這部分的合約程式是我們 faucet 的主要邏輯。它透過設定提款限額來控制合約的資金流出。這是一個非常簡單的控制例子，但卻可以讓你看到可編程區塊鏈的強大功能：一個控制貨幣的去中心化軟體。
+
+接下來是實際的提款：
 
 [[withdraw_command]]
 Next comes the actual withdrawal:
@@ -333,7 +335,7 @@ Next comes the actual withdrawal:
 msg.sender.transfer(withdraw_amount);
 ----
 
-這裡發生了一些有趣的事情。+msg+ 物件是所有合約可以訪問的輸入之一。它代表觸發執行此合約的交易。屬性 +sender+ 是交易的發件人地址。函數 +transfer+ 是一個內建函數，它將ether從合約傳遞到調用它的地址。從後往前讀，表示 +transfer+ 到觸發此合約執行的 +msg+ 的 +sender+。+transfer+ 函數將一個金額作為唯一的參數。我們傳遞之前宣告為 +withdraw+ 方法的參數的 +withdraw_amount+ 值。
+這裡發生了一些有趣的事情。+msg+ 物件是所有合約都取得的一個輸入。+msg+ 物件代表的是促使該合約執行起來的那筆交易 (transaction)。而屬性 +sender+ 是指此比交易發送者的地址；而它的函數 +transfer+ 是一個內建函數，將此合約上的 ether 轉帳至該地址去。從後往前讀，意思就是把錢轉帳至該 +msg+ 的傳送者 +sender+ 去，也就是觸發該合約執行的交易發起者。+transfer+ 只需要用到一個參數，該參數的傳入值即為 +withdraw+ 函數中的 withdraw_amount 函數參數。
 
 緊接著的一行是結束大括號，表示 +withdraw+ 函數定義的結束。
 
