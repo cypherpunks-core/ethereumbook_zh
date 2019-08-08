@@ -16,7 +16,9 @@ EVM具有基於堆棧的體系結構，將所有內存中的值存儲在堆棧�
 在執行期間還有一組可用的環境變量和數據。我們將在本章後面詳細介紹這些內容。
 
 <<evm_architecture>> 顯示以太坊虛擬機架構及執行脈落
-
+[[evm_architecture]]
+.The Ethereum Virtual Machine (EVM) Architecture and Execution Context
+image::images/evm-architecture.png["The Ethereum Virtual Machine (EVM) Architecture and Execution Context"]
 
 [[evm_description]]
 === 這是什麼？
