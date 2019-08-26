@@ -1,0 +1,1338 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第十四章以太坊虛擬機 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第十五章.html" />
+    
+    
+    <link rel="prev" href="第十三章.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="前言.html">
+            
+                <a href="前言.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="術語.html">
+            
+                <a href="術語.html">
+            
+                    
+                    術語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第一章.html">
+            
+                <a href="第一章.html">
+            
+                    
+                    第一章 什麼是以太坊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第二章.html">
+            
+                <a href="第二章.html">
+            
+                    
+                    第二章以太坊基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第三章.html">
+            
+                <a href="第三章.html">
+            
+                    
+                    第三章以太坊客戶端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第四章.html">
+            
+                <a href="第四章.html">
+            
+                    
+                    第四章以太坊測試網（Testnets）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第五章.html">
+            
+                <a href="第五章.html">
+            
+                    
+                    第五章密鑰，地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第六章.html">
+            
+                <a href="第六章.html">
+            
+                    
+                    第六章錢包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第七章.html">
+            
+                <a href="第七章.html">
+            
+                    
+                    第七章交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第八章.html">
+            
+                <a href="第八章.html">
+            
+                    
+                    第八章智能合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第九章.html">
+            
+                <a href="第九章.html">
+            
+                    
+                    第九章開發工具，框架和庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十章.html">
+            
+                <a href="第十章.html">
+            
+                    
+                    第十章Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="第十一章.html">
+            
+                <a href="第十一章.html">
+            
+                    
+                    第十一章去中心化應用 (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="第十二章.html">
+            
+                <a href="第十二章.html">
+            
+                    
+                    第十二章Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="第十三章.html">
+            
+                <a href="第十三章.html">
+            
+                    
+                    第十三章gas（Gas）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="第十四章.html">
+            
+                <a href="第十四章.html">
+            
+                    
+                    第十四章以太坊虛擬機
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="第十五章.html">
+            
+                <a href="第十五章.html">
+            
+                    
+                    第十五章共識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="第十六章.html">
+            
+                <a href="第十六章.html">
+            
+                    
+                    第十六章Vyper: 面向合約的程式語言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="第十七章.html">
+            
+                <a href="第十七章.html">
+            
+                    
+                    第十七章節點間的通信 —— 一個簡單的視角
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="第十八章.html">
+            
+                <a href="第十八章.html">
+            
+                    
+                    第十八章以太坊標準
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="第十九章.html">
+            
+                <a href="第十九章.html">
+            
+                    
+                    第十九章以太坊分叉歷史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第十四章以太坊虛擬機</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x5341;&#x4E09;&#x7AE0;#,&#x4E0A;&#x4E00;&#x7AE0;&#xFF1A;Gas&gt;&gt;</p>
+</div>
+<div class="sect1">
+<h2 id="evm_chapter">&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F; (The Ethereum Virtual Machine)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F;&#xFF0C;&#x7C21;&#x7A31;&#x3000;EVM&#xFF0C;&#x662F;&#x4EE5;&#x592A;&#x574A;&#x5354;&#x8B70;&#x548C;&#x904B;&#x4F5C;&#x7684;&#x5FC3;&#x81DF;&#x3002; &#x6B63;&#x5982;&#x60A8;&#x53EF;&#x80FD;&#x5F9E;&#x540D;&#x7A31;&#x4E2D;&#x731C;&#x5230;&#x7684;&#x90A3;&#x6A23;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x500B;&#x8A08;&#x7B97;&#x5F15;&#x64CE;&#xFF0C;&#x8207;&#x6216;&#x8005;&#x662F;&#x5176;&#x4ED6;&#x5B57;&#x7BC0;&#x78BC;&#x7DE8;&#x8B6F;(bytecode-complied)&#x7684;&#x7DE8;&#x7A0B;&#x8A9E;&#x8A00;&#xFF08;&#x5982;Java&#xFF09;&#x7684;&#x76F4;&#x8B6F;&#x5668;&#xFF0C;&#x6216;&#x662F;&#x50CF; Microsoft .NET Framework&#x7684;&#x865B;&#x64EC;&#x6A5F;&#xFF0C;&#x4E26;&#x6C92;&#x6709;&#x592A;&#x5927;&#x5DEE;&#x5225;&#x3002; &#x5728;&#x672C;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x6703;&#x8A73;&#x7D30;&#x4ECB;&#x7D39; EVM, &#x5728;&#x4E59;&#x592A;&#x574A;&#x72C0;&#x614B;&#x66F4;&#x65B0;&#x7684;&#x57F7;&#x884C;&#x8108;&#x843D;&#x4E4B;&#x4E2D;&#xFF0C;&#x4ECB;&#x7D39;&#x5305;&#x542B;&#x6307;&#x4EE4;&#x96C6; (instruction set), &#x7D50;&#x69CB;&#x4EE5;&#x53CA;&#x904B;&#x4F5C;&#x3002;</p>
+</div>
+<div class="sect2">
+<h3 id="evm_description">&#x4EC0;&#x9EBC;&#x662F;&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F; (EVM) ?</h3>
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F; (EVM) &#x662F;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x4E00;&#x90E8;&#x4EFD;&#xFF0C;&#x7528;&#x4F86;&#x8655;&#x7406;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;&#x90E8;&#x7F72;&#x4EE5;&#x53CA;&#x57F7;&#x884C;&#x3002;&#x7576;&#x5916;&#x90E8;&#x64C1;&#x6709;&#x5E33;&#x6236; (EOA) &#x9001;&#x4EA4;&#x6613;&#x81F3;&#x5176;&#x5B83;&#x63A5;&#x6536;&#x8005;&#x6642;&#xFF0C;&#x82E5;&#x662F;&#x4EA4;&#x6613;&#x4E2D;&#x53EA;&#x7528;&#x5230; value &#x6B04;&#x4F4D;&#x6642;&#xFF0C;&#x5C31;&#x4E0D;&#x9700;&#x8981;&#x52D5;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F;&#x7684;&#x904B;&#x7B97;&#x3002;&#x4F46;&#x662F;&#x5BE6;&#x969B;&#x4E0A;&#x4F86;&#x8AAA;&#xFF0C;&#x5927;&#x90E8;&#x4EFD;&#x7684;&#x60C5;&#x5F62;&#x90FD;&#x6703;&#x9700;&#x8981;&#x4F5C;&#x5230;&#x72C0;&#x614B; (state) &#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x800C;&#x72C0;&#x614B;&#x66F4;&#x65B0;&#x5C31;&#x6703;&#x904B;&#x7528; EVM &#x7684;&#x8A08;&#x7B97;&#x3002;&#x5F9E;&#x9AD8;&#x968E;&#x7684;&#x89D2;&#x5EA6;&#x4F86;&#x770B;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x6240;&#x57F7;&#x884C;&#x7684; EVM &#x53EF;&#x4EE5;&#x88AB;&#x60F3;&#x6210;&#x4E00;&#x500B;&#x5168;&#x57DF;&#x7684;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x96FB;&#x8166;&#xFF0C;&#x6B64;&#x96FB;&#x8166;&#x4E0A;&#x9762;&#x5305;&#x6709;&#x6578;&#x4EE5;&#x767E;&#x842C;&#x8A08;&#x7684;&#x53EF;&#x57F7;&#x884C;&#x7269;&#x4EF6;&#xFF0C;&#x6BCF;&#x500B;&#x7269;&#x4EF6;&#x90FD;&#x64C1;&#x6709;&#x6C38;&#x4E45;&#x7684;&#x6578;&#x64DA;&#x5132;&#x5B58;&#x7A7A;&#x9593;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>EVM &#x662F;&#x4E00;&#x500B;&#x985E;&#x5716;&#x9748;&#x5B8C;&#x5099;&#x7684;&#x72C0;&#x614B;&#x6A5F;; &#x7528;&#x201C;&#x985E;&#x201D;&#x4F86;&#x5F62;&#x5BB9;&#x662F;&#x56E0;&#x70BA;EVM&#x4E0A;&#x6240;&#x6709;&#x57F7;&#x884C;&#x7A0B;&#x5E8F;&#x90FD;&#x6709;&#x8A08;&#x7B97;&#x6B65;&#x6578;&#x7684;&#x9650;&#x5236;&#xFF0C;&#x56E0;&#x70BA;&#x555F;&#x52D5;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x4E4B;&#x57F7;&#x884C;&#x6642;&#xFF0C;&#x6703;&#x8A2D;&#x5B9A; Gas &#x7684;&#x7E3D;&#x91CF;&#x9650;&#x5236;&#x3002;&#x6709;&#x9452;&#x65BC;&#x6B64;&#xFF0C;&#x505C;&#x6A5F;&#x554F;&#x984C;(halting problem)&#x5C31;&#x88AB;&#x89E3;&#x6C7A;&#x4E86;&#xFF0C;&#x6240;&#x6709;&#x7A0B;&#x5F0F;&#x6587;&#x672C;&#x4E4B;&#x57F7;&#x884C;&#x90FD;&#x6709;&#x5176;&#x7D42;&#x9EDE;&#x3002;&#x7576;&#x60E1;&#x610F;&#x6216;&#x610F;&#x5916;&#x7684;&#x4E0D;&#x7576;&#x7A0B;&#x5F0F;&#x88AB;&#x57F7;&#x884C;&#x6642;&#xFF0C;&#x7A0B;&#x5E8F;&#x672C;&#x4F86;&#x5C07;&#x6703;&#x6C38;&#x9060;&#x7121;&#x6CD5;&#x505C;&#x6B62;&#xFF0C;&#x4F46;&#x56E0;&#x70BA;&#x6709; Gas &#x7684;&#x9650;&#x5236;&#xFF0C;&#x6240;&#x4EE5;&#x80FD;&#x5920;&#x907F;&#x514D;&#x8A72;&#x72C0;&#x6CC1;&#xFF1B;&#x6240;&#x4EE5;&#x8AAA;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x5E73;&#x53F0;&#x9047;&#x5230;&#x9019;&#x4E9B;&#x4E0D;&#x7576;&#x7A0B;&#x5F0F;&#x6642;&#xFF0C;&#x4E26;&#x4E0D;&#x6703;&#x505C;&#x6A5F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>EVM &#x5177;&#x6709;&#x57FA;&#x65BC;&#x5806;&#x758A;&#x7684;&#x9AD4;&#x7CFB;&#x7D50;&#x69CB;&#xFF0C;&#x5C07;&#x6240;&#x6709;&#x8A18;&#x61B6;&#x9AD4;&#x5167;(in-memory) &#x7684;&#x503C;&#x5B58;&#x5132;&#x5728;&#x5806;&#x758A;&#x4E2D;&#x3002;&#x5B83;&#x7684;&#x5B57;(word)&#x5927;&#x5C0F;&#x70BA;256&#x4F4D;&#x5143;&#xFF08;&#x4E3B;&#x8981;&#x7528;&#x65BC;&#x7C21;&#x5316;&#x539F;&#x751F;&#x6563;&#x5217;&#x548C;&#x6A62;&#x5713;&#x66F2;&#x7DDA;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x4E26;&#x5177;&#x6709;&#x591A;&#x500B;&#x53EF;&#x5C0B;&#x5740;&#x7684;&#x6578;&#x64DA;&#x7D44;&#x4EF6;&#xFF1A;</p>
+</div>
+<div class="ulist pagebreak-before">
+<ul>
+<li>
+<p>&#x4E00;&#x500B;&#x4E0D;&#x53EF;&#x8B8A;&#x7684;&#x7A0B;&#x5E8F;&#x4EE3;&#x78BC; (program code) ROM&#xFF0C;&#x52A0;&#x8F09;&#x4E86;&#x53EF;&#x57F7;&#x884C;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x5B57;&#x7BC0;&#x78BC; (bytecode)</p>
+</li>
+<li>
+<p>&#x63EE;&#x767C;&#x6027;&#x8A18;&#x61B6;&#x9AD4; (volatile memory) &#x4E2D;&#x6BCF;&#x500B;&#x4F4D;&#x7F6E;&#x90FD;&#x660E;&#x78BA;&#x521D;&#x59CB;&#x5316;&#x70BA;&#x96F6;</p>
+</li>
+<li>
+<p>&#x4F5C;&#x70BA;&#x4EE5;&#x592A;&#x574A;&#x72C0;&#x614B;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x7684;&#x6C38;&#x4E45;&#x5B58;&#x5132;&#x5668;&#xFF0C;&#x4E5F;&#x662F;&#x96F6;&#x521D;&#x59CB;&#x5316;&#x7684;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x57F7;&#x884C;&#x671F;&#x9593;&#x9084;&#x6709;&#x4E00;&#x7D44;&#x53EF;&#x7528;&#x7684;&#x74B0;&#x5883;&#x8B8A;&#x91CF;&#x548C;&#x6578;&#x64DA;&#x3002;&#x6211;&#x5011;&#x5C07;&#x5728;&#x672C;&#x7AE0;&#x5F8C;&#x9762;&#x8A73;&#x7D30;&#x4ECB;&#x7D39;&#x9019;&#x4E9B;&#x5167;&#x5BB9;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><a href="#evm_architecture">&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F; (EVM) &#x67B6;&#x69CB;&#x8207;&#x57F7;&#x884C;&#x8108;&#x843D;</a> &#x986F;&#x793A;&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F;&#x67B6;&#x69CB;&#x53CA;&#x57F7;&#x884C;&#x8108;&#x843D;</p>
+</div>
+<div id="evm_architecture" class="imageblock">
+<div class="content">
+<img src="images/evm-architecture.png" alt="&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F; (EVM) &#x67B6;&#x69CB;&#x8207;&#x57F7;&#x884C;&#x8108;&#x843D;">
+</div>
+<div class="title">Figure 1. &#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F; (EVM) &#x67B6;&#x69CB;&#x8207;&#x57F7;&#x884C;&#x8108;&#x843D;</div>
+</div>
+<div class="sect3">
+<h4 id="evm_comparison">&#x8207;&#x73FE;&#x6709;&#x7684;&#x865B;&#x64EC;&#x6A5F;&#x79D1;&#x6280;&#x4F5C;&#x6BD4;&#x8F03;</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x865B;&#x64EC;&#x6A5F;&#xFF08;Virtual Machine&#xFF09;&#xFF08;Virtualbox, QEMU, &#x96F2;&#x8A08;&#x7B97;&#xFF09;</p>
+</li>
+<li>
+<p>Java &#x865B;&#x64EC;&#x6A5F;&#xFF08;VM&#xFF09;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#x865B;&#x64EC;&#x6A5F;&#x6280;&#x8853;&#xFF08;&#x5982;Virtualbox&#x548C;QEMU / KVM&#xFF09;&#x8207;EVM&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x8655;&#x5728;&#x65BC;&#x5B83;&#x5011;&#x7684;&#x76EE;&#x7684;&#x662F;&#x63D0;&#x4F9B;&#x7BA1;&#x7406;&#x7A0B;&#x5F0F;&#x529F;&#x80FD;&#xFF0C;&#x6216;&#x8005;&#x8655;&#x7406;&#x5BA2;&#x6236;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x8207;&#x5E95;&#x5C64;&#x4E3B;&#x6A5F;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x548C;&#x786C;&#x9AD4;&#x4E4B;&#x9593;&#x7684;&#x7CFB;&#x7D71;&#x8ABF;&#x7528;&#xFF0C;&#x4EFB;&#x52D9;&#x8ABF;&#x5EA6;&#x548C;&#x8CC7;&#x6E90;&#x7BA1;&#x7406;&#x7684;&#x8EDF;&#x9AD4;&#x62BD;&#x8C61;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7136;&#x800C;&#xFF0C;Java VM&#xFF08;JVM&#xFF09;&#x898F;&#x7BC4;&#x7684;&#x67D0;&#x4E9B;&#x65B9;&#x9762;&#x78BA;&#x5BE6;&#x5305;&#x542B;&#x8207;EVM&#x7684;&#x76F8;&#x4F3C;&#x4E4B;&#x8655;&#x3002;&#x5F9E;&#x9AD8;&#x7D1A;&#x6982;&#x8FF0;&#x4F86;&#x770B;&#xFF0C;JVM &#x65E8;&#x5728;&#x63D0;&#x4F9B;&#x8207;&#x5E95;&#x5C64;&#x4E3B;&#x6A5F;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x6216;&#x786C;&#x9AD4;&#x7121;&#x95DC;&#x7684;&#x904B;&#x884C;&#x6642;&#x74B0;&#x5883;&#xFF0C;&#x5F9E;&#x800C;&#x5BE6;&#x73FE;&#x5404;&#x7A2E;&#x7CFB;&#x7D71;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x3002;&#x5728;JVM&#x4E0A;&#x904B;&#x884C;&#x7684;&#x9AD8;&#x7D1A;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#xFF08;&#x5982;Java&#x6216;Scala&#xFF09;&#x88AB;&#x7DE8;&#x8B6F;&#x5230;&#x76F8;&#x61C9;&#x7684;&#x6307;&#x4EE4;&#x96C6; Bytecode &#x4E2D;&#x3002;&#x9019;&#x8207;&#x7DE8;&#x8B6F;&#x8981;&#x5728;EVM&#x4E0A;&#x904B;&#x884C;&#x7684;Solidity&#x6E90;&#x6A94;&#x6848;&#x76F8;&#x7576;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="evm_bytecode_overview">EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#xFF08; Bytecode &#x64CD;&#x4F5C;&#xFF09;</h4>
+<div class="paragraph">
+<p>EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#x5206;&#x70BA;&#x7279;&#x5B9A;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x7D44;&#xFF0C;&#x4F8B;&#x5982;&#x7B97;&#x8853;&#x904B;&#x7B97;&#xFF0C;&#x908F;&#x8F2F;&#x548C;&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#xFF0C;&#x63A7;&#x5236;&#x6D41;&#xFF0C;&#x7CFB;&#x7D71;&#x8ABF;&#x7528;&#xFF0C;&#x5806;&#x68E7;&#x64CD;&#x4F5C;&#x548C;&#x5132;&#x5B58;&#x5668;&#x64CD;&#x4F5C;&#x3002;&#x9664;&#x5178;&#x578B;&#x7684; Bytecode &#x64CD;&#x4F5C;&#x5916;&#xFF0C;EVM&#x9084;&#x5FC5;&#x9808;&#x7BA1;&#x7406;&#x5E33;&#x6236;&#x8CC7;&#x8A0A;&#xFF08;&#x5373;&#x5730;&#x5740;&#x548C;&#x9918;&#x984D;&#xFF09;&#xFF0C;&#x7576;&#x524D;gas&#x50F9;&#x683C;&#x548C;&#x5340;&#x584A;&#x8CC7;&#x8A0A;&#x3002;</p>
+</div>
+<div id="common_stack_opcodes" class="dlist">
+<dl>
+<dt class="hdlist1">&#x901A;&#x7528;&#x5806;&#x68E7;&#x64CD;&#x4F5C;</dt>
+<dd>
+<p>&#x5806;&#x68E7;&#x548C;&#x8A18;&#x61B6;&#x9AD4;&#x7BA1;&#x7406;&#x7684;&#x64CD;&#x4F5C;&#x78BC;&#x6307;&#x4EE4;&#xFF1A;</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>POP     // &#x9805;&#x76EE;&#x51FA;&#x68E7;
+PUSH    // &#x9805;&#x76EE;&#x5165;&#x68E7;
+MLOAD   // &#x5C07;&#x9805;&#x76EE;&#x52A0;&#x8F09;&#x5230;&#x8A18;&#x61B6;&#x9AD4;&#x4E2D;
+MSTORE  // &#x5728;&#x8A18;&#x61B6;&#x9AD4;&#x4E2D;&#x5132;&#x5B58;&#x9805;&#x76EE;
+JUMP    // &#x6539;&#x8B8A;&#x7A0B;&#x5F0F;&#x8A08;&#x6578;&#x5668;&#x7684;&#x4F4D;&#x7F6E;
+PC      // &#x7A0B;&#x5F0F;&#x8A08;&#x6578;&#x5668;
+MSIZE   // &#x6D3B;&#x52D5;&#x7684;&#x8A18;&#x61B6;&#x9AD4;&#x5927;&#x5C0F;
+GAS     // &#x4EA4;&#x6613;&#x53EF;&#x7528;&#x7684;gas&#x6578;&#x91CF;
+DUP     // &#x8907;&#x88FD;&#x68E7;&#x9805;&#x76EE;
+SWAP    // &#x4EA4;&#x63DB;&#x68E7;&#x9805;&#x76EE;</pre>
+</div>
+</div>
+<div id="common_system_opcodes" class="dlist">
+<dl>
+<dt class="hdlist1">&#x901A;&#x7528;&#x7CFB;&#x7D71;&#x64CD;&#x4F5C;</dt>
+<dd>
+<p>&#x57F7;&#x884C;&#x7A0B;&#x5F0F;&#x7684;&#x7CFB;&#x7D71;&#x7684;&#x64CD;&#x4F5C;&#x78BC;&#x6307;&#x4EE4;&#xFF1A;</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>CREATE  // &#x5275;&#x5EFA;&#x65B0;&#x7684;&#x5E33;&#x6236;
+CALL    // &#x5728;&#x5E33;&#x6236;&#x9593;&#x50B3;&#x905E;&#x6D88;&#x606F;&#x7684;&#x6307;&#x4EE4;
+RETURN  // &#x57F7;&#x884C;&#x505C;&#x6A5F;
+REVERT  // &#x57F7;&#x884C;&#x505C;&#x6A5F;&#xFF0C;&#x6062;&#x5FA9;&#x72C0;&#x614B;&#x66F4;&#x6539;
+SELFDESTRUCT // &#x57F7;&#x884C;&#x505C;&#x6A5F;&#xFF0C;&#x4E26;&#x6A19;&#x8A18;&#x5E33;&#x6236;&#x70BA;&#x522A;&#x9664;&#x7684;</pre>
+</div>
+</div>
+<div id="common_arithmetic_opcodes" class="dlist">
+<dl>
+<dt class="hdlist1">&#x7B97;&#x8853;&#x904B;&#x7B97;</dt>
+<dd>
+<p>&#x901A;&#x7528;&#x7B97;&#x8853;&#x904B;&#x7B97;&#x7A0B;&#x5F0F;&#x78BC;&#x6307;&#x4EE4;&#xFF1A;</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&#x6DFB;&#x52A0;//&#x6DFB;&#x52A0;
+MUL //&#x4E58;&#x6CD5;
+SUB //&#x6E1B;&#x6CD5;
+DIV //&#x6574;&#x6578;&#x9664;&#x6CD5;
+SDIV //&#x6709;&#x7B26;&#x865F;&#x6574;&#x6578;&#x9664;&#x6CD5;
+MOD // Modulo&#xFF08;&#x5269;&#x9918;&#xFF09;&#x64CD;&#x4F5C;
+SMOD //&#x7C3D;&#x540D;&#x6A21;&#x904B;&#x7B97;
+ADDMOD //&#x6A21;&#x6578;&#x52A0;&#x6CD5;
+MULMOD //&#x6A21;&#x6578;&#x4E58;&#x6CD5;
+EXP //&#x6307;&#x6578;&#x904B;&#x7B97;
+STOP //&#x505C;&#x6B62;&#x64CD;&#x4F5C;</pre>
+</div>
+</div>
+<div id="common_environment_opcodes" class="dlist">
+<dl>
+<dt class="hdlist1">&#x74B0;&#x5883;&#x64CD;&#x4F5C;&#x78BC;</dt>
+<dd>
+<p>&#x8655;&#x7406;&#x57F7;&#x884C;&#x74B0;&#x5883;&#x8CC7;&#x8A0A;&#x7684;&#x901A;&#x7528;&#x64CD;&#x4F5C;&#x78BC;&#xFF1A;</p>
+</dd>
+</dl>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>ADDRESS //&#x7576;&#x524D;&#x57F7;&#x884C;&#x5E33;&#x6236;&#x7684;&#x5730;&#x5740;
+BALANCE //&#x5E33;&#x6236;&#x9918;&#x984D;
+CALLVALUE //&#x57F7;&#x884C;&#x74B0;&#x5883;&#x7684;&#x4EA4;&#x6613;&#x503C;
+ORIGIN //&#x57F7;&#x884C;&#x74B0;&#x5883;&#x7684;&#x539F;&#x59CB;&#x5730;&#x5740;
+CALLER //&#x57F7;&#x884C;&#x8ABF;&#x7528;&#x8005;&#x7684;&#x5730;&#x5740;
+CODESIZE //&#x57F7;&#x884C;&#x74B0;&#x5883;&#x7A0B;&#x5F0F;&#x78BC;&#x5927;&#x5C0F;
+GASPRICE //gas&#x50F9;&#x683C;&#x72C0;&#x614B;
+EXTCODESIZE //&#x5E33;&#x6236;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x5927;&#x5C0F;
+RETURNDATACOPY //&#x5F9E;&#x5148;&#x524D;&#x7684;&#x8A18;&#x61B6;&#x9AD4;&#x8ABF;&#x7528;&#x8F38;&#x51FA;&#x7684;&#x6578;&#x64DA;&#x7684;&#x526F;&#x672C;</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="evm_state_descriptions">&#x72C0;&#x614B;</h4>
+<div class="paragraph">
+<p>&#x8207;&#x4EFB;&#x4F55;&#x8A08;&#x7B97;&#x7CFB;&#x7D71;&#x4E00;&#x6A23;&#xFF0C;&#x72C0;&#x614B;&#x6982;&#x5FF5;&#x4E5F;&#x5F88;&#x91CD;&#x8981;&#x3002;&#x5C31;&#x50CF;CPU&#x8DDF;&#x8E64;&#x57F7;&#x884C;&#x904E;&#x7A0B;&#x4E00;&#x6A23;&#xFF0C;EVM&#x5FC5;&#x9808;&#x8DDF;&#x8E64;&#x5404;&#x7A2E;&#x7D44;&#x4EF6;&#x7684;&#x72C0;&#x614B;&#x4EE5;&#x652F;&#x6301;&#x4EA4;&#x6613;&#x3002;&#x9019;&#x4E9B;&#x7D44;&#x4EF6;&#x7684;&#x72C0;&#x614B;&#x6700;&#x7D42;&#x6703;&#x63A8;&#x52D5;&#x7E3D;&#x9AD4;&#x5340;&#x584A;&#x93C8;&#x7684;&#x8B8A;&#x5316;&#x7A0B;&#x5EA6;&#x3002;&#x9019;&#x65B9;&#x9762;&#x5C0E;&#x81F4;&#x5C07;&#x4EE5;&#x592A;&#x574A;&#x63CF;&#x8FF0;&#x70BA;<em>&#x57FA;&#x65BC;&#x4EA4;&#x6613;&#x7684;&#x72C0;&#x614B;&#x6A5F;</em>&#xFF0C;&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x7D44;&#x4EF6;&#xFF1A;</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">World State</dt>
+<dd>
+<p>160&#x4F4D;&#x5730;&#x5740;&#x8B58;&#x5225;&#x78BC;&#x548C;&#x5E33;&#x6236;&#x72C0;&#x614B;&#x4E4B;&#x9593;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x5728;&#x4E0D;&#x53EF;&#x8B8A;&#x7684;<em>Merkle Patricia Tree</em>&#x8CC7;&#x6599;&#x7D50;&#x69CB;&#x4E2D;&#x7DAD;&#x8B77;&#x3002;</p>
+</dd>
+<dt class="hdlist1">Account State</dt>
+<dd>
+<p>&#x5305;&#x542B;&#x4EE5;&#x4E0B;&#x56DB;&#x500B;&#x7D44;&#x4EF6;&#xFF1A;</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>nonce</em>&#xFF1A;&#x8868;&#x793A;&#x5F9E;&#x8A72;&#x76F8;&#x61C9;&#x5E33;&#x6236;&#x767C;&#x9001;&#x7684;&#x4EA4;&#x6613;&#x6578;&#x91CF;&#x7684;&#x503C;&#x3002;</p>
+</li>
+<li>
+<p><em>balance</em>&#xFF1A;&#x5E33;&#x6236;&#x5730;&#x5740;&#x64C1;&#x6709;&#x7684;<em>wei</em>&#x7684;&#x6578;&#x91CF;&#x3002;</p>
+</li>
+<li>
+<p><em>storageRoot</em>&#xFF1A;Merkle Patricia Tree&#x6839;&#x7BC0;&#x9EDE;&#x7684;256&#x4F4D;&#x96DC;&#x6E4A;&#x503C;&#x3002;</p>
+</li>
+<li>
+<p><em>codeHash</em>&#xFF1A;&#x5404;&#x500B;&#x5E33;&#x6236;&#x7684;EVM&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x4E0D;&#x53EF;&#x8B8A;&#x96DC;&#x6E4A;&#x503C;&#x3002;</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Storage State</dt>
+<dd>
+<p>&#x5728;EVM&#x4E0A;&#x904B;&#x884C;&#x6642;&#x7DAD;&#x8B77;&#x7684;&#x5E33;&#x6236;&#x7279;&#x5B9A;&#x72C0;&#x614B;&#x8CC7;&#x8A0A;&#x3002;</p>
+</dd>
+<dt class="hdlist1">Block State</dt>
+<dd>
+<p>&#x4EA4;&#x6613;&#x6240;&#x9700;&#x7684;&#x72C0;&#x614B;&#x503C;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x5167;&#x5BB9;&#xFF1A;</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>blockhash</em>&#xFF1A;&#x6700;&#x8FD1;&#x5B8C;&#x6210;&#x7684;&#x584A;&#x7684;&#x96DC;&#x6E4A;&#x503C;&#x3002;</p>
+</li>
+<li>
+<p><em>coinbase</em>&#xFF1A;&#x6536;&#x4EF6;&#x4EBA;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li>
+<p><em>timestamp</em>&#xFF1A;&#x7576;&#x524D;&#x584A;&#x7684;&#x6642;&#x9593;&#x6233;&#x3002;</p>
+</li>
+<li>
+<p><em>number</em>&#xFF1A;&#x7576;&#x524D;&#x584A;&#x7684;&#x7DE8;&#x865F;&#x3002;</p>
+</li>
+<li>
+<p><em>difficulty</em>&#xFF1A;&#x7576;&#x524D;&#x5340;&#x584A;&#x7684;&#x96E3;&#x5EA6;&#x3002;</p>
+</li>
+<li>
+<p><em>gaslimit</em>&#xFF1A;&#x7576;&#x524D;&#x5340;&#x584A;&#x7684;gas&#x9650;&#x5236;&#x3002;</p>
+</li>
+</ul>
+</div>
+</dd>
+<dt class="hdlist1">Runtime Environment Information</dt>
+<dd>
+<p>&#x7528;&#x65BC;&#x4F7F;&#x7528;&#x4EA4;&#x6613;&#x7684;&#x8CC7;&#x8A0A;&#x3002;</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>gasprice</em>&#xFF1A;&#x7576;&#x524D;gas&#x50F9;&#x683C;&#xFF0C;&#x7531;&#x4EA4;&#x6613;&#x767C;&#x8D77;&#x4EBA;&#x6307;&#x5B9A;&#x3002;</p>
+</li>
+<li>
+<p><em>codesize</em>&#xFF1A;&#x4EA4;&#x6613;&#x7A0B;&#x5F0F;&#x78BC;&#x5EAB;&#x7684;&#x5927;&#x5C0F;&#x3002;</p>
+</li>
+<li>
+<p><em>caller</em>&#xFF1A;&#x57F7;&#x884C;&#x7576;&#x524D;&#x4EA4;&#x6613;&#x7684;&#x5E33;&#x6236;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li>
+<p><em>origin</em>&#xFF1A;&#x7576;&#x524D;&#x4EA4;&#x6613;&#x539F;&#x59CB;&#x767C;&#x4EF6;&#x4EBA;&#x7684;&#x5730;&#x5740;&#x3002;</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>&#x72C0;&#x614B;&#x8F49;&#x63DB;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x51FD;&#x6578;&#x8A08;&#x7B97;&#xFF1A;</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">&#x4EE5;&#x592A;&#x574A;&#x72C0;&#x614B;&#x8F49;&#x63DB;&#x51FD;&#x6578;</dt>
+<dd>
+<p>&#x7528;&#x65BC;&#x8A08;&#x7B97;<em>valid state transition</em>&#x3002;</p>
+</dd>
+<dt class="hdlist1">&#x5340;&#x584A;&#x7D42;&#x7D50;&#x72C0;&#x614B;&#x8F49;&#x63DB;&#x51FD;&#x6578;</dt>
+<dd>
+<p>&#x7528;&#x65BC;&#x78BA;&#x5B9A;&#x6700;&#x7D42;&#x584A;&#x7684;&#x72C0;&#x614B;&#xFF0C;&#x4F5C;&#x70BA;&#x6316;&#x7926;&#x904E;&#x7A0B;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5305;&#x542B;&#x5340;&#x584A;&#x734E;&#x52F5;&#x3002;</p>
+</dd>
+<dt class="hdlist1">&#x5340;&#x584A;&#x7D1A;&#x72C0;&#x614B;&#x8F49;&#x63DB;&#x51FD;&#x6578;</dt>
+<dd>
+<p>&#x61C9;&#x7528;&#x65BC;&#x4EA4;&#x6613;&#x72C0;&#x614B;&#x6642;&#x7684;&#x5340;&#x584A;&#x7D42;&#x7D50;&#x72C0;&#x614B;&#x8F49;&#x63DB;&#x51FD;&#x6578;&#x7684;&#x7D50;&#x679C;&#x72C0;&#x614B;&#x3002;</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
+<h4 id="compiling_solidity_to_evm">&#x5C07;Solidity&#x7DE8;&#x8B6F;&#x70BA;EVM Bytecode</h4>
+<div id="solc_help" class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x901A;&#x904E;&#x547D;&#x4EE4;&#x884C;&#x5B8C;&#x6210;&#x5C07;Solidity&#x6E90;&#x6A94;&#x6848;&#x7DE8;&#x8B6F;&#x70BA;EVM Bytecode &#x3002;&#x6709;&#x95DC;&#x5176;&#x4ED6;&#x7DE8;&#x8B6F;&#x9078;&#x9805;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x53EA;&#x9700;&#x904B;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ solc --help</pre>
+</div>
+</div>
+<div id="solc_opcodes_option" class="paragraph">
+<p>&#x4F7F;&#x7528;<em>--opcodes</em>&#x547D;&#x4EE4;&#x884C;&#x9078;&#x9805;&#x53EF;&#x4EE5;&#x8F15;&#x9B06;&#x5BE6;&#x73FE;&#x751F;&#x6210;Solidity&#x6E90;&#x6A94;&#x6848;&#x7684;&#x539F;&#x59CB;&#x64CD;&#x4F5C;&#x78BC;&#x6D41;&#x3002;&#x6B64;&#x64CD;&#x4F5C;&#x78BC;&#x6D41;&#x6703;&#x907A;&#x6F0F;&#x4E00;&#x4E9B;&#x8CC7;&#x8A0A;&#xFF08;<em>--asm</em>&#x9078;&#x9805;&#x6703;&#x751F;&#x6210;&#x5B8C;&#x6574;&#x8CC7;&#x8A0A;&#xFF09;&#xFF0C;&#x4F46;&#x9019;&#x5C0D;&#x65BC;&#x7B2C;&#x4E00;&#x6B21;&#x4ECB;&#x7D39;&#x662F;&#x8DB3;&#x5920;&#x7684;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x7DE8;&#x8B6F;&#x7BC4;&#x4F8B;Solidity&#x6A94;&#x6848;<em>Example.sol</em>&#x4E26;&#x5C07;&#x64CD;&#x4F5C;&#x78BC;&#x8F38;&#x51FA;&#x586B;&#x5145;&#x5230;&#x540D;&#x70BA;<em>BytecodeDir</em>&#x7684;&#x76EE;&#x9304;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5B8C;&#x6210;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ solc -o BytecodeOutputDir --opcodes Example.sol</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x6216;</p>
+</div>
+<div id="solc_asm_option" class="listingblock">
+<div class="content">
+<pre>$ solc -o BytecodeOutputDir --asm Example.sol</pre>
+</div>
+</div>
+<div id="solc_bin_option" class="paragraph">
+<p>&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x5C07;&#x70BA;&#x6211;&#x5011;&#x7684;&#x7BC4;&#x4F8B;&#x7A0B;&#x5F0F;&#x751F;&#x6210; Bytecode &#x4E8C;&#x9032;&#x5236;&#x6A94;&#x6848;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ solc -o BytecodeOutputDir --bin Example.sol</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x751F;&#x6210;&#x7684;&#x8F38;&#x51FA;&#x64CD;&#x4F5C;&#x78BC;&#x6A94;&#x6848;&#x5C07;&#x53D6;&#x6C7A;&#x65BC;Solidity&#x6E90;&#x6A94;&#x6848;&#x4E2D;&#x5305;&#x542B;&#x7684;&#x7279;&#x5B9A;&#x5408;&#x7D04;&#x3002;&#x6211;&#x5011;&#x7684;&#x7C21;&#x55AE;Solidity&#x6A94;&#x6848;<em>Example.sol</em> <a href="#simple_solidity_example">[simple_solidity_example]</a>&#x53EA;&#x6709;&#x4E00;&#x500B;&#x540D;&#x70BA;&#x201C;example&#x201D;&#x7684;&#x5408;&#x7D04;&#x3002;</p>
+</div>
+<div id="simple_solidity_example" class="listingblock">
+<div class="content">
+<pre>pragma solidity ^0.4.19;
+
+contract example {
+
+  address contractOwner;
+
+  function example() {
+    contractOwner = msg.sender;
+  }
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x67E5;&#x770B;<em>BytecodeDir</em>&#x76EE;&#x9304;&#xFF0C;&#x4F60;&#x5C07;&#x770B;&#x5230;&#x64CD;&#x4F5C;&#x78BC;&#x6A94;&#x6848;<em>example.opcode</em>&#xFF08;&#x8ACB;&#x53C3;&#x95B1;<a href="#simple_solidity_example">[simple_solidity_example]</a>&#xFF09;&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x201C;example&#x201D;&#x5408;&#x7D04;&#x7684;EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#x64CD;&#x4F5C;&#x78BC;&#x6307;&#x4EE4;&#x3002;&#x5728;&#x6587;&#x5B57;&#x7DE8;&#x8F2F;&#x5668;&#x4E2D;&#x6253;&#x958B;<em>example.opcode</em>&#x6A94;&#x6848;&#x5C07;&#x986F;&#x793A;&#x4EE5;&#x4E0B;&#x5167;&#x5BB9;&#xFF1A;</p>
+</div>
+<div id="opcode_output" class="listingblock">
+<div class="content">
+<pre>PUSH1 0x60 PUSH1 0x40 MSTORE CALLVALUE ISZERO PUSH1 0xE JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST CALLER PUSH1 0x0 DUP1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP PUSH1 0x35 DUP1 PUSH1 0x5B PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN STOP PUSH1 0x60 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT STOP LOG1 PUSH6 0x627A7A723058 KECCAK256 JUMP 0xb9 SWAP14 0xcb 0x1e 0xdd RETURNDATACOPY 0xec 0xe0 0x1f 0x27 0xc9 PUSH5 0x9C5ABCC14A NUMBER 0x5e INVALID EXTCODESIZE 0xdb 0xcf EXTCODESIZE 0x27 EXTCODESIZE 0xe2 0xb8 SWAP10 0xed 0x</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4F7F;&#x7528;<em>--asm</em>&#x9078;&#x9805;&#x7DE8;&#x8B6F;&#x7BC4;&#x4F8B;&#x6703;&#x5728;<em>BytecodeDir</em>&#x76EE;&#x9304;&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x500B;&#x6A94;&#x6848; <em>example.evm</em>&#x3002;&#x9019;&#x5305;&#x542B;&#x8A73;&#x7D30;&#x7684;EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#x8AAA;&#x660E;&#xFF1A;</p>
+</div>
+<div id="asm_output" class="listingblock">
+<div class="content">
+<pre>/* &quot;Example.sol&quot;:26:132  contract example {... */
+  mstore(0x40, 0x60)
+    /* &quot;Example.sol&quot;:74:130  function example() {... */
+  jumpi(tag_1, iszero(callvalue))
+  0x0
+  dup1
+  revert
+tag_1:
+    /* &quot;Example.sol&quot;:115:125  msg.sender */
+  caller
+    /* &quot;Example.sol&quot;:99:112  contractOwner */
+  0x0
+  dup1
+    /* &quot;Example.sol&quot;:99:125  contractOwner = msg.sender */
+  0x100
+  exp
+  dup2
+  sload
+  dup2
+  0xffffffffffffffffffffffffffffffffffffffff
+  mul
+  not
+  and
+  swap1
+  dup4
+  0xffffffffffffffffffffffffffffffffffffffff
+  and
+  mul
+  or
+  swap1
+  sstore
+  pop
+    /* &quot;Example.sol&quot;:26:132  contract example {... */
+  dataSize(sub_0)
+  dup1
+  dataOffset(sub_0)
+  0x0
+  codecopy
+  0x0
+  return
+stop
+
+sub_0: assembly {
+        /* &quot;Example.sol&quot;:26:132  contract example {... */
+      mstore(0x40, 0x60)
+      0x0
+      dup1
+      revert
+
+    auxdata: 0xa165627a7a7230582056b99dcb1edd3eece01f27c9649c5abcc14a435efe3bdbcf3b273be2b899eda90029
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><em>--bin</em> &#x9078;&#x9805;&#x7522;&#x751F;&#x4EE5;&#x4E0B;&#x5167;&#x5BB9;&#xFF1A;</p>
+</div>
+<div id="bin_output" class="listingblock">
+<div class="content">
+<pre>60606040523415600e57600080fd5b336000806101000a81548173
+ffffffffffffffffffffffffffffffffffffffff
+021916908373
+ffffffffffffffffffffffffffffffffffffffff
+160217905550603580605b6000396000f3006060604052600080fd00a165627a7a7230582056b99dcb1e</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8B93;&#x6211;&#x5011;&#x6AA2;&#x67E5;&#x524D;&#x5169;&#x689D;&#x6307;&#x4EE4;&#xFF08;&#x53C3;&#x8003;<a href="#common_stack_opcodes">[common_stack_opcodes]</a>&#xFF09;&#xFF1A;</p>
+</div>
+<div id="opcode_analysis_1" class="listingblock">
+<div class="content">
+<pre>PUSH1 0x60 PUSH1 0x40</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x88E1;&#x6211;&#x5011;&#x6709;<em>mnemonic</em>&#x201C;PUSH1&#x201D;&#xFF0C;&#x5F8C;&#x8DDF;&#x4E00;&#x500B;&#x503C;&#x70BA;&#x201C;0x60&#x201D;&#x7684;&#x539F;&#x59CB;&#x5B57;&#x7BC0;&#x3002;&#x9019;&#x5C0D;&#x61C9;&#x65BC;EVM&#x6307;&#x4EE4;&#xFF0C;&#x8A72;&#x64CD;&#x4F5C;&#x5C07;&#x64CD;&#x4F5C;&#x78BC;&#x4E4B;&#x5F8C;&#x7684;&#x55AE;&#x5B57;&#x7BC0;&#x89E3;&#x91CB;&#x70BA;&#x6587;&#x5B57;&#x503C;&#x4E26;&#x5C07;&#x5176;&#x63A8;&#x5165;&#x5806;&#x68E7;&#x3002;&#x53EF;&#x4EE5;&#x5C07;&#x5927;&#x5C0F;&#x6700;&#x591A;&#x70BA;32&#x500B;&#x5B57;&#x7BC0;&#x7684;&#x503C;&#x58D3;&#x5165;&#x5806;&#x68E7;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B; Bytecode &#x5C07;4&#x5B57;&#x7BC0;&#x503C;&#x58D3;&#x5165;&#x5806;&#x68E7;&#xFF1A;</p>
+</div>
+<div id="opcode_analysis_2" class="listingblock">
+<div class="content">
+<pre>PUSH4 0x7f1baa12</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x7B2C;&#x4E8C;&#x500B;push&#x64CD;&#x4F5C;&#x78BC;&#x5C07;&#x201C;0x40&#x201D;&#x5132;&#x5B58;&#x5230;&#x5806;&#x68E7;&#x4E2D;&#xFF08;&#x5728;&#x90A3;&#x88E1;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x201C;0x60&#x201D;&#x4E4B;&#x4E0A;&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x7684;&#x5169;&#x500B;&#x6307;&#x4EE4;&#xFF1A;</p>
+</div>
+<div id="opcode_analysis_3" class="listingblock">
+<div class="content">
+<pre>MSTORE CALLVALUE</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>MSTORE&#x662F;&#x4E00;&#x500B;&#x5806;&#x68E7;/&#x8A18;&#x61B6;&#x9AD4;&#x64CD;&#x4F5C;&#xFF08;&#x53C3;&#x898B;<a href="#common_stack_opcodes">[common_stack_opcodes]</a>&#xFF09;&#xFF0C;&#x5B83;&#x5C07;&#x503C;&#x4FDD;&#x5B58;&#x5230;&#x8A18;&#x61B6;&#x9AD4;&#x4E2D;&#xFF0C;&#x800C;CALLVALUE&#x662F;&#x4E00;&#x500B;&#x74B0;&#x5883;&#x64CD;&#x4F5C;&#x78BC;&#xFF08;&#x53C3;&#x898B;<a href="#common_environment_opcodes">[common_environment_opcodes]</a>&#xFF09;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x6B63;&#x5728;&#x57F7;&#x884C;&#x7684;&#x6D88;&#x606F;&#x8ABF;&#x7528;&#x7684;&#x5B58;&#x653E;&#x503C;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="evm_bytecode_execution">&#x57F7;&#x884C;EVM Bytecode</h4>
+
+</div>
+<div class="sect3">
+<h4 id="gas_accounting_execution">Gas&#xFF0C;&#x6703;&#x8A08;</h4>
+<div class="paragraph">
+<p>&#x5C0D;&#x65BC;&#x6BCF;&#x500B;&#x4EA4;&#x6613;&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x500B;&#x95DC;&#x806F;&#x7684;<em>gas-limit</em>&#x548C;<em>gas-price</em>&#xFF0C;&#x5B83;&#x5011;&#x69CB;&#x6210;&#x4E86;EVM&#x57F7;&#x884C;&#x7684;&#x8CBB;&#x7528;&#x3002;&#x9019;&#x4E9B;&#x8CBB;&#x7528;&#x7528;&#x65BC;&#x4FC3;&#x9032;&#x4EA4;&#x6613;&#x7684;&#x5FC5;&#x8981;&#x8CC7;&#x6E90;&#xFF0C;&#x4F8B;&#x5982;&#x8A08;&#x7B97;&#x548C;&#x5132;&#x5B58;&#x3002;gas&#x9084;&#x7528;&#x65BC;&#x5275;&#x5EFA;&#x5E33;&#x6236;&#x548C;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="turing_completeness_and_gas">&#x5716;&#x9748;&#x5B8C;&#x5099;&#x6027;&#x548C;gas</h4>
+<div class="paragraph">
+<p>&#x7C21;&#x55AE;&#x4F86;&#x8AAA;&#xFF0C;&#x5982;&#x679C;&#x7CFB;&#x7D71;&#x6216;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x53EF;&#x4EE5;&#x89E3;&#x6C7A;&#x4F60;&#x8F38;&#x5165;&#x7684;&#x4EFB;&#x4F55;&#x554F;&#x984C;&#xFF0C;&#x5B83;&#x662F;<em>&#x5716;&#x9748;&#x5B8C;&#x5099;&#x7684;</em>&#x3002;&#x9019;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x9EC3;&#x76AE;&#x66F8;&#x4E2D;&#x8A0E;&#x8AD6;&#x904E;&#xFF1A;</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>It is a <em>quasi</em>-Turing complete machine; the quasi qualification comes from the fact that the computation is intrinsically bounded through a parameter, gas, which limits the total amount of computation done.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#x2014; Gavin Wood<br>
+<cite>ETHEREUM: A SECURE DECENTRALISED GENERALISED TRANSACTION LEDGER</cite>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x96D6;&#x7136;EVM&#x7406;&#x8AD6;&#x4E0A;&#x53EF;&#x4EE5;&#x89E3;&#x6C7A;&#x5B83;&#x6536;&#x5230;&#x7684;&#x4EFB;&#x4F55;&#x554F;&#x984C;&#xFF0C;&#x4F46;gas&#x53EF;&#x80FD;&#x6703;&#x963B;&#x6B62;&#x5B83;&#x9019;&#x6A23;&#x505A;&#x3002;&#x9019;&#x53EF;&#x80FD;&#x5728;&#x4EE5;&#x4E0B;&#x5E7E;&#x500B;&#x65B9;&#x9762;&#x767C;&#x751F;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p>1&#xFF09;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x958B;&#x63A1;&#x7684;&#x584A;&#x5177;&#x6709;&#x8207;&#x4E4B;&#x76F8;&#x95DC;&#x7684;gas&#x9650;&#x5236;; &#x4E5F;&#x5C31;&#x662F;&#x8AAA;&#xFF0C;&#x5340;&#x584A;&#x5167;&#x6240;&#x6709;&#x4EA4;&#x6613;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x7E3D;gas&#x4E0D;&#x80FD;&#x8D85;&#x904E;&#x4E00;&#x5B9A;&#x9650;&#x5EA6;&#x3002;
+2&#xFF09;&#x7531;&#x65BC;gas&#x548C;gas&#x50F9;&#x683C;&#x9F4A;&#x982D;&#x4E26;&#x9032;&#xFF0C;&#x5373;&#x4F7F;&#x53D6;&#x6D88;&#x4E86;gas&#x9650;&#x5236;&#xFF0C;&#x9AD8;&#x5EA6;&#x8907;&#x96DC;&#x7684;&#x4EA4;&#x6613;&#x4E5F;&#x53EF;&#x80FD;&#x5728;&#x7D93;&#x6FDF;&#x4E0A;&#x4E0D;&#x53EF;&#x884C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5C0D;&#x65BC;&#x5927;&#x591A;&#x6578;&#x7528;&#x4F8B;&#xFF0C;EVM&#x53EF;&#x4EE5;&#x89E3;&#x6C7A;&#x63D0;&#x4F9B;&#x7D66;&#x5B83;&#x7684;&#x4EFB;&#x4F55;&#x554F;&#x984C;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="bytecode_vs_runtime_bytecode">Bytecode &#x8207;&#x904B;&#x884C;&#x6642; Bytecode</h4>
+<div class="paragraph">
+<p>&#x7DE8;&#x8B6F;&#x5408;&#x7D04;&#x6642;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7372;&#x5F97;<em>&#x5408;&#x7D04; Bytecode _&#x6216;</em>&#x904B;&#x884C;&#x6642; Bytecode _&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5408;&#x7D04; Bytecode &#x5305;&#x542B;&#x5BE6;&#x969B;&#x4E0A;&#x6700;&#x7D42;&#x4F4D;&#x65BC;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x7684; Bytecode <em>&#x4EE5;&#x53CA;</em>&#x5C07; Bytecode &#x653E;&#x5728;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x4E26;&#x904B;&#x884C;&#x5408;&#x7D04;&#x69CB;&#x9020;&#x51FD;&#x6578;&#x6240;&#x9700;&#x7684; Bytecode &#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x904B;&#x884C;&#x6642; Bytecode &#x53EA;&#x662F;&#x6700;&#x7D42;&#x4F4D;&#x65BC;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x7684; Bytecode &#x3002;&#x9019;&#x4E0D;&#x5305;&#x62EC;&#x521D;&#x59CB;&#x5316;&#x5408;&#x7D04;&#x4E26;&#x5C07;&#x5176;&#x653E;&#x5728;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x6240;&#x9700;&#x7684; Bytecode &#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8B93;&#x6211;&#x5011;&#x4EE5;&#x524D;&#x9762;&#x5275;&#x5EFA;&#x7684;&#x7C21;&#x55AE;<code>Faucet.sol</code>&#x5408;&#x7D04;&#x70BA;&#x4F8B;&#x3002;</p>
+</div>
+<div id="faucet_example" class="listingblock">
+<div class="content">
+<pre>// Version of Solidity compiler this program was written for
+pragma solidity ^0.4.19;
+
+// Our first contract is a faucet!
+contract Faucet {
+
+  // Give out ether to anyone who asks
+  function withdraw(uint withdraw_amount) public {
+
+      // Limit withdrawal amount
+      require(withdraw_amount &lt;= 100000000000000000);
+
+      // Send the amount to the address that requested it
+      msg.sender.transfer(withdraw_amount);
+    }
+
+  // Accept any incoming amount
+  function () public payable {}
+
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8981;&#x7372;&#x5F97;&#x5408;&#x7D04; Bytecode &#xFF0C;&#x6211;&#x5011;&#x5C07;&#x904B;&#x884C;<code>solc --bin Faucet.sol</code>&#x3002;&#x5982;&#x679C;&#x6211;&#x5011;&#x53EA;&#x60F3;&#x8981;&#x904B;&#x884C;&#x6642; Bytecode &#xFF0C;&#x6211;&#x5011;&#x5C07;&#x904B;&#x884C;<code>solc --bin-runtime Faucet.sol</code>&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x6BD4;&#x8F03;&#x9019;&#x4E9B;&#x547D;&#x4EE4;&#x7684;&#x8F38;&#x51FA;&#xFF0C;&#x4F60;&#x5C07;&#x770B;&#x5230;&#x904B;&#x884C;&#x6642; Bytecode &#x662F;&#x5408;&#x7D04; Bytecode &#x7684;&#x5B50;&#x96C6;&#x3002;&#x63DB;&#x53E5;&#x8A71;&#x8AAA;&#xFF0C;&#x904B;&#x884C;&#x6642; Bytecode &#x5B8C;&#x5168;&#x5305;&#x542B;&#x5728;&#x5408;&#x7D04; Bytecode &#x4E2D;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="disassembling_the_bytecode">&#x53CD;&#x5F59;&#x7DE8; Bytecode</h4>
+<div class="paragraph">
+<p>&#x53CD;&#x5F59;&#x7DE8;EVM Bytecode &#x662F;&#x77AD;&#x89E3;&#x9AD8;&#x7D1A;&#x5225;Solidity&#x5728;EVM&#x4E2D;&#x7684;&#x4F5C;&#x7528;&#x7684;&#x597D;&#x65B9;&#x6CD5;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x53CD;&#x5F59;&#x7DE8;&#x7A0B;&#x5F0F;&#x4F86;&#x57F7;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#xFF1A;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Porosity</strong> &#x662F;&#x4E00;&#x500B;&#x6D41;&#x884C;&#x7684;&#x958B;&#x6E90;&#x53CD;&#x7DE8;&#x8B6F;&#x5668;&#xFF1A;https://github.com/comaeio/porosity</p>
+</li>
+<li>
+<p><strong>Ethersplay</strong> &#x662F;Binary Ninja&#x7684;EVM&#x63D2;&#x4EF6;&#xFF0C;&#x4E00;&#x500B;&#x53CD;&#x5F59;&#x7DE8;&#x7A0B;&#x5F0F;&#xFF1A;https://github.com/trailofbits/ethersplay</p>
+</li>
+<li>
+<p><strong>IDA-Evm</strong> &#x662F;IDA&#x7684;EVM&#x63D2;&#x4EF6;&#xFF0C;&#x53E6;&#x4E00;&#x500B;&#x53CD;&#x5F59;&#x7DE8;&#x7A0B;&#x5F0F;&#xFF1A;https://github.com/trailofbits/ida-evm</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x672C;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x4F7F;&#x7528; Binary Ninja &#x7684; <strong>Ethersplay</strong> &#x63D2;&#x4EF6;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x7372;&#x53D6;Faucet.sol&#x7684;&#x904B;&#x884C;&#x6642; Bytecode &#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5C07;&#x5176;&#x63D0;&#x4F9B;&#x7D66;Binary Ninja&#xFF08;&#x5728;&#x532F;&#x5165;Ethersplay&#x63D2;&#x4EF6;&#x4E4B;&#x5F8C;&#xFF09;&#x4EE5;&#x67E5;&#x770B;EVM&#x6307;&#x4EE4;&#x3002;</p>
+</div>
+<div id="Faucet_disassembled" class="imageblock">
+<div class="content">
+<img src="images/Faucet_disassembled.png" alt="Faucet.sol runtime bytecode disassembled">
+</div>
+<div class="title">Figure 2. Disassembling the Faucet runtime bytecode</div>
+</div>
+<div class="paragraph">
+<p>&#x7576;&#x4F60;&#x5C07;&#x4EA4;&#x6613;&#x767C;&#x9001;&#x5230;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x6642;&#xFF0C;&#x4EA4;&#x6613;&#x9996;&#x5148;&#x6703;&#x8207;&#x8A72;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;<strong>&#x8ABF;&#x5EA6;&#x54E1;&#xFF08;dispatcher&#xFF09;</strong>&#x9032;&#x884C;&#x4EA4;&#x4E92;&#x3002;&#x8ABF;&#x5EA6;&#x7A0B;&#x5F0F;&#x8B80;&#x5165;&#x4EA4;&#x6613;&#x7684;&#x6578;&#x64DA;&#x6B04;&#x4F4D;&#x4E26;&#x5C07;&#x5176;&#x767C;&#x9001;&#x5230;&#x9069;&#x7576;&#x7684;&#x51FD;&#x6578;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x719F;&#x6089;&#x7684;MSTORE&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x5728;&#x7DE8;&#x8B6F;&#x7684;Faucet.sol&#x5408;&#x7D04;&#x4E2D;&#x770B;&#x5230;&#x4EE5;&#x4E0B;&#x5275;&#x5EFA;&#xFF1A;</p>
+</div>
+<div id="faucet_instructions" class="listingblock">
+<div class="content">
+<pre>PUSH1 0x4
+CALLDATASIZE
+LT
+PUSH1 0x3f
+JUMPI</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&quot;PUSH1 0x4&quot; &#x5C07;0x4&#x7F6E;&#x65BC;&#x5806;&#x68E7;&#x9802;&#x90E8;&#xFF0C;&#x68E7;&#x521D;&#x59CB;&#x70BA;&#x7A7A;&#x3002;&#x201C;CALLDATASIZE&#x201D;&#x7372;&#x53D6;&#x63A5;&#x6536;&#x5230;&#x7684;&#x4EA4;&#x6613;&#x7684;calldata&#x7684;&#x5927;&#x5C0F;&#xFF08;&#x4EE5;&#x5B57;&#x7BC0;&#x70BA;&#x55AE;&#x4F4D;&#xFF09;&#x4E26;&#x5C07;&#x5176;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x4E2D;&#x3002;&#x7576;&#x524D;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 1. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">length of calldata from tx (msg.data)</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x4</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x662F;&#x201C;LT&#x201D;&#xFF0C;&#x662F;&#x201C;&#x5C0F;&#x65BC;&#xFF08;less than&#xFF09;&#x201D;&#x7684;&#x7E2E;&#x5BEB;&#x3002;LT&#x6307;&#x4EE4;&#x6AA2;&#x67E5;&#x5806;&#x68E7;&#x4E0A;&#x7684;&#x9802;&#x90E8;&#x9805;&#x662F;&#x5426;&#x5C0F;&#x65BC;&#x5806;&#x68E7;&#x4E0A;&#x7684;&#x4E0B;&#x4E00;&#x9805;&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5B83;&#x6AA2;&#x67E5;CALLDATASIZE&#x7684;&#x7D50;&#x679C;&#x662F;&#x5426;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x70BA;&#x4EC0;&#x9EBC;EVM&#x6703;&#x6AA2;&#x67E5;&#x4EA4;&#x6613;&#x7684;calldata&#x662F;&#x5426;&#x81F3;&#x5C11;&#x70BA;4&#x500B;&#x5B57;&#x7BC0;&#xFF1F;&#x56E0;&#x70BA;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;&#x6BCF;&#x500B;&#x51FD;&#x6578;&#x7531;&#x5176;keccak256&#x96DC;&#x6E4A;&#x7684;&#x524D;&#x56DB;&#x500B;&#x5B57;&#x7BC0;&#x6A19;&#x8B58;&#x3002;&#x901A;&#x904E;&#x5C07;&#x51FD;&#x6578;&#x7684;&#x540D;&#x7A31;&#x548C;&#x5B83;&#x6240;&#x63A1;&#x7528;&#x7684;&#x53C3;&#x6578;&#x653E;&#x5165;keccak256&#x96DC;&#x6E4A;&#x51FD;&#x6578;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x63A8;&#x532F;&#x51FA;&#x5B83;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x5408;&#x7D04;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x6709;&#xFF1A;</p>
+</div>
+<div id="faucet_function_identifier" class="listingblock">
+<div class="content">
+<pre class="highlight"><code>keccak256(&quot;withdraw(uint256)&quot;) = 0x2e1a7d4d...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x201C;withdraw&#xFF08;uint256&#xFF09;&#x201D;&#x51FD;&#x6578;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x662F;0x2e1a7d4d&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x5011;&#x662F;&#x7D50;&#x679C;&#x96DC;&#x6E4A;&#x7684;&#x524D;&#x56DB;&#x500B;&#x5B57;&#x7BC0;&#x3002;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x7E3D;&#x662F;4&#x500B;&#x5B57;&#x7BC0;&#x9577;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x767C;&#x9001;&#x7D66;&#x5408;&#x7D04;&#x7684;&#x4EA4;&#x6613;&#x7684;&#x6574;&#x500B;&#x6578;&#x64DA;&#x6B04;&#x4F4D;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x90A3;&#x9EBC;&#x9664;&#x975E;&#x5B9A;&#x7FA9;&#x4E86;<em>fallback&#x51FD;&#x6578;</em>&#xFF0C;&#x5426;&#x5247;&#x6C92;&#x6709;&#x4EA4;&#x6613;&#x53EF;&#x80FD;&#x8207;&#x4E4B;&#x901A;&#x4FE1;&#x7684;&#x51FD;&#x6578;&#x3002;&#x56E0;&#x70BA;&#x6211;&#x5011;&#x5728;Faucet.sol&#x4E2D;&#x5BE6;&#x73FE;&#x4E86;&#x9019;&#x6A23;&#x7684;fallback&#x51FD;&#x6578;&#xFF0C;&#x6240;&#x4EE5;&#x7576;calldata&#x7684;&#x9577;&#x5EA6;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x6642;&#xFF0C;EVM&#x6703;&#x8DF3;&#x8F49;&#x5230;&#x6B64;&#x51FD;&#x6578;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;msg.data&#x6B04;&#x4F4D;&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#xFF0C;LT&#x5C07;&#x5F48;&#x51FA;&#x5806;&#x68E7;&#x7684;&#x524D;&#x5169;&#x500B;&#x503C;&#x4E26;&#x5C07;1&#x63A8;&#x5230;&#x5176;&#x4E0A;&#x3002;&#x5426;&#x5247;&#xFF0C;&#x5B83;&#x6703;&#x63A8;&#x5165;0&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x5047;&#x8A2D;&#x767C;&#x9001;&#x7D66;&#x6211;&#x5011;&#x7684;&#x5408;&#x7D04;&#x7684;transaciton&#x7684;msg.data&#x6B04;&#x4F4D;<em>was</em>&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x201C;PUSH1 0x3f&#x201D;&#x6307;&#x4EE4;&#x5C07;&#x5B57;&#x7BC0;&#x201C;0x3f&#x201D;&#x58D3;&#x5165;&#x5806;&#x68E7;&#x3002;&#x5728;&#x6B64;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 2. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x3f</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x662F;&#x201C;JUMPI&#x201D;&#xFF0C;&#x4EE3;&#x8868;&#x201C;jump if&#x201D;&#x3002;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x5982;&#x4E0B;&#xFF1A;</p>
+</div>
+<div id="faucet_jump_instruction_text" class="listingblock">
+<div class="content">
+<pre>jumpi(label, cond) // Jump to &quot;label&quot; if &quot;cond&quot; is true</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x201C;label&#x201D;&#x662F;0x3f&#xFF0C;&#x9019;&#x662F;&#x6211;&#x5011;&#x7684;fallback&#x51FD;&#x6578;&#x5B58;&#x5728;&#x65BC;&#x6211;&#x5011;&#x7684;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x4E2D;&#x7684;&#x5730;&#x65B9;&#x3002;&#x201C;cond&#x201D;&#x53C3;&#x6578;&#x70BA;1&#xFF0C;&#x5B83;&#x4F86;&#x81EA;&#x4E4B;&#x524D;LT&#x6307;&#x4EE4;&#x7684;&#x7D50;&#x679C;&#x3002;&#x8981;&#x5C07;&#x6574;&#x500B;&#x5E8F;&#x5217;&#x653E;&#x5165;&#x55AE;&#x8A5E;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4EA4;&#x6613;&#x6578;&#x64DA;&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x5247;&#x5408;&#x7D04;&#x5C07;&#x8DF3;&#x8F49;&#x5230;fallback&#x51FD;&#x6578;&#x3002;</p>
+</div>
+<div id="Faucet_jumpi_instruction" class="imageblock">
+<div class="content">
+<img src="images/Faucet_jumpi_instruction.png" alt="JUMPI instruction leading to fallback function">
+</div>
+<div class="title">Figure 3. JUMPI instruction leading to fallback function</div>
+</div>
+<div class="paragraph">
+<p>&#x6211;&#x5011;&#x4F86;&#x770B;&#x4E00;&#x4E0B;&#x8ABF;&#x5EA6;&#x54E1;&#x7684;&#x6838;&#x5FC3;&#x7A0B;&#x5F0F;&#x78BC;&#x584A;&#x3002;&#x5047;&#x8A2D;&#x6211;&#x5011;&#x6536;&#x5230;&#x7684;&#x9577;&#x5EA6;&#x5927;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x7684;calldata&#xFF0C;&#x201C;JUMPI&#x201D;&#x6307;&#x4EE4;&#x4E0D;&#x6703;&#x8DF3;&#x8F49;&#x5230;&#x56DE;&#x9000;&#x51FD;&#x6578;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x7A0B;&#x5F0F;&#x78BC;&#x57F7;&#x884C;&#x5C07;&#x9075;&#x5FAA;&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#xFF1A;</p>
+</div>
+<div id="faucet_instructions" class="listingblock">
+<div class="content">
+<pre>PUSH1 0x0
+CALLDATALOAD
+PUSH29 0x1000000...
+SWAP1
+DIV
+PUSH4 0xffffffff
+AND
+DUP1
+PUSH4 0x2e1a7d4d
+EQ
+PUSH1 0x41
+JUMPI</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x201C;PUSH1 0x0&#x201D;&#x5C07;0&#x58D3;&#x5165;&#x5806;&#x68E7;&#xFF0C;&#x5426;&#x5247;&#x70BA;&#x7A7A;&#x3002;&#x201C;CALLDATALOAD&#x201D;&#x63A5;&#x53D7;&#x767C;&#x9001;&#x5230;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;calldata&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F5C;&#x70BA;&#x53C3;&#x6578;&#xFF0C;&#x4E26;&#x5F9E;&#x8A72;&#x7D22;&#x5F15;&#x8B80;&#x53D6;32&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</div>
+<div id="faucet_calldataload_instruction_text" class="listingblock">
+<div class="content">
+<pre>calldataload(p) // call data starting from position p (32 bytes)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x7531;&#x65BC;0&#x662F;&#x5F9E;PUSH1 0x0&#x547D;&#x4EE4;&#x50B3;&#x905E;&#x7D66;&#x5B83;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x6B64;CALLDATALOAD&#x5F9E;&#x5B57;&#x7BC0;0&#x958B;&#x59CB;&#x8B80;&#x53D6;32&#x5B57;&#x7BC0;&#x7684;calldata&#xFF0C;&#x7136;&#x5F8C;&#x5C07;&#x5176;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x7684;&#x9802;&#x90E8;&#xFF08;&#x5728;&#x5F48;&#x51FA;&#x539F;&#x59CB;0x0&#x4E4B;&#x5F8C;&#xFF09;&#x3002;&#x5728;&#x201C;PUSH29 0x1000000 &#x2026;&#x200B;&#x201D;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 3. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x1000000&#x2026;&#x200B; (29 bytes in length)</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32 bytes of calldata starting at byte 0</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x201C;SWAP1&#x201D;&#x7528;&#x5B83;&#x5F8C;&#x9762;&#x7684;<em>&#x7B2C;i&#x500B;</em>&#x5143;&#x7D20;&#x4EA4;&#x63DB;&#x5806;&#x68E7;&#x9802;&#x90E8;&#x5143;&#x7D20;&#x3002;&#x5728;&#x9019;&#x88E1;&#xFF0C;&#x5B83;&#x8207;&#x5BC6;&#x9470;&#x6578;&#x64DA;&#x4EA4;&#x63DB;0x1000000 &#x2026;&#x200B; &#x65B0;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 4. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32 bytes of calldata starting at byte 0</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x1000000&#x2026;&#x200B; (29 bytes in length)</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x662F;&#x201C;DIV&#x201D;&#xFF0C;&#x5176;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+</div>
+<div id="faucet_div_instruction_text" class="listingblock">
+<div class="content">
+<pre>div(x, y) // x / y</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x9019;&#x88E1;&#xFF0C;x = 32&#x5B57;&#x7BC0;&#x7684;calldata&#x5F9E;&#x5B57;&#x7BC0;0&#x958B;&#x59CB;&#xFF0C;y = 0x100000000 &#x2026;&#x200B;&#xFF08;&#x7E3D;&#x5171;29&#x500B;&#x5B57;&#x7BC0;&#xFF09;&#x3002;&#x4F60;&#x80FD;&#x60F3;&#x5230;&#x8ABF;&#x5EA6;&#x54E1;&#x70BA;&#x4EC0;&#x9EBC;&#x8981;&#x9032;&#x884C;&#x5283;&#x5206;&#x55CE;&#xFF1F;&#x9019;&#x662F;&#x4E00;&#x500B;&#x63D0;&#x793A;&#xFF1A;&#x6211;&#x5011;&#x5F9E;&#x7D22;&#x5F15;0&#x958B;&#x59CB;&#x5F9E;calldata&#x8B80;&#x53D6;32&#x500B;&#x5B57;&#x7BC0;&#x3002;&#x8A72;calldata&#x7684;&#x524D;&#x56DB;&#x500B;&#x5B57;&#x7BC0;&#x662F;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6211;&#x5011;&#x4E4B;&#x524D;&#x63A8;&#x9001;&#x7684;0x100000000 &#x2026;&#x200B;.&#x9577;&#x5EA6;&#x70BA;29&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x7531;&#x958B;&#x982D;&#x7684;1&#x7D44;&#x6210;&#xFF0C;&#x5F8C;&#x8DDF;&#x5168;0&#x3002;&#x5C07;&#x6211;&#x5011;&#x7684;32&#x5B57;&#x7BC0;&#x7684;calldata&#x9664;&#x4EE5;&#x6B64;0x100000000 &#x2026;&#x200B;.&#x5C07;&#x53EA;&#x7559;&#x4E0B;&#x5F9E;&#x7D22;&#x5F15;0&#x958B;&#x59CB;&#x7684;callataload&#x7684;<em>topmost 4&#x5B57;&#x7BC0;</em>&#x9019;&#x56DB;&#x500B;&#x5B57;&#x7BC0; - &#x5F9E;&#x7D22;&#x5F15;0&#x958B;&#x59CB;&#x7684;calldataload&#x4E2D;&#x7684;&#x524D;&#x56DB;&#x500B;&#x5B57;&#x7BC0; - &#x662F;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#xFF0C;&#x4E26;&#x4E14;&#x9019;&#x5C31;&#x662F;EVM&#x5982;&#x4F55;&#x63D0;&#x53D6;&#x8A72;&#x6B04;&#x4F4D;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x6E05;&#x695A;&#x9019;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x9019;&#x6A23;&#x60F3;&#xFF1A;&#x5728;base<sub>10</sub>&#xFF0C;1234000/1000 = 1234&#x3002;&#x5728;base<sub>16</sub>&#x4E2D;&#xFF0C;&#x9019;&#x6C92;&#x6709;&#x4EC0;&#x9EBC;&#x4E0D;&#x540C;&#x3002;&#x4E0D;&#x662F;&#x6BCF;&#x500B;&#x5730;&#x65B9;&#x90FD;&#x662F;10&#x7684;&#x500D;&#x6578;&#xFF0C;&#x5B83;&#x662F;16&#x7684;&#x500D;&#x6578;&#x3002;&#x6B63;&#x5982;&#x5728;&#x6211;&#x5011;&#x7684;&#x8F03;&#x5C0F;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x9664;&#x4EE5;10<sup>3</sup>&#xFF08;1000&#xFF09;&#x53EA;&#x4FDD;&#x7559;&#x6700;&#x9802;&#x90E8;&#x7684;&#x6578;&#x5B57;&#xFF0C;&#x5C07;&#x6211;&#x5011;&#x7684;32&#x5B57;&#x7BC0;&#x57FA;&#x6578;<sub>16</sub>&#x503C;&#x9664;&#x4EE5;16<sup>29</sup>&#x505A;&#x540C;&#x6A23;&#x7684;&#x4E8B;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>DIV&#xFF08;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#xFF09;&#x7684;&#x7D50;&#x679C;&#x88AB;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x7684;&#x65B0;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 5. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">function identifier sent in msg.data</p></td>
+</tr>
+</tfoot>
+</table>
+<div class="paragraph">
+<p>&#x7531;&#x65BC;&#x201C;PUSH4 0xffffffff&#x201D;&#x548C;&#x201C;AND&#x201D;&#x6307;&#x4EE4;&#x662F;&#x5197;&#x9918;&#x7684;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x5FFD;&#x7565;&#x5B83;&#x5011;&#xFF0C;&#x56E0;&#x70BA;&#x5806;&#x68E7;&#x5728;&#x5B8C;&#x6210;&#x5F8C;&#x5C07;&#x4FDD;&#x6301;&#x4E0D;&#x8B8A;&#x3002;&#x201C;DUP1&#x201D;&#x6307;&#x4EE4;&#x8907;&#x88FD;&#x5806;&#x68E7;&#x4E0A;&#x7684;1<sup>st</sup>&#x9805;&#xFF0C;&#x9019;&#x662F;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x3002;&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x201C;PUSH4 0x2e1a7d4d&#x201D;&#x5C07;&#x62BD;&#x53D6;&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x7684;&#x8A08;&#x7B97;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x3002;&#x5806;&#x68E7;&#x73FE;&#x5728;&#x770B;&#x8D77;&#x4F86;&#x5982;&#x4E0B;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 6. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x2e1a7d4d</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">function identifier sent in msg.data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">function identifier sent in msg.data</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x201C;EQ&#x201D;&#x5F48;&#x51FA;&#x5806;&#x68E7;&#x7684;&#x524D;&#x5169;&#x9805;&#x4E26;&#x5C0D;&#x5B83;&#x5011;&#x9032;&#x884C;&#x6BD4;&#x8F03;&#x3002;&#x9019;&#x662F;&#x8ABF;&#x5EA6;&#x7A0B;&#x5F0F;&#x5B8C;&#x6210;&#x5176;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#x7684;&#x5730;&#x65B9;&#xFF1A;&#x5B83;&#x6BD4;&#x8F03;&#x4EA4;&#x6613;&#x7684;msg.data&#x6B04;&#x4F4D;&#x4E2D;&#x767C;&#x9001;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x662F;&#x5426;&#x8207;withdraw&#xFF08;uint256&#xFF09;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x5B83;&#x5011;&#x76F8;&#x7B49;&#xFF0C;&#x5247;EQ&#x5C07;1&#x63A8;&#x5165;&#x5806;&#x68E7;&#xFF0C;&#x9019;&#x6700;&#x7D42;&#x5C07;&#x7528;&#x65BC;&#x8DF3;&#x8F49;&#x5230;fallback&#x51FD;&#x6578;&#x3002;&#x5426;&#x5247;&#xFF0C;EQ&#x5C07;0&#x63A8;&#x5165;&#x5806;&#x68E7;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5047;&#x8A2D;&#x767C;&#x9001;&#x7D66;&#x6211;&#x5011;&#x5408;&#x7D04;&#x7684;&#x4EA4;&#x6613;&#x78BA;&#x5BE6;&#x4EE5;withdraw&#xFF08;uint256&#xFF09;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x958B;&#x982D;&#xFF0C;&#x6211;&#x5011;&#x7684;&#x65B0;&#x68E7;&#x770B;&#x8D77;&#x4F86;&#x5982;&#x4E0B;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 7. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">function identifier sent in msg.data</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x63A5;&#x4E0B;&#x4F86;&#xFF0C;&#x6211;&#x5011;&#x6709;&#x201C;PUSH1 0x41&#x201D;&#xFF0C;&#x9019;&#x662F;withdraw&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x5728;&#x5408;&#x7D04;&#x4E2D;&#x7684;&#x5730;&#x5740;&#x3002;&#x5728;&#x6B64;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+</div>
+<table class="tableblock frame-topbot grid-all" style="width: 40%;">
+<caption class="title">Table 8. Current stack</caption>
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Stack</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0x41</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">function identifier sent in msg.data</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x662F;JUMPI&#x6307;&#x4EE4;&#xFF0C;&#x5B83;&#x518D;&#x6B21;&#x63A5;&#x53D7;&#x5806;&#x68E7;&#x4E0A;&#x7684;&#x524D;&#x5169;&#x500B;&#x5143;&#x7D20;&#x4F5C;&#x70BA;&#x53C3;&#x6578;&#x3002;&#x5728;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x6211;&#x5011;&#x6709;&#x201C;jumpi&#xFF08;0x41,1&#xFF09;&#x201D;&#xFF0C;&#x5B83;&#x544A;&#x8A34;EVM&#x57F7;&#x884C;&#x8DF3;&#x8F49;&#x5230;withdraw&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="evm_tools_references">EVM&#x5DE5;&#x5177;&#x53C3;&#x8003;</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>[ByteCode To Opcode Disassembler](<a href="https://etherscan.io/opcode-tool" class="bare" target="_blank">https://etherscan.io/opcode-tool</a>) (&#x7528;&#x65BC;&#x6AA2;&#x67E5;/&#x8ABF;&#x8A66;&#x7DE8;&#x8B6F;&#x662F;&#x5426;&#x5B8C;&#x6574;&#x904B;&#x884C;&#xFF0C;&#x5982;&#x679C;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x672A;&#x767C;&#x4F48;&#x5247;&#x53EF;&#x7528;&#x65BC;&#x9006;&#x5411;&#x5DE5;&#x7A0B;)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x5341;&#x4E94;&#x7AE0;#,&#x4E0B;&#x4E00;&#x7AE0;&#xFF1A;&#x5171;&#x8B58;&gt;&gt;</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第十三章.html" class="navigation navigation-prev " aria-label="Previous page: 第十三章gas（Gas）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第十五章.html" class="navigation navigation-next " aria-label="Next page: 第十五章共識">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十四章以太坊虛擬機","level":"1.17","depth":1,"next":{"title":"第十五章共識","level":"1.18","depth":1,"path":"第十五章.asciidoc","ref":"第十五章.asciidoc","articles":[]},"previous":{"title":"第十三章gas（Gas）","level":"1.16","depth":1,"path":"第十三章.asciidoc","ref":"第十三章.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第十四章.asciidoc","mtime":"2019-08-26T19:27:31.894Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-26T19:29:19.280Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
