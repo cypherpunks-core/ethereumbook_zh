@@ -1,0 +1,679 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第十三章gas（Gas） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第十四章.html" />
+    
+    
+    <link rel="prev" href="第十二章.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="前言.html">
+            
+                <a href="前言.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="術語.html">
+            
+                <a href="術語.html">
+            
+                    
+                    術語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第一章.html">
+            
+                <a href="第一章.html">
+            
+                    
+                    第一章 什麼是以太坊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第二章.html">
+            
+                <a href="第二章.html">
+            
+                    
+                    第二章以太坊基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第三章.html">
+            
+                <a href="第三章.html">
+            
+                    
+                    第三章以太坊客戶端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第四章.html">
+            
+                <a href="第四章.html">
+            
+                    
+                    第四章以太坊測試網（Testnets）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第五章.html">
+            
+                <a href="第五章.html">
+            
+                    
+                    第五章密鑰，地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第六章.html">
+            
+                <a href="第六章.html">
+            
+                    
+                    第六章錢包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第七章.html">
+            
+                <a href="第七章.html">
+            
+                    
+                    第七章交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第八章.html">
+            
+                <a href="第八章.html">
+            
+                    
+                    第八章智能合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第九章.html">
+            
+                <a href="第九章.html">
+            
+                    
+                    第九章開發工具，框架和庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十章.html">
+            
+                <a href="第十章.html">
+            
+                    
+                    第十章Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="第十一章.html">
+            
+                <a href="第十一章.html">
+            
+                    
+                    第十一章去中心化應用 (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="第十二章.html">
+            
+                <a href="第十二章.html">
+            
+                    
+                    第十二章Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="第十三章.html">
+            
+                <a href="第十三章.html">
+            
+                    
+                    第十三章gas（Gas）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="第十四章.html">
+            
+                <a href="第十四章.html">
+            
+                    
+                    第十四章以太坊虛擬機
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="第十五章.html">
+            
+                <a href="第十五章.html">
+            
+                    
+                    第十五章共識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="第十六章.html">
+            
+                <a href="第十六章.html">
+            
+                    
+                    第十六章Vyper: 面向合約的程式語言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="第十七章.html">
+            
+                <a href="第十七章.html">
+            
+                    
+                    第十七章節點間的通信 —— 一個簡單的視角
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="第十八章.html">
+            
+                <a href="第十八章.html">
+            
+                    
+                    第十八章以太坊標準
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="第十九章.html">
+            
+                <a href="第十九章.html">
+            
+                    
+                    第十九章以太坊分叉歷史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第十三章gas（Gas）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x5341;&#x4E8C;&#x7AE0;#,&#x4E0A;&#x4E00;&#x7AE0;&#xFF1A;Oracles&gt;&gt;</p>
+</div>
+<div class="sect1">
+<h2 id="gas">gas&#xFF08;Gas&#xFF09;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Gas</strong>&#x662F;&#x4EE5;&#x592A;&#x574A;&#x7528;&#x65BC;&#x8861;&#x91CF;&#x7A0B;&#x5F0F;&#x57F7;&#x884C;&#x4E00;&#x500B;&#x6216;&#x4E00;&#x7D44;&#x52D5;&#x4F5C;&#x6240;&#x9700;&#x8A08;&#x7B97;&#x91CF;&#x7684;&#x55AE;&#x4F4D;&#x3002;&#x4EA4;&#x6613;&#x6216;&#x5408;&#x7D04;&#x57F7;&#x884C;&#x7684;&#x6BCF;&#x9805;&#x64CD;&#x4F5C;&#x90FD;&#x9700;&#x8981;&#x4E00;&#x5B9A;&#x6578;&#x91CF;&#x7684;gas; &#x6240;&#x9700;&#x7684;gas&#x6578;&#x91CF;&#x8207;&#x6B63;&#x5728;&#x57F7;&#x884C;&#x7684;&#x8A08;&#x7B97;&#x6B65;&#x9A5F;&#x7684;&#x985E;&#x578B;&#x548C;&#x6578;&#x91CF;&#x6709;&#x95DC;&#x3002;&#x8207;&#x50C5;&#x4EE5;&#x5343;&#x5B57;&#x7BC0;&#xFF08;kB&#xFF09;&#x8A08;&#x7B97;&#x4EA4;&#x6613;&#x898F;&#x6A21;&#x7684;&#x6BD4;&#x7279;&#x5E63;&#x4EA4;&#x6613;&#x8CBB;&#x76F8;&#x6BD4;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x4EA4;&#x6613;&#x8CBB;&#x5FC5;&#x9808;&#x8003;&#x616E;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7A0B;&#x5F0F;&#x78BC;&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x7684;&#x4EFB;&#x610F;&#x6578;&#x91CF;&#x7684;&#x8A08;&#x7B97;&#x6B65;&#x9A5F;&#x3002;&#x7A0B;&#x5F0F;&#x57F7;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x6578;&#x8D8A;&#x591A;&#xFF0C;&#x904B;&#x884C;&#x5B8C;&#x6210;&#x7684;&#x6210;&#x672C;&#x5C31;&#x8D8A;&#x9AD8;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6BCF;&#x6B21;&#x64CD;&#x4F5C;&#x90FD;&#x9700;&#x8981;&#x56FA;&#x5B9A;&#x91CF;&#x7684;gas&#x3002;&#x4EE5;&#x592A;&#x574A;&#x9EC3;&#x76AE;&#x66F8;&#x7684;&#x7684;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#xFF1A;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x6DFB;&#x52A0;&#x5169;&#x500B;&#x6578;&#x5B57;&#x9700;&#x8981;3&#x500B;gas</p>
+</li>
+<li>
+<p>&#x8A08;&#x7B97;Keccak256&#x96DC;&#x6E4A;&#x503C;&#xFF0C;&#x9700;&#x8981;30&#x500B;gas+ &#x6BCF;256&#x4F4D;&#x6578;&#x64DA;&#x88AB;&#x96DC;&#x6E4A;6&#x500B;gas</p>
+</li>
+<li>
+<p>&#x767C;&#x9001;&#x4EA4;&#x6613;&#x6210;&#x672C;&#x70BA;21000 gas</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>gas&#x662F;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x91CD;&#x8981;&#x7D44;&#x6210;&#x90E8;&#x5206;&#xFF0C;&#x5177;&#x6709;&#x96D9;&#x91CD;&#x4F5C;&#x7528;&#x3002;&#x4E00;&#xFF0C;&#x4F5C;&#x70BA;&#x4EE5;&#x592A;&#x574A;&#x50F9;&#x683C;&#xFF08;&#x5177;&#x6709;&#x6CE2;&#x52D5;&#x6027;&#xFF09;&#x548C;&#x7926;&#x5DE5;&#x5C0D;&#x5176;&#x5DE5;&#x4F5C;&#x7684;&#x734E;&#x52F5;&#x4E4B;&#x9593;&#x7684;&#x62BD;&#x8C61;&#x5C64;&#x3002;&#x53E6;&#x4E00;&#x7A2E;&#x662F;&#x62B5;&#x79A6;&#x62D2;&#x7D55;&#x670D;&#x52D9;&#x653B;&#x64CA;&#x3002;&#x70BA;&#x4E86;&#x9632;&#x6B62;&#x7DB2;&#x8DEF;&#x4E2D;&#x7684;&#x610F;&#x5916;&#x6216;&#x60E1;&#x610F;&#x7121;&#x9650;&#x8FF4;&#x5708;&#x6216;&#x5176;&#x4ED6;&#x8A08;&#x7B97;&#x6D6A;&#x8CBB;&#xFF0C;&#x6BCF;&#x500B;&#x4EA4;&#x6613;&#x7684;&#x767C;&#x8D77;&#x8005;&#x9700;&#x8981;&#x8A2D;&#x7F6E;&#x4ED6;&#x5011;&#x9858;&#x610F;&#x82B1;&#x8CBB;&#x5728;gas&#x4E0A;&#x7684;&#x91D1;&#x984D;&#x7684;&#x9650;&#x5236;&#x3002;&#x56E0;&#x6B64;&#xFF0C;gas&#x7CFB;&#x7D71;&#x963B;&#x6B62;&#x653B;&#x64CA;&#x8005;&#x767C;&#x9001;&#x5783;&#x573E;&#x90F5;&#x4EF6;&#x4EA4;&#x6613;&#xFF0C;&#x56E0;&#x70BA;&#x4ED6;&#x5011;&#x5FC5;&#x9808;&#x6309;&#x6BD4;&#x4F8B;&#x652F;&#x4ED8;&#x4ED6;&#x5011;&#x6D88;&#x8017;&#x7684;&#x8A08;&#x7B97;&#xFF0C;&#x5E36;&#x5BEC;&#x548C;&#x5132;&#x5B58;&#x8CC7;&#x6E90;&#x3002;</p>
+</div>
+<div class="sect2">
+<h3 id="__">&#x505C;&#x6A5F;&#x554F;&#x984C;</h3>
+<div class="paragraph">
+<p>&#x4EA4;&#x6613;&#x8CBB;&#x548C;&#x6703;&#x8A08;&#x7684;&#x60F3;&#x6CD5;&#x4F3C;&#x4E4E;&#x5F88;&#x5BE6;&#x7528;&#xFF0C;&#x4F46;&#x4F60;&#x53EF;&#x80FD;&#x60F3;&#x77E5;&#x9053;&#x70BA;&#x4EC0;&#x9EBC;&#x4EE5;&#x592A;&#x574A;&#x9996;&#x5148;&#x9700;&#x8981;gas&#x3002;gas&#x662F;&#x95DC;&#x9375;&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x4E0D;&#x50C5;&#x53EF;&#x4EE5;&#x89E3;&#x6C7A;&#x505C;&#x6A5F;&#x554F;&#x984C;&#xFF0C;&#x800C;&#x4E14;&#x5C0D;&#x5B89;&#x5168;&#x548C;&#x6D3B;&#x529B;&#x4E5F;&#x81F3;&#x95DC;&#x91CD;&#x8981;&#x3002;&#x4EC0;&#x9EBC;&#x662F;&#x505C;&#x6A5F;&#x554F;&#x984C;&#xFF0C;&#x5B89;&#x5168;&#x548C;&#x6D3B;&#x529B;&#xFF0C;&#x70BA;&#x4EC0;&#x9EBC;&#x8981;&#x95DC;&#x5FC3;&#xFF1F;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__gas">&#x652F;&#x4ED8;gas</h3>
+<div class="paragraph">
+<p>&#x96D6;&#x7136;gas&#x6709;&#x50F9;&#x683C;&#xFF0C;&#x4F46;&#x5B83;&#x4E0D;&#x80FD;&#x201C;&#x64C1;&#x6709;&#x201D;&#x4E5F;&#x4E0D;&#x80FD;&#x201C;&#x82B1;&#x201D;&#x3002;gas&#x50C5;&#x5B58;&#x5728;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F;&#xFF08;EVM&#xFF09;&#x5167;&#x90E8;&#xFF0C;&#x4F5C;&#x70BA;&#x8A08;&#x7B97;&#x5DE5;&#x4F5C;&#x91CF;&#x7684;&#x8A08;&#x6578;&#x3002;&#x767C;&#x8D77;&#x65B9;&#x88AB;&#x6536;&#x53D6;ether&#x4EA4;&#x6613;&#x8CBB;&#xFF0C;&#x7136;&#x5F8C;&#x8F49;&#x63DB;&#x70BA;gas&#xFF0C;&#x7136;&#x5F8C;&#x8F49;&#x56DE;&#x5230;ether&#xFF0C;&#x4F5C;&#x70BA;&#x7926;&#x5DE5;&#x7684;&#x584A;&#x734E;&#x52F5;&#x3002;&#x9019;&#x4E9B;&#x8F49;&#x63DB;&#x6B65;&#x9A5F;&#x7528;&#x65BC;&#x5C07;&#x8A08;&#x7B97;&#x7684;&#x50F9;&#x683C;&#xFF08;&#x8207;&#x201C;&#x5DE5;&#x4F5C;&#x91CF;&#x201D;&#x76F8;&#x95DC;&#xFF09;&#x8207;ether&#x7684;&#x50F9;&#x683C;&#xFF08;&#x8207;&#x5E02;&#x5834;&#x6CE2;&#x52D5;&#x76F8;&#x95DC;&#xFF09;&#x5206;&#x958B;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gas_gas">gas&#x6210;&#x672C;&#x8207;gas&#x50F9;&#x683C;</h3>
+<div class="paragraph">
+<p>&#x96D6;&#x7136;<strong>gas&#x6210;&#x672C;</strong>&#x662F;EVM&#x4E2D;&#x57F7;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x6B65;&#x9A5F;&#x7684;&#x5EA6;&#x91CF;&#xFF0C;&#x4F46;gas&#x672C;&#x8EAB;&#x4E5F;&#x5177;&#x6709;&#x4EE5;ether&#x6E2C;&#x91CF;&#x7684;<strong>gas&#x50F9;&#x683C;</strong>&#x3002;&#x5728;&#x57F7;&#x884C;&#x4EA4;&#x6613;&#x6642;&#xFF0C;&#x767C;&#x8D77;&#x65B9;&#x6307;&#x5B9A;&#x4ED6;&#x5011;&#x9858;&#x610F;&#x70BA;&#x6BCF;&#x500B;gas&#x55AE;&#x4F4D;&#x652F;&#x4ED8;&#x7684;gas&#x50F9;&#x683C;&#xFF08;&#x4EE5;ether&#x70BA;&#x55AE;&#x4F4D;&#xFF09;&#xFF0C;&#x5141;&#x8A31;&#x5E02;&#x5834;&#x6C7A;&#x5B9A;ether&#x7684;&#x50F9;&#x683C;&#x8207;&#x8A08;&#x7B97;&#x64CD;&#x4F5C;&#x7684;&#x6210;&#x672C;&#x4E4B;&#x9593;&#x7684;&#x95DC;&#x4FC2;&#xFF08;&#x4EE5;gas&#x8861;&#x91CF;&#xFF09; &#x3002;</p>
+</div>
+<div class="paragraph">
+<p><code>total gas used * gas price paid = transaction fee</code>&#xFF0C;&#x4EE5;ether&#x70BA;&#x55AE;&#x4F4D;</p>
+</div>
+<div class="paragraph">
+<p>&#x6B64;&#x91D1;&#x984D;&#x5C07;&#x5728;&#x4EA4;&#x6613;&#x57F7;&#x884C;&#x958B;&#x59CB;&#x6642;&#x5F9E;&#x767C;&#x8D77;&#x65B9;&#x7684;&#x5E33;&#x6236;&#x4E2D;&#x6263;&#x9664;&#x3002;&#x767C;&#x8D77;&#x65B9;&#x4E0D;&#x662F;&#x8A2D;&#x7F6E;&#x201C;total gas used&#x201D;&#xFF0C;&#x800C;&#x662F;&#x8A2D;&#x7F6E;<strong>gas limit</strong>&#xFF0C;&#x8A72;&#x9650;&#x5236;&#x61C9;&#x8DB3;&#x4EE5;&#x8986;&#x84CB;&#x57F7;&#x884C;&#x4EA4;&#x6613;&#x6240;&#x9700;&#x7684;gas&#x91CF;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gas_gas_2">gas&#x6210;&#x672C;&#x9650;&#x5236;&#x548C;gas&#x8017;&#x76E1;</h3>
+<div class="paragraph">
+<p>&#x5728;&#x767C;&#x9001;&#x4EA4;&#x6613;&#x4E4B;&#x524D;&#xFF0C;&#x767C;&#x8D77;&#x65B9;&#x5FC5;&#x9808;&#x6307;&#x5B9A;<strong>gas limit</strong>  - &#x4ED6;&#x5011;&#x9858;&#x610F;&#x8CFC;&#x8CB7;&#x7684;&#x6700;&#x5927;gas&#x6578;&#x91CF;&#x3002;&#x4ED6;&#x5011;&#x9084;&#x5FC5;&#x9808;&#x6307;&#x5B9A;<strong>gas price</strong> - &#x4ED6;&#x5011;&#x9858;&#x610F;&#x70BA;&#x6BCF;&#x55AE;&#x4F4D;gas&#x652F;&#x4ED8;&#x7684;&#x4EE5;&#x592A;&#x50F9;&#x683C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4EE5;ether&#x8A08;&#x7B97;&#x7684;<code>gas limit * gas price</code>&#x5728;&#x4EA4;&#x6613;&#x57F7;&#x884C;&#x958B;&#x59CB;&#x6642;&#x5F9E;&#x767C;&#x8D77;&#x65B9;&#x7684;&#x5E33;&#x6236;&#x4E2D;&#x6263;&#x9664;&#x4F5C;&#x70BA;&#x5B58;&#x6B3E;&#x3002;&#x9019;&#x662F;&#x70BA;&#x4E86;&#x9632;&#x6B62;&#x767C;&#x9001;&#x8005;&#x5728;&#x57F7;&#x884C;&#x4E2D;&#x671F;&#x201C;&#x7834;&#x7522;&#x201D;&#x4E26;&#x4E14;&#x7121;&#x6CD5;&#x652F;&#x4ED8;gas&#x8CBB;&#x7528;&#x3002;&#x7531;&#x65BC;&#x9019;&#x500B;&#x539F;&#x56E0;&#xFF0C;&#x7528;&#x6236;&#x4E5F;&#x7121;&#x6CD5;&#x8A2D;&#x7F6E;&#x8D85;&#x51FA;&#x5176;&#x5E33;&#x6236;&#x9918;&#x984D;&#x7684;gas&#x9650;&#x5236;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7406;&#x60F3;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x767C;&#x8D77;&#x65B9;&#x5C07;&#x8A2D;&#x7F6E;&#x4E00;&#x500B;&#x9AD8;&#x65BC;&#x6216;&#x7B49;&#x65BC;&#x5BE6;&#x969B;&#x4F7F;&#x7528;&#x7684;gas&#x7684;gas&#x9650;&#x5236;&#x3002;&#x5982;&#x679C;gas&#x9650;&#x5236;&#x8A2D;&#x7F6E;&#x9AD8;&#x65BC;&#x6D88;&#x8017;&#x7684;gas&#x91CF;&#xFF0C;&#x767C;&#x8CA8;&#x4EBA;&#x5C07;&#x6536;&#x5230;&#x8D85;&#x984D;&#x91D1;&#x984D;&#x7684;&#x9000;&#x6B3E;&#xFF0C;&#x56E0;&#x70BA;&#x7926;&#x5DE5;&#x53EA;&#x7372;&#x5F97;&#x4ED6;&#x5011;&#x5BE6;&#x969B;&#x5DE5;&#x4F5C;&#x7684;&#x88DC;&#x511F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x4E0B;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p>`&#xFF08;gas&#x9650;&#x5236; - &#x591A;&#x9918;gas&#xFF09;*gas&#x50F9;&#x683C;&#x4EE5;&#x592A;&#x4EE5;&#x7926;&#x584A;&#x4F5C;&#x70BA;&#x584A;&#x734E;&#x52F5;</p>
+</div>
+<div class="paragraph">
+<p><code>(gas limit - excess gas) * gas price</code> ether&#x4F5C;&#x70BA;&#x7926;&#x5DE5;&#x7684;&#x5340;&#x584A;&#x734E;&#x52F5;</p>
+</div>
+<div class="paragraph">
+<p><code>excess gas * gas price</code> ether&#x9000;&#x56DE;&#x767C;&#x8D77;&#x65B9;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;gas&#x8D85;&#x904E;&#x898F;&#x5B9A;&#x7684;gas&#x9650;&#x5236;&#xFF0C;&#x5373;&#x5982;&#x679C;&#x5728;&#x57F7;&#x884C;&#x671F;&#x9593;&#x4EA4;&#x6613;&#x201C;runs out of gas&#x201D;&#xFF0C;&#x5247;&#x64CD;&#x4F5C;&#x7D42;&#x6B62;&#x3002;&#x96D6;&#x7136;&#x4EA4;&#x6613;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x4F46;&#x7531;&#x65BC;&#x7926;&#x5DE5;&#x5DF2;&#x7D93;&#x5B8C;&#x6210;&#x4E86;&#x8A08;&#x7B97;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E0D;&#x6703;&#x9000;&#x56DE;&#x767C;&#x9001;&#x4EBA;&#x7684;&#x4EA4;&#x6613;&#x8CBB;&#x7528;&#xFF0C;&#x7926;&#x5DE5;&#x56E0;&#x6B64;&#x5F97;&#x5230;&#x88DC;&#x511F;&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="___2">&#x7BC4;&#x4F8B;</h4>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4EA4;&#x6613;&#x662F;&#x5F9E;&#x5916;&#x90E8;&#x64C1;&#x6709;&#x5E33;&#x6236;&#xFF08;EOA&#xFF09;&#x767C;&#x9001;&#x7684;&#xFF0C;&#x5247;&#x5F9E;EOA&#x7684;&#x9918;&#x984D;&#x4E2D;&#x6263;&#x9664;gas&#x8CBB;&#x3002;&#x63DB;&#x53E5;&#x8A71;&#x8AAA;&#xFF0C;&#x4EA4;&#x6613;&#x7684;&#x767C;&#x8D77;&#x4EBA;&#x6B63;&#x5728;&#x652F;&#x4ED8;gas&#x8CBB;&#x3002;&#x767C;&#x8D77;&#x4EBA;&#x70BA;&#x4EA4;&#x6613;&#x6D88;&#x8017;&#x7684;&#x7E3D;gas&#x4EE5;&#x53CA;&#x96A8;&#x5F8C;&#x7684;&#x4EFB;&#x4F55;&#x5B50;&#x57F7;&#x884C;&#x63D0;&#x4F9B;&#x8CC7;&#x91D1;&#x3002;&#x9019;&#x610F;&#x5473;&#x8457;&#x5982;&#x679C;&#x767C;&#x8D77;&#x8005;X&#x9644;&#x52A0;1000&#x500B;gas&#x4F86;&#x8ABF;&#x7528;&#x5408;&#x7D04;A&#xFF0C;&#x5176;&#x5728;&#x8A08;&#x7B97;&#x4E0A;&#x82B1;&#x8CBB;500&#x500B;gas&#x7136;&#x5F8C;&#x5411;&#x5408;&#x7D04;B&#x767C;&#x9001;&#x53E6;&#x4E00;&#x500B;&#x6D88;&#x606F;&#xFF0C;&#x5247;A&#x7528;&#x65BC;&#x5C07;&#x6D88;&#x606F;&#x767C;&#x9001;&#x5230;B&#x7684;gas&#x4E5F;&#x6703;&#x518D;&#x5DF2;&#x958B;&#x59CB;&#x5F9E;X&#x7684;gas&#x9650;&#x5236;&#x4E2D;&#x6263;&#x9664;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>EOA&#x5E33;&#x6236;X&#x555F;&#x52D5;&#x4EA4;&#x6613;&#x4E26;&#x8ABF;&#x7528;&#x5408;&#x7D04;&#x5E33;&#x6236;A&#x4E0A;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9644;&#x5E36;1000&#x500B;gas
+
+&#x5408;&#x7D04;A&#x5728;&#x8A08;&#x7B97;&#x4E0A;&#x82B1;&#x8CBB;500gas&#xFF0C;&#x4E26;&#x5411;&#x5408;&#x7D04;B&#x767C;&#x9001;&#x6D88;&#x8017;100gas&#x7684;&#x6D88;&#x606F;
+
+&#x5408;&#x7D04;B&#x5728;&#x8A08;&#x7B97;&#x4E0A;&#x82B1;&#x8CBB;300&#x500B;gas&#x4E26;&#x5B8C;&#x6210;&#x4EA4;&#x6613;&#x3002;
+
+100&#x500B;gas&#x9000;&#x9084;&#x7D66;X.</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x5982;&#x679C;&#x8A72;&#x4EA4;&#x6613;&#x7684;&#x767C;&#x8D77;&#x4EBA;&#x5728;&#x958B;&#x59CB;&#x6642;&#x6C92;&#x6709;&#x9644;&#x52A0;&#x8DB3;&#x5920;&#x9AD8;&#x7684;gas&#x8CBB;&#xFF0C;&#x90A3;&#x9EBC;&#x5728;&#x4EA4;&#x6613;&#x4E2D;&#x57F7;&#x884C;&#x4E00;&#x90E8;&#x5206;&#x64CD;&#x4F5C;&#x7684;&#x4E2D;&#x9593;&#x5408;&#x7D04;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x6211;&#x5011;&#x7684;&#x7BC4;&#x4F8B;&#x4E2D;&#x70BA;&#x5408;&#x7D04;A&#xFF09;&#x7406;&#x8AD6;&#x4E0A;&#x53EF;&#x4EE5;&#x8017;&#x76E1;gas&#x3002;&#x5982;&#x679C;&#x5408;&#x7D04;&#x5728;&#x57F7;&#x884C;&#x4E2D;&#x671F;&#x7528;&#x5B8C;&#xFF0C;&#x9664;&#x4E86;gas&#x8CBB;&#x652F;&#x4ED8;&#x5916;&#xFF0C;&#x6240;&#x6709;&#x72C0;&#x614B;&#x8B8A;&#x66F4;&#x90FD;&#x6703;&#x88AB;&#x64A4;&#x92B7;&#x3002;</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__gas_2">&#x4F30;&#x7B97; Gas</h3>
+<div class="paragraph">
+<p>&#x901A;&#x904E;&#x5047;&#x88DD;&#x4EA4;&#x6613;&#x5DF2;&#x7D93;&#x88AB;&#x5305;&#x542B;&#x5728;&#x5340;&#x584A;&#x93C8;&#x4E2D;&#x4F86;&#x4F30;&#x7B97;gas&#xFF0C;&#x7136;&#x5F8C;&#x8FD4;&#x56DE;&#x5982;&#x679C;&#x64CD;&#x4F5C;&#x662F;&#x771F;&#x5BE6;&#x7684;&#x90A3;&#x9EBC;&#x53EF;&#x4EE5;&#x6536;&#x53D6;&#x7684;&#x78BA;&#x5207;gas&#x91CF;&#x3002;&#x63DB;&#x53E5;&#x8A71;&#x8AAA;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x8207;&#x7926;&#x5DE5;&#x7528;&#x4F86;&#x8A08;&#x7B97;&#x5BE6;&#x969B;&#x8CBB;&#x7528;&#x4F46;&#x5F9E;&#x672A;&#x958B;&#x63A1;&#x904E;&#x5340;&#x584A;&#x93C8;&#x7684;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x7A0B;&#x5F0F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8ACB;&#x6CE8;&#x610F;&#xFF0C;&#x7531;&#x65BC;&#x5404;&#x7A2E;&#x539F;&#x56E0;&#xFF08;&#x5305;&#x62EC;EVM&#x6A5F;&#x5236;&#x548C;&#x7BC0;&#x9EDE;&#x6027;&#x80FD;&#xFF09;&#xFF0C;&#x4F30;&#x8A08;&#x503C;&#x53EF;&#x80FD;&#x9060;&#x9060;&#x8D85;&#x904E;&#x4EA4;&#x6613;&#x5BE6;&#x969B;&#x4F7F;&#x7528;&#x7684;gas&#x91CF;&#x3002;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript"><span class="hljs-keyword">var</span> result = web3.eth.estimateGas({
+    to: <span class="hljs-string">&quot;0xc4abd0339eb8d57087278718986382264244252f&quot;</span>,
+    data: <span class="hljs-string">&quot;0xc6888fa10000000000000000000000000000000000000000000000000000000000000003&quot;</span>
+});
+<span class="hljs-built_in">console</span>.log(result); <span class="hljs-comment">// &quot;0x0000000000000000000000000000000000000000000000000000000000000015&quot;</span></code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gas">gas&#x50F9;&#x683C;&#x548C;&#x4EA4;&#x6613;&#x512A;&#x5148;&#x9806;&#x5E8F;</h3>
+<div class="paragraph">
+<p>gas&#x50F9;&#x683C;&#x662F;&#x4EA4;&#x6613;&#x767C;&#x8D77;&#x65B9;&#x9858;&#x610F;&#x70BA;&#x6BCF;&#x500B;gas&#x55AE;&#x4F4D;&#x652F;&#x4ED8;&#x7684;ether&#x91CF;&#x3002;&#x958B;&#x63A1;&#x4E0B;&#x4E00;&#x500B;&#x5340;&#x584A;&#x7684;&#x7926;&#x5DE5;&#x6C7A;&#x5B9A;&#x8981;&#x5305;&#x62EC;&#x54EA;&#x4E9B;&#x4EA4;&#x6613;&#x3002;&#x7531;&#x65BC;gas&#x50F9;&#x683C;&#x88AB;&#x8A08;&#x5165;&#x4ED6;&#x5011;&#x5C07;&#x4F5C;&#x70BA;&#x734E;&#x52F5;&#x7684;&#x4EA4;&#x6613;&#x8CBB;&#x4E2D;&#xFF0C;&#x4ED6;&#x5011;&#x66F4;&#x53EF;&#x80FD;&#x9996;&#x5148;&#x5305;&#x62EC;&#x5177;&#x6709;&#x6700;&#x9AD8;gas&#x50F9;&#x683C;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x5982;&#x679C;&#x767C;&#x8D77;&#x65B9;&#x5C07;gas&#x50F9;&#x683C;&#x8A2D;&#x7F6E;&#x5F97;&#x592A;&#x4F4E;&#xFF0C;&#x4ED6;&#x5011;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7B49;&#x5F85;&#x5F88;&#x9577;&#x6642;&#x9593;&#x624D;&#x80FD;&#x5C07;&#x5176;&#x4EA4;&#x6613;&#x9032;&#x5165;&#x4E00;&#x500B;&#x5340;&#x584A;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7926;&#x5DE5;&#x9084;&#x53EF;&#x4EE5;&#x6C7A;&#x5B9A;&#x584A;&#x4E2D;&#x5305;&#x542B;&#x4EA4;&#x6613;&#x7684;&#x9806;&#x5E8F;&#x3002;&#x7531;&#x65BC;&#x591A;&#x500B;&#x7926;&#x5DE5;&#x7AF6;&#x722D;&#x5C07;&#x5176;&#x5340;&#x584A;&#x9644;&#x52A0;&#x5230;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x56E0;&#x6B64;&#x5340;&#x584A;&#x5167;&#x7684;&#x4EA4;&#x6613;&#x9806;&#x5E8F;&#x7531;&#x201C;&#x7372;&#x52DD;&#x201D;&#x7926;&#x5DE5;&#x4EFB;&#x610F;&#x6C7A;&#x5B9A;&#xFF0C;&#x7136;&#x5F8C;&#x5176;&#x4ED6;&#x7926;&#x5DE5;&#x7528;&#x8A72;&#x8A02;&#x55AE;&#x6838;&#x5BE6;&#x3002;&#x96D6;&#x7136;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x6392;&#x5217;&#x4F86;&#x81EA;&#x4E0D;&#x540C;&#x5E33;&#x6236;&#x7684;&#x4EA4;&#x6613;&#xFF0C;&#x4F46;&#x662F;&#x4F86;&#x81EA;&#x500B;&#x4EBA;&#x5E33;&#x6236;&#x7684;&#x4EA4;&#x6613;&#x662F;&#x6309;&#x7167;&#x81EA;&#x52D5;&#x905E;&#x589E;&#x7684;&#x96A8;&#x6A5F;&#x6578;&#x7684;&#x9806;&#x5E8F;&#x57F7;&#x884C;&#x7684;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__gas_3">&#x5340;&#x584A;gas&#x9650;&#x5236;</h3>
+<div class="paragraph">
+<p>&#x5340;&#x584A;gas&#x9650;&#x5236;&#x662F;&#x5340;&#x584A;&#x4E2D;&#x5141;&#x8A31;&#x7684;&#x6700;&#x5927;gas&#x91CF;&#xFF0C;&#x7528;&#x65BC;&#x78BA;&#x5B9A;&#x5340;&#x584A;&#x4E2D;&#x53EF;&#x4EE5;&#x5BB9;&#x7D0D;&#x7684;&#x4EA4;&#x6613;&#x6578;&#x91CF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5047;&#x8A2D;&#x6211;&#x5011;&#x6709;5&#x500B;&#x4EA4;&#x6613;&#xFF0C;&#x5176;&#x4E2D;&#x6BCF;&#x500B;&#x4EA4;&#x6613;&#x7684;gas&#x9650;&#x5236;&#x70BA;10,20,30,40&#x548C;50.&#x5982;&#x679C;&#x5340;&#x584A;gas&#x9650;&#x5236;&#x70BA;100&#xFF0C;&#x90A3;&#x9EBC;&#x524D;&#x56DB;&#x500B;&#x4EA4;&#x6613;&#x53EF;&#x4EE5;&#x9069;&#x5408;&#x8A72;&#x5340;&#x584A;&#xFF0C;&#x800C;&#x4EA4;&#x6613;5&#x5FC5;&#x9808;&#x7B49;&#x5F85;&#x672A;&#x4F86;&#x7684;&#x5340;&#x584A;&#x3002;&#x5982;&#x524D;&#x6240;&#x8FF0;&#xFF0C;&#x7926;&#x5DE5;&#x6C7A;&#x5B9A;&#x5728;&#x4E00;&#x500B;&#x5340;&#x584A;&#x4E2D;&#x5305;&#x542B;&#x54EA;&#x4E9B;&#x4EA4;&#x6613;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x7926;&#x5DE5;&#x53EF;&#x4EE5;&#x5617;&#x8A66;&#x5305;&#x62EC;&#x584A;&#x4E2D;&#x7684;&#x6700;&#x5F8C;2&#x500B;&#x4EA4;&#x6613;&#xFF08;50 + 40&#xFF09;&#xFF0C;&#x4E26;&#x4E14;&#x5B83;&#x5011;&#x50C5;&#x5177;&#x6709;&#x5305;&#x62EC;&#x7B2C;&#x4E00;&#x500B;&#x4EA4;&#x6613;&#xFF08;10&#xFF09;&#x7684;&#x7A7A;&#x9593;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5617;&#x8A66;&#x5305;&#x542B;&#x7684;&#x4EA4;&#x6613;&#x9700;&#x8981;&#x7684;gas&#x91CF;&#x8D85;&#x904E;&#x7576;&#x524D;&#x7684;gas&#x9650;&#x5236;&#xFF0C;&#x5247;&#x7DB2;&#x8DEF;&#x5C07;&#x62D2;&#x7D55;&#x8A72;&#x4EA4;&#x6613;&#xFF0C;&#x4F60;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x5C07;&#x5411;&#x4F60;&#x767C;&#x9001;&#x6D88;&#x606F;&#x201C;&#x4EA4;&#x6613;&#x8D85;&#x904E;&#x5340;&#x584A;gas&#x9650;&#x5236;&#x3002;&#x6839;&#x64DA;https://etherscan.io&#x7684;&#x6578;&#x64DA;&#xFF0C;&#x76EE;&#x524D;&#x5340;&#x584A;&#x7684;gas&#x9650;&#x5236;&#x5728;500&#x842C;&#x5DE6;&#x53F3;&#x3002;&#x5373;&#x4E00;&#x500B;&#x5340;&#x584A;&#x53EF;&#x4EE5;&#x5BB9;&#x7D0D;&#x7D04;238&#x500B;&#x4EA4;&#x6613;&#xFF0C;&#x6BCF;&#x500B;&#x4EA4;&#x6613;&#x6D88;&#x8017;21000&#x500B;gas&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__gas_4">&#x8AB0;&#x4F86;&#x6C7A;&#x5B9A;&#x5340;&#x584A;gas&#x9650;&#x5236;&#x662F;&#x591A;&#x5C11;&#xFF1F;</h3>
+<div class="paragraph">
+<p>&#x7DB2;&#x8DEF;&#x4E0A;&#x7684;&#x7926;&#x5DE5;&#x6C7A;&#x5B9A;&#x5340;&#x584A;gas&#x9650;&#x5236;&#x662F;&#x4EC0;&#x9EBC;&#x3002;&#x60F3;&#x8981;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x7DB2;&#x8DEF;&#x4E0A;&#x6316;&#x7926;&#x7684;&#x500B;&#x4EBA;&#x4F7F;&#x7528;&#x6316;&#x7926;&#x7A0B;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;ethminer&#xFF0C;&#x5B83;&#x9023;&#x63A5;&#x5230;Geth&#x6216;Parity Ethereum&#x5BA2;&#x6236;&#x7AEF;&#x3002;&#x4EE5;&#x592A;&#x574A;&#x5354;&#x8B70;&#x6709;&#x4E00;&#x500B;&#x5167;&#x5EFA;&#x6A5F;&#x5236;&#xFF0C;&#x7926;&#x5DE5;&#x53EF;&#x4EE5;&#x5C0D;gas&#x9650;&#x5236;&#x9032;&#x884C;&#x6295;&#x7968;&#xFF0C;&#x56E0;&#x6B64;&#x7121;&#x9700;&#x5728;&#x786C;&#x5206;&#x53C9;&#x4E0A;&#x9032;&#x884C;&#x5354;&#x8ABF;&#x5C31;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x5BB9;&#x91CF;&#x3002;&#x584A;&#x7684;&#x7926;&#x5DE5;&#x80FD;&#x5920;&#x5728;&#x4EFB;&#x4E00;&#x65B9;&#x5411;&#x4E0A;&#x5C07;&#x584A;&#x6C23;&#x9650;&#x5236;&#x8ABF;&#x6574;1/1024&#xFF08;0.0976&#xFF05;&#xFF09;&#x3002;&#x5176;&#x7D50;&#x679C;&#x662F;&#x6839;&#x64DA;&#x7576;&#x6642;&#x7DB2;&#x8DEF;&#x7684;&#x9700;&#x8981;&#x8ABF;&#x6574;&#x584A;&#x5927;&#x5C0F;&#x3002;&#x9019;&#x4E00;&#x6A5F;&#x5236;&#x8207;&#x9810;&#x8A2D;&#x7684;&#x958B;&#x63A1;&#x7B56;&#x7565;&#x7D50;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x7926;&#x5DE5;&#x9810;&#x8A2D;&#x5C07;&#x6295;&#x7968;&#x6C7A;&#x5B9A;&#x81F3;&#x5C11;470&#x842C;&#x7684;gas&#x9650;&#x5236;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x9019;&#x4E00;&#x6578;&#x5B57;&#x66F4;&#x9AD8;&#x7684;&#x8A71;&#xFF0C;&#x5C07;&#x628A;&#x76EE;&#x6A19;&#x5C0D;&#x6E96;&#x6700;&#x8FD1;&#x7684;(1024&#x5340;&#x584A;&#x6307;&#x6578;&#x79FB;&#x52D5;)&#x5E73;&#x5747;gas&#x7684;150%&#xFF0C;&#x5F9E;&#x800C;&#x4F7F;&#x6578;&#x91CF;&#x6709;&#x6A5F;&#x5730;&#x589E;&#x52A0;&#x3002;&#x7926;&#x5DE5;&#x5011;&#x53EF;&#x4EE5;&#x9078;&#x64C7;&#x6539;&#x8B8A;&#x9019;&#x4E00;&#x9EDE;&#xFF0C;&#x4F46;&#x662F;&#x4ED6;&#x5011;&#x4E2D;&#x7684;&#x8A31;&#x591A;&#x4EBA;&#x4E0D;&#x9019;&#x6A23;&#x505A;&#xFF0C;&#x4E26;&#x4FDD;&#x7559;&#x9810;&#x8A2D;&#x503C;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gas_2">gas&#x9000;&#x6B3E;</h3>
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x901A;&#x904E;&#x9000;&#x9084;&#x9AD8;&#x9054;&#x4E00;&#x534A;&#x7684;gas&#x8CBB;&#x7528;&#x4F86;&#x9F13;&#x52F5;&#x522A;&#x9664;&#x5132;&#x5B58;&#x7684;&#x8B8A;&#x6578;&#x3002;
+EVM&#x4E2D;&#x6709;2&#x500B;&#x8CA0;&#x7684;gas&#x64CD;&#x4F5C;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p>&#x6E05;&#x7406;&#x5408;&#x7D04;&#x662F;-24,000&#xFF08;SELFDESTRUCT&#xFF09;
+&#x6E05;&#x7406;&#x5132;&#x5B58;&#x70BA;-15,000&#xFF08;SSTORE [x] = 0&#xFF09;</p>
+</div>
+<div class="sect3">
+<h4 id="_gastoken">GasToken</h4>
+<div class="paragraph">
+<p>GasToken&#x662F;&#x4E00;&#x7A2E;&#x7B26;&#x5408;ERC20&#x6A19;&#x6E96;&#x7684;token&#xFF0C;&#x5141;&#x8A31;&#x4EFB;&#x4F55;&#x4EBA;&#x5728;gas&#x50F9;&#x683C;&#x4F4E;&#x6642;&#x201C;&#x5132;&#x5B58;&#x201D;gas&#xFF0C;&#x4E26;&#x5728;gas&#x50F9;&#x683C;&#x9AD8;&#x6642;&#x4F7F;&#x7528;gas&#x3002;&#x901A;&#x904E;&#x4F7F;&#x5176;&#x6210;&#x70BA;&#x53EF;&#x4EA4;&#x6613;&#x7684;&#x8CC7;&#x7522;&#xFF0C;&#x5B83;&#x57FA;&#x672C;&#x4E0A;&#x5275;&#x9020;&#x4E86;&#x4E00;&#x500B;gas&#x5E02;&#x5834;&#x3002;
+&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x662F;&#x5229;&#x7528;&#x524D;&#x9762;&#x63CF;&#x8FF0;&#x7684;gas&#x9000;&#x6B3E;&#x6A5F;&#x5236;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;[<a href="https://gastoken.io/" class="bare" target="_blank">https://gastoken.io/</a>](<a href="https://gastoken.io/)&#x77AD;&#x89E3;&#x8A08;&#x7B97;&#x76C8;&#x5229;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x91CB;&#x653E;gas&#x6240;&#x6D89;&#x53CA;&#x7684;&#x6578;&#x5B78;" class="bare" target="_blank">https://gastoken.io/)&#x77AD;&#x89E3;&#x8A08;&#x7B97;&#x76C8;&#x5229;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x91CB;&#x653E;gas&#x6240;&#x6D89;&#x53CA;&#x7684;&#x6578;&#x5B78;</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="___3">&#x79DF;&#x91D1;</h3>
+<div class="paragraph">
+<p>&#x76EE;&#x524D;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x793E;&#x5340;&#x63D0;&#x51FA;&#x4E86;&#x4E00;&#x9805;&#x95DC;&#x65BC;&#x5411;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x6536;&#x53D6;&#x201C;&#x79DF;&#x91D1;&#x201D;&#x4EE5;&#x4FDD;&#x6301;&#x6D3B;&#x529B;&#x7684;&#x5EFA;&#x8B70;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x6C92;&#x6709;&#x652F;&#x4ED8;&#x79DF;&#x91D1;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x5C07;&#x88AB;&#x201C;&#x7761;&#x7720;&#x201D;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x7C21;&#x55AE;&#x7684;&#x8B80;&#x53D6;&#x64CD;&#x4F5C;&#x4E5F;&#x7121;&#x6CD5;&#x7372;&#x5F97;&#x6578;&#x64DA;&#x3002;&#x9700;&#x8981;&#x901A;&#x904E;&#x652F;&#x4ED8;&#x79DF;&#x91D1;&#x548C;&#x63D0;&#x4EA4;Merkle&#x8B49;&#x64DA;&#x4F86;&#x559A;&#x9192;&#x9032;&#x5165;&#x7761;&#x7720;&#x72C0;&#x614B;&#x7684;&#x5408;&#x7D04;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ethereum/EIPs/issues/35" class="bare" target="_blank">https://github.com/ethereum/EIPs/issues/35</a>
+<a href="https://ethresear.ch/t/a-simple-and-principled-way-to-compute-rent-fees/1455" class="bare" target="_blank">https://ethresear.ch/t/a-simple-and-principled-way-to-compute-rent-fees/1455</a>
+<a href="https://ethresear.ch/t/improving-the-ux-of-rent-with-a-sleeping-waking-mechanism/1480" class="bare" target="_blank">https://ethresear.ch/t/improving-the-ux-of-rent-with-a-sleeping-waking-mechanism/1480</a></p>
+</div>
+<div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x5341;&#x56DB;&#x7AE0;#,&#x4E0B;&#x4E00;&#x7AE0;&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x865B;&#x64EC;&#x6A5F;&gt;&gt;</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第十二章.html" class="navigation navigation-prev " aria-label="Previous page: 第十二章Oracles">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第十四章.html" class="navigation navigation-next " aria-label="Next page: 第十四章以太坊虛擬機">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第十三章gas（Gas）","level":"1.16","depth":1,"next":{"title":"第十四章以太坊虛擬機","level":"1.17","depth":1,"path":"第十四章.asciidoc","ref":"第十四章.asciidoc","articles":[]},"previous":{"title":"第十二章Oracles","level":"1.15","depth":1,"path":"第十二章.asciidoc","ref":"第十二章.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第十三章.asciidoc","mtime":"2019-08-26T19:01:45.074Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-26T19:02:08.515Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

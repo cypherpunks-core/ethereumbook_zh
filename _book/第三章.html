@@ -1,0 +1,1400 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第三章以太坊客戶端 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第四章.html" />
+    
+    
+    <link rel="prev" href="第二章.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="前言.html">
+            
+                <a href="前言.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="術語.html">
+            
+                <a href="術語.html">
+            
+                    
+                    術語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第一章.html">
+            
+                <a href="第一章.html">
+            
+                    
+                    第一章 什麼是以太坊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第二章.html">
+            
+                <a href="第二章.html">
+            
+                    
+                    第二章以太坊基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="第三章.html">
+            
+                <a href="第三章.html">
+            
+                    
+                    第三章以太坊客戶端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="第四章.html">
+            
+                <a href="第四章.html">
+            
+                    
+                    第四章以太坊測試網（Testnets）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第五章.html">
+            
+                <a href="第五章.html">
+            
+                    
+                    第五章密鑰，地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第六章.html">
+            
+                <a href="第六章.html">
+            
+                    
+                    第六章錢包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第七章.html">
+            
+                <a href="第七章.html">
+            
+                    
+                    第七章交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第八章.html">
+            
+                <a href="第八章.html">
+            
+                    
+                    第八章智能合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第九章.html">
+            
+                <a href="第九章.html">
+            
+                    
+                    第九章開發工具，框架和庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十章.html">
+            
+                <a href="第十章.html">
+            
+                    
+                    第十章Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="第十一章.html">
+            
+                <a href="第十一章.html">
+            
+                    
+                    第十一章去中心化應用 (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="第十二章.html">
+            
+                <a href="第十二章.html">
+            
+                    
+                    第十二章Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="第十三章.html">
+            
+                <a href="第十三章.html">
+            
+                    
+                    第十三章gas（Gas）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="第十四章.html">
+            
+                <a href="第十四章.html">
+            
+                    
+                    第十四章以太坊虛擬機
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="第十五章.html">
+            
+                <a href="第十五章.html">
+            
+                    
+                    第十五章共識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="第十六章.html">
+            
+                <a href="第十六章.html">
+            
+                    
+                    第十六章Vyper: 面向合約的程式語言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="第十七章.html">
+            
+                <a href="第十七章.html">
+            
+                    
+                    第十七章節點間的通信 —— 一個簡單的視角
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="第十八章.html">
+            
+                <a href="第十八章.html">
+            
+                    
+                    第十八章以太坊標準
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="第十九章.html">
+            
+                <a href="第十九章.html">
+            
+                    
+                    第十九章以太坊分叉歷史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第三章以太坊客戶端</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="ethereum_clients_chapter">&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x4E8C;&#x7AE0;#,&#x4E0A;&#x4E00;&#x7AE0;&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x57FA;&#x790E;&gt;&gt;</p>
+</div>
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF; (Ethereum client) &#x662F;&#x4E00;&#x96BB;&#x8EDF;&#x9AD4;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#xFF0C;&#x5B83;&#x4F9D;&#x4EE5;&#x592A;&#x574A;&#x5354;&#x5B9A;&#x6A19;&#x6E96;&#x5BE6;&#x73FE;&#xFF0C;&#x4E26;&#x4E14;&#x5728;&#x9EDE;&#x5C0D;&#x9EDE;&#x7DB2;&#x8DEF; (peer-to-pper network) &#x4E0A;&#x8207;&#x5176;&#x5B83;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x6E9D;&#x901A;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x53EA;&#x8981;&#x9075;&#x5B88;&#x9019;&#x4E9B;&#x5354;&#x5B9A;&#x53CA;&#x901A;&#x8A0A;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4E92;&#x76F8;&#x64CD;&#x4F5C;&#x3002;&#x96D6;&#x7136;&#x4E0D;&#x540C;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x7531;&#x4E0D;&#x540C;&#x7684;&#x5718;&#x968A;&#x6216;&#x4E0D;&#x540C;&#x7684;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x4F86;&#x5BE6;&#x73FE;&#xFF0C;&#x800C;&#x5B83;&#x5011;&#x8AAA;&#x7684;&#x662F;&#x76F8;&#x540C;&#x7684;&#x8A9E;&#x8A00;&#x4E26;&#x4E14;&#x9075;&#x7167;&#x76F8;&#x540C;&#x898F;&#x5B9A;&#xFF1B;&#x56E0;&#x6B64;&#xFF0C;&#x5728;&#x540C;&#x4E00;&#x500B;&#x4EE5;&#x592A;&#x574A;&#x7DB2;&#x8DEF;&#x4E0B;&#xFF0C;&#x9019;&#x4E9B;&#x5BA2;&#x6236;&#x7AEF;&#x53EF;&#x4EE5;&#x5F7C;&#x6B64;&#x64CD;&#x4F5C;&#x8207;&#x4E92;&#x52D5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x662F;&#x4E00;&#x500B;&#x958B;&#x653E;&#x539F;&#x59CB;&#x78BC; (open source) &#x5C08;&#x6848;&#xFF0C;&#x539F;&#x59CB;&#x78BC;&#x53EF;&#x5728;&#x958B;&#x6E90;&#x6388;&#x6B0A;&#xFF08;LGPL v3.0&#xFF09;&#x8A31;&#x53EF;&#x4E0B;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x514D;&#x8CBB;&#x4E0B;&#x8F09;&#x4E26;&#x7528;&#x65BC;&#x4EFB;&#x4F55;&#x76EE;&#x7684;&#x3002;&#x958B;&#x653E;&#x539F;&#x59CB;&#x78BC;&#x610F;&#x5473;&#x8457;&#x4E0D;&#x50C5;&#x50C5;&#x662F;&#x514D;&#x8CBB;&#x4F7F;&#x7528;&#x3002;&#x9019;&#x4E5F;&#x610F;&#x5473;&#x8457;&#x4EE5;&#x592A;&#x574A;&#x7531;&#x958B;&#x6E90;&#x793E;&#x7FA4;&#x7684;&#x5FD7;&#x9858;&#x8005;&#x6240;&#x958B;&#x767C;&#xFF0C;&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x3002;&#x8D8A;&#x591A;&#x4EBA;&#x95DC;&#x6CE8;&#x6B64;&#x5C08;&#x6848;&#xFF0C;&#x5B83;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x5C31;&#x8D8A;&#x53EF;&#x4EE5;&#x88AB;&#x4FE1;&#x8CF4;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E00;&#x500B;&#x540D;&#x70BA;&quot;&#x9EC3;&#x76AE;&#x66F8; (Yellow Paper)&quot; &#x7684;&#x6B63;&#x5F0F;&#x6A19;&#x6E96;&#x5B9A;&#x7FA9;&#x4E86;&#x4EE5;&#x592A;&#x574A;&#x3002;(&#x8ACB;&#x898B;&#x4EE5;&#x592A;&#x574A;&#x9EC3;&#x76AE;&#x66F8;&#xFF0C;&#x9023;&#x7D50;&#xFF1A;https://ethereum.github.io/yellowpaper/paper.pdf)</p>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x8207;&#x6BD4;&#x7279;&#x5E63;&#x76F8;&#x53CD;&#xFF0C;&#x6BD4;&#x7279;&#x5E63;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x6B63;&#x5F0F;&#x7684;&#x5B9A;&#x7FA9;&#x3002;&#x6BD4;&#x7279;&#x5E63;&#x7684;&#x201C;&#x898F;&#x7BC4;&#x201D;&#x662F;&#x6BD4;&#x7279;&#x5E63;&#x6838;&#x5FC3;&#x7684;&#x53C3;&#x8003;&#x5BE6;&#x73FE;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x898F;&#x7BC4;&#x5B9A;&#x7FA9;&#x5728;&#x4E00;&#x7BC7;&#x7D50;&#x5408;&#x4E86;&#x82F1;&#x6587;&#x548C;&#x6578;&#x5B78;&#x7684;&#xFF08;&#x6B63;&#x5F0F;&#x7684;&#xFF09;&#x898F;&#x7BC4;&#x7684;&#x8AD6;&#x6587;&#x4E2D;&#x3002;
+&#x9019;&#x500B;&#x6B63;&#x5F0F;&#x7684;&#x898F;&#x7BC4;&#xFF0C;&#x9664;&#x4E86;&#x5404;&#x7A2E;&#x4EE5;&#x592A;&#x574A;&#x6539;&#x9032;&#x5EFA;&#x8B70;&#x4E4B;&#x5916;&#xFF0C;&#x9084;&#x5B9A;&#x7FA9;&#x4E86;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x6A19;&#x6E96;&#x884C;&#x70BA;&#x3002;&#x96A8;&#x8457;&#x5C0D;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x91CD;&#x5927;&#x6539;&#x8B8A;&#xFF0C;&#x9EC3;&#x76AE;&#x66F8;&#x6703;&#x5B9A;&#x671F;&#x66F4;&#x65B0;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F5C;&#x70BA;&#x4EE5;&#x592A;&#x574A;&#x660E;&#x78BA;&#x7684;&#x6B63;&#x5F0F;&#x898F;&#x7BC4;&#x7684;&#x7D50;&#x679C;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x6709;&#x8A31;&#x591A;&#x7368;&#x7ACB;&#x958B;&#x767C;&#x7684;&#xFF0C;&#x53EF;&#x4E92;&#x64CD;&#x4F5C;&#x7684;&#x8EDF;&#x9AD4;&#x5BE6;&#x73FE;&#x3002;&#x4EE5;&#x592A;&#x574A;&#x5728;&#x7DB2;&#x8DEF;&#x4E0A;&#x904B;&#x884C;&#x7684;&#x5BE6;&#x73FE;&#x65B9;&#x5F0F;&#x6BD4;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5340;&#x584A;&#x93C8;&#x90FD;&#x591A;&#x3002;</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__">&#x4EE5;&#x592A;&#x574A;&#x7DB2;&#x8DEF;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&#x73FE;&#x4ECA;&#x5B58;&#x5728;&#x5404;&#x5F0F;&#x5404;&#x6A23;&#x57FA;&#x65BC;&#x4E59;&#x592A;&#x574A;&#x7684;&#x7DB2;&#x8DEF;&#xFF0C;&#x5B83;&#x5011;&#x96D6;&#x7136;&#x5927;&#x7A0B;&#x5EA6;&#x7B26;&#x5408;&#x4EE5;&#x592A;&#x574A;&#x9EC3;&#x76AE;&#x66F8; (Ethereum Yellow Paper) &#x7684;&#x6B63;&#x5F0F;&#x898F;&#x7BC4;&#x3002;&#x4F46;&#x5B83;&#x5011;&#x4E4B;&#x9593;&#x4E26;&#x4E0D;&#x4E00;&#x5B9A;&#x80FD;&#x4E92;&#x76F8;&#x64CD;&#x4F5C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x4E9B;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x7DB2;&#x8DEF;&#x6709;&#xFF1A;Ethereum&#x3001;Ethereum Classic&#x3001;Ella&#xFF0C;Expanse&#x3001;Ubiq&#x3001;Musicoin &#x7B49;&#x7B49;&#x3002;&#x96D6;&#x7136;&#x5B83;&#x5011;&#x5E7E;&#x4E4E;&#x76F8;&#x5BB9;&#x65BC;&#x4E59;&#x592A;&#x574A;&#x5354;&#x8B70;(Ethereum protocol)&#xFF0C;&#x4F46;&#x9019;&#x4E9B;&#x7DB2;&#x8DEF;&#x901A;&#x5E38;&#x5404;&#x81EA;&#x6709;&#x4E00;&#x4E9B;&#x7279;&#x5225;&#x529F;&#x80FD;&#x53CA;&#x5C6C;&#x6027;&#xFF0C;&#x800C;&#x4E59;&#x592A;&#x574A;&#x7528;&#x6236;&#x7AEF; (Ethereum client) &#x8EDF;&#x9AD4;&#x70BA;&#x4E86;&#x652F;&#x6301;&#x9019;&#x4E9B;&#x4E0D;&#x540C;&#x7DB2;&#x8DEF;&#xFF0C;&#x9700;&#x8981;&#x70BA;&#x5404;&#x5225;&#x7DB2;&#x8DEF;&#x9032;&#x884C;&#x5C0F;&#x4FEE;&#x6539;&#x624D;&#x6709;&#x8FA6;&#x6CD5;&#x9054;&#x6210;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E26;&#x975E;&#x6BCF;&#x500B;&#x7248;&#x672C;&#x7684;&#x4E59;&#x592A;&#x574A;&#x7528;&#x6236;&#x7AEF; (Ethereum client) &#x8EDF;&#x9AD4;&#x7E3D;&#x80FD;&#x5920;&#x652F;&#x6301;&#x6240;&#x6709;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x7DB2;&#x8DEF;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x76EE;&#x524D;&#xFF0C;&#x4E59;&#x592A;&#x574A;&#x5354;&#x8B70; (Ethereum protocol) &#x6709;&#x516D;&#x7A2E;&#x5BE6;&#x4F5C;&#xFF0C;&#x4EE5;&#x4E0D;&#x540C;&#x7684;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x7DE8;&#x5BEB;&#x5B8C;&#x6210;&#xFF1A;Go &#x8A9E;&#x8A00;&#x7DE8;&#x5BEB;&#x7684; Geth&#x3001;Rust &#x8A9E;&#x8A00;&#x7DE8;&#x5BEB;&#x7684; parity&#x3001;C++ &#x7DE8;&#x5BEB;&#x7684; cpp-ethereum&#x3001;Python &#x7DE8;&#x5BEB;&#x7684; pyethereum &#x3001;Scala &#x7DE8;&#x5BEB;&#x7684; mantis &#x4EE5;&#x53CA; Java &#x7DE8;&#x5BEB;&#x7684;harmony&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x672C;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x770B;&#x770B;&#x5169;&#x500B;&#x6700;&#x5E38;&#x898B;&#x7684;&#x4E59;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;Geth &#x548C; Parity&#x3002;&#x6211;&#x5011;&#x5C07;&#x5B78;&#x7FD2;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x5B83;&#x5011;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#x53BB;&#x555F;&#x52D5;&#x7BC0;&#x9EDE;(node)&#xFF0C;&#x4E26;&#x4E14;&#x63A2;&#x7D22;&#x5B83;&#x5011;&#x7684;&#x547D;&#x4EE4;&#x5217;(command-line options) &#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#x4EE5;&#x53CA;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x7DE8;&#x7A0B;&#x4ECB;&#x9762;&#xFF08;API&#xFF09;&#x3002;</p>
+</div>
+<div class="sect2">
+<h3 id="full_node_importance">&#x6211;&#x61C9;&#x8A72;&#x904B;&#x884C;&#x4E00;&#x500B;&#x5168;&#x7BC0;&#x9EDE; (full node) &#x55CE;&#xFF1F;</h3>
+<div class="paragraph">
+<p>&#x5340;&#x584A;&#x93C8;&#x7684;&#x5065;&#x5EB7;&#x3001;&#x5F48;&#x6027;&#x4EE5;&#x53CA;&#x6297;&#x5BE9;&#x67E5;&#x6027;&#xFF0C;&#x9700;&#x8981;&#x4F9D;&#x9760;&#x5927;&#x91CF;&#x5206;&#x4F48;&#x65BC;&#x4E16;&#x754C;&#x5404;&#x5730;&#x4E26;&#x4E14;&#x7368;&#x7ACB;&#x904B;&#x4F5C;&#x7684;&#x5168;&#x7BC0;&#x9EDE; (full node) &#x3002;&#x6BCF;&#x500B;&#x5168;&#x7BC0;&#x9EDE;&#x6703;&#x5354;&#x52A9;&#x65B0;&#x7BC0;&#x9EDE;&#x53D6;&#x5F97;&#x5340;&#x584A;&#x8CC7;&#x6599;&#xFF0C;&#x9019;&#x9EBC;&#x4F5C;&#x4E0D;&#x50C5;&#x80FD;&#x5E6B;&#x52A9;&#x71DF;&#x904B;&#x7684;&#x65B0;&#x7BC0;&#x9EDE;&#x53D6;&#x5F97;&#x53D7;&#x5230;&#x516C;&#x4FE1;&#x529B;&#x53CA;&#x7368;&#x7ACB;&#x6027;&#x9A57;&#x8B49;&#x904E;&#x7684;&#x5408;&#x7D04;&#x53CA;&#x4EA4;&#x6613;&#x8CC7;&#x6599;&#xFF0C;&#x4E5F;&#x80FD;&#x8B93;&#x65B0;&#x7BC0;&#x9EDE;&#x80FD;&#x81EA;&#x884C;&#x5B8C;&#x6574;&#x7684;&#x71DF;&#x904B;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F46;&#x662F;&#xFF0C;&#x904B;&#x884C;&#x5B8C;&#x6574;&#x7684;&#x7BC0;&#x9EDE;&#x6703;&#x5C0E;&#x81F4;&#x786C;&#x9AD4;&#x8CC7;&#x6E90;&#x548C;&#x5E36;&#x5BEC;&#x7684;&#x5DE8;&#x5927;&#x6210;&#x672C;&#x3002;&#x5B8C;&#x6574;&#x7684;&#x7BC0;&#x9EDE;&#x5FC5;&#x9808;&#x4E0B;&#x8F09;&#x8D85;&#x904E;80GB&#x7684;&#x6578;&#x64DA;&#xFF08;&#x622A;&#x81F3;2018&#x5E74;4&#x6708;;&#x53D6;&#x6C7A;&#x65BC;&#x5BA2;&#x6236;&#x7AEF;&#xFF09;&#x4E26;&#x5C07;&#x5176;&#x5132;&#x5B58;&#x5728;&#x672C;&#x5730;&#x786C;&#x789F;&#x4E0A;&#x3002;&#x96A8;&#x8457;&#x65B0;&#x7684;&#x4EA4;&#x6613;&#x548C;&#x5340;&#x584A;&#x7684;&#x6DFB;&#x52A0;&#xFF0C;&#x9019;&#x7A2E;&#x6578;&#x64DA;&#x8CA0;&#x64D4;&#x6BCF;&#x5929;&#x90FD;&#x6703;&#x8FC5;&#x901F;&#x589E;&#x52A0;&#x3002;<a href="#requirements">&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x7684;&#x786C;&#x9AD4;&#x8981;&#x6C42;</a> &#x4E2D;&#x6709;&#x95DC;&#x65BC;&#x6B64;&#x4E3B;&#x984C;&#x7684;&#x66F4;&#x591A;&#x8CC7;&#x8A0A;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x4EE5;&#x592A;&#x574A;&#x958B;&#x767C;&#x4E2D;&#xFF0C;&#x904B;&#x884C;&#x5728;&#x6D3B;&#x8E8D;&#x7DB2;&#x8DEF;&#xFF08;&#x4E3B;&#x7DB2;&#xFF09;&#x4E0A;&#x7684;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x4E0D;&#x662F;&#x5FC5;&#x9700;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<em>testnet</em>&#x7BC0;&#x9EDE;&#xFF08;&#x5B83;&#x5132;&#x5B58;&#x5C0F;&#x578B;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x5340;&#x584A;&#x93C8;&#x7684;&#x526F;&#x672C;&#xFF09;&#xFF0C;&#x6216;&#x672C;&#x5730;&#x79C1;&#x6709;&#x5340;&#x584A;&#x93C8;&#xFF08;&#x53C3;&#x898B; <a href="#ganache">[ganache]</a>&#xFF09;&#xFF0C;&#x6216;&#x670D;&#x52D9;&#x63D0;&#x4F9B;&#x5546;&#x63D0;&#x4F9B;&#x7684;&#x57FA;&#x65BC;&#x96F2;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#xFF08;&#x53C3;&#x898B; <a href="#infura">[infura]</a>&#xFF09;&#xFF0C;&#x505A;&#x5E7E;&#x4E4E;&#x4EFB;&#x4F55;&#x4E8B;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x9084;&#x53EF;&#x4EE5;&#x9078;&#x64C7;&#x904B;&#x884C;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x8A72;&#x5BA2;&#x6236;&#x7AEF;&#x4E0D;&#x6703;&#x5132;&#x5B58;&#x5340;&#x584A;&#x93C8;&#x7684;&#x672C;&#x5730;&#x526F;&#x672C;&#x6216;&#x9A57;&#x8B49;&#x584A;&#x548C;&#x4EA4;&#x6613;&#x3002;&#x9019;&#x4E9B;&#x5BA2;&#x6236;&#x7AEF;&#x63D0;&#x4F9B;&#x9322;&#x5305;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E26;&#x53EF;&#x4EE5;&#x5275;&#x5EFA;&#x548C;&#x5EE3;&#x64AD;&#x4EA4;&#x6613;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x53EF;&#x7528;&#x65BC;&#x9023;&#x63A5;&#x5230;&#x73FE;&#x6709;&#x7DB2;&#x8DEF;&#xFF0C;&#x4F8B;&#x5982;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#xFF0C;&#x516C;&#x5171;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x516C;&#x958B;&#x6216;&#x8A31;&#x53EF;&#x7684;&#xFF08;PoA&#xFF09;&#x6E2C;&#x8A66;&#x7DB2;&#x6216;&#x79C1;&#x6709;&#x672C;&#x5730;&#x5340;&#x584A;&#x93C8;&#x3002;&#x5728;&#x5BE6;&#x8E10;&#x4E2D;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x6703;&#x4F7F;&#x7528;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x5982;MetaMask&#x3001;Emerald Wallet&#x3001;MyEtherWallet&#x6216;MyCrypto&#x4F5C;&#x70BA;&#x5728;&#x6240;&#x6709;&#x4E0D;&#x540C;&#x7BC0;&#x9EDE;&#x9078;&#x9805;&#x4E4B;&#x9593;&#x5207;&#x63DB;&#x7684;&#x4FBF;&#x6377;&#x65B9;&#x5F0F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5118;&#x7BA1;&#x5B58;&#x5728;&#x4E00;&#x4E9B;&#x5DEE;&#x7570;&#xFF0C;&#x8853;&#x8A9E;&#x201C;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x201D;&#x548C;&#x201C;&#x9322;&#x5305;&#x201D;&#x53EF;&#x4EE5;&#x4E92;&#x63DB;&#x4F7F;&#x7528;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x9664;&#x4E86;&#x63D0;&#x4F9B;&#x9322;&#x5305;&#x7684;&#x4EA4;&#x6613;&#x529F;&#x80FD;&#x5916;&#xFF0C;&#x9084;&#x63D0;&#x4F9B;API&#xFF08;&#x5982;web3js API&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E0D;&#x8981;&#x5C07;&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#x8F15;&#x91CF;&#x7D1A;&#x9322;&#x5305;&#x7684;&#x6982;&#x5FF5;&#x8207;&#x6BD4;&#x7279;&#x5E63;&#x4E2D;&#x7C21;&#x5316;&#x652F;&#x4ED8;&#x9A57;&#x8B49;&#xFF08;SPV&#xFF09;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x6982;&#x5FF5;&#x6DF7;&#x6DC6;&#x3002;SPV&#x5BA2;&#x6236;&#x9A57;&#x8B49;&#x5340;&#x584A;&#x982D;&#x4E26;&#x4F7F;&#x7528;merkle&#x8B49;&#x660E;&#x4F86;&#x9A57;&#x8B49;&#x5340;&#x584A;&#x93C8;&#x4E2D;&#x662F;&#x5426;&#x5305;&#x542B;&#x4EA4;&#x6613;&#x3002;&#x4EE5;&#x592A;&#x574A;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x901A;&#x5E38;&#x4E0D;&#x9A57;&#x8B49;&#x5340;&#x584A;&#x982D;&#x6216;&#x4EA4;&#x6613;&#x3002;&#x4ED6;&#x5011;&#x5B8C;&#x5168;&#x4FE1;&#x4EFB;&#x7531;&#x7B2C;&#x4E09;&#x65B9;&#x904B;&#x71DF;&#x7684;&#x5B8C;&#x6574;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x8B93;&#x4ED6;&#x5011;&#x901A;&#x904E;RPC&#x8A2A;&#x554F;&#x5340;&#x584A;&#x93C8;&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="full_node_adv_disadv">&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x7684;&#x512A;&#x9EDE;&#x548C;&#x7F3A;&#x9EDE;</h4>
+<div class="paragraph">
+<p>&#x9078;&#x64C7;&#x904B;&#x884C;&#x4E00;&#x500B;&#x5B8C;&#x6574;&#x7684;&#x7BC0;&#x9EDE;&#x53EF;&#x4EE5;&#x5E6B;&#x52A9;&#x5404;&#x7A2E;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x7DB2;&#x8DEF;&#xFF0C;&#x4F46;&#x4E5F;&#x6703;&#x7D66;&#x4F60;&#x5E36;&#x4F86;&#x4E00;&#x4E9B;&#x6EAB;&#x548C;&#x7684;&#x6216;&#x9069;&#x4E2D;&#x7684;&#x6210;&#x672C;&#x3002;&#x6211;&#x5011;&#x4F86;&#x770B;&#x770B;&#x4E00;&#x4E9B;&#x512A;&#x9EDE;&#x548C;&#x7F3A;&#x9EDE;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x512A;&#x9EDE;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x652F;&#x6301;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x7DB2;&#x8DEF;&#x7684;&#x5F48;&#x6027;&#x548C;&#x6297;&#x5BE9;&#x67E5;&#x3002;</p>
+</li>
+<li>
+<p>&#x6B0A;&#x5A01;&#x6027;&#x9A57;&#x8B49;&#x6240;&#x6709;&#x4EA4;&#x6613;&#x3002;</p>
+</li>
+<li>
+<p>&#x53EF;&#x4EE5;&#x8207;&#x516C;&#x5171;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x5408;&#x7D04;&#x9032;&#x884C;&#x4EA4;&#x4E92;&#xFF08;&#x7121;&#x9700;&#x4E2D;&#x4ECB;&#xFF09;&#x3002;</p>
+</li>
+<li>
+<p>&#x5982;&#x6709;&#x5FC5;&#x8981;&#xFF0C;&#x53EF;&#x4EE5;&#x96E2;&#x7DDA;&#x67E5;&#x8A62;&#xFF08;&#x53EA;&#x8B80;&#xFF09;&#x5340;&#x584A;&#x93C8;&#x72C0;&#x614B;&#xFF08;&#x5E33;&#x6236;&#x3001;&#x5408;&#x7D04;&#x7B49;&#xFF09;&#x3002;</p>
+</li>
+<li>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x8B93;&#x7B2C;&#x4E09;&#x65B9;&#x77E5;&#x9053;&#x4F60;&#x6B63;&#x5728;&#x8B80;&#x53D6;&#x7684;&#x8CC7;&#x8A0A;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#x67E5;&#x8A62;&#x5340;&#x584A;&#x93C8;&#x3002;</p>
+</li>
+<li>
+<p>&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5C07;&#x81EA;&#x5DF1;&#x7684;&#x5408;&#x7D04;&#x90E8;&#x7F72;&#x5230;&#x516C;&#x5171;&#x5340;&#x584A;&#x93C8;&#x4E2D;&#xFF08;&#x7121;&#x9700;&#x4E2D;&#x4ECB;&#xFF09;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>&#x7F3A;&#x9EDE;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x9700;&#x8981;&#x5927;&#x91CF;&#x4E14;&#x4E0D;&#x65B7;&#x589E;&#x9577;&#x7684;&#x786C;&#x9AD4;&#x548C;&#x5E36;&#x5BEC;&#x8CC7;&#x6E90;&#x3002;</p>
+</li>
+<li>
+<p>&#x9700;&#x8981;&#x5E7E;&#x500B;&#x5C0F;&#x6642;&#x6216;&#x5E7E;&#x5929;&#x624D;&#x80FD;&#x5B8C;&#x6210;&#x7B2C;&#x4E00;&#x6B21;&#x521D;&#x59CB;&#x4E0B;&#x8F09;&#x7684;&#x540C;&#x6B65;&#x3002;</p>
+</li>
+<li>
+<p>&#x5FC5;&#x9808;&#x7DAD;&#x8B77;&#xFF0C;&#x5347;&#x7D1A;&#x4E26;&#x4FDD;&#x6301;&#x806F;&#x6A5F;&#x624D;&#x80FD;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x3002;</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="pub_test_adv_disadv">&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x512A;&#x9EDE;&#x548C;&#x7F3A;&#x9EDE;</h4>
+<div class="paragraph">
+<p>&#x7121;&#x8AD6;&#x4F60;&#x662F;&#x5426;&#x9078;&#x64C7;&#x904B;&#x884C;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x90FD;&#x9700;&#x8981;&#x904B;&#x884C;&#x516C;&#x5171;testnet&#x7BC0;&#x9EDE;&#x3002;&#x6211;&#x5011;&#x4F86;&#x770B;&#x770B;&#x4F7F;&#x7528;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x4E00;&#x4E9B;&#x512A;&#x9EDE;&#x548C;&#x7F3A;&#x9EDE;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x512A;&#x9EDE;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x7BC0;&#x9EDE;&#x9700;&#x8981;&#x540C;&#x6B65;&#x4E26;&#x5132;&#x5B58;&#x5C11;&#x5F97;&#x591A;&#x7684;&#x6578;&#x64DA;&#xFF0C;&#x6839;&#x64DA;&#x7DB2;&#x8DEF;&#x5927;&#x5C0F;&#x7D04;&#x70BA;10GB&#xFF08;&#x622A;&#x81F3;2018&#x5E74;4&#x6708;&#xFF09;&#x3002;</p>
+</li>
+<li>
+<p>&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x7BC0;&#x9EDE;&#x53EF;&#x4EE5;&#x5728;&#x5E7E;&#x500B;&#x5C0F;&#x6642;&#x5167;&#x5B8C;&#x5168;&#x540C;&#x6B65;&#x3002;</p>
+</li>
+<li>
+<p>&#x90E8;&#x7F72;&#x5408;&#x7D04;&#x6216;&#x9032;&#x884C;&#x4EA4;&#x6613;&#x9700;&#x8981;&#x6E2C;&#x8A66;ether&#xFF0C;&#x5B83;&#x6C92;&#x6709;&#x50F9;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x5F9E;&#x5E7E;&#x500B;&#x201C;faucet&#x201D;&#x514D;&#x8CBB;&#x7372;&#x5F97;&#x3002;</p>
+</li>
+<li>
+<p>Testnets&#x662F;&#x8207;&#x5176;&#x4ED6;&#x8A31;&#x591A;&#x7528;&#x6236;&#x548C;&#x5408;&#x7D04;&#x5171;&#x4EAB;&#x7684;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x904B;&#x884C;&#x201C;live&#x201D;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>&#x7F3A;&#x9EDE;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x4F60;&#x4E0D;&#x80FD;&#x5728;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0A;&#x4F7F;&#x7528;&#x201C;&#x771F;&#x5BE6;&#x201D;&#x7684;&#x9322;&#xFF0C;&#x5B83;&#x4EE5;&#x6E2C;&#x8A66;ether&#x904B;&#x8F49;&#x3002;</p>
+</li>
+<li>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x4F60;&#x7121;&#x6CD5;&#x91DD;&#x5C0D;&#x771F;&#x6B63;&#x5C0D;&#x624B;&#x9032;&#x884C;&#x5B89;&#x5168;&#x6027;&#x6E2C;&#x8A66;&#xFF0C;&#x56E0;&#x70BA;&#x6C92;&#x6709;&#x4EFB;&#x4F55;&#x98A8;&#x96AA;&#x3002;</p>
+</li>
+<li>
+<p>&#x516C;&#x5171;&#x5340;&#x584A;&#x93C8;&#x7684;&#x67D0;&#x4E9B;&#x65B9;&#x9762;&#x7121;&#x6CD5;&#x5728;testnet&#x4E0A;&#x771F;&#x5BE6;&#x5730;&#x6E2C;&#x8A66;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4EA4;&#x6613;&#x8CBB;&#x96D6;&#x7136;&#x662F;&#x767C;&#x9001;&#x4EA4;&#x6613;&#x6240;&#x5FC5;&#x9700;&#x7684;&#xFF0C;&#x4F46;&#x7531;&#x65BC;gas&#x662F;&#x514D;&#x8CBB;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0A;&#x8003;&#x616E;&#x3002;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0D;&#x6703;&#x50CF;&#x516C;&#x5171;&#x7DB2;&#x8DEF;&#x90A3;&#x6A23;&#x7D93;&#x6B77;&#x7DB2;&#x8DEF;&#x64C1;&#x585E;&#x3002;</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="testRPC_adv_disadv">&#x672C;&#x5730;&#x5BE6;&#x4F8B;&#xFF08;TestRPC&#xFF09;&#x7684;&#x512A;&#x9EDE;&#x548C;&#x7F3A;&#x9EDE;</h4>
+<div class="paragraph">
+<p>&#x5C0D;&#x65BC;&#x8A31;&#x591A;&#x6E2C;&#x8A66;&#x76EE;&#x7684;&#xFF0C;&#x6700;&#x597D;&#x7684;&#x9078;&#x64C7;&#x662F;&#x4F7F;&#x7528; testrpc &#x7BC0;&#x9EDE;&#x555F;&#x52D5;&#x4E00;&#x500B;&#x5BE6;&#x4F8B;&#x79C1;&#x6709;&#x5340;&#x584A;&#x93C8;&#x3002;TestRPC&#x5275;&#x5EFA;&#x4E00;&#x500B;&#x672C;&#x5730;&#x79C1;&#x6709;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x8207;&#x4E4B;&#x4EA4;&#x4E92;&#xFF0C;&#x800C;&#x7121;&#x9700;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x53C3;&#x8207;&#x8005;&#x3002;&#x5B83;&#x5206;&#x4EAB;&#x4E86;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x8A31;&#x591A;&#x512A;&#x9EDE;&#x548C;&#x7F3A;&#x9EDE;&#xFF0C;&#x4F46;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x5DEE;&#x7570;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x512A;&#x9EDE;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x4E0D;&#x540C;&#x6B65;&#xFF0C;&#x786C;&#x789F;&#x4E0A;&#x5E7E;&#x4E4E;&#x6C92;&#x6709;&#x6578;&#x64DA;&#x3002;&#x4F60;&#x81EA;&#x5DF1;&#x6316;&#x6398;&#x7B2C;&#x4E00;&#x584A;&#x3002;</p>
+</li>
+<li>
+<p>&#x7121;&#x9700;&#x6E2C;&#x8A66;ether&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5C07;&#x6316;&#x7926;&#x734E;&#x52F5;&#x201C;&#x734E;&#x52F5;&#x201D;&#x7D66;&#x81EA;&#x5DF1;&#xFF0C;&#x7528;&#x65BC;&#x6E2C;&#x8A66;&#x3002;</p>
+</li>
+<li>
+<p>&#x6C92;&#x6709;&#x5176;&#x4ED6;&#x7528;&#x6236;&#xFF0C;&#x53EA;&#x6709;&#x4F60;&#x3002;</p>
+</li>
+<li>
+<p>&#x6C92;&#x6709;&#x5176;&#x4ED6;&#x5408;&#x7D04;&#xFF0C;&#x53EA;&#x6709;&#x4F60;&#x555F;&#x52D5;&#x5F8C;&#x90E8;&#x7F72;&#x7684;&#x5408;&#x7D04;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>&#x7F3A;&#x9EDE;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x6C92;&#x6709;&#x5176;&#x4ED6;&#x7528;&#x6236;&#x610F;&#x5473;&#x8457;&#x5B83;&#x4E0D;&#x50CF;&#x516C;&#x5171;&#x5340;&#x584A;&#x93C8;&#x4E00;&#x6A23;&#x3002;&#x6C92;&#x6709;&#x4EA4;&#x6613;&#x7A7A;&#x9593;&#x6216;&#x4EA4;&#x6613;&#x6392;&#x5E8F;&#x7684;&#x7AF6;&#x722D;&#x3002;</p>
+</li>
+<li>
+<p>&#x9664;&#x4F60;&#x4E4B;&#x5916;&#x6C92;&#x6709;&#x7926;&#x5DE5;&#x610F;&#x5473;&#x8457;&#x63A1;&#x7926;&#x66F4;&#x5177;&#x53EF;&#x9810;&#x6E2C;&#x6027;&#xFF0C;&#x56E0;&#x6B64;&#x4F60;&#x7121;&#x6CD5;&#x6E2C;&#x8A66;&#x516C;&#x958B;&#x5340;&#x584A;&#x93C8;&#x4E0A;&#x767C;&#x751F;&#x7684;&#x4E00;&#x4E9B;&#x60C5;&#x6CC1;&#x3002;</p>
+</li>
+<li>
+<p>&#x6C92;&#x6709;&#x5176;&#x4ED6;&#x5408;&#x7D04;&#x610F;&#x5473;&#x8457;&#x4F60;&#x5FC5;&#x9808;&#x90E8;&#x7F72;&#x6240;&#x6709;&#x4F60;&#x60F3;&#x6E2C;&#x8A66;&#x7684;&#x5167;&#x5BB9;&#xFF0C;&#x5305;&#x62EC;&#x4F9D;&#x8CF4;&#x9805;&#x548C;&#x5408;&#x7D04;&#x5EAB;&#x3002;</p>
+</li>
+<li>
+<p>&#x4F60;&#x4E0D;&#x80FD;&#x91CD;&#x65B0;&#x5275;&#x5EFA;&#x4E00;&#x4E9B;&#x516C;&#x5171;&#x5408;&#x7D04;&#x53CA;&#x5176;&#x5730;&#x5740;&#x4F86;&#x6E2C;&#x8A66;&#x4E00;&#x4E9B;&#x5834;&#x666F;&#xFF08;&#x4F8B;&#x5982;DAO&#x5408;&#x7D04;&#xFF09;&#x3002;</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="running_client">&#x904B;&#x884C;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;</h3>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F60;&#x6709;&#x6642;&#x9593;&#x548C;&#x8CC7;&#x6E90;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x5617;&#x8A66;&#x904B;&#x884C;&#x4E00;&#x500B;&#x5B8C;&#x6574;&#x7684;&#x7BC0;&#x9EDE;&#xFF0C;&#x5373;&#x4F7F;&#x53EA;&#x662F;&#x70BA;&#x4E86;&#x66F4;&#x591A;&#x5730;&#x77AD;&#x89E3;&#x9019;&#x500B;&#x904E;&#x7A0B;&#x3002;&#x5728;&#x63A5;&#x4E0B;&#x4F86;&#x7684;&#x5E7E;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x4E0B;&#x8F09;&#xFF0C;&#x7DE8;&#x8B6F;&#x548C;&#x904B;&#x884C;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;Go-Ethereum&#xFF08;Geth&#xFF09;&#x548C;Parity&#x3002;&#x9019;&#x9700;&#x8981;&#x719F;&#x6089;&#x5728;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x4E0A;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x754C;&#x9762;&#x3002;&#x7121;&#x8AD6;&#x4F60;&#x9078;&#x64C7;&#x5C07;&#x5B83;&#x5011;&#x4F5C;&#x70BA;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#xFF0C;&#x4F5C;&#x70BA;testnet&#x7BC0;&#x9EDE;&#x9084;&#x662F;&#x4F5C;&#x70BA;&#x672C;&#x5730;&#x79C1;&#x6709;&#x5340;&#x584A;&#x93C8;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#x904B;&#x884C;&#xFF0C;&#x90FD;&#x503C;&#x5F97;&#x5B89;&#x88DD;&#x9019;&#x4E9B;&#x5BA2;&#x6236;&#x7AEF;&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="requirements">&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x7684;&#x786C;&#x9AD4;&#x8981;&#x6C42;</h4>
+<div class="paragraph">
+<p>&#x5728;&#x6211;&#x5011;&#x958B;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x78BA;&#x4FDD;&#x4F60;&#x6709;&#x4E00;&#x81FA;&#x5177;&#x6709;&#x8DB3;&#x5920;&#x8CC7;&#x6E90;&#x7684;&#x8A08;&#x7B97;&#x6A5F;&#x4F86;&#x904B;&#x884C;&#x4EE5;&#x592A;&#x574A;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x3002;&#x4F60;&#x5C07;&#x9700;&#x8981;&#x81F3;&#x5C11;80GB&#x7684;&#x786C;&#x789F;&#x7A7A;&#x9593;&#x4F86;&#x5132;&#x5B58;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x7684;&#x5B8C;&#x6574;&#x526F;&#x672C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x9084;&#x60F3;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0A;&#x904B;&#x884C;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#xFF0C;&#x5247;&#x81F3;&#x5C11;&#x9700;&#x8981;&#x984D;&#x5916;&#x7684;15GB&#x3002;&#x4E0B;&#x8F09;80GB&#x7684;&#x5340;&#x584A;&#x93C8;&#x6578;&#x64DA;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5F88;&#x9577;&#x6642;&#x9593;&#xFF0C;&#x56E0;&#x6B64;&#x5EFA;&#x8B70;&#x4F60;&#x4F7F;&#x7528;&#x5FEB;&#x901F;&#x7684;Internet&#x9023;&#x63A5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x540C;&#x6B65;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x662F;&#x975E;&#x5E38;&#x5BC6;&#x96C6;&#x7684;&#x8F38;&#x5165;&#x8F38;&#x51FA;&#xFF08;I / O&#xFF09;&#x3002;&#x6700;&#x597D;&#x6709;&#x4E00;&#x500B;&#x56FA;&#x614B;&#x786C;&#x789F;&#xFF08;SSD&#xFF09;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6709;&#x6A5F;&#x68B0;&#x786C;&#x789F;&#x9A45;&#x52D5;&#x5668;&#xFF08;HDD&#xFF09;&#xFF0C;&#x5247;&#x81F3;&#x5C11;&#x9700;&#x8981;8GB&#x7684;RAM&#x80FD;&#x7528;&#x4F5C;&#x7DE9;&#x5B58;&#x3002;&#x5426;&#x5247;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x6703;&#x767C;&#x73FE;&#x4F60;&#x7684;&#x7CFB;&#x7D71;&#x901F;&#x5EA6;&#x592A;&#x6162;&#xFF0C;&#x7121;&#x6CD5;&#x5B8C;&#x5168;&#x4FDD;&#x6301;&#x540C;&#x6B65;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x6700;&#x4F4E;&#x8981;&#x6C42;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>2&#x6838;&#x5FC3;CPU&#x3002;</p>
+</li>
+<li>
+<p>&#x56FA;&#x614B;&#x786C;&#x789F;&#xFF08;SSD&#xFF09;&#xFF0C;&#x81F3;&#x5C11;80GB&#x53EF;&#x7528;&#x7A7A;&#x9593;&#x3002;</p>
+</li>
+<li>
+<p>&#x6700;&#x5C0F;4GB&#x8A18;&#x61B6;&#x9AD4;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;HDD&#x800C;&#x4E0D;&#x662F;SSD&#xFF0C;&#x5247;&#x81F3;&#x5C11;8GB&#x3002;</p>
+</li>
+<li>
+<p>8+ MBit/sec&#x4E0B;&#x8F09;&#x901F;&#x5EA6;&#x7684;&#x4E92;&#x806F;&#x7DB2;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x4E9B;&#x662F;&#x540C;&#x6B65;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x5340;&#x584A;&#x93C8;&#x7684;&#x5B8C;&#x6574;&#xFF08;&#x4F46;&#x5DF2;&#x4FEE;&#x526A;&#xFF09;&#x526F;&#x672C;&#x7684;&#x6700;&#x4F4E;&#x8981;&#x6C42;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x7DE8;&#x5BEB;&#x672C;&#x6587;&#x6642;&#xFF08;2018&#x5E74;4&#x6708;&#xFF09;&#xFF0C;Parity&#x7A0B;&#x5F0F;&#x78BC;&#x5EAB;&#x7684;&#x8CC7;&#x6E90;&#x5F80;&#x5F80;&#x66F4;&#x8F15;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x6709;&#x9650;&#x7684;&#x786C;&#x9AD4;&#x904B;&#x884C;&#xFF0C;&#x90A3;&#x9EBC;&#x4F7F;&#x7528;Parity&#x53EF;&#x80FD;&#x6703;&#x770B;&#x5230;&#x6700;&#x597D;&#x7684;&#x7D50;&#x679C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5728;&#x5408;&#x7406;&#x7684;&#x6642;&#x9593;&#x5167;&#x540C;&#x6B65;&#x4E26;&#x5132;&#x5B58;&#x6211;&#x5011;&#x5728;&#x672C;&#x66F8;&#x4E2D;&#x8A0E;&#x8AD6;&#x7684;&#x6240;&#x6709;&#x958B;&#x767C;&#x5DE5;&#x5177;&#xFF0C;&#x5EAB;&#xFF0C;&#x5BA2;&#x6236;&#x7AEF;&#x548C;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x4F60;&#x5C07;&#x9700;&#x8981;&#x4E00;&#x81FA;&#x529F;&#x80FD;&#x66F4;&#x5F37;&#x5927;&#x7684;&#x8A08;&#x7B97;&#x6A5F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x63A8;&#x85A6;&#x898F;&#x683C;&#xFF1A;</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>4&#x500B;&#x4EE5;&#x4E0A;&#x6838;&#x5FC3;&#x7684;&#x5FEB;&#x901F;CPU&#x3002;</p>
+</li>
+<li>
+<p>16GB+ RAM&#x3002;</p>
+</li>
+<li>
+<p>&#x81F3;&#x5C11;&#x6709;500GB&#x53EF;&#x7528;&#x7A7A;&#x9593;&#x7684;&#x5FEB;&#x901F;SSD&#x3002;</p>
+</li>
+<li>
+<p>25+ MBit/sec&#x4E0B;&#x8F09;&#x901F;&#x5EA6;&#x7684;&#x4E92;&#x806F;&#x7DB2;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#x5F88;&#x96E3;&#x9810;&#x6E2C;&#x5340;&#x584A;&#x93C8;&#x7684;&#x5927;&#x5C0F;&#x6703;&#x589E;&#x52A0;&#x591A;&#x5FEB;&#xFF0C;&#x4EE5;&#x53CA;&#x4F55;&#x6642;&#x9700;&#x8981;&#x66F4;&#x591A;&#x7684;&#x786C;&#x789F;&#x7A7A;&#x9593;&#xFF0C;&#x6240;&#x4EE5;&#x5EFA;&#x8B70;&#x4F60;&#x5728;&#x958B;&#x59CB;&#x540C;&#x6B65;&#x4E4B;&#x524D;&#x6AA2;&#x67E5;&#x5340;&#x584A;&#x93C8;&#x7684;&#x6700;&#x65B0;&#x5927;&#x5C0F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><strong>&#x4EE5;&#x592A;&#x574A;&#xFF1A;</strong> <a href="https://bitinfocharts.com/ethereum/" class="bare" target="_blank">https://bitinfocharts.com/ethereum/</a></p>
+</div>
+<div class="paragraph">
+<p><strong>&#x4EE5;&#x592A;&#x574A;&#x7D93;&#x5178;&#xFF1A;</strong> <a href="https://bitinfocharts.com/ethereum%20classic/" class="bare" target="_blank">https://bitinfocharts.com/ethereum%20classic/</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="sw_reqs">&#x69CB;&#x5EFA;&#x548C;&#x904B;&#x884C;&#x5BA2;&#x6236;&#x7AEF;&#xFF08;&#x7BC0;&#x9EDE;&#xFF09;&#x7684;&#x8EDF;&#x9AD4;&#x8981;&#x6C42;</h4>
+<div class="paragraph">
+<p>&#x672C;&#x7BC0;&#x4ECB;&#x7D39;Geth&#x548C;Parity&#x5BA2;&#x6236;&#x7AEF;&#x8EDF;&#x9AD4;&#x3002;&#x4E26;&#x5047;&#x8A2D;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x985E;Unix&#x7684;&#x547D;&#x4EE4;&#x884C;&#x74B0;&#x5883;&#x3002;&#x9019;&#x4E9B;&#x7BC4;&#x4F8B;&#x986F;&#x793A;&#x4E86;&#x5728;&#x904B;&#x884C;Bash shell&#xFF08;&#x547D;&#x4EE4;&#x884C;&#x57F7;&#x884C;&#x74B0;&#x5883;&#xFF09;&#x7684;Ubuntu Linux&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x4E0A;&#x8F38;&#x5165;&#x7684;&#x8F38;&#x51FA;&#x548C;&#x547D;&#x4EE4;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x901A;&#x5E38;&#xFF0C;&#x6BCF;&#x500B;&#x5340;&#x584A;&#x93C8;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;Geth&#x7248;&#x672C;&#xFF0C;&#x800C;Parity&#x652F;&#x6301;&#x591A;&#x500B;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#xFF08;Ethereum&#x3001;Ethereum Classic&#x3001;Ellaism&#x3001;Expanse&#x3001;Musicoin&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x6211;&#x5011;&#x958B;&#x59CB;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x6EFF;&#x8DB3;&#x4E00;&#x4E9B;&#x5148;&#x6C7A;&#x689D;&#x4EF6;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5F9E;&#x672A;&#x5728;&#x4F60;&#x7576;&#x524D;&#x4F7F;&#x7528;&#x7684;&#x8A08;&#x7B97;&#x6A5F;&#x4E0A;&#x9032;&#x884C;&#x4EFB;&#x4F55;&#x8EDF;&#x9AD4;&#x958B;&#x767C;&#xFF0C;&#x5247;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5B89;&#x88DD;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x5DE5;&#x5177;&#x3002;&#x5C0D;&#x65BC;&#x4EE5;&#x4E0B;&#x7BC4;&#x4F8B;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5B89;&#x88DD; git&#xFF0C;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x7BA1;&#x7406;&#x7CFB;&#x7D71;; Golang&#xFF0C;Go&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x548C;&#x6A19;&#x6E96;&#x5EAB;; &#x548C;Rust&#xFF0C;&#x4E00;&#x7A2E;&#x7CFB;&#x7D71;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x8AAA;&#x660E;&#x5B89;&#x88DD;Git&#xFF1A;
+<a href="https://git-scm.com/" class="bare" target="_blank">https://git-scm.com/</a></p>
+</div>
+<div class="paragraph">
+<p>&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x8AAA;&#x660E;&#x5B89;&#x88DD;Go&#xFF1A;
+<a href="https://golang.org/" class="bare" target="_blank">https://golang.org/</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Geth&#x7684;&#x8981;&#x6C42;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x4F60;&#x5805;&#x6301;&#x4F7F;&#x7528;Go&#x7248;&#x672C;1.10&#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x80FD;&#x5920;&#x7DE8;&#x8B6F;&#x4F60;&#x60F3;&#x8981;&#x7684;&#x4EFB;&#x4F55;&#x7248;&#x672C;&#x7684;Geth&#x3002;&#x7576;&#x7136;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x7E3D;&#x662F;&#x53C3;&#x8003;&#x4F60;&#x9078;&#x64C7;&#x7684;Geth&#x7684;&#x6587;&#x4EF6;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x5B89;&#x88DD;&#x5728;&#x4F60;&#x7684;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x4E0A;&#x7684;Golang&#x7248;&#x672C;&#x6216;&#x8005;&#x5F9E;&#x7CFB;&#x7D71;&#x7684;&#x8EDF;&#x9AD4;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x7372;&#x5F97;&#x7684;&#x7248;&#x672C;&#x9060;&#x9060;&#x65E9;&#x65BC;1.10&#xFF0C;&#x8ACB;&#x5C07;&#x5176;&#x522A;&#x9664;&#x4E26;&#x5F9E;golang.org&#x5B89;&#x88DD;&#x6700;&#x65B0;&#x7248;&#x672C;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Rust&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x4EE5;&#x4E0B;&#x8AAA;&#x660E;&#x9032;&#x884C;&#x5B89;&#x88DD;&#xFF1A;
+<a href="https://www.rustup.rs/" class="bare" target="_blank">https://www.rustup.rs/</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Parity&#x9700;&#x8981;Rust&#x7248;&#x672C;1.24&#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Parity&#x9084;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x8EDF;&#x9AD4;&#x5EAB;&#xFF0C;&#x4F8B;&#x5982;OpenSSL&#x548C;libudev&#x3002;&#x8981;&#x5728;Linux&#xFF08;Debian&#xFF09;&#x517C;&#x5BB9;&#x7CFB;&#x7D71;&#x4E0A;&#x5B89;&#x88DD;&#xFF0C;&#x8ACB;&#x57F7;&#x884C;&#x4EE5;&#x4E0B;&#x64CD;&#x4F5C;&#xFF1A;</p>
+</div>
+<div id="install_parity_dependencies" class="listingblock">
+<div class="content">
+<pre>$ sudo apt-get install openssl libssl-dev libudev-dev</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5C0D;&#x65BC;&#x5176;&#x4ED6;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#xFF0C;&#x8ACB;&#x4F7F;&#x7528;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x7684;&#x8EDF;&#x9AD4;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x6216;&#x9075;&#x5FAA;Wiki&#x8AAA;&#x660E;&#xFF08;https://github.com/paritytech/parity/wiki/Setup&#xFF09;&#x4F86;&#x5B89;&#x88DD;&#x6240;&#x9700;&#x7684;&#x5EAB;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x73FE;&#x5728;&#x4F60;&#x5DF2;&#x7D93;&#x5B89;&#x88DD;&#x4E86; git&#x3001;golang&#x3001;rust &#x548C;&#x5FC5;&#x8981;&#x7684;&#x5EAB;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x958B;&#x59CB;&#x5DE5;&#x4F5C;&#x5427;&#xFF01;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="parity">Parity</h4>
+<div class="paragraph">
+<p>Parity&#x662F;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x548C;DApp&#x700F;&#x89BD;&#x5668;&#x7684;&#x5BE6;&#x73FE;&#x3002;Parity&#x662F;&#x7531;Rust&#x5F9E;&#x982D;&#x958B;&#x59CB;&#x7DE8;&#x5BEB;&#x7684;&#xFF0C;&#x7CFB;&#x7D71;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x662F;&#x70BA;&#x4E86;&#x69CB;&#x5EFA;&#x4E00;&#x500B;&#x6A21;&#x584A;&#x5316;&#xFF0C;&#x5B89;&#x5168;&#x548C;&#x53EF;&#x64F4;&#x5C55;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x3002;Parity&#x7531;&#x82F1;&#x570B;&#x516C;&#x53F8;Parity Tech&#x958B;&#x767C;&#xFF0C;&#x4E26;&#x4EE5;GPLv3&#x958B;&#x6E90;&#x8A31;&#x53EF;&#x8B49;&#x767C;&#x4F48;&#x3002;</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x62AB;&#x9732;&#xFF1A;&#x672C;&#x66F8;&#x7684;&#x4F5C;&#x8005;&#x4E4B;&#x4E00;Gavin Wood&#x662F;Parity Tech&#x7684;&#x5275;&#x59CB;&#x4EBA;&#xFF0C;&#x4E26;&#x64B0;&#x5BEB;&#x4E86;&#x5927;&#x90E8;&#x5206;Parity&#x5BA2;&#x6236;&#x7AEF;&#x3002;Parity&#x4EE3;&#x8868;&#x4E86;&#x7D04;28%&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>&#x8981;&#x5B89;&#x88DD;Parity&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Rust&#x5305;&#x7BA1;&#x7406;&#x5668;cargo&#x6216;&#x5F9E;GitHub&#x4E0B;&#x8F09;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x3002;&#x8EDF;&#x9AD4;&#x5305;&#x7BA1;&#x7406;&#x5668;&#x4E5F;&#x4E0B;&#x8F09;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#xFF0C;&#x6240;&#x4EE5;&#x5169;&#x7A2E;&#x9078;&#x64C7;&#x4E4B;&#x9593;&#x6C92;&#x6709;&#x592A;&#x5927;&#x5340;&#x5225;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x7BC0;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x5411;&#x4F60;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x81EA;&#x5DF1;&#x4E0B;&#x8F09;&#x548C;&#x7DE8;&#x8B6F;Parity&#x3002;</p>
+</div>
+<div class="sect4">
+<h5 id="install_parity">&#x5B89;&#x88DD; Parity</h5>
+<div class="paragraph">
+<p>Parity Wiki&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x4E0D;&#x540C;&#x74B0;&#x5883;&#x548C;&#x5BB9;&#x5668;&#x4E2D;&#x69CB;&#x5EFA;Parity&#x7684;&#x8AAA;&#x660E;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/paritytech/parity/wiki/Setup" class="bare" target="_blank">https://github.com/paritytech/parity/wiki/Setup</a></p>
+</div>
+<div class="paragraph">
+<p>&#x6211;&#x5011;&#x5C07;&#x5F9E;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x69CB;&#x5EFA;&#x5947;&#x5076;&#x6821;&#x9A57;&#x3002;&#x9019;&#x5047;&#x5B9A;&#x4F60;&#x5DF2;&#x7D93;&#x4F7F;&#x7528; rustup &#x5B89;&#x88DD;&#x4E86;Rust&#xFF08;&#x898B; <a href="#sw_reqs">&#x69CB;&#x5EFA;&#x548C;&#x904B;&#x884C;&#x5BA2;&#x6236;&#x7AEF;&#xFF08;&#x7BC0;&#x9EDE;&#xFF09;&#x7684;&#x8EDF;&#x9AD4;&#x8981;&#x6C42;</a>&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x9996;&#x5148;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x5F9E;GitHub&#x7372;&#x53D6;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#xFF1A;</p>
+</div>
+<div id="git_clone_parity" class="listingblock">
+<div class="content">
+<pre>$ git clone https://github.com/paritytech/parity</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73FE;&#x5728;&#xFF0C;&#x6211;&#x5011;&#x8F49;&#x5230;parity&#x76EE;&#x9304;&#x4E26;&#x4F7F;&#x7528;cargo&#x69CB;&#x5EFA;&#x53EF;&#x57F7;&#x884C;&#x6A94;&#x6848;&#xFF1A;</p>
+</div>
+<div id="parity_build" class="listingblock">
+<div class="content">
+<pre>$ cd parity
+$ cargo build</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4E00;&#x5207;&#x9806;&#x5229;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x770B;&#x5230;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x7684;&#x5167;&#x5BB9;&#xFF1A;</p>
+</div>
+<div id="parity_build_status" class="listingblock">
+<div class="content">
+<pre>$ cargo build
+    Updating git repository `https://github.com/paritytech/js-precompiled.git`
+ Downloading log v0.3.7
+ Downloading isatty v0.1.1
+ Downloading regex v0.2.1
+
+ [...]
+
+Compiling parity-ipfs-api v1.7.0
+Compiling parity-rpc v1.7.0
+Compiling parity-rpc-client v1.4.0
+Compiling rpc-cli v1.4.0 (file:///home/aantonop/Dev/parity/rpc_cli)
+Finished dev [unoptimized + debuginfo] target(s) in 479.12 secs
+$</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8B93;&#x6211;&#x5011;&#x901A;&#x904E;&#x8ABF;&#x7528;--version&#x9078;&#x9805;&#x4F86;&#x904B;&#x884C;parity&#x4EE5;&#x67E5;&#x770B;&#x5B83;&#x662F;&#x5426;&#x5DF2;&#x5B89;&#x88DD;&#xFF1A;</p>
+</div>
+<div id="run_parity" class="listingblock">
+<div class="content">
+<pre>$ parity --version
+Parity
+  version Parity/v1.7.0-unstable-02edc95-20170623/x86_64-linux-gnu/rustc1.18.0
+Copyright 2015, 2016, 2017 Parity Technologies (UK) Ltd
+License GPLv3+: GNU GPL version 3 or later &lt;http://gnu.org/licenses/gpl.html&gt;.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+By Wood/Paronyan/Kotewicz/Drwi&#x119;ga/Volf
+   Habermeier/Czaban/Greeff/Gotchac/Redmann
+$</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73FE;&#x5728;&#x5DF2;&#x5B89;&#x88DD;&#x4E86;Parity&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x540C;&#x6B65;&#x5340;&#x584A;&#x93C8;&#x4E26;&#x958B;&#x59CB;&#x4F7F;&#x7528;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x547D;&#x4EE4;&#x884C;&#x9078;&#x9805;&#x3002;</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="go_ethereum_geth">Go-Ethereum (Geth)</h4>
+<div class="paragraph">
+<p>Geth&#x662F;Go&#x8A9E;&#x8A00;&#x5BE6;&#x73FE;&#x7684;&#xFF0C;&#x5B83;&#x88AB;&#x7A4D;&#x6975;&#x958B;&#x767C;&#x4E26;&#x88AB;&#x8996;&#x70BA;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x201C;&#x5B98;&#x65B9;&#x201D;&#x5BE6;&#x73FE;&#x3002;&#x901A;&#x5E38;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x6BCF;&#x500B;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x5340;&#x584A;&#x93C8;&#x90FD;&#x6703;&#x6709;&#x81EA;&#x5DF1;&#x7684;Geth&#x5BE6;&#x73FE;&#x3002;&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x904B;&#x884C;Geth&#xFF0C;&#x90A3;&#x9EBC;&#x4F60;&#x9700;&#x8981;&#x78BA;&#x4FDD;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x67D0;&#x500B;&#x5132;&#x5B58;&#x5EAB;&#x93C8;&#x63A5;&#x70BA;&#x5340;&#x584A;&#x93C8;&#x7372;&#x53D6;&#x6B63;&#x78BA;&#x7684;&#x7248;&#x672C;&#x3002;</p>
+</div>
+<div class="sect4">
+<h5 id="___2">&#x7248;&#x672C;&#x5EAB;&#x93C8;&#x63A5;</h5>
+<div class="paragraph">
+<p><strong>Ethereum:</strong> <a href="https://github.com/ethereum/go-ethereum" class="bare" target="_blank">https://github.com/ethereum/go-ethereum</a> (or <a href="https://geth.ethereum.org/" class="bare" target="_blank">https://geth.ethereum.org/</a>)</p>
+</div>
+<div class="paragraph">
+<p><strong>Ethereum Classic:</strong> <a href="https://github.com/ethereumproject/go-ethereum" class="bare" target="_blank">https://github.com/ethereumproject/go-ethereum</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Ellaism:</strong> <a href="https://github.com/ellaism/go-ellaism" class="bare" target="_blank">https://github.com/ellaism/go-ellaism</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Expanse:</strong> <a href="https://github.com/expanse-org/go-expanse" class="bare" target="_blank">https://github.com/expanse-org/go-expanse</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Musicoin:</strong> <a href="https://github.com/Musicoin/go-musicoin" class="bare" target="_blank">https://github.com/Musicoin/go-musicoin</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Ubiq:</strong> <a href="https://github.com/ubiq/go-ubiq" class="bare" target="_blank">https://github.com/ubiq/go-ubiq</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x8DF3;&#x904E;&#x9019;&#x4E9B;&#x8AAA;&#x660E;&#x4F75;&#x70BA;&#x4F60;&#x9078;&#x64C7;&#x7684;&#x5E73;&#x81FA;&#x5B89;&#x88DD;&#x9810;&#x7DE8;&#x8B6F;&#x7684;&#x4E8C;&#x9032;&#x5236;&#x6A94;&#x6848;&#x3002;&#x9810;&#x7DE8;&#x8B6F;&#x7684;&#x7248;&#x672C;&#x5B89;&#x88DD;&#x8D77;&#x4F86;&#x66F4;&#x5BB9;&#x6613;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x4E0A;&#x9762;&#x7248;&#x672C;&#x5EAB;&#x7684;&#x201C;&#x7248;&#x672C;&#x201D;&#x90E8;&#x5206;&#x627E;&#x5230;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x904E;&#x81EA;&#x5DF1;&#x4E0B;&#x8F09;&#x548C;&#x7DE8;&#x8B6F;&#x8EDF;&#x9AD4;&#x4F86;&#x4E86;&#x89E3;&#x66F4;&#x591A;&#x8CC7;&#x8A0A;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect4">
+<h5 id="cloning_repo">&#x8907;&#x88FD;&#x5132;&#x5B58;&#x5EAB;</h5>
+<div class="paragraph">
+<p>&#x6211;&#x5011;&#x7684;&#x7B2C;&#x4E00;&#x6B65;&#x662F;&#x8907;&#x88FD;git&#x5009;&#x5EAB;&#xFF0C;&#x4EE5;&#x7372;&#x5F97;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x526F;&#x672C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8981;&#x5275;&#x5EFA;&#x6B64;&#x5132;&#x5B58;&#x5EAB;&#x7684;&#x672C;&#x5730;&#x526F;&#x672C;&#xFF0C;&#x8ACB;&#x4F7F;&#x7528; git &#x547D;&#x4EE4;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF0C;&#x5728;&#x4F60;&#x7684;&#x4E3B;&#x76EE;&#x9304;&#x6216;&#x7528;&#x65BC;&#x958B;&#x767C;&#x7684;&#x4EFB;&#x4F55;&#x76EE;&#x9304;&#x4E0B;&#xFF1A;</p>
+</div>
+<div id="git_clone_geth" class="listingblock">
+<div class="content">
+<pre>$ git clone &lt;Repository Link&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x5C07;&#x5132;&#x5B58;&#x5EAB;&#x8907;&#x88FD;&#x5230;&#x672C;&#x5730;&#x7CFB;&#x7D71;&#x6642;&#xFF0C;&#x4F60;&#x61C9;&#x8A72;&#x770B;&#x5230;&#x9032;&#x5EA6;&#x5831;&#x544A;&#xFF1A;</p>
+</div>
+<div id="cloning_status" class="listingblock">
+<div class="content">
+<pre>Cloning into &apos;go-ethereum&apos;...
+remote: Counting objects: 62587, done.
+remote: Compressing objects: 100% (26/26), done.
+remote: Total 62587 (delta 10), reused 13 (delta 4), pack-reused 62557
+Receiving objects: 100% (62587/62587), 84.51 MiB | 1.40 MiB/s, done.
+Resolving deltas: 100% (41554/41554), done.
+Checking connectivity... done.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x73FE;&#x5728;&#x6211;&#x5011;&#x6709;&#x4E86;Geth&#x7684;&#x672C;&#x5730;&#x526F;&#x672C;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x70BA;&#x6211;&#x5011;&#x7684;&#x5E73;&#x81FA;&#x7DE8;&#x8B6F;&#x4E00;&#x500B;&#x53EF;&#x57F7;&#x884C;&#x6A94;&#x6848;&#x3002;</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="build_geth_src">&#x5F9E;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x69CB;&#x5EFA;Geth</h5>
+<div class="paragraph">
+<p>&#x8981;&#x69CB;&#x5EFA;Geth&#xFF0C;&#x5207;&#x63DB;&#x5230;&#x4E0B;&#x8F09;&#x6E90;&#x7A0B;&#x5F0F;&#x78BC;&#x7684;&#x76EE;&#x9304;&#x4E26;&#x4F7F;&#x7528; make &#x547D;&#x4EE4;&#xFF1A;</p>
+</div>
+<div id="making_geth" class="listingblock">
+<div class="content">
+<pre>$ cd go-ethereum
+$ make geth</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4E00;&#x5207;&#x9806;&#x5229;&#xFF0C;&#x4F60;&#x5C07;&#x770B;&#x5230;Go&#x7DE8;&#x8B6F;&#x5668;&#x69CB;&#x5EFA;&#x6BCF;&#x500B;&#x7D44;&#x4EF6;&#xFF0C;&#x76F4;&#x5230;&#x5B83;&#x751F;&#x6210;+ geth +&#x53EF;&#x57F7;&#x884C;&#x6A94;&#x6848;&#xFF1A;</p>
+</div>
+<div id="making_geth_status" class="listingblock">
+<div class="content">
+<pre>build/env.sh go run build/ci.go install ./cmd/geth
+&gt;&gt;&gt; /usr/local/go/bin/go install -ldflags -X main.gitCommit=58a1e13e6dd7f52a1d5e67bee47d23fd6cfdee5c -v ./cmd/geth
+github.com/ethereum/go-ethereum/common/hexutil
+github.com/ethereum/go-ethereum/common/math
+github.com/ethereum/go-ethereum/crypto/sha3
+github.com/ethereum/go-ethereum/rlp
+github.com/ethereum/go-ethereum/crypto/secp256k1
+github.com/ethereum/go-ethereum/common
+[...]
+github.com/ethereum/go-ethereum/cmd/utils
+github.com/ethereum/go-ethereum/cmd/geth
+Done building.
+Run &quot;build/bin/geth&quot; to launch geth.
+$</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8B93;&#x6211;&#x5011;&#x5728;&#x505C;&#x6B62;&#x4E26;&#x66F4;&#x6539;&#x5B83;&#x7684;&#x914D;&#x7F6E;&#x4E4B;&#x524D;&#x904B;&#x884C; geth &#x4EE5;&#x78BA;&#x4FDD;&#x5B83;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+</div>
+<div id="run_geth" class="listingblock">
+<div class="content">
+<pre>$ ./build/bin/geth version
+
+Geth
+Version: 1.6.6-unstable
+Git Commit: 58a1e13e6dd7f52a1d5e67bee47d23fd6cfdee5c
+Architecture: amd64
+Protocol Versions: [63 62]
+Network Id: 1
+Go Version: go1.8.3
+Operating System: linux
+GOPATH=/usr/local/src/gocode/
+GOROOT=/usr/local/go</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x7684; geth version &#x547D;&#x4EE4;&#x53EF;&#x80FD;&#x6703;&#x7A0D;&#x5FAE;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x4F60;&#x61C9;&#x8A72;&#x770B;&#x5230;&#x985E;&#x4F3C;&#x4E0A;&#x9762;&#x7684;&#x7248;&#x672C;&#x5831;&#x544A;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6700;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x5C07; geth &#x547D;&#x4EE4;&#x8907;&#x88FD;&#x5230;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x7684;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x76EE;&#x9304;&#xFF08;&#x6216;&#x547D;&#x4EE4;&#x884C;&#x57F7;&#x884C;&#x8DEF;&#x5F91;&#x4E0A;&#x7684;&#x76EE;&#x9304;&#xFF09;&#x3002;&#x5728;Linux&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+</div>
+<div id="copy_geth_binary" class="listingblock">
+<div class="content">
+<pre>$ sudo cp ./build/bin/geth /usr/local/bin</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5148;&#x4E0D;&#x8981;&#x958B;&#x59CB;&#x904B;&#x884C; geth&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x6703;&#x4EE5;&#x201C;&#x7DE9;&#x6162;&#x7684;&#x65B9;&#x5F0F;&#x201D;&#x958B;&#x59CB;&#x5C07;&#x5340;&#x584A;&#x93C8;&#x540C;&#x6B65;&#xFF0C;&#x9019;&#x5C07;&#x82B1;&#x8CBB;&#x592A;&#x9577;&#x7684;&#x6642;&#x9593;&#xFF08;&#x5E7E;&#x5468;&#xFF09;&#x3002;<a href="#first_sync">&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x5340;&#x584A;&#x93C8;&#x9996;&#x6B21;&#x540C;&#x6B65;</a> &#x89E3;&#x91CB;&#x4E86;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x7684;&#x521D;&#x59CB;&#x540C;&#x6B65;&#x5E36;&#x4F86;&#x7684;&#x6311;&#x6230;&#x3002;</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="first_sync">&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x5340;&#x584A;&#x93C8;&#x9996;&#x6B21;&#x540C;&#x6B65;</h3>
+<div class="paragraph">
+<p>&#x901A;&#x5E38;&#xFF0C;&#x5728;&#x540C;&#x6B65;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x6642;&#xFF0C;&#x4F60;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#x5C07;&#x4E0B;&#x8F09;&#x4E26;&#x9A57;&#x8B49;&#x81EA;&#x5275;&#x4E16;&#x5340;&#x584A;&#x4EE5;&#x4F86;&#x7684;&#x6BCF;&#x500B;&#x5340;&#x584A;&#x548C;&#x6BCF;&#x500B;&#x4EA4;&#x6613;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x96D6;&#x7136;&#x53EF;&#x4EE5;&#x901A;&#x904E;&#x9019;&#x7A2E;&#x65B9;&#x5F0F;&#x5B8C;&#x6574;&#x540C;&#x6B65;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x4F46;&#x540C;&#x6B65;&#x6703;&#x82B1;&#x8CBB;&#x5F88;&#x9577;&#x6642;&#x9593;&#x4E26;&#x4E14;&#x5C0D;&#x8A08;&#x7B97;&#x8CC7;&#x6E90;&#x8981;&#x6C42;&#x8F03;&#x9AD8;&#xFF08;RAM&#x66F4;&#x591A;&#xFF0C;&#x5132;&#x5B58;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8A31;&#x591A;&#x57FA;&#x65BC;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x5340;&#x584A;&#x93C8;&#x5728;2016&#x5E74;&#x5E95;&#x906D;&#x53D7;&#x4E86;&#x62D2;&#x7D55;&#x670D;&#x52D9;&#xFF08;DoS&#xFF09;&#x653B;&#x64CA;&#x3002;&#x53D7;&#x6B64;&#x653B;&#x64CA;&#x5F71;&#x97FF;&#x7684;&#x5340;&#x584A;&#x93C8;&#x5728;&#x9032;&#x884C;&#x5B8C;&#x5168;&#x540C;&#x6B65;&#x6642;&#x50BE;&#x5411;&#x65BC;&#x7DE9;&#x6162;&#x540C;&#x6B65;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x4E2D;&#xFF0C;&#x65B0;&#x5BA2;&#x6236;&#x7AEF;&#x5728;&#x5230;&#x9054;&#x5340;&#x584A;2,283,397&#x4E4B;&#x524D;&#x6703;&#x9032;&#x5C55;&#x8FC5;&#x901F;&#x3002;&#x8A72;&#x584A;&#x5728;2016&#x5E74;9&#x6708;18&#x65E5;&#x958B;&#x63A1;&#xFF0C;&#x6A19;&#x8A8C;&#x8457;DoS&#x653B;&#x64CA;&#x7684;&#x958B;&#x59CB;&#x3002;&#x5F9E;&#x9019;&#x500B;&#x5340;&#x584A;&#x5230;2,700,031&#x5340;&#x584A;&#xFF08;2016&#x5E74;11&#x6708;26&#x65E5;&#xFF09;&#xFF0C;&#x4EA4;&#x6613;&#x9A57;&#x8B49;&#x8B8A;&#x5F97;&#x975E;&#x5E38;&#x7DE9;&#x6162;&#xFF0C;&#x8A18;&#x61B6;&#x9AD4;&#x5BC6;&#x96C6;&#x4E26;&#x4E14;I/O&#x5BC6;&#x96C6;&#x3002;&#x9019;&#x5C0E;&#x81F4;&#x6BCF;&#x584A;&#x7684;&#x9A57;&#x8B49;&#x6642;&#x9593;&#x8D85;&#x904E;1&#x5206;&#x9418;&#x3002;&#x4EE5;&#x592A;&#x574A;&#x4F7F;&#x7528;&#x786C;&#x5206;&#x53C9;&#x5BE6;&#x65BD;&#x4E86;&#x4E00;&#x7CFB;&#x5217;&#x5347;&#x7D1A;&#xFF0C;&#x4EE5;&#x89E3;&#x6C7A;&#x5728;&#x62D2;&#x7D55;&#x670D;&#x52D9;&#x4E2D;&#x88AB;&#x5229;&#x7528;&#x7684;&#x5E95;&#x5C64;&#x6F0F;&#x6D1E;&#x3002;&#x9019;&#x4E9B;&#x5347;&#x7D1A;&#x9084;&#x901A;&#x904E;&#x522A;&#x9664;&#x7531;&#x5783;&#x573E;&#x90F5;&#x4EF6;&#x4EA4;&#x6613;&#x5275;&#x5EFA;&#x7684;&#x5927;&#x7D04;2000&#x842C;&#x500B;&#x7A7A;&#x5E33;&#x6236;&#x4F86;&#x6E05;&#x7406;&#x5340;&#x584A;&#x93C8;&#x3002;&lt;&lt;[1]&gt;&gt;</p>
+</div>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F60;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x5B8C;&#x6574;&#x9A57;&#x8B49;&#x9032;&#x884C;&#x540C;&#x6B65;&#xFF0C;&#x5247;&#x5BA2;&#x6236;&#x7AEF;&#x6703;&#x653E;&#x6162;&#x901F;&#x5EA6;&#x4E26;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5E7E;&#x5929;&#x6216;&#x66F4;&#x9577;&#x6642;&#x9593;&#x624D;&#x80FD;&#x9A57;&#x8B49;&#x53D7;&#x6B64;DoS&#x653B;&#x64CA;&#x5F71;&#x97FF;&#x7684;&#x4EFB;&#x4F55;&#x584A;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5927;&#x591A;&#x6578;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x5305;&#x62EC;&#x4E00;&#x500B;&#x9078;&#x9805;&#xFF0C;&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x201C;&#x5FEB;&#x901F;&#x201D;&#x540C;&#x6B65;&#xFF0C;&#x8DF3;&#x904E;&#x4EA4;&#x6613;&#x7684;&#x5B8C;&#x6574;&#x9A57;&#x8B49;&#xFF0C;&#x540C;&#x6B65;&#x5230;&#x5340;&#x584A;&#x93C8;&#x7684;&#x9802;&#x7AEF;&#x5F8C;&#xFF0C;&#x518D;&#x6062;&#x5FA9;&#x5B8C;&#x6574;&#x9A57;&#x8B49;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5C0D;&#x65BC;Geth&#xFF0C;&#x555F;&#x7528;&#x5FEB;&#x901F;&#x540C;&#x6B65;&#x7684;&#x9078;&#x9805;&#x901A;&#x5E38;&#x7A31;&#x70BA; --fast&#x3002;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x53C3;&#x8003;&#x4F60;&#x9078;&#x64C7;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x93C8;&#x7684;&#x5177;&#x9AD4;&#x8AAA;&#x660E;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x5C0D;&#x65BC;Parity&#xFF0C;&#x8F03;&#x820A;&#x7248;&#x672C;&#xFF08;&lt;1.6&#xFF09;&#xFF0C;&#x8A72;&#x9078;&#x9805;&#x70BA; --warp&#xFF0C;&#x8F03;&#x65B0;&#x7248;&#x672C;&#xFF08;&gt;=1.6&#xFF09;&#x4E0A;&#x9810;&#x8A2D;&#x555F;&#x7528;&#xFF08;&#x7121;&#x9700;&#x8A2D;&#x7F6E;&#x914D;&#x7F6E;&#x9078;&#x9805;&#xFF09;&#x3002;</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Geth&#x548C;Parity&#x53EA;&#x80FD;&#x5728;&#x7A7A;&#x7684;&#x5340;&#x584A;&#x8CC7;&#x6599;&#x5EAB;&#x555F;&#x52D5;&#x6642;&#x9032;&#x884C;&#x5FEB;&#x901F;&#x540C;&#x6B65;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7D93;&#x958B;&#x59CB;&#x6C92;&#x6709;&#x201C;&#x5FEB;&#x901F;&#x201D;&#x6A21;&#x5F0F;&#x7684;&#x540C;&#x6B65;&#xFF0C;&#x5247;Geth&#x548C;Parity&#x7121;&#x6CD5;&#x5207;&#x63DB;&#x3002;&#x522A;&#x9664;&#x5340;&#x584A;&#x93C8;&#x6578;&#x64DA;&#x76EE;&#x9304;&#x4E26;&#x5F9E;&#x982D;&#x958B;&#x59CB;&#x201C;&#x5FEB;&#x901F;&#x201D;&#x540C;&#x6B65;&#x6BD4;&#x7E7C;&#x7E8C;&#x5B8C;&#x6574;&#x9A57;&#x8B49;&#x540C;&#x6B65;&#x66F4;&#x5FEB;&#x3002;&#x522A;&#x9664;&#x5340;&#x584A;&#x93C8;&#x6578;&#x64DA;&#x6642;&#x8ACB;&#x5C0F;&#x5FC3;&#x4E0D;&#x8981;&#x522A;&#x9664;&#x4EFB;&#x4F55;&#x9322;&#x5305;&#xFF01;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="json_rpc">JSON-RPC&#x63A5;&#x53E3;</h4>
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x63D0;&#x4F9B;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x7DE8;&#x7A0B;&#x63A5;&#x53E3;&#xFF08;API&#xFF09;&#x548C;&#x4E00;&#x7D44;&#x9060;&#x7A0B;&#x904E;&#x7A0B;&#x8ABF;&#x7528;&#xFF08;RPC&#xFF09;&#x547D;&#x4EE4;&#xFF0C;&#x9019;&#x4E9B;&#x547D;&#x4EE4;&#x88AB;&#x7DE8;&#x78BC;&#x70BA;JavaScript&#x7269;&#x4EF6;&#x8868;&#x793A;&#x6CD5;&#xFF08;JSON&#xFF09;&#x3002;&#x9019;&#x88AB;&#x7A31;&#x70BA;<em>JSON-RPC API</em>&#x3002;&#x672C;&#x8CEA;&#x4E0A;&#xFF0C;JSON-RPC API&#x662F;&#x4E00;&#x500B;&#x63A5;&#x53E3;&#xFF0C;&#x5141;&#x8A31;&#x6211;&#x5011;&#x5C07;&#x4F7F;&#x7528;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x7A0B;&#x5F0F;&#x4F5C;&#x70BA;<em>gateway</em>&#x7DE8;&#x5BEB;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x7DB2;&#x8DEF;&#x548C;&#x5340;&#x584A;&#x93C8;&#x4E2D;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x901A;&#x5E38;&#xFF0C;RPC&#x63A5;&#x53E3;&#x4F5C;&#x70BA;&#x9023;&#x63A5;&#x57E0;8545&#x4E0A;&#x7684;HTTP&#x670D;&#x52D9;&#x63D0;&#x4F9B;&#x3002;&#x51FA;&#x65BC;&#x5B89;&#x5168;&#x539F;&#x56E0;&#xFF0C;&#x9810;&#x8A2D;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x5B83;&#x50C5;&#x53D7;&#x9650;&#x65BC;&#x5F9E;&#x672C;&#x5730;&#x4E3B;&#x6A5F;&#xFF08;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x8A08;&#x7B97;&#x6A5F;&#x7684;IP&#x5730;&#x5740;&#x70BA;127.0.0.1&#xFF09;&#x63A5;&#x53D7;&#x9023;&#x63A5;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8981;&#x8A2A;&#x554F;JSON-RPC API&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5C08;&#x9580;&#x7684;&#x5EAB;&#xFF0C;&#x7528;&#x4F60;&#x9078;&#x64C7;&#x7684;&#x7A0B;&#x5F0F;&#x8A9E;&#x8A00;&#x7DE8;&#x5BEB;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x8207;&#x6BCF;&#x500B;&#x53EF;&#x7528;&#x7684;RPC&#x547D;&#x4EE4;&#x76F8;&#x5C0D;&#x61C9;&#x7684;&#x201C;&#x6A01;&#xFF08;stub&#xFF09;&#x201D;&#x51FD;&#x6578;&#x8ABF;&#x7528;&#x3002;&#x6216;&#x8005;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x624B;&#x52D5;&#x69CB;&#x5EFA;HTTP&#x8ACB;&#x6C42;&#x4F75;&#x767C;&#x9001;/&#x63A5;&#x6536;JSON&#x7DE8;&#x78BC;&#x7684;&#x8ACB;&#x6C42;&#x3002;&#x4F60;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x901A;&#x7528;&#x547D;&#x4EE4;&#x884C;HTTP&#x5BA2;&#x6236;&#x7AEF;&#xFF08;&#x5982; curl &#xFF09;&#x4F86;&#x8ABF;&#x7528;RPC&#x63A5;&#x53E3;&#x3002;&#x8B93;&#x6211;&#x5011;&#x5617;&#x8A66;&#x4E00;&#x4E0B;&#xFF08;&#x78BA;&#x4FDD;&#x4F60;&#x5DF2;&#x7D93;&#x914D;&#x7F6E;&#x4E26;&#x904B;&#x884C;&#x4E86;Geth&#xFF09;&#xFF1A;</p>
+</div>
+<div id="curl_web3" class="listingblock">
+<div class="title">Using curl to call the web3_clientVersion function over JSON-RPC</div>
+<div class="content">
+<pre>$ curl -X POST -H &quot;Content-Type: application/json&quot; --data \
+&apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;web3_clientVersion&quot;,&quot;params&quot;:[],&quot;id&quot;:1}&apos; \
+http://localhost:8545
+
+{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:1,
+&quot;result&quot;:&quot;Geth/v1.8.0-unstable-02aeb3d7/linux-amd64/go1.8.3&quot;}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x5728;&#x9019;&#x500B;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x4F7F;&#x7528; curl &#x5EFA;&#x7ACB;&#x4E00;&#x500B;HTTP&#x9023;&#x63A5;&#x4F86;&#x8A2A;&#x554F; http://localhost:8545&#x3002;&#x6211;&#x5011;&#x5DF2;&#x7D93;&#x904B;&#x884C;&#x4E86; geth&#xFF0C;&#x5B83;&#x5C07;JSON-RPC API&#x4F5C;&#x70BA;&#x9023;&#x63A5;&#x57E0;8545&#x4E0A;&#x7684;HTTP&#x670D;&#x52D9;&#x63D0;&#x4F9B;&#x3002;&#x6211;&#x5011;&#x6307;&#x793A; curl &#x4F7F;&#x7528;HTTP POST &#x547D;&#x4EE4;&#x4E26;&#x5C07;&#x5167;&#x5BB9;&#x6A19;&#x8B58;&#x70BA; Content-Type: application/json&#x3002;&#x6700;&#x5F8C;&#xFF0C;&#x6211;&#x5011;&#x50B3;&#x905E;&#x4E00;&#x500B;JSON&#x7DE8;&#x78BC;&#x7684;&#x8ACB;&#x6C42;&#x4F5C;&#x70BA;&#x6211;&#x5011;HTTP&#x8ACB;&#x6C42;&#x7684;data&#x90E8;&#x5206;&#x3002;&#x6211;&#x5011;&#x7684;&#x5927;&#x591A;&#x6578;&#x547D;&#x4EE4;&#x884C;&#x53EA;&#x662F;&#x8A2D;&#x7F6E; curl &#x4F86;&#x6B63;&#x78BA;&#x5730;&#x5EFA;&#x7ACB;HTTP&#x9023;&#x63A5;&#x3002;&#x6709;&#x8DA3;&#x7684;&#x90E8;&#x5206;&#x662F;&#x6211;&#x5011;&#x767C;&#x4F48;&#x7684;&#x5BE6;&#x969B;&#x7684;JSON-RPC&#x547D;&#x4EE4;&#xFF1A;</p>
+</div>
+<div id="JSON_RPC_command" class="listingblock">
+<div class="content">
+<pre>{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;web3_clientVersion&quot;,&quot;params&quot;:[],&quot;id&quot;:4192}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>JSON-RPC&#x8ACB;&#x6C42;&#x6839;&#x64DA;JSON-RPC 2.0&#x898F;&#x7BC4;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x9019;&#x88E1;&#x770B;&#x5230;&#xFF1A;
+<a href="http://www.jsonrpc.org/specification" class="bare" target="_blank">http://www.jsonrpc.org/specification</a></p>
+</div>
+<div class="paragraph">
+<p>&#x6BCF;&#x500B;&#x8ACB;&#x6C42;&#x5305;&#x542B;4&#x500B;&#x5143;&#x7D20;&#xFF1A;</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">jsonrpc</dt>
+<dd>
+<p>JSON-RPC&#x5354;&#x8B70;&#x7684;&#x7248;&#x672C;&#x3002;&#x9019;<em>&#x5FC5;&#x9808;</em>&#x662F;&#x201C;2.0&#x201D;&#x3002;</p>
+</dd>
+<dt class="hdlist1">method</dt>
+<dd>
+<p>&#x8981;&#x8ABF;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x540D;&#x7A31;&#x3002;</p>
+</dd>
+<dt class="hdlist1">params</dt>
+<dd>
+<p>&#x4E00;&#x500B;&#x7D50;&#x69CB;&#x5316;&#x503C;&#xFF0C;&#x7528;&#x65BC;&#x4FDD;&#x5B58;&#x5728;&#x8ABF;&#x7528;&#x65B9;&#x6CD5;&#x671F;&#x9593;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x53C3;&#x6578;&#x503C;&#x3002;&#x8A72;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x7701;&#x7565;&#x3002;</p>
+</dd>
+<dt class="hdlist1">id</dt>
+<dd>
+<p>&#x7531;&#x5BA2;&#x6236;&#x7AEF;&#x5EFA;&#x7ACB;&#x7684;&#x8B58;&#x5225;&#x78BC;&#xFF0C;&#x5FC5;&#x9808;&#x5305;&#x542B;&#x5B57;&#x4E32;&#xFF0C;&#x6578;&#x5B57;&#x6216;NULL&#x503C;&#xFF08;&#x5982;&#x679C;&#x5305;&#x542B;&#xFF09;&#x3002;&#x5982;&#x679C;&#x5305;&#x542B;&#xFF0C;&#x4F3A;&#x670D;&#x5668;&#x5FC5;&#x9808;&#x5728;Response&#x7269;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x503C;&#x9032;&#x884C;&#x56DE;&#x8986;&#x3002;&#x8A72;&#x5143;&#x7D20;&#x7528;&#x65BC;&#x95DC;&#x806F;&#x5169;&#x500B;&#x7269;&#x4EF6;&#x4E4B;&#x9593;&#x7684;&#x4E0A;&#x4E0B;&#x6587;&#x3002;</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>id &#x53C3;&#x6578;&#x4E3B;&#x8981;&#x7528;&#x65BC;&#x5728;&#x55AE;&#x500B;JSON-RPC&#x8ABF;&#x7528;&#x4E2D;&#x9032;&#x884C;&#x591A;&#x500B;&#x8ACB;&#x6C42;&#x7684;&#x60C5;&#x6CC1;&#xFF0C;&#x9019;&#x7A2E;&#x505A;&#x6CD5;&#x7A31;&#x70BA;<em>&#x6279;&#x8655;&#x7406;</em>&#x3002;&#x6279;&#x8655;&#x7406;&#x7528;&#x65BC;&#x907F;&#x514D;&#x6BCF;&#x500B;&#x8ACB;&#x6C42;&#x7684;&#x65B0;HTTP&#x548C;TCP&#x9023;&#x63A5;&#x7684;&#x958B;&#x92B7;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x74B0;&#x5883;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x5011;&#x60F3;&#x8981;&#x5728;&#x4E00;&#x500B;HTTP&#x9023;&#x63A5;&#x4E2D;&#x67E5;&#x8A62;&#x6578;&#x5343;&#x500B;&#x4EA4;&#x6613;&#xFF0C;&#x6211;&#x5011;&#x5C07;&#x4F7F;&#x7528;&#x6279;&#x8655;&#x7406;&#x3002;&#x6279;&#x8655;&#x7406;&#x6642;&#xFF0C;&#x70BA;&#x6BCF;&#x500B;&#x8ACB;&#x6C42;&#x8A2D;&#x7F6E;&#x4E0D;&#x540C;&#x7684; id&#xFF0C;&#x7136;&#x5F8C;&#x5C07;&#x5176;&#x8207;&#x4F86;&#x81EA;JSON-RPC&#x4F3A;&#x670D;&#x5668;&#x7684;&#x6BCF;&#x500B;&#x97FF;&#x61C9;&#x4E2D;&#x7684;id&#x9032;&#x884C;&#x5339;&#x914D;&#x3002;&#x5BE6;&#x73FE;&#x9019;&#x500B;&#x6700;&#x7C21;&#x55AE;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x7DAD;&#x8B77;&#x4E00;&#x500B;&#x8A08;&#x6578;&#x5668;&#x4F75;&#x70BA;&#x6BCF;&#x500B;&#x8ACB;&#x6C42;&#x589E;&#x52A0;&#x503C;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="JSON_RPC_response" class="paragraph">
+<p>The response we receive is:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:4192,
+&quot;result&quot;:&quot;Geth/v1.8.0-unstable-02aeb3d7/linux-amd64/go1.8.3&quot;}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x544A;&#x8A34;&#x6211;&#x5011;JSON-RPC API&#x7531;Geth&#x5BA2;&#x6236;&#x7AEF;&#x7248;&#x672C;1.8.0&#x63D0;&#x4F9B;&#x670D;&#x52D9;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8B93;&#x6211;&#x5011;&#x5617;&#x8A66;&#x4E00;&#x4E9B;&#x66F4;&#x6709;&#x8DA3;&#x7684;&#x4E8B;&#x60C5;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x500B;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x8981;&#x6C42;JSON-RPC API&#x7372;&#x53D6;&#x7576;&#x524D;&#x7684;gas&#x50F9;&#x683C;&#xFF0C;&#x4EE5;wei&#x70BA;&#x55AE;&#x4F4D;&#xFF1A;</p>
+</div>
+<div id="curl_current_gas_price" class="listingblock">
+<div class="content">
+<pre>$ curl -X POST -H &quot;Content-Type: application/json&quot; --data \
+&apos;{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;eth_gasPrice&quot;,&quot;params&quot;:[],&quot;id&quot;:4213}&apos; \
+http://localhost:8545
+
+{&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:4213,&quot;result&quot;:&quot;0x430e23400&quot;}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x97FF;&#x61C9; 0x430e23400 &#x544A;&#x8A34;&#x6211;&#x5011;&#xFF0C;&#x7576;&#x524D;&#x7684;gas&#x50F9;&#x683C;&#x662F;1.8wei&#xFF08;gigawei&#x6216;&#x5341;&#x5104;wei&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ethereum/wiki/wiki/JSON-RPC" class="bare" target="_blank">https://github.com/ethereum/wiki/wiki/JSON-RPC</a></p>
+</div>
+<div class="sect4">
+<h5 id="parity_compatibility_mode">Parity&#x7684;Geth&#x517C;&#x5BB9;&#x6A21;&#x5F0F;</h5>
+<div class="paragraph">
+<p>&#x6709;&#x4E00;&#x500B;&#x7279;&#x6B8A;&#x7684;&#x201C;Geth&#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x201D;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x500B;&#x8207;geth&#x76F8;&#x540C;&#x7684;JSON-RPC API&#x3002;&#x8981;&#x5728;Geth&#x517C;&#x5BB9;&#x6A21;&#x5F0F;&#x4E0B;&#x904B;&#x884C;&#x5947;&#x5076;&#x6821;&#x9A57;&#xFF0C;&#x8ACB;&#x4F7F;&#x7528;--geth&#x958B;&#x95DC;&#xFF1A;</p>
+</div>
+<div id="parity_geth" class="listingblock">
+<div class="content">
+<pre>$ parity --geth</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lw_eth_clients">&#x8F15;&#x91CF;&#x7D1A;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;</h3>
+<div class="paragraph">
+<p>&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x63D0;&#x4F9B;&#x4E86;&#x5B8C;&#x6574;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x3002;&#x4ED6;&#x5011;&#x4E0D;&#x5132;&#x5B58;&#x5B8C;&#x6574;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x5011;&#x7684;&#x555F;&#x52D5;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x6240;&#x9700;&#x7684;&#x6578;&#x64DA;&#x5132;&#x5B58;&#x91CF;&#x4E5F;&#x66F4;&#x5C11;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x63D0;&#x4F9B;&#x4EE5;&#x4E0B;&#x4E00;&#x9805;&#x6216;&#x591A;&#x9805;&#x529F;&#x80FD;&#xFF1A;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x7BA1;&#x7406;&#x9322;&#x5305;&#x4E2D;&#x7684;&#x79C1;&#x9470;&#x548C;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x3002;</p>
+</li>
+<li>
+<p>&#x5275;&#x5EFA;&#x3001;&#x7C3D;&#x7F72;&#x548C;&#x5EE3;&#x64AD;&#x4EA4;&#x6613;&#x3002;</p>
+</li>
+<li>
+<p>&#x4F7F;&#x7528;&#x6578;&#x64DA;&#x8207;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x9032;&#x884C;&#x4EA4;&#x4E92;&#x3002;</p>
+</li>
+<li>
+<p>&#x700F;&#x89BD;&#x4E26;&#x8207;DApps&#x4EA4;&#x4E92;&#x3002;</p>
+</li>
+<li>
+<p>&#x63D0;&#x4F9B;&#x5230;&#x5340;&#x584A;&#x700F;&#x89BD;&#x5668;&#x7B49;&#x5916;&#x90E8;&#x670D;&#x52D9;&#x7684;&#x93C8;&#x63A5;&#x3002;</p>
+</li>
+<li>
+<p>&#x8F49;&#x63DB;ether&#x55AE;&#x4F4D;&#x4E26;&#x5F9E;&#x5916;&#x90E8;&#x4F86;&#x6E90;&#x67E5;&#x8A62;&#x532F;&#x7387;&#x3002;</p>
+</li>
+<li>
+<p>&#x5C07;web3&#x5BE6;&#x4F8B;&#x4F5C;&#x70BA;JavaScript&#x7269;&#x4EF6;&#x6CE8;&#x5165;&#x5230;Web&#x700F;&#x89BD;&#x5668;&#x4E2D;&#x3002;</p>
+</li>
+<li>
+<p>&#x4F7F;&#x7528;&#x53E6;&#x4E00;&#x500B;&#x5BA2;&#x6236;&#x7AEF;&#x63D0;&#x4F9B;/&#x6CE8;&#x5165;&#x700F;&#x89BD;&#x5668;&#x7684;web3&#x5BE6;&#x4F8B;&#x3002;</p>
+</li>
+<li>
+<p>&#x5728;&#x672C;&#x5730;&#x6216;&#x9060;&#x7A0B;&#x4EE5;&#x592A;&#x7DB2;&#x7BC0;&#x9EDE;&#x4E0A;&#x8A2A;&#x554F;RPC&#x670D;&#x52D9;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&#x4E00;&#x4E9B;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#xFF08;&#x4F8B;&#x5982;&#x884C;&#x52D5;&#xFF08;&#x667A;&#x6167;&#x578B;&#x624B;&#x6A5F;&#xFF09;&#x9322;&#x5305;&#xFF09;&#x50C5;&#x63D0;&#x4F9B;&#x57FA;&#x672C;&#x7684;&#x9322;&#x5305;&#x529F;&#x80FD;&#x3002;&#x5176;&#x4ED6;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x662F;&#x5B8C;&#x5168;&#x958B;&#x767C;&#x7684;DApp&#x700F;&#x89BD;&#x5668;&#x3002;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x901A;&#x5E38;&#x63D0;&#x4F9B;&#x5B8C;&#x6574;&#x7BC0;&#x9EDE;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x67D0;&#x4E9B;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x7121;&#x9700;&#x540C;&#x6B65;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x7684;&#x672C;&#x5730;&#x526F;&#x672C;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6211;&#x5011;&#x4F86;&#x770B;&#x770B;&#x4E00;&#x4E9B;&#x6700;&#x53D7;&#x6B61;&#x8FCE;&#x7684;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x53CA;&#x5176;&#x63D0;&#x4F9B;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="mobile_wallets">&#x884C;&#x52D5;&#xFF08;&#x667A;&#x6167;&#x578B;&#x624B;&#x6A5F;&#xFF09;&#x9322;&#x5305;</h3>
+<div class="paragraph">
+<p>&#x6240;&#x6709;&#x7684;&#x884C;&#x52D5;&#x9322;&#x5305;&#x90FD;&#x662F;&#x8F15;&#x91CF;&#x7D1A;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x56E0;&#x70BA;&#x667A;&#x6167;&#x578B;&#x624B;&#x6A5F;&#x6C92;&#x6709;&#x8DB3;&#x5920;&#x7684;&#x8CC7;&#x6E90;&#x4F86;&#x904B;&#x884C;&#x5B8C;&#x6574;&#x7684;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6D41;&#x884C;&#x7684;&#x884C;&#x52D5;&#x9322;&#x5305;&#x5305;&#x62EC;Jaxx&#xFF0C;Status&#x548C;Trust Wallet&#x3002;&#x6211;&#x5011;&#x5217;&#x8209;&#x9019;&#x4E9B;&#x4F5C;&#x70BA;&#x6D41;&#x884C;&#x624B;&#x6A5F;&#x9322;&#x5305;&#x7684;&#x4F8B;&#x5B50;&#xFF08;&#x4E0D;&#x662F;&#x5C0D;&#x9019;&#x4E9B;&#x9322;&#x5305;&#x7684;&#x5B89;&#x5168;&#x6216;&#x529F;&#x80FD;&#x7684;&#x8A8D;&#x53EF;&#xFF09;&#x3002;</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Jaxx </dt>
+<dd>
+<p>&#x57FA;&#x65BC;BIP39&#x52A9;&#x8A18;&#x7A2E;&#x5B50;&#x7684;&#x591A;&#x5E63;&#x7A2E;&#x624B;&#x6A5F;&#x9322;&#x5305;&#xFF0C;&#x652F;&#x6301;&#x6BD4;&#x7279;&#x5E63;&#x3001;&#x840A;&#x7279;&#x5E63;&#x3001;&#x4EE5;&#x592A;&#x574A;&#x3001;&#x4EE5;&#x592A;&#x574A;&#x7D93;&#x5178;&#x3001;ZCash&#x3001;&#x5404;&#x7A2E;ERC20&#x4EE3;&#x5E63;&#x548C;&#x8A31;&#x591A;&#x5176;&#x4ED6;&#x8CA8;&#x5E63;&#x3002;Jaxx&#x53EF;&#x5728;Android&#x3001;iOS&#x4E0A;&#x4F5C;&#x70BA;&#x700F;&#x89BD;&#x5668;&#x63D2;&#x4EF6;&#x9322;&#x5305;&#x4F7F;&#x7528;&#xFF0C;&#x684C;&#x9762;&#x9322;&#x5305;&#x53EF;&#x7528;&#x65BC;&#x5404;&#x7A2E;&#x4F5C;&#x696D;&#x7CFB;&#x7D71;&#x3002;&#x53EF;&#x4EE5;&#x5728;https://jaxx.io&#x627E;&#x5230;&#x5B83;&#x3002;</p>
+</dd>
+<dt class="hdlist1">Status</dt>
+<dd>
+<p>&#x884C;&#x52D5;&#x9322;&#x5305;&#x548C;DApp&#x700F;&#x89BD;&#x5668;&#xFF0C;&#x652F;&#x6301;&#x5404;&#x7A2E;&#x4EE3;&#x5E63;&#x548C;&#x6D41;&#x884C;&#x7684;DApps&#x3002;&#x9069;&#x7528;&#x65BC;iOS&#x548C;Android&#x667A;&#x6167;&#x578B;&#x624B;&#x6A5F;&#x3002;&#x53EF;&#x4EE5;&#x5728;https://status.im&#x627E;&#x5230;&#x5B83;&#x3002;</p>
+</dd>
+<dt class="hdlist1">Trust Wallet</dt>
+<dd>
+<p>&#x652F;&#x6301;ERC20&#x548C;ERC223&#x4EE3;&#x5E63;&#x7684;&#x884C;&#x52D5;&#x4EE5;&#x592A;&#x574A;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x7D93;&#x5178;&#x9322;&#x5305;&#x3002;Trust Wallet&#x9069;&#x7528;&#x65BC;iOS&#x548C;Android&#x667A;&#x6167;&#x578B;&#x624B;&#x6A5F;&#x3002;&#x53EF;&#x4EE5;&#x5728;https://trustwalletapp.com/&#x627E;&#x5230;&#x5B83;&#x3002;</p>
+</dd>
+<dt class="hdlist1">Cipher Browser</dt>
+<dd>
+<p>&#x5168;&#x529F;&#x80FD;&#x7684;&#x555F;&#x7528;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x884C;&#x52D5;DApp&#x700F;&#x89BD;&#x5668;&#x548C;&#x9322;&#x5305;&#x3002;&#x5141;&#x8A31;&#x8207;&#x4EE5;&#x592A;&#x574A;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x548C;&#x4EE3;&#x5E63;&#x96C6;&#x6210;&#x3002;&#x53EF;&#x4EE5;&#x5728;https://www.cipherbrowser.com&#x627E;&#x5230;&#x5B83;</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="browser_wallets">&#x700F;&#x89BD;&#x5668;&#x9322;&#x5305;</h3>
+<div class="paragraph">
+<p>&#x5404;&#x7A2E;&#x9322;&#x5305;&#x548C;DApp&#x700F;&#x89BD;&#x5668;&#x53EF;&#x7528;&#x4F5C;&#x700F;&#x89BD;&#x5668;&#x7684;&#x63D2;&#x4EF6;&#x6216;&#x64F4;&#x5C55;&#xFF0C;&#x4F8B;&#x5982;Chrome&#x548C;Firefox&#xFF1A;&#x904B;&#x884C;&#x5728;&#x700F;&#x89BD;&#x5668;&#x5167;&#x7684;&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x4E00;&#x4E9B;&#x6BD4;&#x8F03;&#x6D41;&#x884C;&#x7684;&#x662F;MetaMask&#x3001;Jaxx&#x548C;MyEtherWallet/MyCrypto&#x3002;</p>
+</div>
+<div class="sect3">
+<h4 id="MetaMask">MetaMask</h4>
+<div class="paragraph">
+<p>MetaMask &#x5728; <a href="#intro">[intro]</a> &#x4E2D;&#x4ECB;&#x7D39;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x500B;&#x591A;&#x529F;&#x80FD;&#x7684;&#x57FA;&#x65BC;&#x700F;&#x89BD;&#x5668;&#x7684;&#x9322;&#x5305;&#xFF0C;RPC&#x5BA2;&#x6236;&#x7AEF;&#x548C;&#x57FA;&#x672C;&#x5408;&#x7D04;&#x700F;&#x89BD;&#x5668;&#x3002;&#x5B83;&#x53EF;&#x7528;&#x65BC;Chrome&#x3001;Firefox&#x3001;Opera&#x548C;Brave Browser&#x3002;&#x5728;&#x4EE5;&#x4E0B;&#x4F4D;&#x7F6E;&#x627E;&#x5230;MetaMask&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://metamask.io" class="bare" target="_blank">https://metamask.io</a></p>
+</div>
+<div class="paragraph">
+<p>&#x4E4D;&#x770B;&#xFF0C;MetaMask&#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x65BC;&#x700F;&#x89BD;&#x5668;&#x7684;&#x9322;&#x5305;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x8207;&#x5176;&#x4ED6;&#x700F;&#x89BD;&#x5668;&#x9322;&#x5305;&#x4E0D;&#x540C;&#xFF0C;MetaMask&#x5C07;web3&#x5BE6;&#x4F8B;&#x6CE8;&#x5165;&#x700F;&#x89BD;&#x5668;&#xFF0C;&#x4F5C;&#x70BA;&#x9023;&#x63A5;&#x5230;&#x5404;&#x7A2E;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#xFF08;&#x4F8B;&#x5982;mainnet&#x3001;Ropsten testnet&#x3001;Kovan testnet&#x3001;&#x672C;&#x5730;RPC&#x7BC0;&#x9EDE;&#x7B49;&#xFF09;&#x7684;RPC&#x5BA2;&#x6236;&#x7AEF;&#x3002;&#x80FD;&#x5920;&#x6CE8;&#x5165;web3&#x5BE6;&#x4F8B;&#x4E26;&#x5145;&#x7576;&#x5916;&#x90E8;RPC&#x670D;&#x52D9;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x4F7F;MetaMask&#x6210;&#x70BA;&#x958B;&#x767C;&#x4EBA;&#x54E1;&#x548C;&#x7528;&#x6236;&#x975E;&#x5E38;&#x5F37;&#x5927;&#x7684;&#x5DE5;&#x5177;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x8207;MyEtherWallet&#x6216;MyCrypto&#x76F8;&#x7D50;&#x5408;&#xFF0C;&#x5145;&#x7576;&#x9019;&#x4E9B;&#x5DE5;&#x5177;&#x7684;web3&#x63D0;&#x4F9B;&#x8005;&#x548C;RPC&#x7DB2;&#x95DC;&#x3002;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Jaxx">Jaxx</h4>
+<div class="paragraph">
+<p>&#x5728; <a href="#mobile_wallets">&#x884C;&#x52D5;&#xFF08;&#x667A;&#x6167;&#x578B;&#x624B;&#x6A5F;&#xFF09;&#x9322;&#x5305;</a> &#x4E2D;&#x4F5C;&#x70BA;&#x884C;&#x52D5;&#x9322;&#x5305;&#x4ECB;&#x7D39;&#x7684;Jaxx&#x4E5F;&#x53EF;&#x7528;&#x4F5C;Chrome&#x548C;Firefox&#x64F4;&#x5C55;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x9019;&#x88E1;&#x627E;&#x5230;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://jaxx.io" class="bare" target="_blank">https://jaxx.io</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="MEW">MyEtherWallet (MEW)</h4>
+<div class="paragraph">
+<p>MyEtherWallet&#x662F;&#x4E00;&#x6B3E;&#x57FA;&#x65BC;&#x700F;&#x89BD;&#x5668;&#x7684;JavaScript&#x8F15;&#x91CF;&#x7D1A;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x63D0;&#x4F9B;&#xFF1A;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&#x5728;JavaScript&#x4E2D;&#x904B;&#x884C;&#x7684;&#x8EDF;&#x9AD4;&#x9322;&#x5305;&#x3002;</p>
+</li>
+<li>
+<p>&#x901A;&#x5F80;&#x8AF8;&#x5982;Trezor&#x548C;Ledger&#x7B49;&#x6D41;&#x884C;&#x786C;&#x9AD4;&#x9322;&#x5305;&#x7684;&#x6A4B;&#x6A11;&#x3002;</p>
+</li>
+<li>
+<p>&#x4E00;&#x500B;web3&#x754C;&#x9762;&#xFF0C;&#x53EF;&#x4EE5;&#x9023;&#x63A5;&#x5230;&#x53E6;&#x4E00;&#x500B;&#x5BA2;&#x6236;&#x7AEF;&#x6CE8;&#x5165;&#x7684;web3&#x5BE6;&#x4F8B;&#xFF08;&#x4F8B;&#x5982;MetaMask&#xFF09;&#x3002;</p>
+</li>
+<li>
+<p>&#x53EF;&#x4EE5;&#x9023;&#x63A5;&#x5230;&#x4EE5;&#x592A;&#x574A;&#x5B8C;&#x6574;&#x5BA2;&#x6236;&#x7AEF;&#x7684;RPC&#x5BA2;&#x6236;&#x7AEF;&#x3002;</p>
+</li>
+<li>
+<p>&#x7D66;&#x5B9A;&#x5408;&#x7D04;&#x5730;&#x5740;&#x548C;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x4E8C;&#x9032;&#x5236;&#x63A5;&#x53E3;&#xFF08;ABI&#xFF09;&#xFF0C;&#x53EF;&#x4EE5;&#x8207;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x4EA4;&#x4E92;&#x7684;&#x57FA;&#x672C;&#x63A5;&#x53E3;&#x3002;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>MyEtherWallet&#x5C0D;&#x65BC;&#x6E2C;&#x8A66;&#x548C;&#x4F5C;&#x70BA;&#x786C;&#x9AD4;&#x9322;&#x5305;&#x754C;&#x9762;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x5B83;&#x4E0D;&#x61C9;&#x8A72;&#x88AB;&#x7528;&#x4F5C;&#x4E3B;&#x8981;&#x7684;&#x8EDF;&#x9AD4;&#x9322;&#x5305;&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x5728;&#x700F;&#x89BD;&#x5668;&#x74B0;&#x5883;&#x4E2D;&#x6703;&#x53D7;&#x5230;&#x5A01;&#x8105;&#xFF0C;&#x4E26;&#x4E14;&#x4E0D;&#x662F;&#x4E00;&#x500B;&#x5B89;&#x5168;&#x7684;&#x5BC6;&#x9470;&#x5132;&#x5B58;&#x7CFB;&#x7D71;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8A2A;&#x554F;MyEtherWallet&#x548C;&#x5176;&#x4ED6;&#x57FA;&#x65BC;&#x700F;&#x89BD;&#x5668;&#x7684;JavaScript&#x9322;&#x5305;&#x6642;&#xFF0C;&#x4F60;&#x5FC5;&#x9808;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x5011;&#x7D93;&#x5E38;&#x662F;&#x91E3;&#x9B5A;&#x653B;&#x64CA;&#x7684;&#x76EE;&#x6A19;&#x3002;&#x59CB;&#x7D42;&#x4F7F;&#x7528;&#x66F8;&#x7C64;&#x800C;&#x4E0D;&#x662F;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x6216;&#x93C8;&#x63A5;&#x8A2A;&#x554F;&#x6B63;&#x78BA;&#x7684;&#x7DB2;&#x5740;&#x3002;MyEtherWallet&#x53EF;&#x4EE5;&#x5728;&#x4EE5;&#x4E0B;&#x7DB2;&#x5740;&#x627E;&#x5230;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://MyEtherWallet.com" class="bare" target="_blank">https://MyEtherWallet.com</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="MyCrypto">MyCrypto</h4>
+<div class="paragraph">
+<p>&#x5C31;&#x5728;&#x672C;&#x66F8;&#x7B2C;&#x4E00;&#x7248;&#x51FA;&#x7248;&#x4E4B;&#x524D;&#xFF0C;MyEtherWallet&#x9805;&#x76EE;&#x5206;&#x70BA;&#x7531;&#x5169;&#x500B;&#x7368;&#x7ACB;&#x958B;&#x767C;&#x5718;&#x968A;&#x4E3B;&#x5C0E;&#x7684;&#x7AF6;&#x722D;&#x5BE6;&#x73FE;&#xFF1A;&#x4E00;&#x500B;&#x201C;&#x5206;&#x53C9;&#x201D;&#xFF0C;&#x5C31;&#x50CF;&#x5728;&#x958B;&#x6E90;&#x958B;&#x767C;&#x4E2D;&#x6240;&#x7A31;&#x7684;&#x90A3;&#x6A23;&#x3002;&#x9019;&#x5169;&#x500B;&#x9805;&#x76EE;&#x88AB;&#x7A31;&#x70BA;MyEtherWallet&#xFF08;&#x539F;&#x59CB;&#x54C1;&#x724C;&#xFF09;&#x548C;MyCrypto&#x3002;&#x5728;&#x62C6;&#x5206;&#x6642;&#xFF0C;MyCrypto&#x63D0;&#x4F9B;&#x8207;MyEtherWallet&#x76F8;&#x540C;&#x7684;&#x529F;&#x80FD;&#x3002;&#x7531;&#x65BC;&#x5169;&#x500B;&#x958B;&#x767C;&#x5718;&#x968A;&#x63A1;&#x53D6;&#x4E0D;&#x540C;&#x7684;&#x76EE;&#x6A19;&#x548C;&#x512A;&#x5148;&#x4E8B;&#x9805;&#xFF0C;&#x9019;&#x5169;&#x500B;&#x9805;&#x76EE;&#x53EF;&#x80FD;&#x6703;&#x51FA;&#x73FE;&#x5206;&#x6B67;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8207;MyEtherWallet&#x4E00;&#x6A23;&#xFF0C;&#x5728;&#x700F;&#x89BD;&#x5668;&#x4E2D;&#x8A2A;&#x554F;MyCrypto&#x6642;&#x5FC5;&#x9808;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#x3002;&#x59CB;&#x7D42;&#x4F7F;&#x7528;&#x66F8;&#x7C64;&#xFF0C;&#x6216;&#x8005;&#x975E;&#x5E38;&#x5C0F;&#x5FC3;&#x5730;&#x8F38;&#x5165;URL&#xFF08;&#x7136;&#x5F8C;&#x5C07;&#x5176;&#x66F8;&#x7C64;&#x4EE5;&#x5099;&#x5C07;&#x4F86;&#x4F7F;&#x7528;&#xFF09;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>MyCrypto&#x53EF;&#x4EE5;&#x5728;&#x4EE5;&#x4E0B;&#x7DB2;&#x5740;&#x627E;&#x5230;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://MyCrypto.com" class="bare" target="_blank">https://MyCrypto.com</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Mist">Mist</h4>
+<div class="paragraph">
+<p>Mist&#x662F;&#x4EE5;&#x592A;&#x574A;&#x57FA;&#x91D1;&#x6703;&#x5275;&#x5EFA;&#x7684;&#x7B2C;&#x4E00;&#x500B;&#x555F;&#x7528;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x700F;&#x89BD;&#x5668;&#x3002;&#x5B83;&#x9084;&#x5305;&#x542B;&#x4E00;&#x500B;&#x57FA;&#x65BC;&#x700F;&#x89BD;&#x5668;&#x7684;&#x9322;&#x5305;&#xFF0C;&#x9019;&#x662F;&#x6709;&#x53F2;&#x4EE5;&#x4F86;&#x7B2C;&#x4E00;&#x500B;&#x5BE6;&#x73FE;ERC20&#x4EE3;&#x5E63;&#x6A19;&#x6E96;&#x7684;&#xFF08;Fabian Vogelsteller&#xFF0C;ERC20&#x7684;&#x4F5C;&#x8005;&#x4E5F;&#x662F;Mist&#x7684;&#x4E3B;&#x8981;&#x958B;&#x767C;&#x4EBA;&#x54E1;&#xFF09;&#x3002;Mist&#x4E5F;&#x662F;&#x7B2C;&#x4E00;&#x500B;&#x5F15;&#x5165;camelCase&#x6821;&#x9A57;&#x548C;&#x7684;&#x8EDF;&#x9AD4;&#x5305;&#xFF08;EIP-155&#xFF0C;&#x53C3;&#x898B; <a href="#eip-155">[eip-155]</a> &#xFF09;&#x3002;Mist&#x904B;&#x884C;&#x4E00;&#x500B;&#x5B8C;&#x6574;&#x7684;&#x7BC0;&#x9EDE;&#xFF0C;&#x4E26;&#x63D0;&#x4F9B;&#x5B8C;&#x6574;&#x7684;DApp&#x700F;&#x89BD;&#x5668;&#xFF0C;&#x652F;&#x6301;&#x57FA;&#x65BC;Swarm&#x7684;&#x5132;&#x5B58;&#x548C;ENS&#x5730;&#x5740;&#x3002;&#x53EF;&#x4EE5;&#x5728;&#x4EE5;&#x4E0B;&#x7DB2;&#x5740;&#x627E;&#x5230;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ethereum/mist" class="bare" target="_blank">https://github.com/ethereum/mist</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references">References</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a id="1"></a>[1] EIP-161: <a href="http://eips.ethereum.org/EIPS/eip-161" class="bare" target="_blank">http://eips.ethereum.org/EIPS/eip-161</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x56DB;&#x7AE0;#,&#x4E0B;&#x4E00;&#x7AE0;&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x6E2C;&#x8A66;&#x7DB2;&gt;&gt;</p>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第二章.html" class="navigation navigation-prev " aria-label="Previous page: 第二章以太坊基礎">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第四章.html" class="navigation navigation-next " aria-label="Next page: 第四章以太坊測試網（Testnets）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第三章以太坊客戶端","level":"1.6","depth":1,"next":{"title":"第四章以太坊測試網（Testnets）","level":"1.7","depth":1,"path":"第四章.asciidoc","ref":"第四章.asciidoc","articles":[]},"previous":{"title":"第二章以太坊基礎","level":"1.5","depth":1,"path":"第二章.asciidoc","ref":"第二章.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第三章.asciidoc","mtime":"2019-08-26T19:01:45.069Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-26T19:02:08.515Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

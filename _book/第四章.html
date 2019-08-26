@@ -1,0 +1,838 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第四章以太坊測試網（Testnets） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="第五章.html" />
+    
+    
+    <link rel="prev" href="第三章.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="前言.html">
+            
+                <a href="前言.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="術語.html">
+            
+                <a href="術語.html">
+            
+                    
+                    術語
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="第一章.html">
+            
+                <a href="第一章.html">
+            
+                    
+                    第一章 什麼是以太坊
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="第二章.html">
+            
+                <a href="第二章.html">
+            
+                    
+                    第二章以太坊基礎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="第三章.html">
+            
+                <a href="第三章.html">
+            
+                    
+                    第三章以太坊客戶端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="第四章.html">
+            
+                <a href="第四章.html">
+            
+                    
+                    第四章以太坊測試網（Testnets）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="第五章.html">
+            
+                <a href="第五章.html">
+            
+                    
+                    第五章密鑰，地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="第六章.html">
+            
+                <a href="第六章.html">
+            
+                    
+                    第六章錢包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="第七章.html">
+            
+                <a href="第七章.html">
+            
+                    
+                    第七章交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="第八章.html">
+            
+                <a href="第八章.html">
+            
+                    
+                    第八章智能合約
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="第九章.html">
+            
+                <a href="第九章.html">
+            
+                    
+                    第九章開發工具，框架和庫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="第十章.html">
+            
+                <a href="第十章.html">
+            
+                    
+                    第十章Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="第十一章.html">
+            
+                <a href="第十一章.html">
+            
+                    
+                    第十一章去中心化應用 (DApps)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="第十二章.html">
+            
+                <a href="第十二章.html">
+            
+                    
+                    第十二章Oracles
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="第十三章.html">
+            
+                <a href="第十三章.html">
+            
+                    
+                    第十三章gas（Gas）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="第十四章.html">
+            
+                <a href="第十四章.html">
+            
+                    
+                    第十四章以太坊虛擬機
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="第十五章.html">
+            
+                <a href="第十五章.html">
+            
+                    
+                    第十五章共識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="第十六章.html">
+            
+                <a href="第十六章.html">
+            
+                    
+                    第十六章Vyper: 面向合約的程式語言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="第十七章.html">
+            
+                <a href="第十七章.html">
+            
+                    
+                    第十七章節點間的通信 —— 一個簡單的視角
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="第十八章.html">
+            
+                <a href="第十八章.html">
+            
+                    
+                    第十八章以太坊標準
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="第十九章.html">
+            
+                <a href="第十九章.html">
+            
+                    
+                    第十九章以太坊分叉歷史
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >第四章以太坊測試網（Testnets）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="sect1">
+<h2 id="testnets">&#x4EE5;&#x592A;&#x574A;&#x6E2C;&#x8A66;&#x7DB2;&#xFF08;Testnets&#xFF09;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x4E09;&#x7AE0;#,&#x4E0A;&#x4E00;&#x7AE0;&#xFF1A;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&gt;&gt;</p>
+</div>
+<div class="sect2">
+<h3 id="__">&#x4EC0;&#x9EBC;&#x662F;&#x6E2C;&#x8A66;&#x7DB2;&#xFF1F;</h3>
+<div class="paragraph">
+<p>&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF08;&#x7C21;&#x7A31;testnet&#xFF09;&#x7528;&#x65BC;&#x6A21;&#x64EC;&#x4EE5;&#x592A;&#x7DB2;&#x4E3B;&#x7DB2;&#x7684;&#x884C;&#x70BA;&#x3002;&#x6709;&#x4E00;&#x4E9B;&#x516C;&#x958B;&#x7684;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x53EF;&#x4EE5;&#x66FF;&#x4EE3;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x3002;&#x9019;&#x4E9B;&#x7DB2;&#x8DEF;&#x4E0A;&#x7684;&#x8CA8;&#x5E63;&#x6BEB;&#x7121;&#x50F9;&#x503C;&#xFF0C;&#x4F46;&#x5B83;&#x5011;&#x4ECD;&#x7136;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x56E0;&#x70BA;&#x5408;&#x7D04;&#x548C;&#x5354;&#x8B70;&#x8B8A;&#x66F4;&#x7684;&#x529F;&#x80FD;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x4E2D;&#x65B7;&#x4EE5;&#x592A;&#x7DB2;&#x4E3B;&#x7DB2;&#x6216;&#x4F7F;&#x7528;&#x771F;&#x5BE6;&#x8CA8;&#x5E63;&#x7684;&#x60C5;&#x6CC1;&#x4E0B;&#x9032;&#x884C;&#x6E2C;&#x8A66;&#x3002;&#x7576;&#x4E3B;&#x7DB2;&#xFF08;&#x7C21;&#x7A31;mainnet&#xFF09;&#x5373;&#x5C07;&#x5305;&#x542B;&#x5C0D;&#x4EE5;&#x592A;&#x574A;&#x5354;&#x8B70;&#x7684;&#x4EFB;&#x4F55;&#x91CD;&#x5927;&#x6539;&#x8B8A;&#x6642;&#xFF0C;&#x5176;&#x6E2C;&#x8A66;&#x4E3B;&#x8981;&#x5728;&#x9019;&#x4E9B;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x4E0A;&#x5B8C;&#x6210;&#x3002;&#x9019;&#x4E9B;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x4E5F;&#x88AB;&#x5927;&#x91CF;&#x958B;&#x767C;&#x4EBA;&#x54E1;&#x7528;&#x65BC;&#x5728;&#x90E8;&#x7F72;&#x5230;&#x4E3B;&#x7DB2;&#x4E4B;&#x524D;&#x6E2C;&#x8A66;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__testnets">&#x4F7F;&#x7528; Testnets</h3>
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x9023;&#x63A5;&#x5230;&#x516C;&#x5171;&#x53EF;&#x7528;&#x7684;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x6216;&#x5275;&#x5EFA;&#x4F60;&#x81EA;&#x5DF1;&#x7684;&#x79C1;&#x4EBA;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x4F7F;&#x7528;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#x4F86;&#x66F4;&#x7C21;&#x55AE;&#x5730;&#x8D77;&#x6B65;&#x3002;&#x8981;&#x4F7F;&#x7528;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x4EE5;&#x53CA;&#x5230;&#x8A72;&#x7DB2;&#x8DEF;&#x7684;&#x9023;&#x63A5;&#x3002;&#x5C0D;&#x65BC;testnet ether&#xFF0C;&#x4F7F;&#x7528;&#x201C;faucet&#x201D;&#xFF0C;faucet&#x7DE9;&#x6162;&#x5730;&#x5206;&#x914D;&#x6E2C;&#x8A66;ether&#xFF0C;&#x5411;&#x4EFB;&#x4F55;&#x8A62;&#x554F;&#x7684;&#x4EBA;&#x201C;&#x6EF4;&#x9001;&#x201D;&#x5C11;&#x91CF;ether&#x3002;&#x8981;&#x9023;&#x63A5;&#x5230;&#x4E00;&#x500B;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4E00;&#x500B;&#x4EE5;&#x592A;&#x574A;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x5B8C;&#x6574;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#xFF0C;&#x6BD4;&#x5982;geth&#xFF0C;&#x6216;&#x8005;&#x5B8C;&#x6574;&#x7684;&#x5BA2;&#x6236;&#x7AEF;&#x7684;&#x7DB2;&#x95DC;&#xFF0C;&#x6BD4;&#x5982;MetaMask&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="___2">&#x7372;&#x53D6;&#x6E2C;&#x8A66;&#x4EE5;&#x592A;&#x7DB2;</h3>
+<div class="paragraph">
+<p>&#x7531;&#x65BC;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0D;&#x4EE5;&#x771F;&#x6B63;&#x7684;&#x91D1;&#x9322;&#x904B;&#x4F5C;&#xFF0C;&#x7926;&#x5DE5;&#x4FDD;&#x8B77;&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x52D5;&#x6A5F;&#x5F88;&#x5F31;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6E2C;&#x8A66;&#x7DB2;&#x5FC5;&#x9808;&#x4FDD;&#x8B77;&#x81EA;&#x5DF1;&#x514D;&#x53D7;&#x6FEB;&#x7528;&#x548C;&#x653B;&#x64CA;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x70BA;&#x9019;&#x4E9B;&#x6E2C;&#x8A66;&#x7DB2;&#x5275;&#x5EFA;&#x4E86;&#x6C34;&#x9F8D;&#x982D;&#xFF0C;&#x4EE5;&#x53D7;&#x63A7;&#x7684;&#x65B9;&#x5F0F;&#x5411;&#x958B;&#x767C;&#x4EBA;&#x54E1;&#x5206;&#x767C;&#x514D;&#x8CBB;&#x7684;&#x6E2C;&#x8A66;ether&#xFF08;&#x5927;&#x591A;&#x6578;faucet&#x6BCF;&#x9694;&#x5E7E;&#x79D2;&#x5DE6;&#x53F3;&quot;&#x6EF4;&#x6CE8;&quot;ether&#xFF09;&#x3002;&#x9019;&#x7A2E;&#x4EE5;&#x592A;&#x7DB2;&#x7684;&#x53D7;&#x63A7;&#x5206;&#x914D;&#x53EF;&#x9632;&#x6B62;&#x7528;&#x6236;&#x6FEB;&#x7528;&#x93C8;&#xFF0C;&#x56E0;&#x70BA;&#x63D0;&#x4F9B;&#x6709;&#x9650;&#x7684;ether&#x4F9B;&#x61C9;&#x53EF;&#x9632;&#x6B62;&#x4ED6;&#x5011;&#x5411;&#x93C8;&#x4E2D;&#x5BEB;&#x5165;&#x904E;&#x591A;&#x5167;&#x5BB9;&#x6216;&#x57F7;&#x884C;&#x592A;&#x591A;&#x4EA4;&#x6613;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x4E00;&#x4E9B;testnets&#x5DF2;&#x7D93;&#x5BE6;&#x65BD;&#x4E86;&#x8A8D;&#x8B49;&#x8B49;&#x660E;&#xFF08;Proof of Authentication&#xFF09;&#x65B9;&#x6848;&#xFF0C;&#x4F7F;&#x7528;faucet&#x9700;&#x8981;&#x5177;&#x6709;&#x9069;&#x7576;&#x793E;&#x4EA4;&#x5A92;&#x9AD4;&#x7DB2;&#x7AD9;&#x7684;&#x8A8D;&#x8B49;&#x7684;&#x6191;&#x8B49;&#x3002;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__testnets_2">&#x9023;&#x63A5;&#x5230;Testnets</h3>
+<div class="sect3">
+<h4 id="_metamask">Metamask</h4>
+<div class="paragraph">
+<p>Metamask&#x5B8C;&#x5168;&#x652F;&#x6301;Ropsten&#xFF0C;Kovan&#x548C;Rinkeby&#x6E2C;&#x8A66;&#x7DB2;&#xFF0C;&#x4F46;&#x4E5F;&#x53EF;&#x4EE5;&#x9023;&#x63A5;&#x5230;&#x5176;&#x4ED6;&#x6E2C;&#x8A66;&#x7DB2;&#x548C;&#x672C;&#x5730;&#x7DB2;&#x3002;&#x5728;Metamask&#x4E2D;&#xFF0C;&#x53EA;&#x9700;&#x55AE;&#x64CA;&#x201C;main network&#x201D;&#x4E0B;&#x62C9;&#x83DC;&#x55AE;&#xFF0C;&#x5373;&#x53EF;&#x5207;&#x63DB;&#x7DB2;&#x8DEF;&#x3002;MetaMask&#x9084;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x500B;&#x201C;buy&#x201D;&#x6E2C;&#x8A66;ether&#x7684;&#x9078;&#x9805;&#xFF0C;&#x8A72;&#x9078;&#x9805;&#x5C07;&#x4F60;&#x5F15;&#x5C0E;&#x81F3;&#x4F60;&#x53EF;&#x4EE5;&#x8ACB;&#x6C42;&#x514D;&#x8CBB;&#x6E2C;&#x8A66;&#x4EE5;&#x592A;&#x7DB2;&#x7684;faucet&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;Ropsten&#x6E2C;&#x8A66;&#x7DB2;&#xFF0C;&#x5247;&#x53EF;&#x4EE5;&#x5F9E;Ropsten&#x6E2C;&#x8A66;faucet&#x670D;&#x52D9;&#x4E2D;&#x7372;&#x53D6;ether&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5F9E;&#x6B64;&#x9801;&#x9762;&#x8A2A;&#x554F;&#x6B64;faucet&#x3002;&#x5B83;&#x9700;&#x8981;Metamask&#x64F4;&#x5C55;&#x624D;&#x80FD;&#x5DE5;&#x4F5C;&#x3002;https://faucet.metamask.io/</p>
+</div>
+<div class="sect4">
+<h5 id="_infura">Infura</h5>
+<div class="paragraph">
+<p>&#x7576;MetaMask&#x9023;&#x63A5;&#x5230;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x6642;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;Infura&#x670D;&#x52D9;&#x63D0;&#x4F9B;&#x5546;&#x4F86;&#x8A2A;&#x554F;JSON-RPC&#x63A5;&#x53E3;&#x3002;Infura&#x8A95;&#x751F;&#x7684;&#x76EE;&#x7684;&#x662F;&#x70BA;ConsenSys&#x5167;&#x90E8;&#x9805;&#x76EE;&#x63D0;&#x4F9B;&#x7A69;&#x5B9A;&#x53EF;&#x9760;&#x7684;RPC&#x8A2A;&#x554F;&#x3002;&#x9664;&#x4E86;JSON-RPC API&#x4E4B;&#x5916;&#xFF0C;Infura&#x9084;&#x63D0;&#x4F9B;REST&#xFF08;&#x8868;&#x8FF0;&#x6027;&#x72C0;&#x614B;&#x8F49;&#x79FB;&#xFF09;API&#x3001;IPFS&#xFF08;&#x661F;&#x969B;&#x6A94;&#x6848;&#x7CFB;&#x7D71;&#xFF0C;&#x5373;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x5132;&#x5B58;&#xFF09;API&#x548C;Websockets&#xFF08;&#x5373;&#x6D41;&#x5F0F;&#x50B3;&#x8F38;&#xFF09;API&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>Infura&#x70BA;Ethereum&#x4E3B;&#x7DB2;&#xFF0C;Ropsten&#x3001;Kovan&#x3001;Rinkeby&#x548C;INFURAnet&#xFF08;&#x7528;&#x65BC;Infura&#x7684;&#x5B9A;&#x88FD;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF09;&#x63D0;&#x4F9B;&#x7DB2;&#x95DC;API&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8981;&#x901A;&#x904E;MetaMask&#x4F7F;&#x7528;Infura&#x9032;&#x884C;&#x8F03;&#x4F4E;&#x7D1A;&#x5225;&#x7684;&#x6D3B;&#x52D5;&#xFF0C;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x5E33;&#x6236;&#x3002;&#x8981;&#x76F4;&#x63A5;&#x4F7F;&#x7528;API&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x8A3B;&#x518A;&#x4E00;&#x500B;&#x5E33;&#x6236;&#x4E26;&#x4F7F;&#x7528;Infura&#x63D0;&#x4F9B;&#x7684;API&#x5BC6;&#x9470;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x6709;&#x95DC;Infura&#x7684;&#x66F4;&#x591A;&#x8CC7;&#x8A0A;&#xFF0C;&#x8ACB;&#x8A2A;&#x554F;&#xFF1A;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://infura.io/" class="bare" target="_blank">https://infura.io/</a></p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_remix_ide">Remix&#x96C6;&#x6210;&#x958B;&#x767C;&#x74B0;&#x5883;&#xFF08;IDE&#xFF09;</h4>
+<div class="paragraph">
+<p>Remix IDE&#x53EF;&#x7528;&#x65BC;&#x5728;&#x4E3B;&#x7DB2;&#x548C;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0A;&#x90E8;&#x7F72;&#x548C;&#x4EA4;&#x4E92;&#x667A;&#x80FD;&#x5408;&#x7D04;&#xFF0C;&#x5305;&#x62EC;Ropsten&#x3001;Rinkeby&#x548C;Kovan&#xFF08;Web3&#x63D0;&#x4F9B;&#x8005;&#x4F7F;&#x7528;Infura&#x5730;&#x5740;&#x548C;API&#x5BC6;&#x9470;&#x6216;&#x901A;&#x904E;Injected Web3&#x4F7F;&#x7528;MetaMask&#x4E2D;&#x9078;&#x64C7;&#x7684;&#x7DB2;&#x8DEF;&#xFF09;&#x548C;Ganache&#xFF08; Web3&#x63D0;&#x4F9B;&#x7AEF;&#x9EDE;http://localhost:8545&#xFF09;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ethereum/remix/blob/master/docs/run_tab.rst" class="bare" target="_blank">https://github.com/ethereum/remix/blob/master/docs/run_tab.rst</a>
+<a href="https://medium.com/swlh/deploy-smart-contracts-on-ropsten-testnet-through-ethereum-remix-233cd1494b4b" class="bare" target="_blank">https://medium.com/swlh/deploy-smart-contracts-on-ropsten-testnet-through-ethereum-remix-233cd1494b4b</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_geth">Geth</h4>
+<div class="paragraph">
+<p>Geth&#x672C;&#x8EAB;&#x652F;&#x6301;Ropsten&#x548C;Rinkeby&#x7DB2;&#x8DEF;&#x3002;&#x8981;&#x9023;&#x63A5;&#x5230;Ropsten&#x7DB2;&#x8DEF;&#xFF0C;&#x8ACB;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x53C3;&#x6578;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>geth --testnet</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x5C07;&#x958B;&#x59CB;&#x540C;&#x6B65;Ropsten&#x5340;&#x584A;&#x93C8;&#x3002;&#x540D;&#x70BA; testnet &#x7684;&#x65B0;&#x76EE;&#x9304;&#x5C07;&#x5728;&#x4F60;&#x7684;&#x4E3B;Ethereum&#x6578;&#x64DA;&#x76EE;&#x9304;&#x4E2D;&#x5275;&#x5EFA;&#x3002;&#x4E00;&#x500B; keystore &#x76EE;&#x9304;&#x5C07;&#x5728; testnet &#x5167;&#x90E8;&#x5275;&#x5EFA;&#xFF0C;&#x4E26;&#x5C07;&#x5132;&#x5B58;&#x4F60;&#x7684;testnet&#x5E33;&#x6236;&#x7684;&#x79C1;&#x9470;&#x3002;&#x5728;&#x64B0;&#x5BEB;&#x672C;&#x6587;&#x6642;&#xFF0C;Ropsten&#x5340;&#x584A;&#x93C8;&#x6BD4;&#x4EE5;&#x592A;&#x574A;&#x4E3B;&#x5340;&#x584A;&#x93C8;&#x5C0F;&#x5F97;&#x591A;&#xFF1A;&#x5927;&#x7D04;14GB&#x7684;&#x6578;&#x64DA;&#x3002;&#x7531;&#x65BC;&#x6E2C;&#x8A66;&#x7DB2;&#x9700;&#x8981;&#x7684;&#x8CC7;&#x6E90;&#x8F03;&#x5C11;&#xFF0C;&#x56E0;&#x6B64;&#x9996;&#x5148;&#x5728;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0A;&#x8A2D;&#x7F6E;&#x4E26;&#x6E2C;&#x8A66;&#x4F60;&#x7684;&#x7A0B;&#x5F0F;&#x78BC;&#x6703;&#x66F4;&#x7C21;&#x55AE;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x8207;testnet&#x7684;&#x4EA4;&#x4E92;&#x8207;mainnet&#x985E;&#x4F3C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x63A7;&#x5236;&#x53F0;&#x555F;&#x52D5;Geth testnet&#xFF0C;&#x65B9;&#x6CD5;&#x662F;&#x904B;&#x884C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>geth --testnet console</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x9019;&#x4F7F;&#x5F97;&#x57F7;&#x884C;&#x64CD;&#x4F5C;&#x6210;&#x70BA;&#x53EF;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;&#x958B;&#x8A2D;&#x65B0;&#x8CEC;&#x6236;&#x3001;&#x6AA2;&#x67E5;&#x9918;&#x984D;&#x3001;&#x6AA2;&#x67E5;&#x5176;&#x4ED6;&#x4EE5;&#x592A;&#x574A;&#x5730;&#x5740;&#x7684;&#x9918;&#x984D;&#x7B49;&#x3002;
+&#x5728;Geth&#x63A7;&#x5236;&#x53F0;&#x4E4B;&#x5916;&#x904B;&#x884C;&#x6642;&#xFF0C;&#x53EA;&#x9700;&#x5C07;<code>--testnet</code>&#x53C3;&#x6578;&#x6DFB;&#x52A0;&#x5230;&#x547D;&#x4EE4;&#x884C;&#x6307;&#x4EE4;&#x4E2D;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x57F7;&#x884C;&#x985E;&#x4F3C;&#x65BC;&#x5728;&#x4E3B;&#x7DB2;&#x4E0A;&#x57F7;&#x884C;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x4F5C;&#x70BA;&#x5217;&#x8209;&#x6240;&#x6709;&#x53EF;&#x7528;&#x7684;testnet&#x5E33;&#x6236;&#x53CA;&#x5176;&#x5730;&#x5740;&#x7684;&#x7BC4;&#x4F8B;&#xFF0C;&#x8ACB;&#x904B;&#x884C;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>geth --testnet account list</pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>&#x96D6;&#x7136;&#x5C0F;&#x5F97;&#x591A;&#xFF0C;&#x4F46;&#x6E2C;&#x8A66;&#x7DB2;&#x4ECD;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x6642;&#x9593;&#x624D;&#x80FD;&#x5B8C;&#x5168;&#x540C;&#x6B65;&#x3002;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x904E;&#x5728;geth&#x4EA4;&#x4E92;&#x5F0F;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x904B;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x4F86;&#x6AA2;&#x67E5;geth&#x662F;&#x5426;&#x5DF2;&#x5B8C;&#x6210;&#x540C;&#x6B65;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>eth.getBlock(&quot;latest&quot;).number</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x4E00;&#x65E6;&#x4F60;&#x7684;testnet&#x7BC0;&#x9EDE;&#x5B8C;&#x5168;&#x540C;&#x6B65;&#xFF0C;&#x9019;&#x61C9;&#x8A72;&#x8FD4;&#x56DE;&#x4E00;&#x500B;&#x975E;0&#x7684;&#x6578;&#x5B57;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5C07;&#x8A72;&#x7DE8;&#x865F;&#x8207;&#x5DF2;&#x77E5;&#x7684;testnet&#x5340;&#x584A;&#x700F;&#x89BD;&#x5668;&#x4E2D;&#x7684;&#x6700;&#x65B0;&#x5340;&#x584A;&#x9032;&#x884C;&#x6BD4;&#x8F03;&#xFF0C;&#x4F8B;&#x5982;https://ropsten.etherscan.io/</p>
+</div>
+<div class="paragraph">
+<p>&#x540C;&#x6A23;&#xFF0C;&#x8981;&#x9023;&#x63A5;&#x5230;Rinkeby&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF0C;&#x8ACB;&#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x884C;&#x53C3;&#x6578;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>geth --rinkeby</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_parity">Parity</h4>
+<div class="paragraph">
+<p>Parity&#x5BA2;&#x6236;&#x7AEF;&#x652F;&#x6301;Ropsten&#x548C;Kovan&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x7528;chain&#x53C3;&#x6578;&#x9078;&#x64C7;&#x4F60;&#x8981;&#x9023;&#x63A5;&#x7684;&#x7DB2;&#x8DEF;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x8981;&#x540C;&#x6B65;Ropsten&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>parity --chain ropsten</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x540C;&#x6A23;&#xFF0C;&#x8981;&#x540C;&#x6B65;Kovan&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF0C;&#x8ACB;&#x4F7F;&#x7528;&#xFF1A;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>parity --chain kovan</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__testnets_3">&#x6DF1;&#x5165;&#x4EE5;&#x592A;&#x574A;Testnets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&#x5728;&#x9019;&#x500B;&#x968E;&#x6BB5;&#x4F60;&#x53EF;&#x80FD;&#x6703;&#x60F3;&#xFF1A;&#x201C;&#x6211;&#x660E;&#x767D;&#x6211;&#x70BA;&#x4EC0;&#x9EBC;&#x8981;&#x4F7F;&#x7528;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF0C;&#x4F46;&#x70BA;&#x4EC0;&#x9EBC;&#x6703;&#x6709;&#x9019;&#x9EBC;&#x591A;&#x5462;&#xFF1F;&#x201D;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.ethnews.com/ropsten-to-kovan-to-rinkeby-ethereums-testnet-troubles" class="bare" target="_blank">https://www.ethnews.com/ropsten-to-kovan-to-rinkeby-ethereums-testnet-troubles</a></p>
+</div>
+<div class="sect2">
+<h3 id="__proof_of_work_mining_proof_of_authority_federated_signing">&#x5DE5;&#x4F5C;&#x91CF;&#x8B49;&#x660E;&#xFF08;&#x6316;&#x7926;&#xFF09;Proof-of-Work (Mining) &#x8207; &#x6B0A;&#x5A01;&#x8B49;&#x660E;&#xFF08;&#x806F;&#x5408;&#x7C3D;&#x540D;&#xFF09;Proof-of-Authority (Federated Signing)</h3>
+<div class="paragraph">
+<p><a href="https://github.com/ethereum/guide/blob/master/poa.md" class="bare" target="_blank">https://github.com/ethereum/guide/blob/master/poa.md</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_morden">Morden&#xFF08;&#x539F;&#x59CB;&#x6E2C;&#x8A66;&#x7DB2;&#xFF09;</h3>
+<div class="paragraph">
+<p><a href="https://blog.ethereum.org/2016/11/20/from-morden-to-ropsten/" class="bare" target="_blank">https://blog.ethereum.org/2016/11/20/from-morden-to-ropsten/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ropsten">Ropsten</h3>
+<div class="paragraph">
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x958B;&#x59CB;&#x5728;Ropsten&#x7DB2;&#x8DEF;&#x4E0A;&#x6E2C;&#x8A66;&#x5408;&#x7D04;&#xFF0C;&#x6709;&#x5E7E;&#x500B;faucet&#x53EF;&#x4EE5;&#x4F9B;&#x7D66;&#x4F60;Ropsten&#x7684;ether&#x3002;&#x5982;&#x679C;faucet&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x8ACB;&#x5617;&#x8A66;&#x4E0D;&#x540C;&#x7684;faucet&#x3002;</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://faucet.ropsten.be:3001/" class="bare" target="_blank">http://faucet.ropsten.be:3001/</a>
+&#x9019;&#x500B;faucet&#x63D0;&#x4F9B;&#x4E86;&#x61C9;&#x8A72;&#x6392;&#x968A;&#x63A5;&#x6536;&#x6E2C;&#x8A66;&#x4EE5;&#x592A;&#x7684;&#x5730;&#x5740;&#x7684;&#x53EF;&#x80FD;&#x6027;&#x3002;</p>
+</li>
+<li>
+<p>bitfwd Ropsten Faucet
+<a href="https://faucet.bitfwd.xyz/&#x3002;" class="bare" target="_blank">https://faucet.bitfwd.xyz/&#x3002;</a></p>
+</li>
+<li>
+<p>Kyber Network Ropsten Faucet
+<a href="https://faucet.kyber.network/&#x3002;" class="bare" target="_blank">https://faucet.kyber.network/&#x3002;</a></p>
+</li>
+<li>
+<p>MetaMask Ropsten Faucet
+<a href="https://faucet.metamask.io/" class="bare" target="_blank">https://faucet.metamask.io/</a></p>
+</li>
+<li>
+<p>Ropsten Testnet Mining Pool
+<a href="http://pool.ropsten.ethereum.org/" class="bare" target="_blank">http://pool.ropsten.ethereum.org/</a></p>
+</li>
+<li>
+<p>Etherscan Ropsten Pool
+<a href="https://ropsten.etherscan.io/" class="bare" target="_blank">https://ropsten.etherscan.io/</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_rinkeby">Rinkeby</h3>
+<div class="paragraph">
+<p>Rinkeby&#x6C34;&#x9F8D;&#x982D;&#x4F4D;&#x65BC;https://faucet.rinkeby.io/&#x3002;
+&#x8981;&#x8ACB;&#x6C42;&#x6E2C;&#x8A66;ether&#xFF0C;&#x6709;&#x5FC5;&#x8981;&#x5728;Twitter&#xFF0C;Google Plus&#x6216;Facebook&#x4E0A;&#x767C;&#x4F48;&#x516C;&#x958B;&#x8CC7;&#x8A0A;&#x3002;https://www.rinkeby.io/
+<a href="https://rinkeby.etherscan.io/" class="bare" target="_blank">https://rinkeby.etherscan.io/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_kovan">Kovan</h3>
+<div class="paragraph">
+<p>Kovan testnet&#x652F;&#x6301;&#x5404;&#x7A2E;&#x65B9;&#x6CD5;&#x4F86;&#x8ACB;&#x6C42;&#x6E2C;&#x8A66;ether&#x3002;
+&#x66F4;&#x591A;&#x8CC7;&#x8A0A;&#x53EF;&#x4EE5;&#x5728; <a href="https://github.com/kovan-testnet/faucet/blob/master/README.md" class="bare" target="_blank">https://github.com/kovan-testnet/faucet/blob/master/README.md</a> &#x627E;&#x5230;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://medium.com/@Digix/announcing-kovan-a-stable-ethereum-public-testnet-10ac7cb6c85f" class="bare" target="_blank">https://medium.com/@Digix/announcing-kovan-a-stable-ethereum-public-testnet-10ac7cb6c85f</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://kovan-testnet.github.io/website/" class="bare" target="_blank">https://kovan-testnet.github.io/website/</a></p>
+</div>
+<div class="paragraph">
+<p><a href="https://kovan.etherscan.io/" class="bare" target="_blank">https://kovan.etherscan.io/</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="__testnets_4">&#x4EE5;&#x592A;&#x574A;&#x7D93;&#x5178;Testnets</h2>
+<div class="sectionbody">
+<div class="sect3">
+<h4 id="_morden_2">Morden</h4>
+<div class="paragraph">
+<p>&#x4EE5;&#x592A;&#x574A;&#x7D93;&#x5178;&#x76EE;&#x524D;&#x904B;&#x884C;&#x8457;Morden&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x4E00;&#x500B;&#x8B8A;&#x9AD4;&#xFF0C;&#x8207;&#x4EE5;&#x592A;&#x574A;&#x7D93;&#x5178;&#x6D3B;&#x8E8D;&#x7DB2;&#x8DEF;&#x4FDD;&#x6301;&#x529F;&#x80FD;&#x76F8;&#x540C;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x904E;gastracker RPC&#x6216;&#x8005;&#x70BA;<code>geth</code>&#x6216;<code>parity</code>&#x63D0;&#x4F9B;&#x4E00;&#x500B;&#x6A19;&#x8A8C;&#x4F86;&#x9023;&#x63A5;&#x5B83;.</p>
+</div>
+<div class="paragraph">
+<p><strong>Faucet:</strong> <a href="http://testnet.epool.io/" class="bare" target="_blank">http://testnet.epool.io/</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Gastracker RPC:</strong> <a href="https://web3.gastracker.io/morden" class="bare" target="_blank">https://web3.gastracker.io/morden</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Block Explorer:</strong> <a href="http://mordenexplorer.ethertrack.io/home" class="bare" target="_blank">http://mordenexplorer.ethertrack.io/home</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Geth flag:</strong> <code>geth --chain=morden</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Parity flag:</strong> <code>parity --chain=classic-testnet</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="___3">&#x4EE5;&#x592A;&#x574A;&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x6B77;&#x53F2;</h3>
+<div class="paragraph">
+<p>Olympic, Morden to Ropsten, Kovan, Rinkeby</p>
+</div>
+<div class="paragraph">
+<p>Olympic testnet (Network ID: 0) &#x662F;Frontier&#x9996;&#x500B;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#xFF08;&#x7C21;&#x7A31;Ethereum 0.9&#xFF09;&#x3002;&#x5B83;&#x65BC;2015&#x5E74;&#x521D;&#x63A8;&#x51FA;&#xFF0C;2015&#x5E74;&#x4E2D;&#x671F;&#x88AB;Morden&#x53D6;&#x4EE3;&#x6642;&#x68C4;&#x7528;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>Ethereum&#x2019;s Morden testnet (Network ID: 2) &#x8207;Frontier&#x4E00;&#x8D77;&#x767C;&#x4F48;&#xFF0C;&#x5F9E;2015&#x5E74;7&#x6708;&#x958B;&#x59CB;&#x904B;&#x884C;&#xFF0C;&#x76F4;&#x5230;2016&#x5E74;11&#x6708;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x3002;&#x96D6;&#x7136;&#x4EFB;&#x4F55;&#x4F7F;&#x7528;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5275;&#x5EFA;&#x6E2C;&#x8A66;&#x7DB2;&#xFF0C;&#x4F46;Morden&#x662F;&#x7B2C;&#x4E00;&#x500B;&#x201C;&#x5B98;&#x65B9;&#x201D;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#xFF0C;&#x53D6;&#x4EE3;&#x4E86;Olympic&#x6E2C;&#x8A66;&#x7DB2;&#x3002;&#x7531;&#x65BC;&#x81C3;&#x816B;&#x5340;&#x584A;&#x93C8;&#x7684;&#x9577;&#x540C;&#x6B65;&#x6642;&#x9593;&#x4EE5;&#x53CA;Geth&#x548C;Parity&#x5BA2;&#x6236;&#x7AEF;&#x4E4B;&#x9593;&#x7684;&#x5171;&#x8B58;&#x554F;&#x984C;&#xFF0C;&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x91CD;&#x65B0;&#x555F;&#x52D5;&#x4E26;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x70BA;Ropsten&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>Ropsten (Network ID: 3) &#x662F;&#x4E00;&#x500B;&#x91DD;&#x5C0D;Homestead&#x7684;&#x516C;&#x5171;&#x8DE8;&#x5BA2;&#x6236;&#x7AEF;&#x6E2C;&#x8A66;&#x7DB2;&#xFF0C;&#x65BC;2016&#x5E74;&#x665A;&#x4E9B;&#x6642;&#x5019;&#x63A8;&#x51FA;&#xFF0C;&#x4E26;&#x4F5C;&#x70BA;&#x516C;&#x5171;&#x6E2C;&#x8A66;&#x7DB2;&#x9806;&#x5229;&#x904B;&#x884C;&#x81F3;2017&#x5E74;2&#x6708;&#x5E95;&#x3002;&#x6839;&#x64DA;Ethereum&#x7684;&#x6838;&#x5FC3;&#x958B;&#x767C;&#x4EBA;&#x54E1;P&#xE9;terSzil&#xE1;gyi&#x7684;&#x8AAA;&#x6CD5;&#xFF0C;&#x4E8C;&#x6708;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x201C;&#x60E1;&#x610F;&#x884C;&#x70BA;&#x8005;&#x6C7A;&#x5B9A;&#x6FEB;&#x7528;&#x4F4E;PoW&#xFF0C;&#x4E26;&#x9010;&#x6B65;&#x5C07;gas&#x9650;&#x5236;&#x63D0;&#x9AD8;&#x5230;90&#x5104;&#xFF08;&#x5F9E;&#x666E;&#x901A;&#x7684;470&#x842C;&#xFF09;&#xFF0C;&#x767C;&#x9001;&#x5DE8;&#x5927;&#x4EA4;&#x6613;&#x640D;&#x5BB3;&#x4E86;&#x6574;&#x500B;&#x7DB2;&#x8DEF;&#x201D;&#x3002;Ropsten&#x5728;2017&#x5E74;3&#x6708;&#x88AB;&#x6062;&#x5FA9;&#x3002;https://github.com/ethereum/ropsten</p>
+</div>
+<div class="paragraph">
+<p>Kovan (Network ID: 42) &#x662F;&#x7531;Parity&#x7684;&#x6B0A;&#x5A01;&#x8B49;&#x660E;&#xFF08;PoA&#xFF09;&#x5171;&#x8B58;&#x6F14;&#x7B97;&#x6CD5;&#x9A45;&#x52D5;&#x7684;Homestead&#x7684;&#x516C;&#x5171;Parity&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#x3002;&#x8A72;&#x6E2C;&#x8A66;&#x7DB2;&#x4E0D;&#x53D7;&#x5783;&#x573E;&#x90F5;&#x4EF6;&#x653B;&#x64CA;&#x7684;&#x5F71;&#x97FF;&#xFF0C;&#x56E0;&#x70BA;ether&#x4F9B;&#x61C9;&#x7531;&#x53EF;&#x4FE1;&#x65B9;&#x63A7;&#x5236;&#x3002;&#x9019;&#x4E9B;&#x503C;&#x5F97;&#x4FE1;&#x8CF4;&#x7684;&#x5404;&#x65B9;&#x662F;&#x5728;Ethereum&#x4E0A;&#x7A4D;&#x6975;&#x958B;&#x767C;&#x7684;&#x516C;&#x53F8;&#x3002;
+&#x5118;&#x7BA1;&#x770B;&#x8D77;&#x4F86;&#x9019;&#x61C9;&#x8A72;&#x662F;&#x4EE5;&#x592A;&#x574A;&#x6E2C;&#x8A66;&#x7DB2;&#x554F;&#x984C;&#x7684;&#x89E3;&#x6C7A;&#x65B9;&#x6848;&#xFF0C;&#x4F46;&#x5728;&#x4EE5;&#x592A;&#x574A;&#x793E;&#x5340;&#x5167;&#x4F3C;&#x4E4E;&#x5B58;&#x5728;&#x95DC;&#x65BC;Kovan&#x6E2C;&#x8A66;&#x7DB2;&#x7684;&#x5171;&#x8B58;&#x554F;&#x984C;&#x3002;https://github.com/kovan-testnet/proposal</p>
+</div>
+<div class="paragraph">
+<p>Rinkeby (Network ID: 4) &#x662F;&#x7531;Ethereum&#x5718;&#x968A;&#x65BC;2017&#x5E74;4&#x6708;&#x958B;&#x59CB;&#x7684;Homestead&#x767C;&#x4F48;&#x7684;Geth&#x6E2C;&#x8A66;&#x7DB2;&#x8DEF;&#xFF0C;&#x4E26;&#x4F7F;&#x7528;PoA&#x5171;&#x8B58;&#x5354;&#x8B70;&#x3002;&#x4EE5;&#x65AF;&#x5FB7;&#x54E5;&#x723E;&#x6469;&#x7684;&#x5730;&#x9435;&#x7AD9;&#x547D;&#x540D;&#xFF0C;&#x5B83;&#x5E7E;&#x4E4E;&#x4E0D;&#x53D7;&#x5783;&#x573E;&#x90F5;&#x4EF6;&#x653B;&#x64CA;&#x7684;&#x5F71;&#x97FF;&#xFF08;&#x56E0;&#x70BA;&#x4EE5;&#x592A;&#x7DB2;&#x4F9B;&#x61C9;&#x7531;&#x53D7;&#x4FE1;&#x4EFB;&#x65B9;&#x63A7;&#x5236;&#xFF09;&#x3002;&#x8ACB;&#x53C3;&#x95B1;EIP 225&#xFF1A;https://github.com/ethereum/EIPs/issues/225</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="__proof_of_work_mining_proof_of_authority_federated_signing_2">&#x5DE5;&#x4F5C;&#x91CF;&#x8B49;&#x660E;&#xFF08;&#x6316;&#x7926;&#xFF09;Proof-of-Work (Mining) &#x8207; &#x6B0A;&#x5A01;&#x8B49;&#x660E;&#xFF08;&#x806F;&#x5408;&#x7C3D;&#x540D;&#xFF09;Proof-of-Authority (Federated Signing)</h3>
+<div class="paragraph">
+<p><a href="https://github.com/ethereum/guide/blob/master/poa.md" class="bare" target="_blank">https://github.com/ethereum/guide/blob/master/poa.md</a></p>
+</div>
+<div class="paragraph">
+<p>Proof-of-Work &#x662F;&#x4E00;&#x7A2E;&#x5354;&#x8B70;&#xFF0C;&#x5FC5;&#x9808;&#x57F7;&#x884C;&#x6316;&#x7926;&#xFF08;&#x6602;&#x8CB4;&#x7684;&#x8A08;&#x7B97;&#x6A5F;&#x8A08;&#x7B97;&#xFF09;&#x4EE5;&#x5728;&#x5340;&#x584A;&#x93C8;&#xFF08;&#x5206;&#x4F48;&#x5F0F;&#x8CEC;&#x672C;&#xFF09;&#x4E0A;&#x5275;&#x5EFA;&#x65B0;&#x7684;&#x5340;&#x584A;&#xFF08;&#x53BB;&#x4FE1;&#x4EFB;&#x7684;&#x4EA4;&#x6613;&#xFF09;&#x3002;
+&#x7F3A;&#x9EDE;&#xFF1A;&#x80FD;&#x6E90;&#x6D88;&#x8017;&#x3002;&#x96C6;&#x4E2D;&#x7684;&#x96DC;&#x6E4A;&#x7B97;&#x529B;&#x8207;&#x96C6;&#x4E2D;&#x7684;&#x63A1;&#x7926;&#x8FB2;&#x5834;&#xFF0C;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;&#x5206;&#x4F48;&#x5F0F;&#x3002;&#x6316;&#x6398;&#x65B0;&#x584A;&#x9AD4;&#x6240;&#x9700;&#x7684;&#x5927;&#x91CF;&#x8A08;&#x7B97;&#x80FD;&#x529B;&#x5C0D;&#x74B0;&#x5883;&#x6709;&#x5F71;&#x97FF;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>Proof-of-Authority &#x662F;&#x4E00;&#x7A2E;&#x5354;&#x8B70;&#xFF0C;&#x5B83;&#x53EA;&#x5C07;&#x9020;&#x5E63;&#x7684;&#x8CA0;&#x8F09;&#x5206;&#x914D;&#x7D66;&#x6388;&#x6B0A;&#x548C;&#x53EF;&#x4FE1;&#x7684;&#x7C3D;&#x540D;&#x8005;&#xFF0C;&#x4ED6;&#x5011;&#x53EF;&#x4EE5;&#x6839;&#x64DA;&#x81EA;&#x5DF1;&#x7684;&#x5224;&#x65B7;&#x4E26;&#x96A8;&#x6642;&#x4EE5;&#x767C;&#x5E63;&#x983B;&#x7387;&#x5206;&#x767C;&#x65B0;&#x7684;&#x5340;&#x584A;&#x3002;https://github.com/ethereum/EIPs/issues/225
+&#x512A;&#x9EDE;&#xFF1A;&#x5177;&#x6709;&#x6700;&#x986F;&#x8D6B;&#x7684;&#x8EAB;&#x4EFD;&#x7684;&#x5340;&#x584A;&#x93C8;&#x53C3;&#x8207;&#x8005;&#x901A;&#x904E;&#x6F14;&#x7B97;&#x6CD5;&#x9078;&#x64C7;&#x4F86;&#x9A57;&#x8B49;&#x584A;&#x4F86;&#x4EA4;&#x4ED8;&#x4EA4;&#x6613;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://www.deepdotweb.com/2017/05/21/generalized-proof-activity-poa-forking-free-hybrid-consensus/" class="bare" target="_blank">https://www.deepdotweb.com/2017/05/21/generalized-proof-activity-poa-forking-free-hybrid-consensus/</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="___4">&#x904B;&#x884C;&#x672C;&#x5730;&#x6E2C;&#x8A66;&#x7DB2;</h3>
+<div class="sect3">
+<h4 id="_ganache">Ganache: &#x4EE5;&#x592A;&#x574A;&#x958B;&#x767C;&#x7684;&#x500B;&#x4EBA;&#x5340;&#x584A;&#x93C8;</h4>
+<div class="paragraph">
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Ganache&#x90E8;&#x7F72;&#x5408;&#x7D04;&#xFF0C;&#x958B;&#x767C;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x4E26;&#x904B;&#x884C;&#x6E2C;&#x8A66;&#x3002;&#x5B83;&#x53EF;&#x7528;&#x4F5C;Windows&#xFF0C;Mac&#x548C;Linux&#x7684;&#x684C;&#x9762;&#x61C9;&#x7528;&#x7A0B;&#x5F0F;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p>&#x7DB2;&#x7AD9;: <a href="http://truffleframework.com/ganache" class="bare" target="_blank">http://truffleframework.com/ganache</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_ganache_cli_ganache">Ganache CLI: Ganache &#x4F5C;&#x70BA;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x3002;</h4>
+<div class="paragraph">
+<p>&#x9019;&#x500B;&#x5DE5;&#x5177;&#x4EE5;&#x524D;&#x7A31;&#x70BA;&#x201C;ethereumJS TestRPC&#x201D;&#x3002;</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/trufflesuite/ganache-cli/" class="bare" target="_blank">https://github.com/trufflesuite/ganache-cli/</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ npm install -g ganache-cli</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#x8B93;&#x6211;&#x5011;&#x958B;&#x59CB;&#x4EE5;&#x592A;&#x574A;&#x5340;&#x584A;&#x93C8;&#x5354;&#x8B70;&#x7684;&#x7BC0;&#x9EDE;&#x6A21;&#x64EC;&#x3002;
+* []&#x6AA2;&#x67E5;<code>--networkId</code>&#x548C;<code>--port`flag values&#x662F;&#x5426;&#x8207;truffle.js&#x4E2D;&#x7684;&#x914D;&#x7F6E;&#x76F8;&#x5339;&#x914D;
+* []&#x6AA2;&#x67E5;</code>--gasLimit`flag values&#x662F;&#x5426;&#x8207;https://ethstats.net&#x4E0A;&#x986F;&#x793A;&#x7684;&#x6700;&#x65B0;&#x4E3B;&#x7DB2;gas&#x6975;&#x9650;&#xFF08;&#x5373;8000000 gas&#xFF09;&#x76F8;&#x5339;&#x914D;&#xFF0C;&#x4EE5;&#x907F;&#x514D;&#x4E0D;&#x5FC5;&#x8981;&#x5730;&#x9047;&#x5230;<code>gas&apos;&#x7570;&#x5E38;&#x3002;&#x8ACB;&#x6CE8;&#x610F;&#xFF0C;4000000000&#x7684;&#x201C;--gasPrice&#x201D;&#x4EE3;&#x8868;4 gwei&#x7684;gas&#x50F9;&#x683C;&#x3002;
+* []&#x53EF;&#x4EE5;&#x8F38;&#x5165;&#x4E00;&#x500B;</code>--mnemonic&#x2019;flag values&#x4F86;&#x6062;&#x5FA9;&#x4EE5;&#x524D;&#x7684;&#x9AD8;&#x6E05;&#x9322;&#x5305;&#x548C;&#x76F8;&#x95DC;&#x5730;&#x5740;</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>$ ganache-cli \
+  --networkId=3 \
+  --port=&quot;8545&quot; \
+  --verbose \
+  --gasLimit=8000000 \
+  --gasPrice=4000000000;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&lt;&lt;&#x7B2C;&#x4E94;&#x7AE0;#,&#x4E0B;&#x4E00;&#x7AE0;&#xFF1A;&#x5BC6;&#x9470;&#x8207;&#x5730;&#x5740;&gt;&gt;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="第三章.html" class="navigation navigation-prev " aria-label="Previous page: 第三章以太坊客戶端">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="第五章.html" class="navigation navigation-next " aria-label="Next page: 第五章密鑰，地址">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第四章以太坊測試網（Testnets）","level":"1.7","depth":1,"next":{"title":"第五章密鑰，地址","level":"1.8","depth":1,"path":"第五章.asciidoc","ref":"第五章.asciidoc","articles":[]},"previous":{"title":"第三章以太坊客戶端","level":"1.6","depth":1,"path":"第三章.asciidoc","ref":"第三章.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第四章.asciidoc","mtime":"2019-08-26T19:01:45.079Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-26T19:02:08.515Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
