@@ -1,0 +1,212 @@
+<<第十章#,上一章：Tokens>>
+
+[[decentralized_applications_chap]]
+== 去中心化應用 (DApps)
+
+點對點（P2P，peer-to-peer）運動使數百萬互聯網用戶能夠連接在一起。USENET是被稱為第一個點對點架構的一種分佈式消息傳遞系統，它於1979年成立，是第一個“互聯網”ARPANET的繼承者。ARPANET是一個客戶端 - 伺服器網路，參與者運行節點請求和提供內容，但由於除了簡單的基於地址的路由，缺乏提供任何上下文的能力，USENET很有希望實施一個分散的控制模型，即客戶端 - 伺服器模型，分別從用戶或客戶角度為新聞組伺服器提供自組織方法。
+
+1999年，著名的音樂和檔案共享應用程式Napster出現了。Napster是點對點網路運動演變為BitTorrent的開始，參與用戶建立了一個虛擬網路，完全獨立於物理網路，無需遵守任何管理機構或限制。
+
+由於點對點機制可用於訪問任何類型的分佈式資源，因此它們在去中心化應用程式中起著核心作用。
+
+[[what_is_a_dapp_sec]]
+=== 什麼是DApp？
+
+與傳統應用程式不同，去中心化應用（DApp）不僅屬於單個提供者或伺服器，而是整個棧將在P2P網路上以分佈式方式部署和操作。
+
+典型的DApp棧包括前端，後端和數據儲存。創建DApp有許多優點，典型集中式架構無法提供：
+
+1）彈性：在智能合約上編寫業務邏輯意味著DApp後端將在區塊鏈上完全分發和管理。與在中央伺服器上部署應用程式不同，DApp不會有停機時間，只要區塊鏈仍在運行，它就會繼續存在。
+
+2）透明性：DApp的開源特性允許任何人分叉程式碼並在區塊鏈上運行相同的應用程式。同樣，任何與區塊鏈的互動都將永久儲存，任何擁有區塊鏈副本的人都可以獲得對它的訪問權限。值得注意的是，可能無法將 Bytecode 反編譯為源碼並完全理解合約的程式碼。尋求提供合約行為完全透明的開發人員必須發佈供用戶閱讀，編譯和驗證的源程式碼。
+
+3）抗審查：只要用戶可以訪問以太坊節點，用戶將始終能夠與DApp交互而不受集中機構控制的干擾。一旦在網路上部署程式碼，任何服務提供商，甚至智能合約的所有者都不能更改程式碼。
+
+[[components_of_a_dapp_sec]]
+=== DApp的組件
+
+[[blockchain_smart_contracts_sec]]
+==== 區塊鏈（智能合約）
+
+智能合約用於儲存去中心化應用程式的業務邏輯，狀態和計算; 將智能合約視為常規應用程式中的伺服器端組件。
+
+在以太坊智能合約上部署伺服器端邏輯的一個優點是，你可以構建一個更復雜的架構，智能合約可以在其中相互讀取和寫入數據。部署智能合約後，未來許多其他開發人員都可以使用你的業務邏輯，而無需你管理和維護程式碼。
+
+將智能合約作為核心業務邏輯功能運行的一個主要問題是在部署程式碼後無法更改程式碼。此外，一個非常龐大的智能合約可能需要耗費大量gas來部署和運行。因此，某些應用程式可能會選擇離線計算和外部數據源。請記住，DApp的核心業務邏輯依賴於外部數據或伺服器意味著你的用戶必須信任這些外部事物。
+
+[[front_end_web_ui_cec]]
+==== 前端（Web用戶界面(UI)）
+
+與DApp的業務邏輯需要開發人員瞭解EVM和新語言（如Solidity）不同，DApp的客戶端界面使用基本的Web前端技術（HTML，CSS，JavaScript）。這允許傳統的Web開發人員使用他們熟悉的工具，庫和框架。與DApp的交互（例如簽名消息，發送交易和密鑰管理）通常通過瀏覽器本身使用Mist瀏覽器或Metamask瀏覽器擴展等工具進行。
+
+雖然也可以創建行動DApp，但由於缺少可用作具有密鑰管理功能的輕客戶端的行動客戶端，目前沒有創建行動DApp前端的最佳實踐。
+
+[[data_storage_sec]]
+==== 數據儲存
+
+由於gas成本高，智能合約目前不適合儲存大量數據。因此，大多數DApps將利用去中心化儲存（如IPFS或Swarm）來儲存和分發大型靜態資產，如圖像，視頻和客戶端應用程式（HTML，CSS，JavaScript）。
+
+內容的雜湊值通常使用鍵值映射儲存為智能合約中的字節。然後，通過你的前端應用程式調用智能合約查詢資產，以獲取每個資產的URL。
+
+[[on_chain_vs_off_chain_data_sec]]
+===== 上鏈 vs. 脫鏈
+
+////
+TODO
+////
+
+[[ipfs_sec]]
+===== IPFS
+
+////
+TODO
+////
+
+[[swarm_sec]]
+===== Swarm
+
+Swarm主頁: http://swarm-gateways.net/bzz:/theswarm.eth/
+
+閱讀文件: https://swarm-guide.readthedocs.io/en/latest/index.html
+
+Swarm開發人員的入門指南: https://github.com/ethersphere/swarm/wiki/swarm
+
+Swarm討論組: https://gitter.im/ethersphere/orange-lounge
+
+Ethereum's Swarm 和 IPFS 的相似之處與不同之處; https://github.com/ethersphere/go-ethereum/wiki/IPFS-&-SWARM
+
+[[centralized_db_sec]]
+===== 中心化數據
+
+集中式資料庫是伺服器上的數據儲存，其特徵與描述相關聯。它們使用客戶端 - 伺服器網路架構，這允許客戶端或用戶修改儲存在集中式伺服器上的數據。資料庫的控制權仍由指定的管理員進行，管理員在提供對資料庫的訪問之前對客戶端的憑據進行身份驗證。如果管理員的安全性受到損害，則可以更改甚至刪除數據，因為管理員是唯一負責管理資料庫的人。
+
+[[dapp_frameworks_sec]]
+=== DApp框架
+
+有許多不同的開發框架和庫，以多種語言編寫，使得開發人員可以在創建和部署DApp時獲得更好的體驗。
+
+[[truffle_sec]]
+==== Truffle
+
+Truffle是一種流行的選擇，為以太坊提供可管理的開發環境，測試框架和資產管道。
+
+有了Truffle，你會得到：
+
+* 內建智能合約編譯，鏈接，部署和二進制管理。
+* 與Mocha和Chai進行自動合約測試。
+* 可配置的構建管道，支持自定義構建過程。
+* 可編寫腳本的部署和遷移框架。
+* 用於部署到許多公共和專用網路的網路管理。
+* 直接與合約溝通的交互式控制台。
+* 在開發過程中即時重建資產。
+* 在Truffle環境中執行腳本的外部腳本運行器。
+
+入門和文件：http://truffleframework.com/docs
+
+Github：https://github.com/trufflesuite/truffle
+
+Website：https://truffleframework.com
+
+[[embark_sec]]
+==== Embark Embark框架專注於使用以太坊，IPFS和其他平臺的無伺服器去中心化應用。Embark目前與EVM區塊鏈（Ethereum），去中心化儲存（IPFS）和去中心化通信平臺（Whisper和Orbit）集成。
+
+** 區塊鏈（以太坊）
+* 自動部署合約並使其在JS程式碼中可用。啟動監視更改，如果你更新合約，Embark將自動重新部署合約（如果需要）和DApp。
+* JS通過Promises使用合約。
+* 使用Javascript與合約進行測試驅動開發。
+* 跟蹤已部署的合約; 只在真正需要時部署。
+* 管理不同的鏈（例如，測試網，私人網，livenet）
+* 輕鬆管理相互依賴合約的複雜系統。
+
+** 去中心化儲存（IPFS）
+* 通過EmbarkJS輕鬆儲存和查詢DApp上的數據，包括上傳和查詢檔案。
+* 將完整的應用程式部署到IPFS或Swarm。
+
+** 去中心化通信 (Whisper, Orbit)
+* 通過Whisper或Orbit輕鬆通過P2P渠道發送/接收消息。
+
+** 網路技術
+* 與任何網路技術集成，包括React，Foundation等。
+* 使用你想要的任何構建管道或工具，包括grunt，gulp和webpack。
+
+入門和文件：https://embark.readthedocs.io
+
+Github：https://github.com/embark-framework/embark
+
+Website：https://github.com/embark-framework/embark
+
+==== Emerald
+
+Emerald Platform 是一個框架和工具集，用於簡化Dapps的開發以及現有服務與基於以太坊的區塊鏈的集成。
+
+Emerald提供：
+
+* Javascript庫和React組件構建Dapp
+* 區塊鏈項目常見的SVG圖示
+* 用於管理私鑰的Rust庫，包括硬體錢包和簽名交易
+* 可以集成到現有app命令行或JSON RPC API中的現成的組件和服務
+* SputnikVM，一個獨立的EVM實現，可用於開發和測試
+
+它與平臺無關，為各種目標提供工具：
+
+* 與Electron捆綁的桌面應用程式
+* 行動應用程式
+* 網路應用程式
+* 命令行應用程式和腳本工具
+
+入門和文件：https://docs.etcdevteam.com
+
+Github：https://github.com/etcdevteam/emerald-platform
+
+Website：https://emeraldplatform.io
+
+[[dapp_develotment_tool_sec]
+==== DApp（開發工具）
+DApp是一個用於智能合約開發的簡單命令行工具。它支持以下常見用例：
+
+* 包管理
+* 源程式碼構建
+* 單元測試
+* 簡單的合約部署
+
+入門和文件：https://dapp.readthedocs.io/en/latest/
+
+[[live_dapps_sec]]
+=== 活躍的DApps
+
+以下列出了以太坊網路上的活躍DApp：
+
+[[ethpm_sec]]
+==== EthPM
+一個旨在將包管理帶入以太坊生態系統的項目。
+
+Website：https://www.ethpm.com/
+
+[[radar_relay_sec]]
+==== Radar Relay
+DEX（去中心化交易所）專注於直接從錢包到錢包交易基於以太坊的tokens。
+
+Website：https://radarrelay.com/
+
+[[cryptokitties_sec]]
+==== CryptoKitties
+在以太坊上部署的遊戲，允許玩家購買，收集，繁殖和銷售各種類型的虛擬貓
+它代表了為休閒和悠閒目的部署區塊鏈技術的最早嘗試之一。
+
+Website：https://www.cryptokitties.co
+
+[[ethlance_sec]]
+==== Ethlance
+Ethlance是一個連接自由職業者和開發者的平臺，用ether支付和收款。
+
+Website：https://ethlance.com/
+
+[[decentraland_sec]]
+==== Decentraland
+Decentraland是以太坊區塊鏈支持的虛擬現實平臺。用戶可以創建，體驗內容和應用程式並從中獲利。
+
+Website：https://decentraland.org/
+
+<<第十二章#,下一章：Oracles>>
+
+
