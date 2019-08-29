@@ -39,10 +39,10 @@ image::images/evm-architecture.png["以太坊虛擬機 (EVM) 架構與執行脈�
 [[evm_bytecode_overview]]
 ==== EVM機器語言（ Bytecode 操作）
 
-EVM機器語言分為特定的指令集組，例如算術運算，邏輯和比較運算，控制流，系統調用，堆棧操作和儲存器操作。除典型的 Bytecode 操作外，EVM還必須管理帳戶資訊（即地址和餘額），當前gas價格和區塊資訊。
+EVM機器語言分為特定的指令集組，例如算術運算，邏輯和比較運算，控制流，系統調用，堆疊操作和儲存器操作。除典型的 Bytecode 操作外，EVM還必須管理帳戶資訊（即地址和餘額），當前gas價格和區塊資訊。
 
 [[common_stack_opcodes]]
-通用堆棧操作:: 堆棧和記憶體管理的操作碼指令：
+通用堆疊操作:: 堆疊和記憶體管理的操作碼指令：
 
 ----
 POP     // 項目出棧
@@ -283,14 +283,14 @@ ffffffffffffffffffffffffffffffffffffffff
 PUSH1 0x60 PUSH1 0x40
 ----
 
-這裡我們有_mnemonic_“PUSH1”，後跟一個值為“0x60”的原始字節。這對應於EVM指令，該操作將操作碼之後的單字節解釋為文字值並將其推入堆棧。可以將大小最多為32個字節的值壓入堆棧。例如，以下 Bytecode 將4字節值壓入堆棧：
+這裡我們有_mnemonic_“PUSH1”，後跟一個值為“0x60”的原始字節。這對應於EVM指令，該操作將操作碼之後的單字節解釋為文字值並將其推入堆疊。可以將大小最多為32個字節的值壓入堆疊。例如，以下 Bytecode 將4字節值壓入堆疊：
 
 [[opcode_analysis_2]]
 ----
 PUSH4 0x7f1baa12
 ----
 
-第二個push操作碼將“0x40”儲存到堆棧中（在那裡已存在的“0x60”之上）。
+第二個push操作碼將“0x40”儲存到堆疊中（在那裡已存在的“0x60”之上）。
 
 接下來的兩個指令：
 
@@ -299,7 +299,7 @@ PUSH4 0x7f1baa12
 MSTORE CALLVALUE
 ----
 
-MSTORE是一個堆棧/記憶體操作（參見<<common_stack_opcodes>>），它將值保存到記憶體中，而CALLVALUE是一個環境操作碼（參見<<common_environment_opcodes>>），它返回正在執行的消息調用的存放值。
+MSTORE是一個堆疊/記憶體操作（參見<<common_stack_opcodes>>），它將值保存到記憶體中，而CALLVALUE是一個環境操作碼（參見<<common_environment_opcodes>>），它返回正在執行的消息調用的存放值。
 
 [[evm_bytecode_execution]]
 ==== 執行EVM Bytecode 
@@ -395,7 +395,7 @@ PUSH1 0x3f
 JUMPI
 ----
 
-"PUSH1 0x4" 將0x4置於堆棧頂部，棧初始為空。“CALLDATASIZE”獲取接收到的交易的calldata的大小（以字節為單位）並將其推送到堆棧中。當前堆棧如下所示：
+"PUSH1 0x4" 將0x4置於堆疊頂部，棧初始為空。“CALLDATASIZE”獲取接收到的交易的calldata的大小（以字節為單位）並將其推送到堆疊中。當前堆疊如下所示：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -405,7 +405,7 @@ JUMPI
 |length of calldata from tx (msg.data)
 |======================
 
-下一條指令是“LT”，是“小於（less than）”的縮寫。LT指令檢查堆棧上的頂部項是否小於堆棧上的下一項。在我們的例子中，它檢查CALLDATASIZE的結果是否小於4個字節。
+下一條指令是“LT”，是“小於（less than）”的縮寫。LT指令檢查堆疊上的頂部項是否小於堆疊上的下一項。在我們的例子中，它檢查CALLDATASIZE的結果是否小於4個字節。
 
 為什麼EVM會檢查交易的calldata是否至少為4個字節？因為函數識別碼的工作原理。每個函數由其keccak256雜湊的前四個字節標識。通過將函數的名稱和它所採用的參數放入keccak256雜湊函數，我們可以推匯出它的函數識別碼。在我們的合約中，我們有：
 
@@ -416,9 +416,9 @@ keccak256("withdraw(uint256)") = 0x2e1a7d4d...
 
 因此，“withdraw（uint256）”函數的函數識別碼是0x2e1a7d4d，因為它們是結果雜湊的前四個字節。函數識別碼總是4個字節長，所以如果發送給合約的交易的整個數據欄位小於4個字節，那麼除非定義了_fallback函數_，否則沒有交易可能與之通信的函數。因為我們在Faucet.sol中實現了這樣的fallback函數，所以當calldata的長度小於4個字節時，EVM會跳轉到此函數。
 
-如果msg.data欄位少於4個字節，LT將彈出堆棧的前兩個值並將1推到其上。否則，它會推入0。在我們的例子中，讓我們假設發送給我們的合約的transaciton的msg.data欄位_was_少於4個字節。
+如果msg.data欄位少於4個字節，LT將彈出堆疊的前兩個值並將1推到其上。否則，它會推入0。在我們的例子中，讓我們假設發送給我們的合約的transaciton的msg.data欄位_was_少於4個字節。
 
-“PUSH1 0x3f”指令將字節“0x3f”壓入堆棧。在此指令之後，堆棧如下所示：
+“PUSH1 0x3f”指令將字節“0x3f”壓入堆疊。在此指令之後，堆疊如下所示：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -459,14 +459,14 @@ PUSH1 0x41
 JUMPI
 ----
 
-“PUSH1 0x0”將0壓入堆棧，否則為空。“CALLDATALOAD”接受發送到智能合約的calldata中的索引作為參數，並從該索引讀取32個字節，如下所示：
+“PUSH1 0x0”將0壓入堆疊，否則為空。“CALLDATALOAD”接受發送到智能合約的calldata中的索引作為參數，並從該索引讀取32個字節，如下所示：
 
 [[faucet_calldataload_instruction_text]]
 ----
 calldataload(p) // call data starting from position p (32 bytes)
 ----
 
-由於0是從PUSH1 0x0命令傳遞給它的索引，因此CALLDATALOAD從字節0開始讀取32字節的calldata，然後將其推送到堆棧的頂部（在彈出原始0x0之後）。在“PUSH29 0x1000000 ...”指令之後，堆棧如下所示：
+由於0是從PUSH1 0x0命令傳遞給它的索引，因此CALLDATALOAD從字節0開始讀取32字節的calldata，然後將其推送到堆疊的頂部（在彈出原始0x0之後）。在“PUSH29 0x1000000 ...”指令之後，堆疊如下所示：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -476,7 +476,7 @@ calldataload(p) // call data starting from position p (32 bytes)
 |0x1000000... (29 bytes in length)
 |======================
 
-“SWAP1”用它後面的_第i個_元素交換堆棧頂部元素。在這裡，它與密鑰數據交換0x1000000 ... 新堆棧如下所示：
+“SWAP1”用它後面的_第i個_元素交換堆疊頂部元素。在這裡，它與密鑰數據交換0x1000000 ... 新堆疊如下所示：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -499,7 +499,7 @@ div(x, y) // x / y
 
 如果你不清楚這一部分，可以這樣想：在base~10~，1234000/1000 = 1234。在base~16~中，這沒有什麼不同。不是每個地方都是10的倍數，它是16的倍數。正如在我們的較小的例子中除以10^3^（1000）只保留最頂部的數字，將我們的32字節基數~16~值除以16^29^做同樣的事。
 
-DIV（函數識別碼）的結果被推送到堆棧上，我們的新堆棧如下：
+DIV（函數識別碼）的結果被推送到堆疊上，我們的新堆疊如下：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -508,7 +508,7 @@ DIV（函數識別碼）的結果被推送到堆棧上，我們的新堆棧如�
 |function identifier sent in msg.data
 |======================
 
-由於“PUSH4 0xffffffff”和“AND”指令是冗餘的，我們可以完全忽略它們，因為堆棧在完成後將保持不變。“DUP1”指令複製堆棧上的1^st^項，這是函數識別碼。下一條指令“PUSH4 0x2e1a7d4d”將抽取（uint256）函數的計算函數識別碼推送到堆棧。堆棧現在看起來如下：
+由於“PUSH4 0xffffffff”和“AND”指令是冗餘的，我們可以完全忽略它們，因為堆疊在完成後將保持不變。“DUP1”指令複製堆疊上的1^st^項，這是函數識別碼。下一條指令“PUSH4 0x2e1a7d4d”將抽取（uint256）函數的計算函數識別碼推送到堆疊。堆疊現在看起來如下：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -519,7 +519,7 @@ DIV（函數識別碼）的結果被推送到堆棧上，我們的新堆棧如�
 |0x2e1a7d4d
 |======================
 
-下一條指令“EQ”彈出堆棧的前兩項並對它們進行比較。這是調度程式完成其主要工作的地方：它比較交易的msg.data欄位中發送的函數識別碼是否與withdraw（uint256）匹配。如果它們相等，則EQ將1推入堆棧，這最終將用於跳轉到fallback函數。否則，EQ將0推入堆棧。
+下一條指令“EQ”彈出堆疊的前兩項並對它們進行比較。這是調度程式完成其主要工作的地方：它比較交易的msg.data欄位中發送的函數識別碼是否與withdraw（uint256）匹配。如果它們相等，則EQ將1推入堆疊，這最終將用於跳轉到fallback函數。否則，EQ將0推入堆疊。
 
 假設發送給我們合約的交易確實以withdraw（uint256）的函數識別碼開頭，我們的新棧看起來如下：
 
@@ -531,7 +531,7 @@ DIV（函數識別碼）的結果被推送到堆棧上，我們的新堆棧如�
 |1
 |======================
 
-接下來，我們有“PUSH1 0x41”，這是withdraw（uint256）函數在合約中的地址。在此指令之後，堆棧如下所示：
+接下來，我們有“PUSH1 0x41”，這是withdraw（uint256）函數在合約中的地址。在此指令之後，堆疊如下所示：
 
 .Current stack
 [width="40%",frame="topbot",options="header,footer"]
@@ -542,7 +542,7 @@ DIV（函數識別碼）的結果被推送到堆棧上，我們的新堆棧如�
 |0x41
 |======================
 
-接下來是JUMPI指令，它再次接受堆棧上的前兩個元素作為參數。在這種情況下，我們有“jumpi（0x41,1）”，它告訴EVM執行跳轉到withdraw（uint256）函數的位置。
+接下來是JUMPI指令，它再次接受堆疊上的前兩個元素作為參數。在這種情況下，我們有“jumpi（0x41,1）”，它告訴EVM執行跳轉到withdraw（uint256）函數的位置。
 
 [[evm_tools_references]]
 === EVM工具參考
