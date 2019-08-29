@@ -487,13 +487,13 @@
 <div class="sect3">
 <h4 id="evm_bytecode_overview">EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#xFF08; Bytecode &#x64CD;&#x4F5C;&#xFF09;</h4>
 <div class="paragraph">
-<p>EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#x5206;&#x70BA;&#x7279;&#x5B9A;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x7D44;&#xFF0C;&#x4F8B;&#x5982;&#x7B97;&#x8853;&#x904B;&#x7B97;&#xFF0C;&#x908F;&#x8F2F;&#x548C;&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#xFF0C;&#x63A7;&#x5236;&#x6D41;&#xFF0C;&#x7CFB;&#x7D71;&#x8ABF;&#x7528;&#xFF0C;&#x5806;&#x68E7;&#x64CD;&#x4F5C;&#x548C;&#x5132;&#x5B58;&#x5668;&#x64CD;&#x4F5C;&#x3002;&#x9664;&#x5178;&#x578B;&#x7684; Bytecode &#x64CD;&#x4F5C;&#x5916;&#xFF0C;EVM&#x9084;&#x5FC5;&#x9808;&#x7BA1;&#x7406;&#x5E33;&#x6236;&#x8CC7;&#x8A0A;&#xFF08;&#x5373;&#x5730;&#x5740;&#x548C;&#x9918;&#x984D;&#xFF09;&#xFF0C;&#x7576;&#x524D;gas&#x50F9;&#x683C;&#x548C;&#x5340;&#x584A;&#x8CC7;&#x8A0A;&#x3002;</p>
+<p>EVM&#x6A5F;&#x5668;&#x8A9E;&#x8A00;&#x5206;&#x70BA;&#x7279;&#x5B9A;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x7D44;&#xFF0C;&#x4F8B;&#x5982;&#x7B97;&#x8853;&#x904B;&#x7B97;&#xFF0C;&#x908F;&#x8F2F;&#x548C;&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#xFF0C;&#x63A7;&#x5236;&#x6D41;&#xFF0C;&#x7CFB;&#x7D71;&#x8ABF;&#x7528;&#xFF0C;&#x5806;&#x758A;&#x64CD;&#x4F5C;&#x548C;&#x5132;&#x5B58;&#x5668;&#x64CD;&#x4F5C;&#x3002;&#x9664;&#x5178;&#x578B;&#x7684; Bytecode &#x64CD;&#x4F5C;&#x5916;&#xFF0C;EVM&#x9084;&#x5FC5;&#x9808;&#x7BA1;&#x7406;&#x5E33;&#x6236;&#x8CC7;&#x8A0A;&#xFF08;&#x5373;&#x5730;&#x5740;&#x548C;&#x9918;&#x984D;&#xFF09;&#xFF0C;&#x7576;&#x524D;gas&#x50F9;&#x683C;&#x548C;&#x5340;&#x584A;&#x8CC7;&#x8A0A;&#x3002;</p>
 </div>
 <div id="common_stack_opcodes" class="dlist">
 <dl>
-<dt class="hdlist1">&#x901A;&#x7528;&#x5806;&#x68E7;&#x64CD;&#x4F5C;</dt>
+<dt class="hdlist1">&#x901A;&#x7528;&#x5806;&#x758A;&#x64CD;&#x4F5C;</dt>
 <dd>
-<p>&#x5806;&#x68E7;&#x548C;&#x8A18;&#x61B6;&#x9AD4;&#x7BA1;&#x7406;&#x7684;&#x64CD;&#x4F5C;&#x78BC;&#x6307;&#x4EE4;&#xFF1A;</p>
+<p>&#x5806;&#x758A;&#x548C;&#x8A18;&#x61B6;&#x9AD4;&#x7BA1;&#x7406;&#x7684;&#x64CD;&#x4F5C;&#x78BC;&#x6307;&#x4EE4;&#xFF1A;</p>
 </dd>
 </dl>
 </div>
@@ -814,7 +814,7 @@ ffffffffffffffffffffffffffffffffffffffff
 </div>
 </div>
 <div class="paragraph">
-<p>&#x9019;&#x88E1;&#x6211;&#x5011;&#x6709;<em>mnemonic</em>&#x201C;PUSH1&#x201D;&#xFF0C;&#x5F8C;&#x8DDF;&#x4E00;&#x500B;&#x503C;&#x70BA;&#x201C;0x60&#x201D;&#x7684;&#x539F;&#x59CB;&#x5B57;&#x7BC0;&#x3002;&#x9019;&#x5C0D;&#x61C9;&#x65BC;EVM&#x6307;&#x4EE4;&#xFF0C;&#x8A72;&#x64CD;&#x4F5C;&#x5C07;&#x64CD;&#x4F5C;&#x78BC;&#x4E4B;&#x5F8C;&#x7684;&#x55AE;&#x5B57;&#x7BC0;&#x89E3;&#x91CB;&#x70BA;&#x6587;&#x5B57;&#x503C;&#x4E26;&#x5C07;&#x5176;&#x63A8;&#x5165;&#x5806;&#x68E7;&#x3002;&#x53EF;&#x4EE5;&#x5C07;&#x5927;&#x5C0F;&#x6700;&#x591A;&#x70BA;32&#x500B;&#x5B57;&#x7BC0;&#x7684;&#x503C;&#x58D3;&#x5165;&#x5806;&#x68E7;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B; Bytecode &#x5C07;4&#x5B57;&#x7BC0;&#x503C;&#x58D3;&#x5165;&#x5806;&#x68E7;&#xFF1A;</p>
+<p>&#x9019;&#x88E1;&#x6211;&#x5011;&#x6709;<em>mnemonic</em>&#x201C;PUSH1&#x201D;&#xFF0C;&#x5F8C;&#x8DDF;&#x4E00;&#x500B;&#x503C;&#x70BA;&#x201C;0x60&#x201D;&#x7684;&#x539F;&#x59CB;&#x5B57;&#x7BC0;&#x3002;&#x9019;&#x5C0D;&#x61C9;&#x65BC;EVM&#x6307;&#x4EE4;&#xFF0C;&#x8A72;&#x64CD;&#x4F5C;&#x5C07;&#x64CD;&#x4F5C;&#x78BC;&#x4E4B;&#x5F8C;&#x7684;&#x55AE;&#x5B57;&#x7BC0;&#x89E3;&#x91CB;&#x70BA;&#x6587;&#x5B57;&#x503C;&#x4E26;&#x5C07;&#x5176;&#x63A8;&#x5165;&#x5806;&#x758A;&#x3002;&#x53EF;&#x4EE5;&#x5C07;&#x5927;&#x5C0F;&#x6700;&#x591A;&#x70BA;32&#x500B;&#x5B57;&#x7BC0;&#x7684;&#x503C;&#x58D3;&#x5165;&#x5806;&#x758A;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4EE5;&#x4E0B; Bytecode &#x5C07;4&#x5B57;&#x7BC0;&#x503C;&#x58D3;&#x5165;&#x5806;&#x758A;&#xFF1A;</p>
 </div>
 <div id="opcode_analysis_2" class="listingblock">
 <div class="content">
@@ -822,7 +822,7 @@ ffffffffffffffffffffffffffffffffffffffff
 </div>
 </div>
 <div class="paragraph">
-<p>&#x7B2C;&#x4E8C;&#x500B;push&#x64CD;&#x4F5C;&#x78BC;&#x5C07;&#x201C;0x40&#x201D;&#x5132;&#x5B58;&#x5230;&#x5806;&#x68E7;&#x4E2D;&#xFF08;&#x5728;&#x90A3;&#x88E1;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x201C;0x60&#x201D;&#x4E4B;&#x4E0A;&#xFF09;&#x3002;</p>
+<p>&#x7B2C;&#x4E8C;&#x500B;push&#x64CD;&#x4F5C;&#x78BC;&#x5C07;&#x201C;0x40&#x201D;&#x5132;&#x5B58;&#x5230;&#x5806;&#x758A;&#x4E2D;&#xFF08;&#x5728;&#x90A3;&#x88E1;&#x5DF2;&#x5B58;&#x5728;&#x7684;&#x201C;0x60&#x201D;&#x4E4B;&#x4E0A;&#xFF09;&#x3002;</p>
 </div>
 <div class="paragraph">
 <p>&#x63A5;&#x4E0B;&#x4F86;&#x7684;&#x5169;&#x500B;&#x6307;&#x4EE4;&#xFF1A;</p>
@@ -833,7 +833,7 @@ ffffffffffffffffffffffffffffffffffffffff
 </div>
 </div>
 <div class="paragraph">
-<p>MSTORE&#x662F;&#x4E00;&#x500B;&#x5806;&#x68E7;/&#x8A18;&#x61B6;&#x9AD4;&#x64CD;&#x4F5C;&#xFF08;&#x53C3;&#x898B;<a href="#common_stack_opcodes">[common_stack_opcodes]</a>&#xFF09;&#xFF0C;&#x5B83;&#x5C07;&#x503C;&#x4FDD;&#x5B58;&#x5230;&#x8A18;&#x61B6;&#x9AD4;&#x4E2D;&#xFF0C;&#x800C;CALLVALUE&#x662F;&#x4E00;&#x500B;&#x74B0;&#x5883;&#x64CD;&#x4F5C;&#x78BC;&#xFF08;&#x53C3;&#x898B;<a href="#common_environment_opcodes">[common_environment_opcodes]</a>&#xFF09;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x6B63;&#x5728;&#x57F7;&#x884C;&#x7684;&#x6D88;&#x606F;&#x8ABF;&#x7528;&#x7684;&#x5B58;&#x653E;&#x503C;&#x3002;</p>
+<p>MSTORE&#x662F;&#x4E00;&#x500B;&#x5806;&#x758A;/&#x8A18;&#x61B6;&#x9AD4;&#x64CD;&#x4F5C;&#xFF08;&#x53C3;&#x898B;<a href="#common_stack_opcodes">[common_stack_opcodes]</a>&#xFF09;&#xFF0C;&#x5B83;&#x5C07;&#x503C;&#x4FDD;&#x5B58;&#x5230;&#x8A18;&#x61B6;&#x9AD4;&#x4E2D;&#xFF0C;&#x800C;CALLVALUE&#x662F;&#x4E00;&#x500B;&#x74B0;&#x5883;&#x64CD;&#x4F5C;&#x78BC;&#xFF08;&#x53C3;&#x898B;<a href="#common_environment_opcodes">[common_environment_opcodes]</a>&#xFF09;&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x6B63;&#x5728;&#x57F7;&#x884C;&#x7684;&#x6D88;&#x606F;&#x8ABF;&#x7528;&#x7684;&#x5B58;&#x653E;&#x503C;&#x3002;</p>
 </div>
 </div>
 <div class="sect3">
@@ -964,7 +964,7 @@ JUMPI</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>&quot;PUSH1 0x4&quot; &#x5C07;0x4&#x7F6E;&#x65BC;&#x5806;&#x68E7;&#x9802;&#x90E8;&#xFF0C;&#x68E7;&#x521D;&#x59CB;&#x70BA;&#x7A7A;&#x3002;&#x201C;CALLDATASIZE&#x201D;&#x7372;&#x53D6;&#x63A5;&#x6536;&#x5230;&#x7684;&#x4EA4;&#x6613;&#x7684;calldata&#x7684;&#x5927;&#x5C0F;&#xFF08;&#x4EE5;&#x5B57;&#x7BC0;&#x70BA;&#x55AE;&#x4F4D;&#xFF09;&#x4E26;&#x5C07;&#x5176;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x4E2D;&#x3002;&#x7576;&#x524D;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&quot;PUSH1 0x4&quot; &#x5C07;0x4&#x7F6E;&#x65BC;&#x5806;&#x758A;&#x9802;&#x90E8;&#xFF0C;&#x68E7;&#x521D;&#x59CB;&#x70BA;&#x7A7A;&#x3002;&#x201C;CALLDATASIZE&#x201D;&#x7372;&#x53D6;&#x63A5;&#x6536;&#x5230;&#x7684;&#x4EA4;&#x6613;&#x7684;calldata&#x7684;&#x5927;&#x5C0F;&#xFF08;&#x4EE5;&#x5B57;&#x7BC0;&#x70BA;&#x55AE;&#x4F4D;&#xFF09;&#x4E26;&#x5C07;&#x5176;&#x63A8;&#x9001;&#x5230;&#x5806;&#x758A;&#x4E2D;&#x3002;&#x7576;&#x524D;&#x5806;&#x758A;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 1. Current stack</caption>
@@ -988,7 +988,7 @@ JUMPI</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x662F;&#x201C;LT&#x201D;&#xFF0C;&#x662F;&#x201C;&#x5C0F;&#x65BC;&#xFF08;less than&#xFF09;&#x201D;&#x7684;&#x7E2E;&#x5BEB;&#x3002;LT&#x6307;&#x4EE4;&#x6AA2;&#x67E5;&#x5806;&#x68E7;&#x4E0A;&#x7684;&#x9802;&#x90E8;&#x9805;&#x662F;&#x5426;&#x5C0F;&#x65BC;&#x5806;&#x68E7;&#x4E0A;&#x7684;&#x4E0B;&#x4E00;&#x9805;&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5B83;&#x6AA2;&#x67E5;CALLDATASIZE&#x7684;&#x7D50;&#x679C;&#x662F;&#x5426;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x3002;</p>
+<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x662F;&#x201C;LT&#x201D;&#xFF0C;&#x662F;&#x201C;&#x5C0F;&#x65BC;&#xFF08;less than&#xFF09;&#x201D;&#x7684;&#x7E2E;&#x5BEB;&#x3002;LT&#x6307;&#x4EE4;&#x6AA2;&#x67E5;&#x5806;&#x758A;&#x4E0A;&#x7684;&#x9802;&#x90E8;&#x9805;&#x662F;&#x5426;&#x5C0F;&#x65BC;&#x5806;&#x758A;&#x4E0A;&#x7684;&#x4E0B;&#x4E00;&#x9805;&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x5B83;&#x6AA2;&#x67E5;CALLDATASIZE&#x7684;&#x7D50;&#x679C;&#x662F;&#x5426;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x3002;</p>
 </div>
 <div class="paragraph">
 <p>&#x70BA;&#x4EC0;&#x9EBC;EVM&#x6703;&#x6AA2;&#x67E5;&#x4EA4;&#x6613;&#x7684;calldata&#x662F;&#x5426;&#x81F3;&#x5C11;&#x70BA;4&#x500B;&#x5B57;&#x7BC0;&#xFF1F;&#x56E0;&#x70BA;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x3002;&#x6BCF;&#x500B;&#x51FD;&#x6578;&#x7531;&#x5176;keccak256&#x96DC;&#x6E4A;&#x7684;&#x524D;&#x56DB;&#x500B;&#x5B57;&#x7BC0;&#x6A19;&#x8B58;&#x3002;&#x901A;&#x904E;&#x5C07;&#x51FD;&#x6578;&#x7684;&#x540D;&#x7A31;&#x548C;&#x5B83;&#x6240;&#x63A1;&#x7528;&#x7684;&#x53C3;&#x6578;&#x653E;&#x5165;keccak256&#x96DC;&#x6E4A;&#x51FD;&#x6578;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x63A8;&#x532F;&#x51FA;&#x5B83;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x5408;&#x7D04;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x6709;&#xFF1A;</p>
@@ -1002,10 +1002,10 @@ JUMPI</pre>
 <p>&#x56E0;&#x6B64;&#xFF0C;&#x201C;withdraw&#xFF08;uint256&#xFF09;&#x201D;&#x51FD;&#x6578;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x662F;0x2e1a7d4d&#xFF0C;&#x56E0;&#x70BA;&#x5B83;&#x5011;&#x662F;&#x7D50;&#x679C;&#x96DC;&#x6E4A;&#x7684;&#x524D;&#x56DB;&#x500B;&#x5B57;&#x7BC0;&#x3002;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x7E3D;&#x662F;4&#x500B;&#x5B57;&#x7BC0;&#x9577;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x767C;&#x9001;&#x7D66;&#x5408;&#x7D04;&#x7684;&#x4EA4;&#x6613;&#x7684;&#x6574;&#x500B;&#x6578;&#x64DA;&#x6B04;&#x4F4D;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x90A3;&#x9EBC;&#x9664;&#x975E;&#x5B9A;&#x7FA9;&#x4E86;<em>fallback&#x51FD;&#x6578;</em>&#xFF0C;&#x5426;&#x5247;&#x6C92;&#x6709;&#x4EA4;&#x6613;&#x53EF;&#x80FD;&#x8207;&#x4E4B;&#x901A;&#x4FE1;&#x7684;&#x51FD;&#x6578;&#x3002;&#x56E0;&#x70BA;&#x6211;&#x5011;&#x5728;Faucet.sol&#x4E2D;&#x5BE6;&#x73FE;&#x4E86;&#x9019;&#x6A23;&#x7684;fallback&#x51FD;&#x6578;&#xFF0C;&#x6240;&#x4EE5;&#x7576;calldata&#x7684;&#x9577;&#x5EA6;&#x5C0F;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x6642;&#xFF0C;EVM&#x6703;&#x8DF3;&#x8F49;&#x5230;&#x6B64;&#x51FD;&#x6578;&#x3002;</p>
 </div>
 <div class="paragraph">
-<p>&#x5982;&#x679C;msg.data&#x6B04;&#x4F4D;&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#xFF0C;LT&#x5C07;&#x5F48;&#x51FA;&#x5806;&#x68E7;&#x7684;&#x524D;&#x5169;&#x500B;&#x503C;&#x4E26;&#x5C07;1&#x63A8;&#x5230;&#x5176;&#x4E0A;&#x3002;&#x5426;&#x5247;&#xFF0C;&#x5B83;&#x6703;&#x63A8;&#x5165;0&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x5047;&#x8A2D;&#x767C;&#x9001;&#x7D66;&#x6211;&#x5011;&#x7684;&#x5408;&#x7D04;&#x7684;transaciton&#x7684;msg.data&#x6B04;&#x4F4D;<em>was</em>&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x3002;</p>
+<p>&#x5982;&#x679C;msg.data&#x6B04;&#x4F4D;&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#xFF0C;LT&#x5C07;&#x5F48;&#x51FA;&#x5806;&#x758A;&#x7684;&#x524D;&#x5169;&#x500B;&#x503C;&#x4E26;&#x5C07;1&#x63A8;&#x5230;&#x5176;&#x4E0A;&#x3002;&#x5426;&#x5247;&#xFF0C;&#x5B83;&#x6703;&#x63A8;&#x5165;0&#x3002;&#x5728;&#x6211;&#x5011;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x8B93;&#x6211;&#x5011;&#x5047;&#x8A2D;&#x767C;&#x9001;&#x7D66;&#x6211;&#x5011;&#x7684;&#x5408;&#x7D04;&#x7684;transaciton&#x7684;msg.data&#x6B04;&#x4F4D;<em>was</em>&#x5C11;&#x65BC;4&#x500B;&#x5B57;&#x7BC0;&#x3002;</p>
 </div>
 <div class="paragraph">
-<p>&#x201C;PUSH1 0x3f&#x201D;&#x6307;&#x4EE4;&#x5C07;&#x5B57;&#x7BC0;&#x201C;0x3f&#x201D;&#x58D3;&#x5165;&#x5806;&#x68E7;&#x3002;&#x5728;&#x6B64;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&#x201C;PUSH1 0x3f&#x201D;&#x6307;&#x4EE4;&#x5C07;&#x5B57;&#x7BC0;&#x201C;0x3f&#x201D;&#x58D3;&#x5165;&#x5806;&#x758A;&#x3002;&#x5728;&#x6B64;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x758A;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 2. Current stack</caption>
@@ -1065,7 +1065,7 @@ JUMPI</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>&#x201C;PUSH1 0x0&#x201D;&#x5C07;0&#x58D3;&#x5165;&#x5806;&#x68E7;&#xFF0C;&#x5426;&#x5247;&#x70BA;&#x7A7A;&#x3002;&#x201C;CALLDATALOAD&#x201D;&#x63A5;&#x53D7;&#x767C;&#x9001;&#x5230;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;calldata&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F5C;&#x70BA;&#x53C3;&#x6578;&#xFF0C;&#x4E26;&#x5F9E;&#x8A72;&#x7D22;&#x5F15;&#x8B80;&#x53D6;32&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&#x201C;PUSH1 0x0&#x201D;&#x5C07;0&#x58D3;&#x5165;&#x5806;&#x758A;&#xFF0C;&#x5426;&#x5247;&#x70BA;&#x7A7A;&#x3002;&#x201C;CALLDATALOAD&#x201D;&#x63A5;&#x53D7;&#x767C;&#x9001;&#x5230;&#x667A;&#x80FD;&#x5408;&#x7D04;&#x7684;calldata&#x4E2D;&#x7684;&#x7D22;&#x5F15;&#x4F5C;&#x70BA;&#x53C3;&#x6578;&#xFF0C;&#x4E26;&#x5F9E;&#x8A72;&#x7D22;&#x5F15;&#x8B80;&#x53D6;32&#x500B;&#x5B57;&#x7BC0;&#xFF0C;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 </div>
 <div id="faucet_calldataload_instruction_text" class="listingblock">
 <div class="content">
@@ -1073,7 +1073,7 @@ JUMPI</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>&#x7531;&#x65BC;0&#x662F;&#x5F9E;PUSH1 0x0&#x547D;&#x4EE4;&#x50B3;&#x905E;&#x7D66;&#x5B83;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x6B64;CALLDATALOAD&#x5F9E;&#x5B57;&#x7BC0;0&#x958B;&#x59CB;&#x8B80;&#x53D6;32&#x5B57;&#x7BC0;&#x7684;calldata&#xFF0C;&#x7136;&#x5F8C;&#x5C07;&#x5176;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x7684;&#x9802;&#x90E8;&#xFF08;&#x5728;&#x5F48;&#x51FA;&#x539F;&#x59CB;0x0&#x4E4B;&#x5F8C;&#xFF09;&#x3002;&#x5728;&#x201C;PUSH29 0x1000000 &#x2026;&#x200B;&#x201D;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&#x7531;&#x65BC;0&#x662F;&#x5F9E;PUSH1 0x0&#x547D;&#x4EE4;&#x50B3;&#x905E;&#x7D66;&#x5B83;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x6B64;CALLDATALOAD&#x5F9E;&#x5B57;&#x7BC0;0&#x958B;&#x59CB;&#x8B80;&#x53D6;32&#x5B57;&#x7BC0;&#x7684;calldata&#xFF0C;&#x7136;&#x5F8C;&#x5C07;&#x5176;&#x63A8;&#x9001;&#x5230;&#x5806;&#x758A;&#x7684;&#x9802;&#x90E8;&#xFF08;&#x5728;&#x5F48;&#x51FA;&#x539F;&#x59CB;0x0&#x4E4B;&#x5F8C;&#xFF09;&#x3002;&#x5728;&#x201C;PUSH29 0x1000000 &#x2026;&#x200B;&#x201D;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x758A;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 3. Current stack</caption>
@@ -1097,7 +1097,7 @@ JUMPI</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>&#x201C;SWAP1&#x201D;&#x7528;&#x5B83;&#x5F8C;&#x9762;&#x7684;<em>&#x7B2C;i&#x500B;</em>&#x5143;&#x7D20;&#x4EA4;&#x63DB;&#x5806;&#x68E7;&#x9802;&#x90E8;&#x5143;&#x7D20;&#x3002;&#x5728;&#x9019;&#x88E1;&#xFF0C;&#x5B83;&#x8207;&#x5BC6;&#x9470;&#x6578;&#x64DA;&#x4EA4;&#x63DB;0x1000000 &#x2026;&#x200B; &#x65B0;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&#x201C;SWAP1&#x201D;&#x7528;&#x5B83;&#x5F8C;&#x9762;&#x7684;<em>&#x7B2C;i&#x500B;</em>&#x5143;&#x7D20;&#x4EA4;&#x63DB;&#x5806;&#x758A;&#x9802;&#x90E8;&#x5143;&#x7D20;&#x3002;&#x5728;&#x9019;&#x88E1;&#xFF0C;&#x5B83;&#x8207;&#x5BC6;&#x9470;&#x6578;&#x64DA;&#x4EA4;&#x63DB;0x1000000 &#x2026;&#x200B; &#x65B0;&#x5806;&#x758A;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 4. Current stack</caption>
@@ -1138,7 +1138,7 @@ JUMPI</pre>
 <p>&#x5982;&#x679C;&#x4F60;&#x4E0D;&#x6E05;&#x695A;&#x9019;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x53EF;&#x4EE5;&#x9019;&#x6A23;&#x60F3;&#xFF1A;&#x5728;base<sub>10</sub>&#xFF0C;1234000/1000 = 1234&#x3002;&#x5728;base<sub>16</sub>&#x4E2D;&#xFF0C;&#x9019;&#x6C92;&#x6709;&#x4EC0;&#x9EBC;&#x4E0D;&#x540C;&#x3002;&#x4E0D;&#x662F;&#x6BCF;&#x500B;&#x5730;&#x65B9;&#x90FD;&#x662F;10&#x7684;&#x500D;&#x6578;&#xFF0C;&#x5B83;&#x662F;16&#x7684;&#x500D;&#x6578;&#x3002;&#x6B63;&#x5982;&#x5728;&#x6211;&#x5011;&#x7684;&#x8F03;&#x5C0F;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x9664;&#x4EE5;10<sup>3</sup>&#xFF08;1000&#xFF09;&#x53EA;&#x4FDD;&#x7559;&#x6700;&#x9802;&#x90E8;&#x7684;&#x6578;&#x5B57;&#xFF0C;&#x5C07;&#x6211;&#x5011;&#x7684;32&#x5B57;&#x7BC0;&#x57FA;&#x6578;<sub>16</sub>&#x503C;&#x9664;&#x4EE5;16<sup>29</sup>&#x505A;&#x540C;&#x6A23;&#x7684;&#x4E8B;&#x3002;</p>
 </div>
 <div class="paragraph">
-<p>DIV&#xFF08;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#xFF09;&#x7684;&#x7D50;&#x679C;&#x88AB;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x7684;&#x65B0;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>DIV&#xFF08;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#xFF09;&#x7684;&#x7D50;&#x679C;&#x88AB;&#x63A8;&#x9001;&#x5230;&#x5806;&#x758A;&#x4E0A;&#xFF0C;&#x6211;&#x5011;&#x7684;&#x65B0;&#x5806;&#x758A;&#x5982;&#x4E0B;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 5. Current stack</caption>
@@ -1157,7 +1157,7 @@ JUMPI</pre>
 </tfoot>
 </table>
 <div class="paragraph">
-<p>&#x7531;&#x65BC;&#x201C;PUSH4 0xffffffff&#x201D;&#x548C;&#x201C;AND&#x201D;&#x6307;&#x4EE4;&#x662F;&#x5197;&#x9918;&#x7684;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x5FFD;&#x7565;&#x5B83;&#x5011;&#xFF0C;&#x56E0;&#x70BA;&#x5806;&#x68E7;&#x5728;&#x5B8C;&#x6210;&#x5F8C;&#x5C07;&#x4FDD;&#x6301;&#x4E0D;&#x8B8A;&#x3002;&#x201C;DUP1&#x201D;&#x6307;&#x4EE4;&#x8907;&#x88FD;&#x5806;&#x68E7;&#x4E0A;&#x7684;1<sup>st</sup>&#x9805;&#xFF0C;&#x9019;&#x662F;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x3002;&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x201C;PUSH4 0x2e1a7d4d&#x201D;&#x5C07;&#x62BD;&#x53D6;&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x7684;&#x8A08;&#x7B97;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x63A8;&#x9001;&#x5230;&#x5806;&#x68E7;&#x3002;&#x5806;&#x68E7;&#x73FE;&#x5728;&#x770B;&#x8D77;&#x4F86;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>&#x7531;&#x65BC;&#x201C;PUSH4 0xffffffff&#x201D;&#x548C;&#x201C;AND&#x201D;&#x6307;&#x4EE4;&#x662F;&#x5197;&#x9918;&#x7684;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x5B8C;&#x5168;&#x5FFD;&#x7565;&#x5B83;&#x5011;&#xFF0C;&#x56E0;&#x70BA;&#x5806;&#x758A;&#x5728;&#x5B8C;&#x6210;&#x5F8C;&#x5C07;&#x4FDD;&#x6301;&#x4E0D;&#x8B8A;&#x3002;&#x201C;DUP1&#x201D;&#x6307;&#x4EE4;&#x8907;&#x88FD;&#x5806;&#x758A;&#x4E0A;&#x7684;1<sup>st</sup>&#x9805;&#xFF0C;&#x9019;&#x662F;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x3002;&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x201C;PUSH4 0x2e1a7d4d&#x201D;&#x5C07;&#x62BD;&#x53D6;&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x7684;&#x8A08;&#x7B97;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x63A8;&#x9001;&#x5230;&#x5806;&#x758A;&#x3002;&#x5806;&#x758A;&#x73FE;&#x5728;&#x770B;&#x8D77;&#x4F86;&#x5982;&#x4E0B;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 6. Current stack</caption>
@@ -1184,7 +1184,7 @@ JUMPI</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x201C;EQ&#x201D;&#x5F48;&#x51FA;&#x5806;&#x68E7;&#x7684;&#x524D;&#x5169;&#x9805;&#x4E26;&#x5C0D;&#x5B83;&#x5011;&#x9032;&#x884C;&#x6BD4;&#x8F03;&#x3002;&#x9019;&#x662F;&#x8ABF;&#x5EA6;&#x7A0B;&#x5F0F;&#x5B8C;&#x6210;&#x5176;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#x7684;&#x5730;&#x65B9;&#xFF1A;&#x5B83;&#x6BD4;&#x8F03;&#x4EA4;&#x6613;&#x7684;msg.data&#x6B04;&#x4F4D;&#x4E2D;&#x767C;&#x9001;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x662F;&#x5426;&#x8207;withdraw&#xFF08;uint256&#xFF09;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x5B83;&#x5011;&#x76F8;&#x7B49;&#xFF0C;&#x5247;EQ&#x5C07;1&#x63A8;&#x5165;&#x5806;&#x68E7;&#xFF0C;&#x9019;&#x6700;&#x7D42;&#x5C07;&#x7528;&#x65BC;&#x8DF3;&#x8F49;&#x5230;fallback&#x51FD;&#x6578;&#x3002;&#x5426;&#x5247;&#xFF0C;EQ&#x5C07;0&#x63A8;&#x5165;&#x5806;&#x68E7;&#x3002;</p>
+<p>&#x4E0B;&#x4E00;&#x689D;&#x6307;&#x4EE4;&#x201C;EQ&#x201D;&#x5F48;&#x51FA;&#x5806;&#x758A;&#x7684;&#x524D;&#x5169;&#x9805;&#x4E26;&#x5C0D;&#x5B83;&#x5011;&#x9032;&#x884C;&#x6BD4;&#x8F03;&#x3002;&#x9019;&#x662F;&#x8ABF;&#x5EA6;&#x7A0B;&#x5F0F;&#x5B8C;&#x6210;&#x5176;&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;&#x7684;&#x5730;&#x65B9;&#xFF1A;&#x5B83;&#x6BD4;&#x8F03;&#x4EA4;&#x6613;&#x7684;msg.data&#x6B04;&#x4F4D;&#x4E2D;&#x767C;&#x9001;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x662F;&#x5426;&#x8207;withdraw&#xFF08;uint256&#xFF09;&#x5339;&#x914D;&#x3002;&#x5982;&#x679C;&#x5B83;&#x5011;&#x76F8;&#x7B49;&#xFF0C;&#x5247;EQ&#x5C07;1&#x63A8;&#x5165;&#x5806;&#x758A;&#xFF0C;&#x9019;&#x6700;&#x7D42;&#x5C07;&#x7528;&#x65BC;&#x8DF3;&#x8F49;&#x5230;fallback&#x51FD;&#x6578;&#x3002;&#x5426;&#x5247;&#xFF0C;EQ&#x5C07;0&#x63A8;&#x5165;&#x5806;&#x758A;&#x3002;</p>
 </div>
 <div class="paragraph">
 <p>&#x5047;&#x8A2D;&#x767C;&#x9001;&#x7D66;&#x6211;&#x5011;&#x5408;&#x7D04;&#x7684;&#x4EA4;&#x6613;&#x78BA;&#x5BE6;&#x4EE5;withdraw&#xFF08;uint256&#xFF09;&#x7684;&#x51FD;&#x6578;&#x8B58;&#x5225;&#x78BC;&#x958B;&#x982D;&#xFF0C;&#x6211;&#x5011;&#x7684;&#x65B0;&#x68E7;&#x770B;&#x8D77;&#x4F86;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -1211,7 +1211,7 @@ JUMPI</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>&#x63A5;&#x4E0B;&#x4F86;&#xFF0C;&#x6211;&#x5011;&#x6709;&#x201C;PUSH1 0x41&#x201D;&#xFF0C;&#x9019;&#x662F;withdraw&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x5728;&#x5408;&#x7D04;&#x4E2D;&#x7684;&#x5730;&#x5740;&#x3002;&#x5728;&#x6B64;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x68E7;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#xFF0C;&#x6211;&#x5011;&#x6709;&#x201C;PUSH1 0x41&#x201D;&#xFF0C;&#x9019;&#x662F;withdraw&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x5728;&#x5408;&#x7D04;&#x4E2D;&#x7684;&#x5730;&#x5740;&#x3002;&#x5728;&#x6B64;&#x6307;&#x4EE4;&#x4E4B;&#x5F8C;&#xFF0C;&#x5806;&#x758A;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
 </div>
 <table class="tableblock frame-topbot grid-all" style="width: 40%;">
 <caption class="title">Table 8. Current stack</caption>
@@ -1238,7 +1238,7 @@ JUMPI</pre>
 </tbody>
 </table>
 <div class="paragraph">
-<p>&#x63A5;&#x4E0B;&#x4F86;&#x662F;JUMPI&#x6307;&#x4EE4;&#xFF0C;&#x5B83;&#x518D;&#x6B21;&#x63A5;&#x53D7;&#x5806;&#x68E7;&#x4E0A;&#x7684;&#x524D;&#x5169;&#x500B;&#x5143;&#x7D20;&#x4F5C;&#x70BA;&#x53C3;&#x6578;&#x3002;&#x5728;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x6211;&#x5011;&#x6709;&#x201C;jumpi&#xFF08;0x41,1&#xFF09;&#x201D;&#xFF0C;&#x5B83;&#x544A;&#x8A34;EVM&#x57F7;&#x884C;&#x8DF3;&#x8F49;&#x5230;withdraw&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
+<p>&#x63A5;&#x4E0B;&#x4F86;&#x662F;JUMPI&#x6307;&#x4EE4;&#xFF0C;&#x5B83;&#x518D;&#x6B21;&#x63A5;&#x53D7;&#x5806;&#x758A;&#x4E0A;&#x7684;&#x524D;&#x5169;&#x500B;&#x5143;&#x7D20;&#x4F5C;&#x70BA;&#x53C3;&#x6578;&#x3002;&#x5728;&#x9019;&#x7A2E;&#x60C5;&#x6CC1;&#x4E0B;&#xFF0C;&#x6211;&#x5011;&#x6709;&#x201C;jumpi&#xFF08;0x41,1&#xFF09;&#x201D;&#xFF0C;&#x5B83;&#x544A;&#x8A34;EVM&#x57F7;&#x884C;&#x8DF3;&#x8F49;&#x5230;withdraw&#xFF08;uint256&#xFF09;&#x51FD;&#x6578;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</p>
 </div>
 </div>
 </div>
@@ -1299,7 +1299,7 @@ JUMPI</pre>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第十四章以太坊虛擬機","level":"1.17","depth":1,"next":{"title":"第十五章共識","level":"1.18","depth":1,"path":"第十五章.asciidoc","ref":"第十五章.asciidoc","articles":[]},"previous":{"title":"第十三章gas（Gas）","level":"1.16","depth":1,"path":"第十三章.asciidoc","ref":"第十三章.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第十四章.asciidoc","mtime":"2019-08-26T19:56:30.966Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-26T19:57:36.331Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第十四章以太坊虛擬機","level":"1.17","depth":1,"next":{"title":"第十五章共識","level":"1.18","depth":1,"path":"第十五章.asciidoc","ref":"第十五章.asciidoc","articles":[]},"previous":{"title":"第十三章gas（Gas）","level":"1.16","depth":1,"path":"第十三章.asciidoc","ref":"第十三章.asciidoc","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"第十四章.asciidoc","mtime":"2019-08-29T16:26:52.168Z","type":"asciidoc"},"gitbook":{"version":"3.2.3","time":"2019-08-29T16:39:25.106Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
