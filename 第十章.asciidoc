@@ -209,11 +209,15 @@ ERC20允許兩種不同的工作流程。第一個是使用+transfer+函數的�
 
 第二個工作流程是使用+approve+和+transferFrom+的雙交易工作流程。該工作流程允許Token所有者將其控制權委託給另一個地址。它通常用於委託控制權給合約來分配Token，但它也可以被交易所使用。例如，如果一家公司為ICO出售Token，他們可以+approve+一個crowdsale合同地址來分發一定數量的Token。然後crowdsale合同可以用+transferFrom+轉移給Token的每個買家。
 
-((("Initial Coin Offerings (ICOs)","tokens and")))For example, if a company is selling tokens for an ICO, they can +approve+ a crowdsale contract address to distribute a certain amount of tokens. The crowdsale contract can then +transferFrom+ the token contract owner's balance to each buyer of the token, as illustrated in <<approve_transferFrom_workflow>>.
+((("Initial Coin Offerings (ICOs)","tokens and"))) 然後，眾包合約可以+從代幣合約所有者的餘額轉移到每個代幣買家，如圖所示 <<approve_transferFrom_workflow>>.
+例如，如果一家公司為ICO出售代幣，他們可以+批准+一個眾包合約 (crowdsale contract) 地址來分發一定數量的代幣。 
+
 
 [NOTE]
 ====
-((("Initial Coin Offerings (ICOs)","defined")))An _Initial Coin Offering_ (ICO) is a crowdfunding mechanism used by companies and organizations to raise money by selling tokens. The term is derived from Initial Public Offering (IPO), which is the process by which a public company offers shares for sale to investors on a stock exchange. Unlike the highly regulated IPO markets, ICOs are open, global, and messy. The examples and explanations of ICOs in this book are not an endorsement of this type of fundraising.
+((("Initial Coin Offerings (ICOs)","defined")))_Initial Coin Offering_（ICO）是一種眾籌機制，公司和組織通過銷售代幣來籌集資金。該術語源自首次公開發行（IPO），即上市公司向證券交易所的投資者出售股票之過程。與高度監管的IPO市場不同，ICO是開放的、全球化並且混亂的。 本書中ICO的例子和解釋並不是在為類籌款作背書。
+
+
 ====
 
 
