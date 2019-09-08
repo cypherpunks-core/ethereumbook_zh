@@ -1,0 +1,420 @@
+[[wallets_chapter]]
+== 錢包
+
+在以太坊中，“錢包”一詞有幾個不同的含義。
+
+在較高層次上，錢包是作為主要用戶界面的應用程式。錢包控制對用戶資金的訪問，管理密鑰和地址，追蹤餘額以及創建和簽署交易。另外，一些以太坊錢包還可以與合約（如代幣）進行交互。
+
+狹義上講，從開發者的角度來看，“錢包”一詞是指用於儲存和管理用戶密鑰的系統。每個“錢包”都有一個密鑰管理組件。對於一些錢包來說，這就是全部。其他一些錢包是更廣泛類別的一部分，即“瀏覽器”，它是以太坊去中心化應用或“DApps”的接口。在“錢包”這個術語下混合的各種類別之間沒有明確的區別。
+
+在本節中，我們將把錢包看作私鑰的容器，並將其視為用於管理密鑰的系統。
+
+[[wallet_tech_overview]]
+=== 錢包技術概覽
+
+在本節中，我們總結了用於構建用戶友好，安全，和靈活的以太坊錢包的技術。
+
+關於以太坊的一個常見誤解是以太坊錢包包含ether或代幣。實際上，錢包只包含密鑰。ether或其他代幣記錄在以太坊區塊鏈中。用戶通過使用錢包中的密鑰簽署交易來控制網路上的代幣。從某種意義上說，以太坊錢包是一個 _鑰匙串_ _keychain_。
+
+[TIP]
+====
+以太坊錢包包含密鑰，而不是ether或令牌。每個用戶都有一個包含密鑰的錢包。錢包真的是包含私鑰/公鑰的鑰匙串（參見<<private_public_keys>>）。用戶使用密鑰簽署交易，從而證明他們擁有ether。ether儲存在區塊鏈上。
+====
+
+有兩種主要類型的錢包，通過它們包含的密鑰是否彼此相關來區分。
+
+第一種類型是 _非確定性錢包_ _nondeterministic wallet_，其中每個密鑰都是從隨機數中獨立生成的。密鑰不相互關聯。這種類型的錢包也被稱為“Just a Bunch Of Keys”，JBOK錢包。
+
+第二種類型的錢包是 _確定性錢包_ _deterministic wallet_，其中所有密鑰都來自單個主密鑰，稱為_種子_ _seed_。這種類型的錢包中的所有鑰匙都是相互關聯的，如果有原始種子，可以再次生成。確定性錢包中使用了許多不同的 _密鑰推導方法。最常用的派生方法使用樹狀結構，稱為 _分層確定_ _hierarchical deterministic_或_HD_錢包。
+
+確定性錢包是從種子初始化的。為了使這些更容易使用，種子被編碼為一些英文單詞（或其他語言的詞），稱為 _mnemonic code_ 助記詞，接下來的幾節將從較高的層次介紹這些技術。
+
+[[random_wallet]]
+==== 非確定性（隨機）錢包
+
+在第一個以太坊錢包（由Ethereum pre-sale創建）中，錢包檔案儲存一個隨機生成的私鑰。這些錢包正在被確定性的錢包取代，因為它們管理，備份和匯入很麻煩。隨機密鑰的缺點是，如果你生成了許多密鑰，你必須保留所有密鑰的副本。每個密鑰都必須備份，否則如果錢包變得不可訪問，則其控制的資金將不可撤銷地丟失。此外，以太坊地址重用可以通過將多個交易和地址相互關聯來降低隱私。0型非確定性錢包是很少的選擇，特別是如果你想避免地址重用，因為它意味著管理許多密鑰，需要經常備份。
+
+許多以太坊客戶端（包括 go-ethereum 或 geth）使用_keystore_檔案，這是一個JSON編碼的檔案，其中包含一個（隨機生成的）私鑰，由一個密碼加密以提高安全性。JSON檔案的內容如下所示：
+
+[[keystore_example]]
+[source,json]
+----
+{
+    "address": "001d3f1ef827552ae1114027bd3ecf1f086ba0f9",
+    "crypto": {
+        "cipher": "aes-128-ctr",
+        "ciphertext": "233a9f4d236ed0c13394b504b6da5df02587c8bf1ad8946f6f2b58f055507ece",
+        "cipherparams": {
+            "iv": "d10c6ec5bae81b6cb9144de81037fa15"
+        },
+        "kdf": "scrypt",
+        "kdfparams": {
+            "dklen": 32,
+            "n": 262144,
+            "p": 1,
+            "r": 8,
+            "salt": "99d37a47c7c9429c66976f643f386a61b78b97f3246adca89abe4245d2788407"
+        },
+        "mac": "594c8df1c8ee0ded8255a50caf07e8c12061fd859f4b7c76ab704b17c957e842"
+    },
+    "id": "4fcb2ba4-ccdb-424f-89d5-26cce304bf9c",
+    "version": 3
+}
+----
+
+keystore格式使用_Key派生函數（KDF）_，也稱為密碼擴展演算法，該演算法可防止對密碼加密的暴力破解，字典或彩虹表攻擊。簡而言之，私鑰沒有直接由密碼短語加密。相反，通過反覆對它進行雜湊，密碼被_拉長_。雜湊函數重複執行262144輪，可以在keystore JSON中的參數 +crypto.kdfparams.n+ 看到。試圖暴力破解密碼短語的攻擊者必須對每個嘗試的密碼應用262144輪雜湊，這足以減緩攻擊行為，從而使破解足夠複雜性和夠長的密碼短語是不可行的。
+
+有許多軟體庫可以讀寫keystore格式，例如JavaScript庫 +keythereum+：
+
+https://github.com/ethereumjs/keythereum
+
+[TIP]
+====
+除簡單測試以外，不鼓勵使用非確定性錢包，他們太麻煩了，無法備份和使用。相反，使用具有_mnemonic_種子的基於行業標準的_HD錢包_。
+====
+
+[[deterministic_wallets]]
+==== 確定性（種子）錢包
+
+確定性或“種子”錢包是包含私鑰的錢包，所有私鑰都來源於共同的種子，使用單向雜湊函數生成。種子是隨機生成的數字，可以與其他數據（如索引編號或“鏈碼”（請參閱​<<hd_wallets>>））組合以匯出私鑰。在確定性錢包中，種子足以恢復所有派生的密鑰，因此在創建時的單個備份就足夠了。種子也足以用於錢包的匯入和匯出，允許在不同實現的錢包之間輕鬆遷移所有用戶密鑰。
+
+[[hd_wallets]]
+==== HD 錢包 (BIP-32/BIP-44)
+
+確定性錢包的開發使得從單個”種子“中獲得許多密鑰變得容易。確定性錢包的最先進的形式是由比特幣的BIP-32標準定義的HD錢包。HD錢包包含以樹狀結構匯出的密鑰，以便父密鑰可以生成一系列的子密鑰，每個子密鑰可以派生一系列孫子密鑰等等，可以達到無限深度。這個樹狀結構在 <<hd_wallet>> 中進行說明。
+
+[[hd_wallets_figure]]
+.HD wallet: a tree of keys generated from a single seed
+image::images/hd_wallet.png["HD wallet"]
+
+與隨機（非確定性）密鑰相比，HD錢包具有兩大優勢。首先，樹狀結構可以用來表達額外的組織含義，例如，使用特定分支的子密鑰來接收傳入的支付，使用不同分支的子密鑰來接收支付時產生的零錢。密鑰的分支也可用於公司設置，將不同分支分配給部門，子公司，特定職能或會計類別。
+
+HD錢包的第二個優點是用戶可以創建一系列公鑰而無需訪問相應的私鑰。這允許HD錢包用於不安全的伺服器上，或者僅用於只查看或只接收的地方，其中錢包沒有可以花費資金的私鑰。
+
+[[mnemonic_codes]]
+==== 種子和助記詞（BIP-39）
+
+HD錢包是管理許多密鑰和地址的非常強大的機制。如果將它們與一系列英文單詞（或另一種語言的單詞）相結合，更易於轉錄，和跨錢包的匯出匯入。這被稱為_mnemonic_，標準由BIP-39定義。今天，許多以太坊錢包（以及用於其他密碼貨幣的錢包）都使用此標準，並且可以使用可互操作的助記詞匯入和匯出種子以進行備份和恢復。
+
+我們從實際的角度來看一下。下列哪種種子更容易轉錄，在紙上記錄，無誤地讀取，匯出並匯入另一個錢包？
+
+[[hex_seed_example]]
+.A seed for a deterministic wallet, in hex
+----
+FCCF1AB3329FD5DA3DA9577511F8F137
+----
+
+[[mnemonic_seed_example]]
+.A seed for a deterministic wallet, from a 12-word mnemonic
+----
+wolf juice proud gown wool unfair
+wall cliff insect more detail hub
+----
+
+[[wallet_best_practices]]
+==== 錢包最佳實踐
+
+隨著密碼貨幣錢包技術的成熟，某些常見行業標準使錢包廣泛地互操作，易於使用，安全和靈活。這些標準還允許錢包從多個不同的密碼貨幣中獲取密鑰，所有這些都來自助記詞。這些通用標準是：
+
+* 基於 BIP-39 的助記詞
+* 基於 BIP-32 的HD錢包
+* 基於 BIP-43 的多用途HD錢包
+* 基於 BIP-44 的多幣種和多帳戶錢包
+
+這些標準可能會改變，或者可能會因未來的發展而過時，但現在它們形成了一套互聯技術，已成為大多數密碼貨幣的事實上的錢包標準。
+
+這些標準已廣泛的被軟體和硬體錢包採用，使所有這些錢包可以互操作。用戶可以匯出其中一個錢包上生成的助記詞並將其匯入另一個錢包，恢復所有交易，密鑰和地址。
+
+支持這些標準的軟體錢包有 Jaxx，MetaMask，MyEtherWallet（MEW），硬體錢包有：Keepkey，Ledger和Trezor。
+
+以下各節詳細介紹了這些技術。
+
+[TIP]
+====
+如果你正在實現以太坊錢包，則應該將其作為HD錢包構建，並將種子編碼為易於備份的助記詞，並遵循BIP-32，BIP-39，BIP-43和BIP -44標準，如以下各節所述。
+====
+
+[[bip39]]
+[[mnemonic_code_words]]
+==== 助記詞 (BIP-39)
+
+助記詞是表示（編碼）派生確定性錢包的種子的隨機數的單詞序列。單詞序列足以重新創建種子，從而重新創建錢包和所有派生的密鑰。使用助記詞實現的確定性錢包會在首次創建錢包時向用戶展示12至24個字的序列。該單字序列是錢包的備份，可用於在相同或任何兼容的錢包應用程式中恢復和重新創建所有密鑰。
+
+[TIP]
+====
+助記詞經常與“腦錢包”混淆。他們不一樣。主要區別在於腦錢包由用戶選擇的單詞組成，而助記詞由錢包隨機創建並呈現給用戶。這個重要的區別使助記詞更加安全，因為人類是非常貧乏的隨機性來源。
+====
+
+助記詞在BIP-39中定義。請注意，BIP-39是助記詞編碼標準的一個實現。有一個不同的標準，帶有一組不同的單詞，在BIP-39之前用於Electrum比特幣錢包。BIP-39由Trezor硬體錢包背後的公司提出，與Electrum的實現不兼容。但是，BIP-39現在已經在數十種可互操作實現方面取得了廣泛的行業支持，應該被視為事實上的行業標準。此外，BIP-39可用於生產支持以太坊的多幣種錢包，而Electrum種子不能。
+
+BIP-39定義了助記詞和種子的創建，我們在這裡通過九個步驟來描述它。為了清楚起見，該過程分為兩部分：步驟1至6展示在<<generate_mnemonic_words>> 中，步驟7至9展示在 <<mnemonic_to_seed>> 中。
+
+[[generating_mnemonic_words]]
+===== 生成助記詞
+
+助記詞是由錢包使用BIP-39中定義的標準化流程自動生成的。錢包從熵源開始，添加校驗和，然後將熵映射到單詞列表：
+
+1. 創建一個128到256位的隨機序列（熵）。
+2. 通過取其SHA256雜湊的第一部分（熵長度/32）來創建隨機序列的校驗和。
+3. 將校驗和添加到隨機序列的末尾。
+4. 將序列按照11bits劃分。
+5. 將每個11bits的值映射到預定義字典中的2048個詞中的一個。
+6. 助記詞就是單詞的序列。
+
+<<generating_entropy_and_encoding>> 展示了如何使用熵來生成助記詞。
+
+[[generating_entropy_and_encoding]]
+[role="smallerseventy"]
+.Generating entropy and encoding as mnemonic words
+image::images/bip39-part1.png["Generating entropy and encoding as mnemonic words"]
+
+<<table_bip39_entropy>> 展示熵數據的大小和助記詞的長度關係。
+
+[[table_bip39_entropy]]
+.Mnemonic codes: entropy and word length
+[options="header"]
+|=======
+|Entropy (bits) | Checksum (bits) | Entropy *+* checksum (bits) | Mnemonic length (words)
+| 128 | 4 | 132 | 12
+| 160 | 5 | 165 | 15
+| 192 | 6 | 198 | 18
+| 224 | 7 | 231 | 21
+| 256 | 8 | 264 | 24
+|=======
+
+[[mnemonic_to_seed]]
+===== 從助記詞到種子
+
+助記符字表示長度為128到256位的熵。然後使用使用密鑰擴展函數PBKDF2將熵匯出成更長的（512位）種子。然後使用生成的種子構建確定性錢包並派生其密鑰。
+
+密鑰擴展函數有兩個參數：助記詞和_salt_。在密鑰擴展函數中使用鹽的目的是使得構建能夠進行暴力攻擊的查找表不可行。在BIP-39標準中，鹽有另一個目的 —— 它允許引入密碼，作為保護種子的附加安全因素，我們將在 <<mnemonic_passphrase>> 中詳細描述。
+
+步驟7到9中從 <<generating_mnemonic_words>> 描述的過程後繼續：
+
+++++
+<ol start="7">
+    <li>PBKDF2密鑰擴展函數的第一個參數是步驟6產生的助記詞。</li>
+    <li>PBKDF2密鑰擴展函數的第二個參數是鹽。鹽由用戶提供的密碼字串和“mnemonic”組合起來。</li>
+    <li>PBKDF2使用2048輪HMAC-SHA512雜湊演算法，擴展助記詞和鹽，生成512位的種子。</li>
+</ol>
+++++
+
+<<fig_5_7>> 展示如何使用助記詞來生成種子。
+
+[[mnemonic_to_seed_figure]]
+.From mnemonic to seed
+image::images/bip39-part2.png["From mnemonic to seed"]
+
+[TIP]
+====
+密鑰擴展函數及其2048輪雜湊對抵禦助記詞或密碼攻擊具有一定的有效保護作用。它使（在計算中）嘗試超過幾千個密碼和助記詞組合的成本高昂，因為可能派生的種子數量很大（2^512^）。
+====
+
+表格 pass:[<a data-type="xref" href="#mnemonic_128_no_pass" data-xrefstyle="select: labelnumber">#mnemonic_128_no_pass</a>], pass:[<a data-type="xref" href="#mnemonic_128_w_pass" data-xrefstyle="select: labelnumber">#mnemonic_128_w_pass</a>], 和 pass:[<a data-type="xref" href="#mnemonic_256_no_pass" data-xrefstyle="select: labelnumber">#mnemonic_256_no_pass</a>] 展示了一些助記詞和它們生成的種子的例子（沒有密碼）。
+
+[[mnemonic_128_no_pass]]
+.128-bit entropy mnemonic code, no passphrase, resulting seed
+[cols="h,"]
+|=======
+| *Entropy input (128 bits)*| +0c1e24e5917779d297e14d45f14e1a1a+
+| *Mnemonic (12 words)* | +army van defense carry jealous true garbage claim echo media make crunch+
+| *Passphrase*| (none)
+| *Seed  (512 bits)* | +5b56c417303faa3fcba7e57400e120a0ca83ec5a4fc9ffba757fbe63fbd77a89a1a3be4c67196f57c39+
++a88b76373733891bfaba16ed27a813ceed498804c0570+
+|=======
+
+[[mnemonic_128_w_pass]]
+.128-bit entropy mnemonic code, with passphrase, resulting seed
+[cols="h,"]
+|=======
+| *Entropy input (128 bits)*| +0c1e24e5917779d297e14d45f14e1a1a+
+| *Mnemonic (12 words)* | +army van defense carry jealous true garbage claim echo media make crunch+
+| *Passphrase*| SuperDuperSecret
+| *Seed  (512 bits)* | +3b5df16df2157104cfdd22830162a5e170c0161653e3afe6c88defeefb0818c793dbb28ab3ab091897d0+
++715861dc8a18358f80b79d49acf64142ae57037d1d54+
+|=======
+
+
+[[mnemonic_256_no_pass]]
+.256-bit entropy mnemonic code, no passphrase, resulting seed
+[cols="h,"]
+|=======
+| *Entropy input (256 bits)* | +2041546864449caff939d32d574753fe684d3c947c3346713dd8423e74abcf8c+
+| *Mnemonic (24 words)* | +cake apple borrow silk endorse fitness top denial coil riot stay wolf
+luggage oxygen faint major edit measure invite love trap field dilemma oblige+
+| *Passphrase*| (none)
+| *Seed (512 bits)* | +3269bce2674acbd188d4f120072b13b088a0ecf87c6e4cae41657a0bb78f5315b33b3a04356e53d062e5+
++5f1e0deaa082df8d487381379df848a6ad7e98798404+
+|=======
+
+[[mnemonic_passphrase]]
+===== BIP-39中的可選密碼短語
+
+BIP-39標準允許在派生種子時使用可選的密碼短語。如果沒有使用密碼短語，助記詞將被一個由常量字串+"mnemonic"+ 組成的鹽擴展，從任何給定的助記詞中產生一個特定的512位種子。如果使用密碼短語，則擴展函數會從同一助記詞中生成一個_不同的_種子。事實上，對於一個助記符，每個可能的密碼都會生成不同的種子。本質上，沒有“錯誤的”密碼。所有密碼都是有效的，它們都會生成不同的種子，形成一大批可能未初始化的錢包。可能的錢包的集合非常大（2^512^），因此沒有暴力或意外猜測正在使用的錢包的可能。
+
+[TIP]
+====
+BIP-39中沒有“錯誤”的密碼短語。每個密碼都會生成一些空錢包，除非以前使用過。
+====
+
+可選的密碼短語創造了兩個重要的特性：
+
+* 第二個使得只有助記詞沒有用的因素（需要記憶的東西），從而保護助記詞備份免受小偷的威脅。
+
+* 一種似是而非的拒絕形式或“脅迫錢包”，一個選定的密碼短語會導致一個帶有少量資金的錢包，用於將攻擊者從包含大部分資金的“真實”錢包吸引開。
+
+但是，重要的是要注意使用密碼也會導致丟失的風險。
+
+* 如果錢包所有者無行為能力或死亡，且其他人不知道密碼，則種子無用，錢包中儲存的所有資金將永遠丟失。
+
+* 相反，如果所有者在與種子相同的位置備份密碼，它會失去第二個因素的目的。
+
+雖然密碼短語非常有用，但只能結合精心策劃的備份和恢復過程，考慮到主人存活的可能性，並允許其家人恢復密碼貨幣資產。
+
+[[working_mnemonic_codes]]
+===== 使用助記詞
+
+BIP-39 以許多不同的程式語言實現為庫：
+
+https://github.com/trezor/python-mnemonic[python-mnemonic]:: SatoshiLabs團隊提出的BIP-39標準的參考實現，使用Python 
+
+https://github.com/ConsenSys/eth-lightwallet[Consensys/eth-lightwallet]:: 輕量級JS Ethereum節點和瀏覽器錢包（使用BIP-39）
+
+https://www.npmjs.com/package/bip39[npm/bip39]:: 比特幣BIP39的JavaScript實現：用於生成確定性密鑰的助記詞
+
+在獨立網頁中還有一個BIP-39生成器，對於測試和實驗非常有用。<<a_bip39_generator_as_a_standalone_web_page>> 展示了生成助記詞，種子和擴展私鑰的獨立網頁。
+
+[[a_bip39_generator_as_a_standalone_web_page]]
+.A BIP-39 generator as a standalone web page
+image::images/bip39_web.png["BIP-39 generator web-page"]
+
+頁面（https://iancoleman.github.io/bip39/）可以在瀏覽器中離線使用，也可以在線訪問。
+
+[[create_hd_wallet]]
+==== 從種子創建HD錢包
+
+HD錢包是由單個_根種子_創建的，該_種子_是128,256或512位隨機數。最常見的情況是，這個種子是從_助記詞_生成的，詳見前一節。
+
+HD錢包中的每個密鑰都是從這個根種子確定性地派生出來的，這使得可以在任何兼容的HD錢包中從該種子重新創建整個HD錢包。這使得備份，恢復，匯出和匯入包含數千乃至數百萬個密鑰的HD錢包變得很容易，只需傳輸根種子的助記詞即可。
+
+[[bip32_bip43/44]]
+==== 分層確定性錢包（BIP-32）和路徑（BIP-43/44）
+
+大多數HD錢包遵循BIP-32標準，這已成為確定性密鑰事實上的行業標準代。你可以在以下網址閱讀詳細說明：
+
+https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+
+我們不會在這裡討論BIP-32的細節，只是瞭解如何在錢包中使用BIP-32。在許多軟體庫中提供了許多可互操作的BIP-32實現：
+
+https://github.com/ConsenSys/eth-lightwallet[Consensys/eth-lightwallet]:: 輕量級JS Ethereum節點和瀏覽器錢包（使用BIP-32）
+
+還有一個BIP-32獨立的網頁生成器，對BIP-32的測試和實驗非常有用：
+
+http://bip32.org/
+
+[NOTE]
+====
+獨立的BIP-32生成器不是HTTPS網站。提醒你，使用這個工具是不安全的。它僅用於測試。你不應使用本網站製作的密鑰（使用實際資金）。
+====
+
+[[extended_keys]]
+===== 擴展公鑰和私鑰
+
+在BIP-32術語中，可以擴展併產生“孩子”的父密鑰稱為 _擴展密鑰_ _extended key_。如果它是一個私有密鑰，它是由前綴_xprv_區分的 _擴展私鑰_ _extended_private_key_：
+
+[[xprv_example]]
+----
+xprv9s21ZrQH143K2JF8RafpqtKiTbsbaxEeUaMnNHsm5o6wCW3z8ySyH4UxFVSfZ8n7ESu7fgir8imbZKLYVBxFPND1pniTZ81vKfd45EHKX73
+----
+
+_擴展公鑰_ _extended public key_ 由前綴 _xpub_ 區分:
+
+[[xpub_example]]
+----
+xpub661MyMwAqRbcEnKbXcCqD2GT1di5zQxVqoHPAgHNe8dv5JP8gWmDproS6kFHJnLZd23tWevhdn4urGJ6b264DfTGKr8zjmYDjyDTi9U7iyT
+----
+
+HD錢包的一個非常有用的特點是能夠從公開的父公鑰中派生子公鑰，而不需要擁有私鑰。這為我們提供了兩種派生子公鑰的方法：從子私鑰派生，或直接從父公鑰派生。
+
+因此，可以使用擴展公鑰匯出HD錢包結構分支中的所有 _公鑰_（只有公鑰）。
+
+此快捷方式可用於創建非常安全的公鑰 - 部署中的伺服器或應用程式只有擴展公鑰的副本，沒有任何私鑰。這種部署可以產生無限數量的公鑰和以太坊地址，但無法花費發送到這些地址的任何資金。與此同時，在另一個更安全的伺服器上，擴展私鑰可以匯出所有相應的私鑰來簽署交易並花費金錢。
+
+此解決方案的一個常見應用是在為電子商務應用程式提供服務的Web伺服器上安裝擴展公鑰。網路伺服器可以使用公鑰派生函數為每個交易（例如，針對客戶購物車）創建新的以太坊地址。Web伺服器將不會有任何易被盜的私鑰。如果沒有HD錢包，唯一的方法就是在單獨的安全伺服器上生成數千個以太坊地址，然後將其預先加載到電子商務伺服器上。這種方法很麻煩，需要不斷的維護以確保電子商務伺服器不會“用完”密鑰。
+
+此解決方案的另一個常見應用是冷錢包或硬體錢包。在這種情況下，擴展私鑰可以儲存在硬體錢包中，而擴展公鑰可以保持在線。用戶可以隨意創建“接收”地址，而私鑰可以安全地在離線狀態下儲存。要花費資金，用戶可以在離線簽署的以太坊客戶端上使用擴展私鑰或在硬體錢包設備上籤署交易。
+
+[[hardened_child_key]]
+===== 強化子密鑰派生
+
+從xpub派生公鑰的分支是非常有用的，但它帶有潛在風險。訪問xpub不能訪問子私鑰。但是，因為xpub包含鏈碼，所以如果某個子私鑰已知，或者以某種方式洩漏，則可以與鏈碼一起使用，以派生所有其他子私鑰。一個洩露的子私鑰和一個父鏈碼一起揭示了所有子私鑰。更糟的是，可以使用子私鑰和父鏈碼來推導父私鑰。
+
+為了應對這種風險，HD錢包使用一種稱為 _強化派生_ _hardened derivation_的替代派生函數，該函數“破壞”父公鑰和子鏈碼之間的關係。強化派生函數使用父私鑰來派生子鏈碼，而不是父公鑰。這會在父/子序列中創建一個“防火牆”，鏈碼不能用於危害父代或同級私鑰。
+
+簡而言之，如果你想使用xpub的便利來派生公鑰的分支，而不會讓自己面臨洩漏鏈碼的風險，所以應該從強化父項而不是普通父項派生。作為最佳做法，主密鑰的1級子密鑰級始終通過強化派生派生，以防止主密鑰受到破壞。
+
+[[index_number]]
+===== 正常和強化派生的索引號
+
+BIP-32派生函數中使用的索引號是一個32位整數。為了便於區分通過常規派生函數派生的密鑰與通過強化派生函數派生的密鑰，該索引號分為兩個部分。0到2^31^-1（0x0到0x7FFFFFFF）之間的索引號僅用於常規派生。2^31^和2^32^-1（0x80000000至0xFFFFFFFF）之間的索引號僅用於強化派生。因此，如果索引號小於2^31^，則子項是常規的，如果索引號等於或大於2^31^，則子項是強化的。
+
+為了使索引號更容易閱讀和展示，強化子項的索引號從零開始展示，但帶有一個主要符號。第一個正常子密鑰展示為0，而第一個強化子密鑰（索引0x80000000）展示為0++'++。然後，按順序，第二個強化子密鑰將具有索引0x80000001，並將展示為1++'++，依此類推。當你看到HD錢包索引i++'++時，表示2^31^+i。
+
+[[hd_wallet_path]]
+===== HD錢包密鑰識別碼（路徑）
+
+HD錢包中的密鑰使用“路徑”命名約定來標識，樹的每個級別都用斜槓（/）字符分隔（參見 <<hd_path_table>>）。從主密鑰派生的私鑰以“m”開頭。從主公鑰派生的公鑰以“M”開始。因此，主私鑰的第一個子私鑰為m/0。第一個子公鑰是M/0。第一個孩子的第二個孩子是m/0/1，依此類推。
+
+從右向左讀取一個密鑰的“祖先”，直到你到達從派生出它的主密鑰。例如，識別碼 m/x/y/z 描述了密鑰 m/x/y 的第z個子密鑰，密鑰 m/x/y 是密鑰 m/x 的第y個子密鑰，密鑰 m/x 是 m 的第 x 個子密鑰。
+
+[[hd_path_table]]
+.HD wallet path examples
+[options="header"]
+|=======
+|HD path | Key described
+| m/0 | The first (0) child private key from the master private key (m)
+| m/0/0 | The first grandchild private key of the first child (m/0)
+| m/0'/0 | The first normal grandchild of the first _hardened_ child (m/0')
+| m/1/0 | The first grandchild private key of the second child (m/1)
+| M/23/17/0/0 | The first great-great-grandchild public key of the first great-grandchild of the 18th grandchild of the 24th child
+|=======
+
+[[navigating_hd_wallet_tree]]
+===== HD錢包樹狀結構導航
+
+HD錢包樹結構提供了巨大的靈活性。每個父擴展密鑰可以有40億子密鑰：20億正常子密鑰和20億強化子密鑰。這些子密鑰中的每一個又可以有另外40億子密鑰，以此類推。這棵樹可以像你想要的一樣深，無限的世代。然而，這些靈活性，使得在這個無限樹中導航變得非常困難。在實現之間轉移HD錢包尤其困難，因為內部組織分支和子分支的可能性是無窮無盡的。
+
+通過為HD錢包的樹狀結構創建一些標準，兩個BIP為這種複雜性提供瞭解決方案。BIP-43建議使用第一個強化子密鑰作為表示樹結構“目的”的特殊識別碼。基於BIP-43，HD錢包應該只使用樹的一個1級分支，索引號通過定義其目的來標識樹的其餘部分的結構和名稱空間。例如，僅使用分支m/i++'++/的HD錢包表示特定目的，而該目的由索引號“i”標識。
+
+擴展該規範，BIP-44提出了一個多幣種多帳戶結構作為BIP-43下的“目的”號碼+44'+。遵循BIP-44的HD錢包通過僅使用樹的一個分支的事實來標識：m / 44'/。
+
+BIP-44指定了包含五個預定義層級的結構
+
+[[bip44_tree]]
+-----
+m / purpose' / coin_type' / account' / change / address_index
+-----
+
+第一級“purpose”始終設置為+44'+。第二級“coin_type”指定密碼貨幣類型，允許多貨幣HD錢包，其中每種貨幣在第二級下具有其自己的子樹。標準檔案中定義了幾種貨幣，稱為SLIP0044：
+
+https://github.com/satoshilabs/slips/blob/master/slip-0044.md
+
+一些例子: Ethereum 是 m/44++'++/60++'++, Ethereum Classic is m/44++'++/61++'++, Bitcoin 是 m/44++'++/0++'++, 所有貨幣的 Testnet 是 m/44++'++/1++'++.
+
+樹的第三層“account”, 允許用戶將他們的錢包分割成邏輯上的子賬戶，用於會計或組織管理目的。例如HD錢包可能包含兩個以太坊“賬戶”： m/44++'++/60++'++/0++'++ 和 m/44++'++/60++'++/1++'++. 每個賬戶都是自己的子樹的根。
+
+由於BIP-44最初是為比特幣創建的，因此它包含一個在以太坊世界中不相關的“怪癖”。在路徑的第四層“change”時，HD錢包有兩個子樹，一個用於創建接收地址，另一個用於創建零錢地址。以太坊只使用“接收”路徑，因為沒有零錢地址這樣的東西。請注意，雖然以前的層級使用強化派生，但此層級使用正常派生。這是為了允許樹的這個層級匯出擴展公鑰在非安全環境中使用。可用地址由HD錢包作為第四級的孩子派生，使樹的第五級成為“address_index”。例如，在主賬戶中以太坊付款的第三個接收地址為M/44++'++/60++'++/0++'++/0/2。<<bip44_path_examples>> 展示了幾個例子。
+
+[[bip44_path_examples]]
+.BIP-44 HD wallet structure examples
+[options="header"]
+|=======
+|HD path | Key described
+| M/44++'++/60++'++/0++'++/0/2 | The third receiving public key for the primary Ethereum account
+| M/44++'++/0++'++/3++'++/1/14 | The fifteenth change-address public key for the fourth Bitcoin account
+| m/44++'++/2++'++/0++'++/0/1 | The second private key in the Litecoin main account, for signing transactions
+|=======
+
+<<第七章#,下一章：交易>>
+
+

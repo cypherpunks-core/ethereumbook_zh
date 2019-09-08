@@ -1,0 +1,56 @@
+# 指定环境语言
+ language: node_js
+ # 指定sudo权限
+ sudo: required
+ # 指定node版本
+ node_js: stable
+ # 指定缓存模块，缓存可以加速编译
+ cache:
+ directories:
+     - node_modules
+
+ # 邮件通知，这里配置不管成功或是失败都通知
+ notifications:
+ email:
+     recipients:
+     - 01360086@me.mcu.edu.tw
+     on_success: always # default: change
+     on_failure: always # default: always
+
+ # 构建的分支
+ branches:
+ only:
+     - master 
+
+ # 调整时区
+ before_install:
+ - export TZ='Asia/Shanghai'
+
+ # 安装环境
+ install:
+ - npm install -g gitbook-cli
+ - gitbook install
+
+ # gitbook生成静态文件
+ script:
+ - gitbook build
+
+ # 生成文件后，进入静态文件目录，部署到指定仓库，需要填写用户名，邮件
+ # 这里要说的是 GH_USER 和 GH_PASSWORD 这两个变量是 在`Travis`后台设置。 正常来说 使用GitHub Token 也可以，但是由于我这边有些问题，没有配置 Token，建议大家用Token来配置 git remote 的源。
+ after_script:
+ - cp ./seo/* ./_book/
+ - cd ./_book
+ - git init
+ - git config user.name "awesome-doge"
+ - git config user.email "oknet821222@gms.tku.edu.tw"
+ - git add .
+ - git commit -m "Update GitBook By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+ - git remote rm origin
+ - git remote add origin https://${GH_USER}:${GH_PASSWORD}@github.com/cypherpunks-core/ethereumbook_zh
+ - git push --force --quiet origin master:master
+
+ # 环境变量
+ env:
+ global:
+ # Github Pages 
+ - GH_REF: github.com/cypherpunks-core/ethereumbook_zh
