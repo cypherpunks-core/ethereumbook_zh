@@ -1,5 +1,3 @@
-<<第十二章#,上一章：Oracles>>
-
 [[gas]]
 == gas（Gas）
 
@@ -114,8 +112,3 @@ GasToken是一種符合ERC20標準的token，允許任何人在gas價格低時�
 https://github.com/ethereum/EIPs/issues/35
 https://ethresear.ch/t/a-simple-and-principled-way-to-compute-rent-fees/1455
 https://ethresear.ch/t/improving-the-ux-of-rent-with-a-sleeping-waking-mechanism/1480
-
-<<第十四章#,下一章：以太坊虛擬機>>
-
-
-

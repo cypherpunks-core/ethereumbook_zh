@@ -1,5 +1,3 @@
-<<第七章#,上一章：交易>>
-
 [[smart_contracts_chapter]]
 == 智能合約
 
@@ -1570,6 +1568,3 @@ eth.getPastLogs(options)
 eth.getStorageAt(address, position)
 ....
 獲取位於 +address+ 的儲存，並使用 +position+ 的偏移量顯示該合約中儲存的數據。
-
-<<第九章#,下一章：開發工具，框架和庫>>
-

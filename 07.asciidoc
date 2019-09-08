@@ -1,5 +1,3 @@
-<<第六章#,上一章：錢包>>
-
 [[tx_chapter]]
 == 交易 (Transactions)
 
@@ -675,7 +673,3 @@ K~2~ = r^-1^ (sR^'^ - zG)
 
 討論和 Grid+ 參考實現：
 https://blog.gridplus.io/toward-an-ethereum-multisig-standard-c566c7b7a3f6
-
-<<第八章#,下一章：智能合約>>
-
-

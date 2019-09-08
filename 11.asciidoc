@@ -1,5 +1,3 @@
-<<第十章#,上一章：Tokens>>
-
 [[decentralized_applications_chap]]
 == 去中心化應用 (DApps)
 
@@ -206,7 +204,3 @@ Website：https://ethlance.com/
 Decentraland是以太坊區塊鏈支持的虛擬現實平臺。用戶可以創建，體驗內容和應用程式並從中獲利。
 
 Website：https://decentraland.org/
-
-<<第十二章#,下一章：Oracles>>
-
-

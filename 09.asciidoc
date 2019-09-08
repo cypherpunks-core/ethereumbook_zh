@@ -1,5 +1,3 @@
-<<第八章#,上一章：智能合約>>
-
 = 開發工具，框架和庫
 
 == 框架
@@ -648,7 +646,3 @@ Emerald Platform提供了庫和UI組件，可以在以太坊上構建Dapps。Eme
 Github link; https://github.com/etcdevteam/emerald-platform
 
 Documentation link; https://docs.etcdevteam.com
-
-<<第十章#,下一章：Tokens>>
-
-
