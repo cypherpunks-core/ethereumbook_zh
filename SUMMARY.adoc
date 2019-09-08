@@ -6,7 +6,7 @@
 . link:02.asciidoc[第2章 以太坊基礎]
 . link:03.asciidoc[第3章 以太坊客戶端]
 . link:04.asciidoc[第4章 以太坊測試網（Testnets）]
-. link:05.asciidoc[第5章 密鑰，地址]
+. link:05.asciidoc[第5章 密鑰、地址]
 . link:06.asciidoc[第6章 錢包]
 . link:07.asciidoc[第7章 交易]
 . link:08.asciidoc[第8章 智能合約]
