@@ -1,15 +1,15 @@
-name: 'Gitbook Action Build'
-on:
-  push:
-    branches:
-      - master  # trigger branch
 jobs:
   build:
+    name: Build Gitbook
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout action
-      uses: actions/checkout@v2
-    - name: Gitbook Action
-      uses: zanderzhao/gitbook-action@v1.2.2
-      with:
-        token: ${{ secrets.PERSONAL_TOKEN }}
+      # We must check out the repo first
+      - name: Checkout
+        uses: actions/checkout@v2
+      # Now run this publish action
+      - name: Publish
+        uses: tuliren/publish-gitbook@v1.0.0
+        with:
+          # specify either github_token or personal_token
+          # github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
