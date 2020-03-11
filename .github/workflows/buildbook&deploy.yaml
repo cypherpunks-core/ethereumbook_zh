@@ -1,0 +1,50 @@
+name: build-book
+on: [push]
+jobs:
+  build:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/book.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: setup env to build website
+        run: |
+          npm install gitbook-cli -g
+          gitbook install
+      - name: setup env to generate file
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          export TZ='Asia/Shanghai'
+          sudo apt-get install calibre fonts-noto-cjk -y
+      - name: build website
+        run: |
+          gitbook build . ./build
+          rm -rf ./build/.github
+          echo "" > ./build/.nojekyll
+      - name: generate file
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          mkdir book
+          xvfb-run gitbook pdf ./ ./book/book.pdf
+          gitbook epub ./ ./book/book.epub
+          gitbook mobi ./ ./book/book.mobi
+    
+      - name: deploy to pages
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./build
+      - name: send to release
+        uses: fnkr/github-action-ghr@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GHR_PATH: ./book
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
