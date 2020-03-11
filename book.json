@@ -1,3 +1,45 @@
 {
-    "plugins": ["mathjax"]
+    "extension": null,
+    "generator": "site",
+    "isbn": "",
+    "links": {
+        "sharing": {
+            "all": null,
+            "facebook": null,
+            "google": null,
+            "twitter": null,
+            "weibo": null
+        },
+        "sidebar": {
+            "awesome-doge's Blog": "https://awesome-doge.github.io/"
+        }
+    },
+    "output": null,
+    "pdf": {
+        "fontSize": 14,
+        "footerTemplate": null,
+        "headerTemplate": null,
+        "margin": {
+            "bottom": 36,
+            "left": 62,
+            "right": 62,
+            "top": 36
+        },
+        "pageNumbers": true,
+        "paperSize": "a4"
+    },
+    "plugins": [
+        "ga",
+        "mathjax"
+    ],
+    "pluginsConfig": {
+        "ga": {
+            "token": ""
+        }
+    },
+    "title" : "Mastering Ethereum - 繁中",
+    "author": "aantonop",
+    "description" : "",
+    "language" : "zh-tw",
+    "variables": {}
 }
